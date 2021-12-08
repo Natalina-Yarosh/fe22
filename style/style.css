@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tabs{
+    padding: 100px 0;
+
+}
+
+.container{
+    
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+.tabs__item{
+    
+    padding-top: 47px;
+    padding-left: 100px;
+    padding-bottom: 54px;
+    padding-right: 30px;
+    width: calc((100% - 30px) / 2);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tabs__title{
+    
+    font-family: 'Open Sans';
+    font-size: 30px;
+    line-height: 40,85px;
+    margin-bottom: 27px;
+    font-weight: 700;
+
+}
+.tabs__text{
+    
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 21.13px;
+    margin-bottom: 27px;
+    font-weight: 400;
+}
+.tabs__btn{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 24.51px;
+    padding: 20px 122px;
+    color: #E5E5E5;
+    background-color: #EC7979;
+
+}
+img{
+    padding: 0;
+    text-align: right;
+}
