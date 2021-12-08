@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap");
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Raleway";
+}
+
+.sights {
+   background-color: #ffffff;
+   padding: 139px 0 118px 0;
+   border: 1px solid black;
+}
+
+.awesome {
+   background-color: #ffffff;
+   padding: 0 0 58px 0;
+   border: 1px solid black;
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+   border: 1px solid black;
+}
+
+.container-top {
+}
+.sights__text-title {
+   font-size: 30px;
+   line-height: 40.85px;
+   font-family: "Open Sans";
+   font-weight: 700;
+   margin-bottom: 56px;
+}
+
+.sight__text {
+   font-family: Raleway;
+   font-size: 18px;
+   line-height: 21px;
+   margin-bottom: 27px;
+}
+
+.sights__btn {
+   font-size: 18px;
+   line-height: 24.51px;
+   padding: 20px;
+   color: #ffffff;
+   font-family: "Open Sans";
+   font-weight: 600;
+   background-color: #ec7979;
+   border: none;
+   display: block;
+   max-width: 270px;
+   width: 100%;
+}
+.sights__item-top {
+   display: inline-block;
+   width: calc((100% - 30px) / 2);
+}
+.sights__item-top:last-child {
+   border: 5px solid black;
+   max-width: 100%;
+   max-height: 500px;
+}
+.sights__item-top:first-child {
+   padding: 55px 30px 54px 100px;
+   border: 1px solid #c6cbcd;
+}
+
+.sights__item-bottom-block {
+   border: 1px solid black;
+}
+.sights__title {
+   font-family: "Raleway";
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   margin-bottom: 40px;
+}
+.line {
+   border-bottom: 1px solid #ec7979;
+   max-width: 170px;
+   width: 100%;
+   margin: 0 auto;
+   margin-bottom: 40px;
+}
+.sights__description {
+   font-family: "Raleway";
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   color: #86878b;
+   margin-bottom: 110px;
+}
+
+.sights__item-bottom {
+   width: calc((100% - 60px) / 3);
+   display: inline-block;
+   border: 1px solid black;
+}
+
+.sights__item-bottom:nth-child(2) {
+   margin-left: 26px;
+}
+.sights__item-bottom:nth-child(3) {
+   margin-left: 25px;
+}
+.sights__icon-bottom {
+   /* вторая картинка не реагирует, синтаксис правильный*/
+   max-width: 96px;
+   max-height: 96px;
+   margin: 0 auto;
+}
+
+.sights__title-bottom {
+   margin-bottom: 46px;
+   font-family: "Open Sans";
+   font-size: 24px;
+   font-style: normal;
+   line-height: 33px;
+   text-align: center;
+}
+
+.sight__text-bottom {
+   font-family: "Raleway";
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+}
