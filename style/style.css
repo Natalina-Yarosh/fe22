@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+   margin: 0 auto;
+   padding: 50px 0;
+}
+.wrapper__body {
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.wrapper__header {
+   margin: 0 0 80px 0;
+}
+.wrapper__title {
+   text-align: center;
+}
+.title {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 36px;
+   line-height: 42px;
+   color: #000000;
+   margin-bottom: 60px;
+}
+.border{
+   border: 1px solid #ec7979;
+   max-width: 170px;
+   height: 0px;
+   margin: 0 auto;
+   margin-bottom: 71px;
+}
+.wrapper__text {
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+}
+.wrapper__row {
+   margin: 0 auto;   
+}
+.wrapper__column {
+   display: inline-block;
+   width: calc(100% - 30px - 8px) / 3;
+}
+.item-wrapper {
+   max-width: 1170px;
+   text-align: center;
+
+}
+.item-wrapper__icon {
+   width: 170px;
+   height: 170px;
+   margin: 0 auto;
+   margin-bottom: 39px;
+   text-align: center;
+}
+.item-wrapper__title {
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 33px;
+   text-align: center;
+   color: #000000;
+   margin-bottom: 30px;
+}
+.item-wrapper__text {
+   max-width: 370px;
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   color: #000000;
+}
+.tabs {
+   padding: 50px 0px;
+}
+.tabs__container {
+   margin: 0 auto;
+}
+.tabs__body{
+   max-width: 1170px;
+   margin: 0 auto;
+   border: 1px solid #C6CBCD;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   display: flex;
+   padding: 0px 15px;
+}
+.tabs__block {
+   padding: 60px 30px 50px 100px;
+}
+.tabs__title {
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 41px;
+   color: #000000;
+   margin-bottom: 70px;
+}
+.tabs__text {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 21px;
+}
+.tabs__btn {
+   max-width: 270px;
+   width: 100%;
+   background: #EC7979;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 25px;
+   text-align: center;
+   color: #fff;
+   border: #EC7979;
+   padding: 18px;
+}
+.tabs__img {
+   max-width: 470px;
+   width: 100%;
+   height: 500px;
+}
+p{
+   margin-bottom: 40px;
+}
+p:last-child{
+   margin-bottom: 27px;
+}
