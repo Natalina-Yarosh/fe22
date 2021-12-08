@@ -25,8 +25,6 @@
    border: 1px solid black;
 }
 
-.container-top {
-}
 .sights__text-title {
    font-size: 30px;
    line-height: 40.85px;
@@ -39,7 +37,7 @@
    font-family: Raleway;
    font-size: 18px;
    line-height: 21px;
-   margin-bottom: 27px;
+   margin-bottom: 20px;
 }
 
 .sights__btn {
@@ -54,19 +52,21 @@
    display: block;
    max-width: 270px;
    width: 100%;
+   margin-top: 7px;
 }
 .sights__item-top {
    display: inline-block;
    width: calc((100% - 30px) / 2);
 }
 .sights__item-top:last-child {
-   border: 5px solid black;
    max-width: 100%;
    max-height: 500px;
+   text-align: right;
 }
 .sights__item-top:first-child {
    padding: 55px 30px 54px 100px;
    border: 1px solid #c6cbcd;
+   vertical-align: top;
 }
 
 .sights__item-bottom-block {
@@ -112,6 +112,7 @@
    max-width: 96px;
    max-height: 96px;
    margin: 0 auto;
+   margin-bottom: 71px;
 }
 
 .sights__title-bottom {
