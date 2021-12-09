@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+}
+
+/* Section TABS */
+
+.tabs {
+    padding: 100px 0 50px 0;
+}
+
+.tabs .container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tabs__item {
+    display: inline-block;
+    width: 184px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.tabs__item:first-child {
+    width: 204px;
+    border: 1px solid #c6cbcd;
+    border-bottom: none;
+}
+
+.tabs__block {
+    border: 1px solid #c6cbcd;
+}
+
+.tabs__left {
+    width: 57%;
+    padding: 41px 30px 54px 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tabs__title {
+    font-size: 30px;
+    margin-bottom: 27px;
+}
+
+.tabs__text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 27px;
+}
+
+.tabs__btn {
+    font-weight: 600;
+    max-width: 270px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ec7979;
+    padding: 17px;
+    border: none;
+}
+
+.tabs__right {
+    display: inline-block;
+    width: 42%;
+    height: 100%;
+    text-align: right;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.tabs__right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section about */
+
+.about {
+    padding: 50px 0;
+}
+
+.about .container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about__title {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    line-height: 42px;
+    margin-bottom: 57px;
+}
+
+.about__line {
+    width: 170px;
+    border: 1px solid #ec7979;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.about__text {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878b;
+    margin-bottom: 100px;
+}
+
+.about__item {
+    display: inline-block;
+    width: calc((100% - 60px) / 3);
+    margin-right: 26px;
+}
+
+.about__item:last-child {
+    margin-right: 0;
+}
+
+.about__image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 24px 0;
+    margin-bottom: 38px;
+}
+
+.about__title-logo {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.about__description {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
