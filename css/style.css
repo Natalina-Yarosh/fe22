@@ -99,14 +99,13 @@
    width: calc((100% - 60px) / 3);
    display: inline-block;
    border: 1px solid black;
+   margin-right: 25px;
 }
 
-.sights__item-bottom:nth-child(2) {
-   margin-left: 26px;
+.sights__item-bottom:last-child {
+   margin-right: 0px;
 }
-.sights__item-bottom:nth-child(3) {
-   margin-left: 25px;
-}
+
 .sights__icon-bottom {
    /* вторая картинка не реагирует, синтаксис правильный*/
    max-width: 96px;
