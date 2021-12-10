@@ -41,7 +41,11 @@ border: 1px solid #C6CBCD;
 border-bottom: none !important
 }
 
-
+.tabs__item{
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: top
+}
 
 .tabs__item-description{
     padding: 41px 30px 54px 100px;
