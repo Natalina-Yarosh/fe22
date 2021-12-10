@@ -41,15 +41,11 @@ border: 1px solid #C6CBCD;
 border-bottom: none !important
 }
 
-.tabs__item{
-    display: inline-block;
-    margin: 0 auto;
-    vertical-align: top
-}
+
 
 .tabs__item-description{
     padding: 41px 30px 54px 100px;
-    max-width: 693px;
+    width: 60%;
 }
 .tabs__title{
 font-weight: 700;
@@ -82,9 +78,8 @@ margin-bottom: 65px;
     }
  
     .tabs__item-picture{
-        max-height: 500px;
-        max-width: 100%;
-        text-align:right
+       height: 500px;
+       width: 40%;
     }
     img.tabs__img {
         width: 100%;
