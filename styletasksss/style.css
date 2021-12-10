@@ -107,6 +107,7 @@ margin-bottom: 65px;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    color: #86878B;
     margin-bottom: 110px;
 }
 .benefits__section{
@@ -140,4 +141,92 @@ margin-bottom: 65px;
     font-size: 18x;
     line-height: 21px;
     text-align: center;
+}
+.pricing{
+    padding: 92px 0 50px;
+    background-color: #F5F5F5;
+}
+.pricing__title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 42px;
+    text-transform: uppercase;
+}
+.pricing__line{
+    border: 1px solid #EC7979;
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.pricing__text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+    margin-bottom: 59px;
+}
+.pricing__block{
+    display: flex;
+    padding-top: 20px
+}
+.pricing__item{
+    margin-right: 30px;
+    width: calc((100% - 30px - 30px) / 3);
+}
+.pricing__item:last-child{
+    margin-right: 0;}
+
+.pricing__item:nth-child(2){
+        margin-top:-20px;}
+li {
+    list-style-type: none;
+}
+.pricing__type{
+    padding: 15px 15px 14px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #333333;
+    border: 2px solid #F5F5F5;
+}
+.pricing__price{
+    font-family: 'Raleway', sans-serif;
+    padding: 29px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #333333;
+    border: 2px solid #F5F5F5;  
+}
+.pricing__duration{
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 15px 14px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #333333;
+    border: 2px solid #F5F5F5;  
+}
+.pricing__size{
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 15px 14px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+    background-color: #ffffff;
+    border: 2px solid #F5F5F5;
+    text-transform: capitalize;  
 }
