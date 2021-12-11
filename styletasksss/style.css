@@ -114,7 +114,10 @@ margin-bottom: 65px;
     padding: 15px 0;
     border: none;
     }
- 
+.tabs__btn:hover{
+    background-color: #AB4949;}
+.tabs__btn:active{
+    box-shadow: 0px 0px 10px #AB4949;}
     .tabs__item-picture{
        height: 500px;
        width: 40%;
