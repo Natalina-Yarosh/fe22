@@ -221,3 +221,38 @@ li {
    border: 2px solid #f5f5f5;
    text-transform: capitalize;
 }
+
+.social-media {
+   padding: 28px 0 18px 0;
+   background-color: #f8efef;
+}
+.social-media__block {
+   display: flex;
+}
+.social-media__item:first-child {
+   display: flex;
+   flex-direction: column;
+   max-width: 100%;
+   width: 40%;
+}
+.social-media__item:last-child {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 100%;
+   width: 60%;
+   padding-left: 50px;
+}
+
+.social-media__title {
+   font-size: 24px;
+   line-height: 32.68px;
+   font-family: "Open Sans";
+   margin-bottom: 20px;
+}
+.social-media__description {
+   font-family: "Raleway", sans-serif;
+   font-size: 18px;
+   line-height: 21px;
+   color: #86878b;
+}
