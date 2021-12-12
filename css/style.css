@@ -136,8 +136,8 @@
 }
 
 .pricing {
-   background-color: #f5f5f5;
    padding: 118px 0 50px 0;
+   background-color: #f5f5f5;
 }
 
 .pricing__title {
@@ -159,14 +159,17 @@
 }
 .pricing__block {
    display: flex;
+   margin: 0 -15px; /*чтобы падинг блока провалился в падинг контейнера*/
 }
 li {
    list-style-type: none;
 }
 
 .pricing__item {
-   margin-right: 30px;
-   width: calc((100% - 60px) / 3);
+   /*margin-right: 30px;
+   width: calc((100% - 60px) / 3); - это работает, но решил попробовать флекс + отрицательный марджин*/
+   flex: 0 1 33.333%; /* flex-grow 0 - запрещает увеличиваться, flex-shirink 1 - разрешает уменьшаться*/
+   padding: 0 15px;
 }
 .pricing__item:first-child {
    margin-top: 20px;
