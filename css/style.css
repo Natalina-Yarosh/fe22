@@ -256,3 +256,7 @@ li {
    line-height: 21px;
    color: #86878b;
 }
+
+.social-media__icon:hover {
+   background-color: blue;
+}
