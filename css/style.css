@@ -271,9 +271,6 @@ li {
    flex-direction: column;
    align-items: center;
 }
-.footer__items {
-   display: flex;
-}
 
 .footer__items:first-child {
    display: flex;
