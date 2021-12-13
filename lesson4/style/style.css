@@ -112,6 +112,7 @@
     text-align: center;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
+    text-transform: uppercase;
     margin-bottom: 60px;
 }
 
@@ -174,4 +175,112 @@
     text-align: center;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
+}
+
+.pricing {
+    padding: 104px 0 50px;
+    background: #f5f5f5;
+}
+
+.pricing .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+.pricing__title {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.pricing__line {
+    width: 170px;
+    border-bottom: 1px solid #ec7979;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.pricing__text {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878b;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin-bottom: 79px;
+}
+
+.pricing__block {
+    display: flex;
+}
+
+.pricing__elem {
+    margin-right: 30px;
+    width: calc((100% - 30px - 30px) / 3);
+}
+
+.pricing__elem:last-child {
+    margin-right: 0;
+}
+
+.pricing__elem:nth-child(2) {
+    margin-top: -20px;
+}
+
+.pricing__item {
+    list-style-type: none;
+}
+
+.pricing__list .pricing__item:first-child {
+    font-size: 24px;
+    line-height: 33px;
+    padding: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.pricing__list .pricing__item:nth-child(2) {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 29px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.pricing__list .pricing__item:nth-child(3) {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 14px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    background: #333333;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.pricing__list .pricing__item {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 14px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #86878b;
+    text-align: center;
+    border-bottom: 1px solid #f5f5f5;
+    background: #ffffff;
+    text-transform: capitalize;
 }
