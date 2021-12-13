@@ -291,3 +291,48 @@ li {
    text-align: center;
    color: rgba(255, 255, 255, 0.5);
 }
+
+.contact {
+   padding: 118px 0 50px 0;
+}
+
+.contact__content {
+}
+.contact__top-block {
+}
+
+.contact__title {
+   font-family: "Raleway", sans-serif;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   margin-bottom: 40px;
+   text-transform: uppercase;
+}
+
+.contact__text-description {
+   font-family: "Raleway", sans-serif;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   color: #86878b;
+   margin-bottom: 353px;
+}
+.contact__bottom-block {
+}
+.contact__button {
+   font-size: 18px;
+   line-height: 24.51px;
+   color: #ffffff;
+   font-family: "Open Sans";
+   font-weight: 600;
+   background-color: #ec7979;
+   border: none;
+   display: block;
+   max-width: 370px;
+   width: 100%;
+   text-transform: capitalize;
+   text-align: center;
+   margin: 0 auto;
+   padding: 20px 0 20px 0;
+}
