@@ -48,7 +48,7 @@
   }
   .awesome__item {
     width: calc((100% - 30px - 30px) / 3);
-    width: 100%;
+    /* width: 100%;  - не может быть 2 значения ширины)) */
     margin-right: 30px;
     display: flex;
     flex-direction: column;
