@@ -58,9 +58,9 @@
 }
 
 .sights__item-top:last-child {
-   display: flex;
+   /* display: flex;
    height: 502px;
-   border: 1px solid #c6cbcd;
+   border: 1px solid #c6cbcd;  - это все лишние стили, картинка по высоте регулируется блоком слева*/
    overflow: hidden;
 }
 
