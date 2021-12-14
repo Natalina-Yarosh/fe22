@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Raleway', 'Open Sans';
+}
+
+/*Block Tabs*/ 
+.tabs{
+   padding: 100px 170px;
+}
+.container__tabs{
+   max-width: 1170px;
+   height: 540px;
+   margin: 0 auto 100px;
+}
+
+.tab__btn{
+      font-family: Open Sans;
+      font-style: normal;
+      font-size: 14px;
+      width: 184px;
+      height: 40px;
+      line-height: 19px;
+      border: none;
+      background: none;
+      border-radius: 5px 5px 0px 0px;
+      padding: 0 15px;
+}
+
+
+.tabs__block{
+   width: 570px;;
+   padding: 40px 30px 54px 100px;
+}
+
+.tabs__img{
+   padding-left: 30px;
+}
+
+
+.item__context > *{
+   display: inline-block;
+   vertical-align: top;
+}
+
+.tabs__title{
+   font-family: Open Sans;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 41px;
+   padding-bottom: 70px;
+}
+
+.tabs__text{
+   font-family: Raleway;
+   font-size: 18px;
+   line-height: 21px;
+   align-items: center;
+   padding-bottom: 10px;
+}
+
+.tabs__button{
+   width: 270px;
+   height: 58px;
+   margin-top: 30px;
+   background-color: #EC7979;
+   font-size: 18px;
+   line-height: 25px;
+   color: #FFFFFF;
+   border: none;
+}
+
+.container__img{
+   width: 470px;
+   height: 500px;
+
+}
+
+.tabs__img{
+   width: 100%;
+   height: 100%;
+}
+
+
+/*Block awesome*/ 
+.awesome{
+   padding: 0 170px 60px;
+}
+
+.conteiner__awesome{
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+
+.awesome__title{
+   font-size: 36px;
+   line-height: 42px;
+   margin-bottom: 55px;
+   text-align: center;
+}
+
+.line{
+   border-bottom: 1px solid #EC7979;
+   width: 100%;
+   max-width: 100px;
+   margin: 0 auto;
+   margin-bottom: 40px;
+}
+
+.awesome__text{
+   font-size: 18px;
+   color: #86878B;
+   line-height: 21px;
+   margin-bottom: 70px;
+   text-align: center;
+}
+
+.blocks{
+   display: flex;
+   flex-direction: row;
+}
+
+.block__awesome{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 30px;
+   text-align: center;
+}
+
+.awesome__imgs{
+   width: 170px;
+   height: 170px;
+   margin-bottom: 35px;
+}
+.block__img{
+width: 100%;
+height: 100%;
+
+}
+.block__title{
+   font-family: Open Sans;
+   font-size: 24px;
+   font-weight: bold;
+   line-height: 33px;
+   margin-bottom: 30px;
+}
+
+.block__text{
+   font-size: 18px;
+   line-height: 21px;
+}
+
+/*Block pricing*/ 
+
+.pricing{
+   padding: 100px 0 50px;
+   background-color: #F5F5F5;
+
+}
+.container__pricing{
+   width: 1170px;
+   margin: 0 auto;
+}
+
+.pricing__title{
+   font-family: 'Raleway';
+   text-transform: uppercase;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   padding-bottom: 54px;
+}
+
+.pricing__text{
+   font-size: 18px;
+   color: #86878B;
+   line-height: 21px;
+   margin-bottom: 70px;
+   text-align: center;
+}
+
+.pricing__items{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.pricing__item{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 15px;
+   text-align: center;
+}
+.pricing__list{
+   list-style-type: none;
+   width: 370px;
+}
+
+.item__head{
+   font-family: Open Sans;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 33px;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 14px 0;
+   background-color: #333333;
+   border-bottom: solid 1px #FFFFFF;
+}
+.item__cost{
+   font-family: Open Sans;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 29px 0;
+   background-color: #333333;
+   border-bottom: solid 1px #FFFFFF;
+}
+
+.item__use{
+   font-family: 'Raleway';
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 15px 0;
+   background-color: #333333;
+   border-bottom: solid 1px #FFFFFF;
+}
+
+.item__text{
+   font-family: Raleway;
+   color: #86878B;
+   font-size: 18px;
+   line-height: 21px;
+   padding: 15px 0;
+   text-align: center;
+   color: #86878B;
+   border: solid 1px #FFFFFF;
+}
+
+.item__shadow{
+   box-shadow: 0 4px 10px rgba(51, 51, 51, 0.2);
+   margin-top: -20px;
+}
