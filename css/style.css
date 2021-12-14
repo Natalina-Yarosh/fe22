@@ -281,7 +281,7 @@ li {
 
 .footer__items:first-child {
    display: flex;
-   margin: 0 -16.5px 28px -16.5px;
+   margin: 0  28px;
 }
 
 .footer__icon {
