@@ -58,7 +58,6 @@ li{
     width: 57%;
 }
 .prime__logo{
-/* padding: 23px 0 23px; - не ставим внутренний отступ  */
 margin-bottom: 72.88px;
 }
 .prime__title{
@@ -604,5 +603,5 @@ margin-bottom: 42px;
     color: rgba(255, 255, 255, 0.5)
 }
 .footer__icon:hover{
-    background-color: #FFFFFF;
+    fill: red;
 }
