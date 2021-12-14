@@ -6,7 +6,7 @@
 }
 
 .tabs {
-  padding: 0 170px;
+  /* padding: 0 170px;  не ставим у обертки отступ слева и справа*/ 
   margin-bottom: 50px;
 }
 
