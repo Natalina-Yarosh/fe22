@@ -498,7 +498,7 @@ margin-bottom: 42px;
     margin-right: 30px;
 }
 .feedback__people{
-    width: 73%;  
+    width: calc(100% - 70px - 30px);  
 }
 .feedback__name{
     font-size: 24px;
