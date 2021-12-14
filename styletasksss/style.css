@@ -505,8 +505,8 @@ margin-bottom: 42px;
     font-size: 24px;
     font-weight: 700;
     line-height: 33px;
-    padding: 15px 0;
-    margin-bottom: 15px;
+    /* padding: 15px 0; - внутренние отступы не нужны  */
+    margin-bottom: 30px;
 }
 .feedback__position{
     font-family: 'Raleway', sans-serif;
