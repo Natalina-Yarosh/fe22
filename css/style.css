@@ -121,6 +121,12 @@
    align-items: center;
 }
 
+.awesome__icon-bottom img{
+   width: 75%;
+   height: 75%;
+   object-fit: contain;
+}
+
 .awesome__title-bottom {
    margin-bottom: 46px;
    font-family: "Open Sans";
