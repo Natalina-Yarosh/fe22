@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .awesome {
-    padding: 0 170px;
+    /* padding: 0 170px; */
     margin-bottom: 58px;
   }
   
@@ -20,7 +20,10 @@
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    padding: 54px;
+
+    /* убираем внутренний отступ и заменяем на отступ от жлемента к линии */
+    margin-bottom: 54px; 
+
     color: #000;
   }
   
