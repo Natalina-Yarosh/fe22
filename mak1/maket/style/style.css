@@ -68,6 +68,7 @@
     align-items: center;
     border: 1px solid #ec7979;
     border-radius: 50%;
+    margin-bottom: 33px;
   }
   
   .awesome__name {
@@ -76,8 +77,8 @@
     line-height: 33px;
     text-transform: capitalize;
     text-align: center;
-    padding: 33.5px;
-    margin-bottom: 8px;
+    /* padding: 33.5px; - убираем внутренни  отступ  */
+    margin-bottom: 41px;
     font-weight: bold;
     color: #000;
   }
