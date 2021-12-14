@@ -18,6 +18,7 @@
 .tabs__row {
 	max-width: 1200px;
 	width: 100%;
+	display: flex;
 }
 
 .tabs__tab {
