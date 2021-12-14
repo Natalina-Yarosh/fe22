@@ -278,7 +278,7 @@ margin-bottom: 65px;
 .tabs__btn:active{
     box-shadow: 0px 0px 10px #AB4949;}
     .tabs__item-picture{
-       height: 500px;
+       /* height: 500px; - убираем высоту так как растянуть нужно картинку по всей ширине блока */
        width: 40%;
     }
     img.tabs__img {
