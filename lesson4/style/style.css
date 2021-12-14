@@ -84,12 +84,9 @@
     width: 40%;
 }
 
-.tabs__img {
-    /* height: 500px; - высоту регулируем за счет блока слева */
-    overflow: hidden;
-}
 
-.tabs__img img {
+
+.tabs__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
