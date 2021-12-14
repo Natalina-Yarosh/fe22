@@ -278,7 +278,6 @@ margin-bottom: 65px;
 .tabs__btn:active{
     box-shadow: 0px 0px 10px #AB4949;}
     .tabs__item-picture{
-       /* height: 500px; - убираем высоту так как растянуть нужно картинку по всей ширине блока */
        width: 40%;
     }
     img.tabs__img {
@@ -492,10 +491,19 @@ margin-bottom: 42px;
     align-items: center;
 }
 .feedback__photo{
-    width: 27%;
     height: 70px;
     width: 70px;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
     margin-right: 30px;
+}
+.feedback__photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: contain;
 }
 .feedback__people{
     width: calc(100% - 70px - 30px);  
