@@ -135,8 +135,12 @@
 	color: #86878b;
 	margin-bottom: 110px;
 }
+
+.about__block{
+	display: flex;
+}
 .about__box {
-	width: calc((100% - 70px) / 3);
+	width: calc((100% - 60px) / 3);
 	display: inline-block;
 	text-align: center;
 
