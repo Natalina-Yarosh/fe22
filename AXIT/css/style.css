@@ -51,14 +51,16 @@
 
 .tabs__block {
 	border: 1px solid #c6cbcd;
+	display: flex;
 }
 
 .tabs__item {
 	display: inline-block;
+	width: 41%;
 }
 .tabs__item:first-child {
 	padding: 55px 30px 54px 100px;
-	max-width: 59.6%;
+	width: 59%;
 }
 .tabs__title {
 	font-family: "Open Sans", sans-serif;
@@ -92,8 +94,8 @@
 	border: none;
 }
 .tabs__item:last-child {
-	height: 500px;
-	max-width: 40%;
+	/* height: 500px; - не ограничиваем по высоте - картинка растягивается на весь блок
+	max-width: 40%; */
 	vertical-align: top;
 	text-align: right;
 }
