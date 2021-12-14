@@ -58,7 +58,7 @@ li{
     width: 57%;
 }
 .prime__logo{
-padding: 23px 0 23px;
+/* padding: 23px 0 23px; - не ставим внутренний отступ  */
 margin-bottom: 72.88px;
 }
 .prime__title{
