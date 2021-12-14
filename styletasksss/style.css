@@ -211,6 +211,7 @@ color: #86878B;
 }
 .tabs__selection{
     max-width: 100%;
+    display: flex;
 }
 
 .tabs__list{
