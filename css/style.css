@@ -48,11 +48,12 @@
 }
 .sights__top-block {
    display: flex;
+   border: 1px solid #c6cbcd;
 }
 
 .sights__item-top:first-child {
    padding: 55px 30px 54px 100px;
-   border: 1px solid #c6cbcd;
+   
    width: 60%;
 }
 
