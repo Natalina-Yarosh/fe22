@@ -85,7 +85,7 @@
 }
 
 .tabs__img {
-    height: 500px;
+    /* height: 500px; - высоту регулируем за счет блока слева */
     overflow: hidden;
 }
 
