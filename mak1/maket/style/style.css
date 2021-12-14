@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .awesome {
-    padding: 0 170px;
+    
     margin-bottom: 58px;
   }
   
@@ -20,7 +20,7 @@
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    padding: 54px;
+    margin-bottom: 54px;
     color: #000;
   }
   
@@ -83,8 +83,7 @@
     font-family: Raleway;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
-    align-items: center;
+    text-align: center;    
     color: #000;
   }
   
