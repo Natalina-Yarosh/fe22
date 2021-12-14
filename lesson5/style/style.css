@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: block;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    max-width: 370px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 17px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* BLOCK ADVANTAGES */
+
+.advantages {
+    padding: 50px 0 58px;
+}
+
+.advantages__block {
+    display: flex;
+}
+
+.advantages__item {
+    margin-right: 30px;
+    width: calc((100% - 60px) / 3);
+}
+
+.advantages__item:last-child {
+    margin-right: 0;
+}
+
+.advantages__logo {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 39px;
+    border-radius: 50%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages__logo img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.advantages__logo-name {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+}
+
+.advantages__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+/* BLOCK PRICING */
+
+.pricing {
+    padding: 50px 0;
+    background: #f5f5f5;
+}
+
+.pricing__block {
+    display: flex;
+}
+
+.pricing__elem {
+    margin-right: 30px;
+    width: calc((100% - 60px) / 3);
+}
+
+.pricing__elem:nth-child(2) {
+    margin-top: -20px;
+}
+
+.pricing__elem:last-child {
+    margin-right: 0;
+}
+
+.pricing__item {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #86878b;
+    background: #ffffff;
+    border: 2px solid #f5f5f5;
+    padding: 15px;
+}
+
+.pricing__item:nth-child(3) {
+    background: #333333;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pricing__item:nth-child(2) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 27px;
+    color: #ffffff;
+    background: #333333;
+}
+
+.pricing__item:nth-child(1) {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 12px;
+    background: #333333;
+    color: #ffffff;
+}
+
+/* BLOCK FEEDBACK */
+
+.feedback {
+    padding: 50px 0;
+}
+
+h2.title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.line {
+    width: 170px;
+    border: 1px solid #ec7979;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878b;
+    margin-bottom: 83px;
+}
+
+.feedback__block {
+    display: flex;
+}
+
+.feedback__item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+}
+
+.feedback__item:last-child {
+    margin-right: 0;
+}
+
+.feedback__comment {
+    padding: 38px 13px 37px;
+    background: #e2e2e2;
+    border-radius: 10px;
+    /* margin-bottom: 66px; */
+}
+
+.feedback__comment-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878b;
+}
+
+.feedback__comment-triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #e2e2e2;
+    margin-bottom: 66px;
+    margin-left: 70px;
+}
+
+.feedback__user {
+    display: flex;
+}
+
+.feedback__user-photo {
+    width: 70px; /* ширину этому блоку лучше задавать в процентах или px? */
+    height: 70px;
+    margin-right: 30px;
+}
+
+.feedback__user-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback__user-name {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.feedback__user-position {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+}
+
+/* BLOCK STYLISH */
+
+.stylish {
+    padding: 50px 0;
+    background-image: url(../img/bgstylish.png);
+}
+
+.stylish__title {
+    color: #ffffff;
+}
+
+.stylish__line {
+    border: 1px solid #ffffff;
+}
+
+.stylish__text {
+    color: #ffffff;
+    margin-bottom: 73px;
+}
+
+.stylish__btn {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background: transparent;
+}
+
+/* BLOCK CONTACT */
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact__text {
+    margin-bottom: 89px;
+}
+
+.contact__form {
+    margin-bottom: 50px;
+}
+
+.contact__btn {
+    color: #ffffff;
+    background: #ec7979;
+    border: none;
+}
+
+/* BLOCK FOOTER */
+.footer {
+    padding: 40px 27px;
+    background: #000000;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.footer__item {
+    margin-right: 45px;
+}
+
+.footer__item:last-child {
+    margin-right: 0;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
