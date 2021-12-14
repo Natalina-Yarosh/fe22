@@ -81,6 +81,7 @@ line-height: 21px;
 font-weight: 400;
 color: #FFFFFF;
 margin-bottom: 42px;
+max-width: 250px;
 }
 .prime__btn{
 display: block;
