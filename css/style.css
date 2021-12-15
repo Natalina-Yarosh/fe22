@@ -278,8 +278,10 @@ li {
    flex: 0 1 14.286%;
    padding: 0 16.5px;
 }
-.footer__icon:hover {
-   background-color: green;
+
+path:hover {
+   fill: rgb(60, 60, 153);
+   color: rgb(60, 60, 153);
 }
 .footer__text {
    font-family: "Raleway", sans-serif;
