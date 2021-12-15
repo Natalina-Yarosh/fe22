@@ -260,6 +260,7 @@ height: 75%;
 .container__pricing{
    width: 1170px;
    margin: 0 auto;
+   padding: 0 15px;
 }
 
 .pricing__title{
