@@ -105,6 +105,11 @@ margin-left: 30px;
    border-radius: 5px 5px 0 0;
 }
 
+.item__context{
+   border: 1px solid #C6CBCD;
+   display: flex;
+}
+
 .tabs__block{
    width: 570px;;
    padding: 40px 30px 54px 100px;
