@@ -80,7 +80,8 @@ margin-left: 30px;
 }
 .container__tabs{
    max-width: 1170px;
-   height: 540px;
+   padding: 0 15px; /*не забываем про отступы у контейнера*/
+   /* height: 540px; - не нужно ставить высоту */
    margin: 0 auto 100px;
 }
 
