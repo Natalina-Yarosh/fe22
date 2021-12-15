@@ -76,7 +76,7 @@ margin-left: 30px;
 
 /*Block Tabs*/ 
 .tabs{
-   padding: 100px 170px;
+   padding: 100px 0; /*у обертки только сверху и снизу*/
 }
 .container__tabs{
    max-width: 1170px;
