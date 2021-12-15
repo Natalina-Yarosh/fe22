@@ -5,8 +5,7 @@
   box-sizing: border-box;
 }
 
-.tabs {
-  
+.tabs {  
   margin-bottom: 104px;
 }
 
@@ -27,11 +26,13 @@
   text-align: center;
   align-items: center;
 }
+
 .tabs__list li {
   max-width: 200px;
   padding: 15px;
   width: 100%;
 }
+
 .tabs__list li:nth-child(1) {
   border: 1px solid #c6cbcd;
   border-collapse: separate;

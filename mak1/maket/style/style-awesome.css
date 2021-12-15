@@ -4,8 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-.awesome {
-    
+
+.awesome {    
     margin-bottom: 58px;
   }
   
@@ -14,6 +14,7 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+
   .awesome__title {
     font-family: Raleway;
     font-weight: 400;
@@ -43,6 +44,7 @@
   .awesome__block {
     display: flex;
   }
+  
   .awesome__item {
     width: calc((100% - 30px - 30px) / 3);
     width: 100%;
