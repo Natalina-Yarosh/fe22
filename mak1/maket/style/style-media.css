@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.social-media {
+  background-color: #f8efef;
+  margin-bottom: 100px;
+}
+
+.container__social-media {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+}
+
+.social-media__block:first-child {
+  width: 40%;
+  margin-right: 30px;
+}
+
+.social-media__block:last-child {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 18px;
+  color: #333333;
+}
+
+.social-media__text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 18px;
+  color: #86878b;
+}
+
+.social-media__img {
+  width: 70px;
+  height: 70px;
+  margin-right: 30px;
+}
+
+.social-media__img:last-child {
+  margin-right: 0;
+}
