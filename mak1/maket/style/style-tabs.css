@@ -5,8 +5,16 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD:mak1/maket/style/style-tabs.css
 .tabs {  
   margin-bottom: 104px;
+=======
+.tabs {
+  /* padding: 0 170px;  не ставим у обертки отступ слева и справа*/ 
+  margin-bottom: 104px;
+  /* отступ ставим до след блока  */
+  /* убраем в след блоке внутренний отступ у заголовка */
+>>>>>>> 3f0c5662b6b199c1cf0140a66456c848b008a040:mak1/maket/style.css/style.css
 }
 
 .container__tabs {
@@ -89,4 +97,11 @@
   width: 100%;
   height: 100%;
   display: flex;
+}
+
+.tabs__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* добавляем стили для картинки, чтобы она полностью заполняла все пространство родителя */
 }

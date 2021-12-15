@@ -4,8 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD:mak1/maket/style/style-awesome.css
 
 .awesome {    
+=======
+.awesome {
+    /* padding: 0 170px; */
+>>>>>>> 3f0c5662b6b199c1cf0140a66456c848b008a040:mak1/maket/style/style.css
     margin-bottom: 58px;
   }
   
@@ -21,7 +26,14 @@
     font-size: 36px;
     line-height: 42px;
     text-align: center;
+<<<<<<< HEAD:mak1/maket/style/style-awesome.css
     margin-bottom: 54px;
+=======
+
+    /* убираем внутренний отступ и заменяем на отступ от жлемента к линии */
+    margin-bottom: 54px; 
+
+>>>>>>> 3f0c5662b6b199c1cf0140a66456c848b008a040:mak1/maket/style/style.css
     color: #000;
   }
   
@@ -47,7 +59,7 @@
   
   .awesome__item {
     width: calc((100% - 30px - 30px) / 3);
-    width: 100%;
+    /* width: 100%;  - не может быть 2 значения ширины)) */
     margin-right: 30px;
     display: flex;
     flex-direction: column;
@@ -67,6 +79,7 @@
     align-items: center;
     border: 1px solid #ec7979;
     border-radius: 50%;
+    margin-bottom: 33px;
   }
   
   .awesome__name {
@@ -75,8 +88,8 @@
     line-height: 33px;
     text-transform: capitalize;
     text-align: center;
-    padding: 33.5px;
-    margin-bottom: 8px;
+    /* padding: 33.5px; - убираем внутренни  отступ  */
+    margin-bottom: 41px;
     font-weight: bold;
     color: #000;
   }
@@ -85,7 +98,12 @@
     font-family: Raleway;
     font-size: 18px;
     line-height: 21px;
+<<<<<<< HEAD:mak1/maket/style/style-awesome.css
     text-align: center;    
+=======
+    text-align: center;
+    /* align-items: center; - убрать ненужные стили */
+>>>>>>> 3f0c5662b6b199c1cf0140a66456c848b008a040:mak1/maket/style/style.css
     color: #000;
   }
   
