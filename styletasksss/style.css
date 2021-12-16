@@ -191,14 +191,13 @@ color: #86878B;
     height: 70px;
     width: 70px;
 }
-.sm__icon:hover{
-  background-color: #EC7979;
-}
-
-.sm__icon img{
+.sm__icon svg{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+li:hover path{
+    fill: #EC7979;
 }
 .tabs{
     padding: 99px 0px 50px;
@@ -589,10 +588,10 @@ margin-bottom: 42px;
 .footer__icon:last-child{
     margin-right: 0;
 }
-.footer__icon img{
+.footer__icon svg{
     width: 100%;
-        height: 100%;
-        object-fit: cover;
+    height: 100%;
+    object-fit: cover;
 }
 .footer__text{
     font-family: 'Raleway', sans-serif;
@@ -601,7 +600,4 @@ margin-bottom: 42px;
     line-height: 21px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5)
-}
-.footer__icon:hover{
-    fill: red;
 }
