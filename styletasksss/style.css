@@ -571,6 +571,82 @@ margin-bottom: 42px;
     border: 2px solid #AB4949;
     color: #ffffff;
     background-color: #AB4949;}
+
+    .contacts{
+        padding: 118px 0 50px;
+    }
+    .contacts__title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    }
+    .contacts__line{
+        border:  1px solid #EC7979;;
+        width: 170px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .contacts__text{
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+        color: #86878B;
+        margin-bottom: 89px;
+    }
+    .contacts__form{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .contacts__form-left{
+        width: calc((100% - 30px) / 2);
+        margin-right: 30px;
+    }
+    .contacts__input{
+        margin-bottom: 16px;
+    }    
+    .contacts__input input{
+    border: none;
+    width: 100%;
+    }
+    input::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #BDBDBD;
+      }
+    .contacts__subline{
+        border: 1px solid #BDBDBD;
+        margin-bottom: 50px;
+    }
+    .contacts__form-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc((100% - 30px) / 2);
+    }
+    .contact__btn{
+        display: block;
+        background-color: #EC7979;
+        max-width: 370px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        text-align: center;
+        color:#ffffff;
+        padding: 20px;
+        margin:0 auto
+    }
+    .contact__btn:hover{
+    background-color: #AB4949;}
+    .contact__btn:active{
+        box-shadow: 0px 0px 10px #AB4949;}
 .footer{
     padding: 35px 0 27px;
     background-color: #000000;
