@@ -7,15 +7,15 @@
    font-family: "Raleway", sans-serif;
 }
 
-.sights {
-   background-color: #ffffff;
-   padding: 139px 0 118px 0;
-}
-
 .container {
    max-width: 1200px;
    margin: 0 auto;
    padding: 0 15px;
+}
+
+.sights {
+   background-color: #ffffff;
+   padding: 139px 0 118px 0;
 }
 
 .sights__text-title {
@@ -163,7 +163,8 @@
    color: #86878b;
    margin-bottom: 59px;
 }
-.pricing__block {
+
+.pricing__item {
    display: flex;
    margin: 0 -15px; /*чтобы падинг блока провалился в падинг контейнера*/
 }
@@ -171,7 +172,7 @@ li {
    list-style-type: none;
 }
 
-.pricing__item {
+.pricing__list {
    /*margin-right: 30px;
    width: calc((100% - 60px) / 3); - это работает, но решил попробовать флекс + отрицательный марджин*/
    flex: 0 1 33.333%; /* flex-grow 0 - запрещает увеличиваться, flex-shirink 1 - разрешает уменьшаться*/
@@ -258,6 +259,88 @@ li {
    color: #86878b;
 }
 
+.banner2 {
+   padding: 118px 0 50px 0;
+   background: url("../img/bg_2.jpg");
+}
+
+.banner2__title {
+   font-family: "Raleway", sans-serif;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   margin-bottom: 40px;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+.banner2__line {
+   border-bottom: 1px solid #ffffff;
+}
+.banner2__text {
+   font-family: "Raleway", sans-serif;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   color: #ffffff;
+   margin-bottom: 73px;
+}
+
+.banner2__btn {
+   font-size: 18px;
+   line-height: 24.51px;
+   color: #fff;
+   font-family: "Open Sans";
+   font-weight: 600;
+   display: block;
+   max-width: 370px;
+   width: 100%;
+   text-transform: capitalize;
+   text-align: center;
+   margin: 0 auto;
+   padding: 20px 0 20px 0;
+   background-color: transparent;
+   border: 2px solid #ffffff;
+}
+
+.contact {
+   padding: 118px 0 50px 0;
+}
+
+.contact__title {
+   font-family: "Raleway", sans-serif;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   margin-bottom: 40px;
+   text-transform: uppercase;
+}
+
+.contact__text-description {
+   font-family: "Raleway", sans-serif;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   color: #86878b;
+   margin-bottom: 353px;
+}
+
+.contact__button {
+   background-color: #ec7979;
+   border: none;
+   font-size: 18px;
+   line-height: 24.51px;
+   color: #ffffff;
+   font-family: "Open Sans";
+   font-weight: 600;
+   display: block;
+   max-width: 370px;
+   width: 100%;
+   text-transform: capitalize;
+   text-align: center;
+   margin: 0 auto;
+   padding: 20px 0 20px 0;
+}
+
 .footer {
    padding: 35px 0 27px 0;
    background-color: #000000;
@@ -289,49 +372,4 @@ path:hover {
    line-height: 21px;
    text-align: center;
    color: rgba(255, 255, 255, 0.5);
-}
-
-.contact {
-   padding: 118px 0 50px 0;
-}
-
-.contact__content {
-}
-.contact__top-block {
-}
-
-.contact__title {
-   font-family: "Raleway", sans-serif;
-   font-size: 36px;
-   line-height: 42px;
-   text-align: center;
-   margin-bottom: 40px;
-   text-transform: uppercase;
-}
-
-.contact__text-description {
-   font-family: "Raleway", sans-serif;
-   font-size: 18px;
-   line-height: 21px;
-   text-align: center;
-   color: #86878b;
-   margin-bottom: 353px;
-}
-.contact__bottom-block {
-}
-.contact__button {
-   font-size: 18px;
-   line-height: 24.51px;
-   color: #ffffff;
-   font-family: "Open Sans";
-   font-weight: 600;
-   background-color: #ec7979;
-   border: none;
-   display: block;
-   max-width: 370px;
-   width: 100%;
-   text-transform: capitalize;
-   text-align: center;
-   margin: 0 auto;
-   padding: 20px 0 20px 0;
 }
