@@ -231,6 +231,10 @@ h2.title {
     object-fit: cover;
 }
 
+.feedback__user-info{
+    width: calc(100% - 70px - 30px);
+}
+
 .feedback__user-name {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
