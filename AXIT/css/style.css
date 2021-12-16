@@ -165,7 +165,7 @@
 	align-items: center;
 	text-align: center;
 	margin-bottom: 44px;
-	max-width: 369px;
+	/* max-width: 369px; */
 }
 .about__desc {
 	color: #000000;
