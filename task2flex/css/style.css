@@ -64,7 +64,7 @@
 }
 .routine__item {
 	margin-right: 55px;
-	width: calc((100%-110px) / 3);
+	width: calc((100% - 110px) / 3);
 }
 .routine__item:last-child {
 	margin-right: 0;
