@@ -36,6 +36,13 @@ li{
     text-align: center;
     color: #ffffff;
 }
+.header__par a:link{
+     color: #ffffff;
+     text-decoration: none;
+}
+.header__par a:visited{
+    color: #ffffff;
+}
 .header__par:hover{
     background-color: #EC7979;
 }
