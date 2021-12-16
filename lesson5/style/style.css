@@ -116,7 +116,7 @@
     text-transform: capitalize;
     color: #86878b;
     background: #ffffff;
-    border: 2px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
     padding: 15px;
 }
 
