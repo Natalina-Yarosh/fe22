@@ -14,8 +14,8 @@
 	margin: 0 auto;
 }
 .tabs__row {
-	max-width: 1200px;
-	width: 100%;
+	/* max-width: 1200px; - нет необходимости в ограничении, так как мы ораничили контейнер
+	width: 100%; */
 	display: flex;
 }
 .tabs__tab {
