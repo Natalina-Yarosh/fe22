@@ -13,6 +13,81 @@
    padding: 0 15px;
 }
 
+.header {
+   background: #000000;
+   padding: 22.46px 0 21.71px 0;
+}
+
+.header__block {
+   display: flex;
+}
+.logo {
+}
+.header__logo {
+   display: flex;
+   align-items: center;
+   max-width: 100%;
+}
+.logo-1 {
+}
+.header__logo-1 {
+}
+.logo-2 {
+}
+.header__logo-2 {
+}
+.menu {
+}
+.header__list {
+   display: flex;
+}
+.header__nav {
+   font-family: "Open Sans";
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 19px;
+   text-align: center;
+   align-self: auto;
+   color: #ffffff;
+   max-width: 167px;
+   width: 100%;
+}
+
+.social {
+   padding: 28px 0 18px 0;
+   background-color: #f8efef;
+}
+.social__block {
+   display: flex;
+}
+.social__item:first-child {
+   display: flex;
+   flex-direction: column;
+   max-width: 100%;
+   width: 40%;
+}
+.social__item:last-child {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 100%;
+   width: 60%;
+   padding-left: 50px;
+}
+
+.social__title {
+   font-size: 24px;
+   line-height: 32.68px;
+   font-family: "Open Sans";
+   margin-bottom: 20px;
+}
+.social__description {
+   font-family: "Raleway", sans-serif;
+   font-size: 18px;
+   line-height: 21px;
+   color: #86878b;
+}
+
 .sights {
    background-color: #ffffff;
    padding: 139px 0 118px 0;
@@ -224,41 +299,31 @@ li {
    text-transform: capitalize;
 }
 
-.social {
-   padding: 28px 0 18px 0;
-   background-color: #f8efef;
+.reviews {
+   padding: 118px 0 75px 0;
 }
-.social__block {
-   display: flex;
+.reviews__block {
 }
-.social__item:first-child {
-   display: flex;
-   flex-direction: column;
-   max-width: 100%;
-   width: 40%;
-}
-.social__item:last-child {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   max-width: 100%;
-   width: 60%;
-   padding-left: 50px;
+.reviews__content-top {
 }
 
-.social__title {
-   font-size: 24px;
-   line-height: 32.68px;
-   font-family: "Open Sans";
-   margin-bottom: 20px;
+.reviews__title {
+   font-family: "Raleway", sans-serif;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   margin-bottom: 40px;
+   text-transform: uppercase;
 }
-.social__description {
+
+.reviews__text {
    font-family: "Raleway", sans-serif;
    font-size: 18px;
    line-height: 21px;
+   text-align: center;
    color: #86878b;
+   margin-bottom: 83px;
 }
-
 .banner2 {
    padding: 118px 0 50px 0;
    background: url("../img/bg_2.jpg");
