@@ -306,7 +306,7 @@ h2.title {
     object-fit: cover;
 }
 
-.feedback__user-info{
+.feedback__user-info {
     width: calc(100% - 70px - 30px);
 }
 
