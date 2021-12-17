@@ -58,6 +58,43 @@ h2.title {
     margin-bottom: 83px;
 }
 
+/* BLOCK HEADER */
+
+.header {
+    background: #000000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    padding: 30px;
+}
+
+.header__menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    padding: 45px; /* НЕ УВЕРЕН В ЭТОМ ЗНАЧЕНИЕ. ВЗЯЛ ЕГО С ПОМОЩЬЮ ЛИНЕЙКИ СНИЗУ И СВЕРХУ ОТ ТЕКСТА
+    ИЛИ ЭТОТ PADDING ЛУЧШЕ ЗАДАВАТЬ САМИМ ССЫЛКАМ? */
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header__item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* BLOCK SOCIAL */
 /* ЧТО-ТО МНЕ НЕ НРАВИТСЯ КАК Я СВЕРСТАЛ ЭТОТ БЛОК. НО СДЕЛАЛ, КАК СМОГ . ЕСЛИ ЗАМЕЧАНИЯ 
 ПО ВЁРСТКЕ ЭТОГО БЛОКА - ПИШИ */
