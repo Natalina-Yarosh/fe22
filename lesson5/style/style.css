@@ -162,7 +162,7 @@ li {
 /* BLOCK PRICING */
 
 .pricing {
-    padding: 50px 0;
+    padding: 118px 0 50px; /*смотрим внимательно на размеры в макете*/
     background: #f5f5f5;
 }
 
@@ -191,7 +191,7 @@ li {
     text-transform: capitalize;
     color: #86878b;
     background: #ffffff;
-    border: 2px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
     padding: 15px;
 }
 
@@ -222,7 +222,7 @@ li {
 /* BLOCK FEEDBACK */
 
 .feedback {
-    padding: 50px 0;
+    padding: 118px 0 74px;
 }
 
 h2.title {
@@ -293,16 +293,21 @@ h2.title {
 }
 
 .feedback__user-photo {
-    width: 70px; /* ширину этому блоку лучше задавать в процентах или px? */
+    width: 70px; /* все верно сделано - в  px */
     height: 70px;
     margin-right: 30px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .feedback__user-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+}
+
+.feedback__user-info{
+    width: calc(100% - 70px - 30px);
 }
 
 .feedback__user-name {
@@ -369,7 +374,7 @@ h2.title {
 
 /* BLOCK FOOTER */
 .footer {
-    padding: 40px 27px;
+    padding: 35px 0 27px;
     background: #000000;
 }
 
