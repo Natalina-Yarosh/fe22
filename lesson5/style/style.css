@@ -25,7 +25,83 @@
     text-align: center;
     text-transform: capitalize;
     margin: auto;
+    border: none;
     cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+/* BLOCK TABS */
+
+.tabs {
+    padding: 109px 0 0;
+}
+
+.tabs__group {
+    display: flex;
+}
+
+.tabs__item {
+    max-width: 184px;
+    width: 100%;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 10px;
+}
+
+.tabs__item:first-child {
+    max-width: 201px;
+    border: 1px solid #c6cbcd;
+    border-radius: 3px;
+}
+
+.tabs__block {
+    display: flex;
+    border: 1px solid #c6cbcd;
+}
+
+.tabs__info {
+    padding: 50px 30px 54px 100px;
+    width: 60%;
+}
+
+.tabs__title {
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 60px;
+}
+
+.tabs__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 27px;
+}
+
+.tabs__btn {
+    max-width: 270px;
+    background: #ec7979;
+    margin-left: 0;
+    color: #ffffff;
+}
+
+.tabs__img {
+    overflow: hidden;
+}
+
+.tabs__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* BLOCK ADVANTAGES */
@@ -108,7 +184,6 @@
 }
 
 .pricing__item {
-    list-style-type: none;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
