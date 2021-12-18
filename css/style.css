@@ -395,13 +395,66 @@ li {
    margin: 0 auto 40px;
 }
 
-.reviews__text {
+.reviews__content-top .reviews__text {
    font-family: "Raleway", sans-serif;
    font-size: 18px;
    line-height: 21px;
    text-align: center;
    color: #86878b;
    margin-bottom: 83px;
+}
+.reviews__content-bottom {
+   display: flex;
+}
+.reviews__item {
+   margin-right: 30px;
+   width: calc((100% - 60px) / 3);
+}
+.reviews__item:last-child {
+   margin-right: 0;
+}
+
+.reviews__item .reviews__text {
+   padding: 38px 40px 37px 40px;
+   background: #e2e2e2;
+   border-radius: 10px;
+   text-align: center;
+   color: #86878b;
+}
+
+.reviews__polygon {
+   width: 0;
+   height: 0;
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+   border-top: 30px solid #e2e2e2;
+   margin: 0 0 46px 80px;
+}
+.reviews__customer {
+   display: flex;
+}
+.reviews__customer-data {
+   margin-left: 30px;
+}
+.reviews__customer-name {
+   font-family: "Open Sans";
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 33px;
+   text-align: left;
+   margin-bottom: 27px;
+   text-transform: capitalize;
+}
+.reviews__customer-position {
+   font-family: Raleway;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 21px;
+   letter-spacing: 0em;
+   text-align: left;
+   text-transform: capitalize;
 }
 .banner2 {
    padding: 118px 0 50px 0;
