@@ -33,6 +33,7 @@
 .header__logo-1 {
 }
 .logo-2 {
+   padding-left: 2px;
 }
 .header__logo-2 {
 }
@@ -51,6 +52,70 @@
    color: #ffffff;
    max-width: 167px;
    width: 100%;
+}
+
+.banner {
+   padding: 208px 0 185px 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   background-image: url("../img/bg_1.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.banner__content {
+   max-width: 1200px;
+   width: 59%;
+   padding-right: 15px;
+}
+.banner__logo {
+   display: flex;
+   margin-bottom: 73px;
+}
+.banner__logo-2 {
+   padding-left: 5px;
+}
+.banner__title {
+   font-family: "Raleway", sans-serif;
+   font-weight: 500;
+   font-size: 48px;
+   line-height: 56px;
+   margin-bottom: 55px;
+   text-transform: uppercase;
+   color: #ffffff;
+   max-width: 670px;
+   width: 100%;
+}
+.banner__line {
+   border-bottom: 1px solid #ffffff;
+   max-width: 170px;
+   width: 100%;
+   margin-bottom: 42px;
+}
+
+.banner__text {
+   font-family: "Raleway", sans-serif;
+   font-size: 18px;
+   line-height: 21px;
+   color: #ffffff;
+   margin-bottom: 42px;
+   display: block;
+   max-width: 270px;
+   width: 100%;
+}
+.banner__btn {
+   font-size: 18px;
+   line-height: 24.51px;
+   color: #fff;
+   font-family: "Open Sans";
+   font-weight: 600;
+   display: block;
+   max-width: 270px;
+   width: 100%;
+   text-align: center;
+   text-transform: capitalize;
+   padding: 20px 0 20px 0;
+   background-color: transparent;
+   border: 2px solid #ffffff;
 }
 
 .social {
@@ -156,7 +221,7 @@
    text-align: center;
    margin-bottom: 40px;
 }
-.line {
+.awesome__line {
    border-bottom: 1px solid #ec7979;
    max-width: 170px;
    width: 100%;
@@ -228,6 +293,13 @@
    text-align: center;
    margin-bottom: 40px;
    text-transform: uppercase;
+}
+
+.pricing__line {
+   border-bottom: 1px solid #ec7979;
+   max-width: 170px;
+   width: 100%;
+   margin: 0 auto 40px;
 }
 
 .pricing__description {
@@ -316,6 +388,13 @@ li {
    text-transform: uppercase;
 }
 
+.reviews__line {
+   border-bottom: 1px solid #ec7979;
+   max-width: 170px;
+   width: 100%;
+   margin: 0 auto 40px;
+}
+
 .reviews__text {
    font-family: "Raleway", sans-serif;
    font-size: 18px;
@@ -326,7 +405,10 @@ li {
 }
 .banner2 {
    padding: 118px 0 50px 0;
-   background: url("../img/bg_2.jpg");
+   background-color: rgba(0, 0, 0, 0.5);
+   background-image: url("../img/bg_2.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 .banner2__title {
@@ -340,6 +422,9 @@ li {
 }
 .banner2__line {
    border-bottom: 1px solid #ffffff;
+   max-width: 170px;
+   width: 100%;
+   margin: 0 auto 40px;
 }
 .banner2__text {
    font-family: "Raleway", sans-serif;
@@ -379,7 +464,12 @@ li {
    margin-bottom: 40px;
    text-transform: uppercase;
 }
-
+.contact__line {
+   border-bottom: 1px solid #ec7979;
+   max-width: 170px;
+   width: 100%;
+   margin: 0 auto 40px;
+}
 .contact__text-description {
    font-family: "Raleway", sans-serif;
    font-size: 18px;
