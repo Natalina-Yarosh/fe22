@@ -25,8 +25,7 @@
 
 .header__logo {
    display: flex;
-   max-width: 500px;
-   width: 100%;
+   flex-basis: 40%;
 }
 
 .logo-2 {
@@ -41,7 +40,7 @@
    display: flex;
 }
 
-li {
+.header__list li {
    flex-grow: 1;
    text-align: center;
 }
@@ -166,7 +165,39 @@ li {
 
 .tabs {
    background-color: #ffffff;
-   padding: 139px 0 118px 0;
+   padding: 110px 0 118px 0;
+}
+
+.tabs__block {
+   display: flex;
+   max-width: 59%;
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.tabs__list {
+   display: flex;
+   flex-grow: 1;
+}
+
+.tabs__list li {
+   flex-grow: 1;
+   text-align: center;
+}
+
+.tabs__link {
+   text-decoration: none;
+   font-family: "Open Sans";
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 19px;
+   color: #333333;
+   text-transform: uppercase;
+}
+
+.tabs__top-block {
+   display: flex;
+   border: 1px solid #c6cbcd;
 }
 
 .tabs__text-title {
@@ -181,6 +212,7 @@ li {
    font-size: 18px;
    line-height: 21px;
    margin-bottom: 20px;
+   color: #000;
 }
 
 .tabs__btn {
@@ -195,12 +227,6 @@ li {
    display: block;
    max-width: 270px;
    width: 100%;
-   /* margin-top: 7px; - зачем нужен этот отступ? */
-}
-
-.tabs__top-block {
-   display: flex;
-   border: 1px solid #c6cbcd;
 }
 
 .tabs__item-top:first-child {
@@ -209,9 +235,6 @@ li {
 }
 
 .tabs__item-top:last-child {
-   /* display: flex;
-   height: 502px;
-   border: 1px solid #c6cbcd;  - это все лишние стили, картинка по высоте регулируется блоком слева*/
    overflow: hidden;
 }
 
