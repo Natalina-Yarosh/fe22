@@ -70,9 +70,9 @@ h2.title {
     align-items: center;
 }
 
-.header__logo {
+/* .header__logo {
     padding: 30px;
-}
+} */
 
 .header__menu {
     display: flex;
