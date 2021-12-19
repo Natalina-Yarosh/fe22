@@ -6,10 +6,10 @@
    font-family: 'Open Sans', sans-serif;
 }
 .tab{
-   max-width: 1510px;
-   width: 100%;
-   padding: 99px 0 0 0;
-   margin: 0 auto;
+   /* max-width: 1510px; */
+   /* width: 100%; */
+   padding: 99px 0 50px 0;
+   /* margin: 0 auto; */
 }
 .tab__container{
    max-width: 1170px;
@@ -83,10 +83,10 @@
    width: 100%;
 }
 .tab__box{
-   max-width: 1170px;
+   /* max-width: 1170px; */
    width: 100%;
    border: 1px solid #C6CBCD;
-   margin-bottom: 50px;
+   /* margin-bottom: 50px; */
 }
 .tab__icon:first-child{
    border: 1px solid #C6CBCD;
