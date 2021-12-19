@@ -131,7 +131,7 @@ h2.title {
 }
 
 .social__right {
-    width: 61%; /* указал остаток 100% - 39% */
+    /* width: 61%; указал остаток 100% - 39% */
     display: flex;
     flex-direction: column;
     justify-content: center;
