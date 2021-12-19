@@ -55,6 +55,14 @@
    text-transform: capitalize;
 }
 
+.nav:hover {
+   color: rgb(103, 103, 129);
+}
+
+.nav:active {
+   color: rgb(31, 165, 120);
+}
+
 .banner {
    padding: 208px 0 185px 0;
    background-color: rgba(0, 0, 0, 0.5);
@@ -193,6 +201,14 @@
    line-height: 19px;
    color: #333333;
    text-transform: uppercase;
+}
+
+.tabs__link:hover {
+   color: rgb(66, 66, 194);
+}
+
+.tabs__link:active {
+   color: rgb(59, 163, 129);
 }
 
 .tabs__top-block {
