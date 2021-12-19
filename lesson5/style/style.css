@@ -110,7 +110,7 @@ h2.title {
 }
 
 .social__left {
-    width: 39%; /* 470 ДЕЛИЛ НА 1200 */
+    max-width: 460px; /* 470 ДЕЛИЛ НА 1200 */
 }
 
 .social__title {
