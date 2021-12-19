@@ -25,19 +25,25 @@
 
 .header__logo {
    display: flex;
+   max-width: 500px;
+   width: 100%;
 }
 
 .logo-2 {
    padding-left: 2px;
 }
 
-.navigation {
-   display: flex;
+.menu {
+   flex-grow: 1;
 }
 
 .header__list {
    display: flex;
-   flex: 0 1 20%;
+}
+
+li {
+   flex-grow: 1;
+   text-align: center;
 }
 
 .header__nav {
@@ -158,26 +164,26 @@
    color: #86878b;
 }
 
-.sights {
+.tabs {
    background-color: #ffffff;
    padding: 139px 0 118px 0;
 }
 
-.sights__text-title {
+.tabs__text-title {
    font-size: 30px;
    line-height: 40.85px;
    font-family: "Open Sans";
    margin-bottom: 56px;
 }
 
-.sight__text {
+.tabs__text {
    font-family: "Raleway", sans-serif;
    font-size: 18px;
    line-height: 21px;
    margin-bottom: 20px;
 }
 
-.sights__btn {
+.tabs__btn {
    font-size: 18px;
    line-height: 24.51px;
    padding: 20px;
@@ -192,35 +198,35 @@
    /* margin-top: 7px; - зачем нужен этот отступ? */
 }
 
-.sights__top-block {
+.tabs__top-block {
    display: flex;
    border: 1px solid #c6cbcd;
 }
 
-.sights__item-top:first-child {
+.tabs__item-top:first-child {
    padding: 55px 30px 54px 100px;
    width: 60%;
 }
 
-.sights__item-top:last-child {
+.tabs__item-top:last-child {
    /* display: flex;
    height: 502px;
    border: 1px solid #c6cbcd;  - это все лишние стили, картинка по высоте регулируется блоком слева*/
    overflow: hidden;
 }
 
-.sights__item-top img {
+.tabs__item-top img {
    width: 100%;
    height: 100%;
    object-fit: cover;
 }
 
-.awesome {
+.about {
    background-color: #ffffff;
    padding: 0 0 58px 0;
 }
 
-.awesome__title {
+.about__title {
    font-family: "Raleway", sans-serif;
    font-size: 36px;
    line-height: 42px;
@@ -228,14 +234,14 @@
    margin-bottom: 40px;
 }
 
-.awesome__line {
+.about__line {
    border-bottom: 1px solid #ec7979;
    max-width: 170px;
    width: 100%;
    margin: 0 auto 40px;
 }
 
-.awesome__description {
+.about__description {
    font-family: "Raleway", sans-serif;
    font-size: 18px;
    line-height: 21px;
@@ -244,11 +250,11 @@
    margin-bottom: 110px;
 }
 
-.awesome__bottom-block {
+.about__bottom-block {
    display: flex;
 }
 
-.awesome__bottom-item {
+.about__bottom-item {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -256,11 +262,11 @@
    width: calc((100% - 60px) / 3);
 }
 
-.awesome__bottom-item:last-child {
+.about__bottom-item:last-child {
    margin-right: 0;
 }
 
-.awesome__icon-bottom {
+.about__icon-bottom {
    width: 92px;
    height: 92px;
    margin-bottom: 71px;
@@ -271,13 +277,13 @@
    align-items: center;
 }
 
-.awesome__icon-bottom img {
+.about__icon-bottom img {
    width: 75%;
    height: 75%;
    object-fit: contain;
 }
 
-.awesome__title-bottom {
+.about__title-bottom {
    margin-bottom: 46px;
    font-family: "Open Sans";
    font-size: 24px;
@@ -285,7 +291,7 @@
    text-align: center;
 }
 
-.awesome__text-bottom {
+.about__text-bottom {
    font-family: "Raleway", sans-serif;
    font-size: 18px;
    line-height: 21px;
