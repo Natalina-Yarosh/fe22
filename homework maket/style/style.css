@@ -41,6 +41,14 @@
 }
 .tab__image{
    width: 40%;
+   display: flex;
+   overflow: hidden;
+}
+
+.tab__image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 .tab__post{
    width: 60%;
@@ -77,11 +85,7 @@
    border: none;
    display: block;
 }
-.tab__img {
-   max-height: 500px;
-   max-width: 470px;
-   width: 100%;
-}
+
 .tab__box{
    /* max-width: 1170px; */
    width: 100%;
