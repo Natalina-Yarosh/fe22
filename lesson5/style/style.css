@@ -79,7 +79,8 @@ h2.title {
     flex-wrap: wrap;
 }
 
-.header__item {
+.header__item a{
+    display: inline-block;
     padding: 45px; /* НЕ УВЕРЕН В ЭТОМ ЗНАЧЕНИЕ. ВЗЯЛ ЕГО С ПОМОЩЬЮ ЛИНЕЙКИ СНИЗУ И СВЕРХУ ОТ ТЕКСТА
     ИЛИ ЭТОТ PADDING ЛУЧШЕ ЗАДАВАТЬ САМИМ ССЫЛКАМ? */
     font-weight: 600;
