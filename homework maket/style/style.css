@@ -138,7 +138,11 @@
    display: flex;
 }
 .awesome__post{
-   width: calc(( 100% - 10px) / 3);
+   width: calc(( 100% - 60px) / 3);
+   margin-right: 30px;
+}
+.awesome__post:last-child{
+   margin-right: 0;
 }
 .post__title{
    font-family: 'Open Sans', sans-serif;
