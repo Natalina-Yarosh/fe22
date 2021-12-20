@@ -1,0 +1,18 @@
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .item{
+        list-style-type: none;
+        margin: 0 15px 15px 0;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000000;
+    }
+    .item:last-child{
+        margin-right:0;
+    }
+    .item:nth-child(6){
+        margin-right:0;
+    }

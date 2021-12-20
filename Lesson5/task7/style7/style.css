@@ -1,0 +1,12 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: blue;
+    }
+.item{
+        padding: 10px 60px;
+        list-style-type: none;
+        color: #ffffff;
+        text-align: center;
+    }

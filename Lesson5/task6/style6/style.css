@@ -1,0 +1,14 @@
+.parent {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    background-color: blue;
+    }
+.item{
+        padding: 10px;
+        list-style-type: none;
+        color: #ffffff;
+        max-width: 100px;
+        text-align: center;
+    }

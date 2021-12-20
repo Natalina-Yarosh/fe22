@@ -1,0 +1,10 @@
+.parent {
+display: flex;
+justify-content: space-between;
+background-color: blue;
+}
+.item{
+    padding: 10px;
+    list-style-type: none;
+    color: #ffffff;
+}
