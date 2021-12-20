@@ -24,8 +24,8 @@
 }
 
 .header__logo {
-   display: flex;
    flex-basis: 40%;
+   display: flex;
 }
 
 .header-logo__logo2 {
@@ -71,9 +71,14 @@
    background-repeat: no-repeat;
 }
 
+.banner__row {
+   display: flex;
+}
+
 .banner__content {
-   max-width: 1200px;
-   width: 59%;
+   display: flex;
+   flex-direction: column;
+   flex-basis: 59%;
    padding-right: 15px;
 }
 
@@ -94,8 +99,6 @@
    margin-bottom: 55px;
    text-transform: uppercase;
    color: #ffffff;
-   max-width: 670px;
-   width: 100%;
 }
 
 .banner__line {
@@ -133,7 +136,7 @@
 }
 
 .social-media {
-   padding: 28px 0 18px 0;
+   padding: 30px 0 18px 0;
    background-color: #f8efef;
 }
 
@@ -142,10 +145,7 @@
 }
 
 .social-media__item:first-child {
-   display: flex;
-   flex-direction: column;
-   max-width: 100%;
-   width: 40%;
+   flex-basis: 40%;
 }
 
 .social-media__title {
@@ -166,8 +166,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   max-width: 100%;
-   width: 60%;
+   flex-grow: 1;
    padding-left: 50px;
 }
 
@@ -178,9 +177,11 @@
 
 .tabs__row {
    display: flex;
-   max-width: 59%;
-   width: 100%;
    margin-bottom: 10px;
+}
+
+.tabs__block {
+   flex-basis: 59%;
 }
 
 .tabs__list {
@@ -218,7 +219,7 @@
 
 .tabs__item:first-child {
    padding: 55px 30px 54px 100px;
-   width: 60%;
+   flex-basis: 60%;
 }
 
 .tabs__title {
@@ -289,20 +290,17 @@
    margin-bottom: 110px;
 }
 
-.about__row {
+.about__row:last-child {
    display: flex;
+   margin: 0px -15px;
 }
 
 .about__item {
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-right: 30px;
-   width: calc((100% - 60px) / 3);
-}
-
-.about__item:last-child {
-   margin-right: 0;
+   flex: 0 1 33.333%;
+   padding: 0 15px;
 }
 
 .about-item__icon {
@@ -462,15 +460,12 @@ li {
 
 .reviews__content-bottom {
    display: flex;
+   margin: 0 -15px;
 }
 
 .reviews__item {
-   margin-right: 30px;
-   width: calc((100% - 60px) / 3);
-}
-
-.reviews__item:last-child {
-   margin-right: 0;
+   flex: 0 1 33.3333%;
+   padding: 0 15px;
 }
 
 .reviews__content-bottom .reviews__text {
@@ -630,7 +625,7 @@ li {
 
 .footer__items {
    display: flex;
-   margin-bottom: 36px;
+   margin: 0 -16.5px 36px -16.5px;
 }
 
 .footer-items__icon {
