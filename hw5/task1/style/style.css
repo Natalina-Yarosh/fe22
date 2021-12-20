@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.routine {
+    padding: 50px 0;
+    background-color: #FCF9F2;
+    ;
+}
+
+.routine__container {
+    padding: 100px 119px;
+    margin: 0 auto;
+    max-width: 1140px;
+    font-family: 'Roboto';
+}
+
+.title__routine__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.title1__routine__title {
+    max-width: 618px;
+    color: #05142D;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 59.8px;
+    text-align: center;
+    margin: 0 auto 39px;
+   }
+
+
+.text__routine__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 39px 0;
+    max-width: 684px;
+    color: #01152F;
+    margin: 0 auto 39px;
+}
+
+.btn__routine__btn {
+    max-width: 314px;
+    background-color: #E38C00;
+    display: block;
+    margin: 0 auto 100px;
+    border-radius: 30px;
+    color: #01152F;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    padding: 14px 14px 13px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.routine__block {
+    display: flex;
+}
+
+.routine__item {
+    margin-right: 55px;
+    width: calc((100% - 55px - 55px) / 3);
+}
+
+.routine__item:last-child {
+    margin-right: 0;
+}
+
+.routine__img {
+    
+    height: 439px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 72px;
+}
+.routine__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.routine__imgtitle {
+    color: #05142D;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1.399999976158142px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.routine__imgtext {
+   
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px;
+   letter-spacing: 0em;
+   text-align: center;
+   margin-bottom: 109px;
+   color: #01152F;
+}
