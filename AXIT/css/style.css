@@ -42,18 +42,18 @@
 .social__img {
 	width: 70px;
 	height: 70px;
-	object-fit: contain;
-	display: flex;
-	justify-content: center;
-}
-.social__img a {
-	display: flex;
+		display: flex;
 	justify-content: center;
 	align-items: center;
 }
+.social__img a {
+	width: 75%;
+	height: 75%;
+}
 .social__img svg {
-	width: 88%;
-	height: 88%;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 li.social__img:hover path {
 	fill: #000000;
@@ -138,10 +138,6 @@ li.social__img:hover path {
 	width: 100%;
 	padding: 16.5px 0;
 	border: none;
-}
-.tabs__item:last-child {
-	/* height: 500px; - не ограничиваем по высоте - картинка растягивается на весь блок
-	max-width: 40%; */
 }
 .tabs__item > img {
 	width: 100%;
@@ -300,4 +296,39 @@ li.social__img:hover path {
 	margin-top: -20px;
 	margin-bottom: 20px;
 	box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
+}
+.footer {
+	background-color: #000000;
+	padding: 40px 0 27px;
+}
+.footer__text {
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.5);
+}
+.footer__item {
+	padding: 0 310px 0 315px;
+	margin-bottom: 33px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer__img {
+	width: 53.2px;
+	height: 53.2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer__img a {
+		width: 75%;
+	height: 75%;
+}
+.footer__img svg {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+li.footer__img:hover path {
+	fill: #ffffff;
 }
