@@ -1,0 +1,172 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .parent {
+            display: flex;
+            justify-content: space-between;
+            background-color: darkblue;
+            margin-bottom: 50px;
+        }
+        
+        .item {
+            list-style-type: none;
+            padding: 10px;
+            color: #fff;
+            border: 1px solid #000;
+        }
+        
+        .item:first-child {
+            background-color: #fff;
+            color: #000;
+        }
+        
+        .parent2 {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            background-color: darkblue;
+            margin-bottom: 50px;
+        }
+        
+        .item2 {
+            list-style-type: none;
+            padding: 10px;
+            color: #fff;
+            border: 1px solid #000;
+        }
+        
+        .parent3 {
+            display: flex;
+            justify-content: center;
+            background-color: darkblue;
+            margin-bottom: 50px;
+        }
+        
+        .item3 {
+            list-style-type: none;
+            padding: 10px;
+            color: #fff;
+            border-color: #fff;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        
+        .iteminfo3 {
+            max-width: 150px;
+        }
+        
+        .parent4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkblue;
+            margin-bottom: 50px;
+        }
+        
+        .item4 {
+            list-style-type: none;
+            padding: 10px;
+            color: #fff;
+            border-color: #fff;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        
+        .iteminfo4 {
+            max-width: 150px;
+        }
+        
+        .parent5 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: darkblue;
+            margin-bottom: 50px;
+        }
+        
+        .item5 {
+            list-style-type: none;
+            padding: 10px;
+            color: #fff;
+            border-color: #fff;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        
+        .iteminfo5 {
+            max-width: 150px;
+        }
+        
+        .parent6 {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: darkblue;
+            margin-bottom: 50px;
+        }
+        
+        .item6 {
+            list-style-type: none;
+            padding: 10px;
+            color: #fff;
+            border-color: #fff;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        
+        .iteminfo6 {
+            max-width: 150px;
+        }
+        
+        .parent7 {
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: darkblue;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        
+        .item7 {
+            list-style-type: none;
+            padding: 10px;
+            color: #fff;
+            border-color: #fff;
+            text-align: center;
+        }
+        
+        .parent8 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: darkblue;
+            margin-bottom: 50px;
+            max-width: 100%;
+        }
+        
+        .item8 {
+            list-style-type: none;
+            padding: 10px;
+            color: #fff;
+            border-color: #fff;
+            border: 1px solid #000;
+            width: 100%;
+        }
+        
+        .parent9 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .item9 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid #000;
+            margin-bottom: 50px;
+        }
