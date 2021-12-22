@@ -256,6 +256,17 @@ line-height: 19px;
 text-align: center;
 color: #333333;
 }
+.firsttab{
+    position: relative;
+}
+.firsttab::after{
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid #ffffff;
+    width: 100%;
+    left:0;
+    top:28px;
+}
 .tabs__block{
 display: flex;
 border: 1px solid #C6CBCD;
