@@ -349,7 +349,7 @@ height: 75%;
    background-color: #fff;
 }
 
-.item__shadow{
+.pricing__list:hover{
    box-shadow: 0 4px 10px rgba(51, 51, 51, 0.2);
    margin-top: -20px;
 }
