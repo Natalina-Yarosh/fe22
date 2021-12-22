@@ -69,7 +69,14 @@ li{
     width: 57%;
 }
 .prime__logo{
-margin-bottom: 72.88px;
+    width:170px;
+    height: 55x;
+    margin-bottom: 72.88px;
+}
+.prime__logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .prime__title{
 font-family: 'Raleway', sans-serif;
@@ -77,12 +84,17 @@ font-size: 48px;
 line-height: 56px;
 font-weight: 500;
 color: #FFFFFF;
-margin-bottom: 55.12px;
+margin-bottom: 97.12px;
+position: relative;
 }
-.prime__line{
-border: 1px solid #FFFFFF;
+.prime__title::after{
+content: "";
+display: block;
+border-bottom: 1px solid #FFFFFF;
 width: 170px;
-margin-bottom: 42px;
+position: absolute;
+left:0;
+bottom:-55.12px;
 }
 .prime__text{
 font-family: 'Raleway', sans-serif;
@@ -101,6 +113,7 @@ font-weight: 600;
 text-align: center;
 color: #FFFFFF;
 max-width: 270px;
+width: 100%;
 background-color: transparent;
 border: 2px solid #FFFFFF;
 padding: 20px;
@@ -118,7 +131,7 @@ color: #FFFFFF;
 width: 43%;
 }
 .prime__form{
-padding: 28px 50px 75px 53px;
+padding: 28px 50px 75px 50px;
 background-color: #FFFFFF;
 border-radius: 10px 10px 0px 0px;
 }
@@ -134,13 +147,19 @@ margin-bottom: 75px;
 .prime__free{
 color: #EC7979;
 }
-.form__line{
-border: 1px solid #BDBDBD;
-margin-bottom: 33px;
-}
 .prime__input{
-margin-bottom: 16px;
+margin-bottom: 52px;
+position: relative;
 }
+.prime__input::after{
+    content: "";
+display: block;
+border-bottom: 1px solid #BDBDBD;
+width: 100%;
+position: absolute;
+left:0;
+bottom:-16px;
+    }
 .form__btn{
 display: block;
 background-color: #EC7979;
@@ -151,6 +170,8 @@ line-height: 20px;
 padding: 22.5px;
 text-align: center;
 color: #FFFFFF;
+width:100%;
+border:none;
 }
 .form__btn:hover{
 background-color: #AB4949;
