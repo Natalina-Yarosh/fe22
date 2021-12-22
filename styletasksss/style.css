@@ -657,14 +657,20 @@ position: relative;
     font-weight: 400;
     color: #000000;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     text-transform: uppercase;
+    position: relative;
     }
-    .contacts__line{
-        border:  1px solid #EC7979;;
-        width: 170px;
-        margin: 0 auto;
-        margin-bottom: 40px;
+    .contacts__title::after{
+        content: "";
+        position: absolute;
+        display: block;
+        border-bottom: 1px solid #EC7979;
+        width:170px;
+        position: absolute;
+        left:50%;
+        bottom:-40px;
+        transform: translateX(-50%);
     }
     .contacts__text{
         font-family: 'Raleway', sans-serif;
@@ -684,7 +690,8 @@ position: relative;
         margin-right: 30px;
     }
     .contacts__input{
-        margin-bottom: 16px;
+        margin-bottom: 69px;
+        position: relative;
     }    
     .contacts__input input{
     border: none;
@@ -696,19 +703,31 @@ position: relative;
         line-height: 19px;
         color: #BDBDBD;
       }
-    .contacts__subline{
-        border: 1px solid #BDBDBD;
-        margin-bottom: 50px;
+    .contacts__input::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #BDBDBD;
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom:-16px;
     }
+    .contacts__form-right .contacts__input::after{
+        content: "";
+        display: block;
+        border-bottom: 1px solid #BDBDBD;
+        width: 100%;
+        position: absolute;
+        left:0;
+        bottom:-198px;
+        }
     .contacts__form-right{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         width: calc((100% - 30px) / 2);
     }
     .contact__btn{
         display: block;
         background-color: #EC7979;
+        width: 100%;
         max-width: 370px;
         font-size: 18px;
         font-weight: 600;
@@ -716,7 +735,8 @@ position: relative;
         text-align: center;
         color:#ffffff;
         padding: 20px;
-        margin:0 auto
+        margin:0 auto;
+        border:none;
     }
     .contact__btn:hover{
     background-color: #AB4949;}
