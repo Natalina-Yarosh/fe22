@@ -503,6 +503,7 @@ li {
    text-align: center;
    color: #86878b;
    margin-bottom: 66px;
+   position: relative;
 }
 
 .reviews__content-bottom .reviews__text::after {
@@ -512,18 +513,11 @@ li {
    height: 0;
    border-left: 20px solid transparent;
    border-right: 20px solid transparent;
-   border-top: 30px solid black;
-   margin: 0 0 46px 80px;
-}
-
-/*.reviews__polygon { --- можно удалять
-   width: 0;
-   height: 0;
-   border-left: 20px solid transparent;
-   border-right: 20px solid transparent;
    border-top: 30px solid #e2e2e2;
-   margin: 0 0 46px 80px;
-}*/
+   position: absolute;
+   top: calc(100%);
+   left: 17%;
+}
 
 .reviews__customer {
    display: flex;
