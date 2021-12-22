@@ -332,13 +332,19 @@ margin-bottom: 65px;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    margin-bottom: 42px;
+    margin-bottom: 80px;
+    position: relative;
 }
-.benefits__line{
-    width: 170px;
-    border: 1px solid #EC7979;
-    margin: 0 auto;
-    margin-bottom: 40px;
+.benefits__title::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid #EC7979;
+    width:170px;
+    position: absolute;
+    left:50%;
+    bottom:-40px;
+    transform: translateX(-50%);
 }
 .benefits__text{
     font-family: 'Raleway', sans-serif;
