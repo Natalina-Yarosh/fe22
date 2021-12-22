@@ -139,6 +139,17 @@
    border: 2px solid #ffffff;
 }
 
+.banner__btn:hover {
+   border: 2px solid #ec7979;
+   color: #ec7979;
+}
+
+.banner__btn:active {
+   color: #fff;
+   background-color: #ab4949;
+   border: none;
+}
+
 .social-media {
    padding: 30px 0 18px 0;
    background-color: #f8efef;
@@ -253,6 +264,17 @@
    display: block;
    max-width: 270px;
    width: 100%;
+}
+
+.tabs__btn:hover {
+   color: #fff;
+   background-color: #ab4949;
+}
+
+.tabs__btn:active {
+   border: 2px solid #ec7979;
+   color: #fff;
+   background-color: #ec7979;
 }
 
 .tabs__item:last-child {
@@ -606,6 +628,17 @@ li {
    border: 2px solid #ffffff;
 }
 
+.banner2__btn:hover {
+   border: 2px solid #ec7979;
+   color: #ec7979;
+}
+
+.banner2__btn:active {
+   color: #fff;
+   background-color: #ab4949;
+   border: none;
+}
+
 .contact {
    padding: 118px 0 50px 0;
 }
@@ -656,6 +689,17 @@ li {
    text-align: center;
    margin: 0 auto;
    padding: 20px 0 20px 0;
+}
+
+.contact__btn:hover {
+   color: #fff;
+   background-color: #ab4949;
+}
+
+.contact__btn:active {
+   border: 2px solid #ec7979;
+   color: #fff;
+   background-color: #ec7979;
 }
 
 .footer {
