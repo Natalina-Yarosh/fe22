@@ -96,16 +96,20 @@
    font-weight: 500;
    font-size: 48px;
    line-height: 56px;
-   margin-bottom: 55px;
+   margin-bottom: 97px;
    text-transform: uppercase;
    color: #ffffff;
+   position: relative;
 }
 
-.banner__line {
+.banner__title:after {
+   content: " ";
+   display: block;
    border-bottom: 1px solid #ffffff;
    max-width: 170px;
    width: 100%;
-   margin-bottom: 42px;
+   position: absolute;
+   top: calc(100% + 40px);
 }
 
 .banner__text {
@@ -271,14 +275,20 @@
    font-size: 36px;
    line-height: 42px;
    text-align: center;
-   margin-bottom: 40px;
+   margin-bottom: 80px;
+   position: relative;
 }
 
-.about__line {
+.about__title::after {
+   position: absolute;
+   content: " ";
+   display: block;
    border-bottom: 1px solid #ec7979;
    max-width: 170px;
    width: 100%;
-   margin: 0 auto 40px;
+   top: calc(100% + 40px);
+   left: 50%;
+   transform: translateX(-50%);
 }
 
 .about__description {
@@ -345,15 +355,21 @@
    font-size: 36px;
    line-height: 42px;
    text-align: center;
-   margin-bottom: 40px;
+   margin-bottom: 80px;
    text-transform: uppercase;
+   position: relative;
 }
 
-.pricing__line {
+.pricing__title::after {
+   content: " ";
+   display: block;
    border-bottom: 1px solid #ec7979;
    max-width: 170px;
    width: 100%;
-   margin: 0 auto 40px;
+   position: absolute;
+   top: calc(100% + 40px);
+   left: 50%;
+   transform: translateX(-50%);
 }
 
 .pricing__description {
@@ -379,6 +395,12 @@ li {
    width: calc((100% - 60px) / 3); - это работает, но решил попробовать флекс + отрицательный марджин*/
    flex: 0 1 33.333%; /* flex-grow 0 - запрещает увеличиваться, flex-shirink 1 - разрешает уменьшаться*/
    padding: 0 15px;
+   position: relative;
+   top: 0;
+}
+
+.pricing__list:hover {
+   top: -20px;
 }
 
 .pricing-list__title {
@@ -438,15 +460,21 @@ li {
    font-size: 36px;
    line-height: 42px;
    text-align: center;
-   margin-bottom: 40px;
+   margin-bottom: 80px;
    text-transform: uppercase;
+   position: relative;
 }
 
-.reviews__line {
+.reviews__title::after {
+   display: block;
+   content: " ";
    border-bottom: 1px solid #ec7979;
    max-width: 170px;
    width: 100%;
-   margin: 0 auto 40px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: calc(100% + 40px);
 }
 
 .reviews__content-top .reviews__text {
@@ -474,16 +502,28 @@ li {
    border-radius: 10px;
    text-align: center;
    color: #86878b;
+   margin-bottom: 66px;
 }
 
-.reviews__polygon {
+.reviews__content-bottom .reviews__text::after {
+   content: " ";
+   display: block;
+   width: 0;
+   height: 0;
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+   border-top: 30px solid black;
+   margin: 0 0 46px 80px;
+}
+
+/*.reviews__polygon { --- можно удалять
    width: 0;
    height: 0;
    border-left: 20px solid transparent;
    border-right: 20px solid transparent;
    border-top: 30px solid #e2e2e2;
    margin: 0 0 46px 80px;
-}
+}*/
 
 .reviews__customer {
    display: flex;
@@ -528,16 +568,22 @@ li {
    font-size: 36px;
    line-height: 42px;
    text-align: center;
-   margin-bottom: 40px;
+   margin-bottom: 80px;
    text-transform: uppercase;
    color: #ffffff;
+   position: relative;
 }
 
-.banner2__line {
+.banner2__title::after {
+   content: " ";
+   display: block;
    border-bottom: 1px solid #ffffff;
    max-width: 170px;
    width: 100%;
-   margin: 0 auto 40px;
+   position: absolute;
+   top: calc(100% + 40px);
+   left: 50%;
+   transform: translateX(-50%);
 }
 
 .banner2__text {
@@ -575,15 +621,21 @@ li {
    font-size: 36px;
    line-height: 42px;
    text-align: center;
-   margin-bottom: 40px;
+   margin-bottom: 80px;
    text-transform: uppercase;
+   position: relative;
 }
 
-.contact__line {
+.contact__title:after {
+   content: " ";
+   display: block;
    border-bottom: 1px solid #ec7979;
    max-width: 170px;
    width: 100%;
-   margin: 0 auto 40px;
+   position: absolute;
+   top: calc(100% + 40px);
+   left: 50%;
+   transform: translateX(-50%);
 }
 
 .contact__description {
