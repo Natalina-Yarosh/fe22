@@ -5,6 +5,22 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+}
+li{
+    list-style-type: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn:active{
+    cursor: pointer;
+}
 .header{
     background-color: #000000;
     position: fixed;
@@ -12,9 +28,6 @@
     z-index: 3;
 }
 .header .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,9 +44,6 @@
 .header__menu{
     display: flex;
     flex-wrap: wrap;
-}
-li{
-    list-style-type: none;
 }
 .header__par{
     padding: 30.5px;
@@ -76,9 +86,6 @@ left:0;
 background-color: rgba(0, 0, 0, 0.5);
 }
 .prime .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
     display: flex;
 }
 .prime__description{
@@ -251,23 +258,14 @@ li:hover path{
 .tabs{
     padding: 99px 0px 50px;
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    position: relative;
-    z-index: 2;
-}
 .tabs__selection{
     max-width: 100%;
     display: flex;
 }
-
 .tabs__list{
 padding: 10px 0; 
 width: calc(100%/2/3); 
 }
-
 .tabs__level{
 font-weight: 400;
 font-size: 14px;
@@ -295,9 +293,6 @@ border: 1px solid #C6CBCD;
 border-radius: 4px 4px 0 0 ;    
 border: 1px solid #C6CBCD;
 }
-
-
-
 .tabs__item-description{
     padding: 41px 30px 54px 100px;
     width: 60%;
@@ -309,7 +304,6 @@ line-height: 41px;
 color: #000000;
 margin-bottom: 65px;
 }
-
 .tabs__text{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -318,7 +312,6 @@ margin-bottom: 65px;
     margin-bottom: 27px;
     color: #000000;
 }
-
 .tabs__btn{
     font-weight: 600;
     font-size: 18px;
@@ -393,7 +386,6 @@ margin-bottom: 65px;
     justify-content: center;
     margin: 0 auto 72px;
 }
-
 .section__title{
     font-size: 24px;
     line-height: 33px;
@@ -456,10 +448,7 @@ margin-bottom: 65px;
 .pricing__item:hover{
     position: relative;
     top:-20px;
-    box-shadow: 0px 0px 10px #86878B;
-}
-li {
-    list-style-type: none;
+    box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
 }
 .pricing__type{
     padding: 15px 15px 14px;
