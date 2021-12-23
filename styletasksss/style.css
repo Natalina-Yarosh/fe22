@@ -241,6 +241,8 @@ li:hover path{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
+    z-index: 2;
 }
 .tabs__selection{
     max-width: 100%;
@@ -594,8 +596,21 @@ position: relative;
 }
 .stylish{
     padding: 92px 0 50px;
-    background: url('../media/bgstylish.jpg'), rgba(0, 0, 0, 0.5);
-    background-blend-mode: color;
+    background-image: url('../media/bgstylish.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.stylish:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .stylish__title{
 font-family: 'Raleway', sans-serif;
