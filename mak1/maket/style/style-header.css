@@ -59,3 +59,10 @@
   font-size: 13px;
   line-height: 18px;
 }
+
+.header__item:active {
+  background: #ab4949;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+}
