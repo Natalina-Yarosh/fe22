@@ -18,12 +18,13 @@
 }
 
 .social-media__block:first-child {
-  width: 40%;
+  width: 42%;
   margin-right: 30px;
+  padding-top: 14px;
 }
 
 .social-media__block:last-child {
-  width: 60%;
+  width: 58%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,3 +59,8 @@
 .social-media__img:last-child {
   margin-right: 0;
 }
+
+.social-media__img svg:hover path{  
+  fill: #333;
+}
+  
