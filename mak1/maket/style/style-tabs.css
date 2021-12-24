@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.tabs {  
+.tabs {
   margin-bottom: 104px;
 }
 
@@ -38,6 +38,18 @@
   border-collapse: separate;
   border-radius: 5px 5px 0px 0px;
   border-bottom: none;
+  position: relative;
+}
+
+.tabs__list li:nth-child(1)::after {
+  content: "";
+  display: block;
+  width: 198px;
+  height: 8px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
 }
 
 .tabs__block {
@@ -91,7 +103,7 @@
   display: flex;
 }
 
-.tabs__img img{
+.tabs__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
