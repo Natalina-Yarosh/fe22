@@ -28,6 +28,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  
 }
 
 .social-media__title {
@@ -54,6 +56,11 @@
   width: 70px;
   height: 70px;
   margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
 
 .social-media__img:last-child {
@@ -61,6 +68,6 @@
 }
 
 .social-media__img svg:hover path{  
-  fill: #333;
+  fill: #000;
 }
   
