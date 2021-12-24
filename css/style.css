@@ -547,6 +547,20 @@ li {
 
 .reviews__customer {
    display: flex;
+   max-width: 370px;
+}
+
+.customer__image {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.customer__image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 .customer__data {
