@@ -95,6 +95,16 @@
   color: #ffffff;
   background-color: #ec7979;
   border: none;
+  cursor: pointer;
+}
+
+.tabs__btn:hover{
+  background: #AB4949;
+}
+
+.tabs__btn:active{
+  background: #EC7979;
+  box-shadow: inset 0px 0px 10px #AB4949;
 }
 
 .tabs__img {
