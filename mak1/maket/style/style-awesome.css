@@ -21,16 +21,25 @@
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    margin-bottom: 54px;
+    margin-bottom: 80px;
     color: #000;
+    position: relative;
+  }
+
+  .awesome__title::after {
+    content: "";
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
+    position: absolute;
+    top: calc(100% + 40px);
+    left: 50%;
+    transform: translatex(-50%);
+
+
   }
   
-  .awesome__line {
-    border-bottom: 1px solid #ec7979;
-    max-width: 170px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
+  
   
   .awesome__text {
     font-family: Raleway;
