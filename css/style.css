@@ -212,13 +212,13 @@
    border: transparent;
 }
 
-.tabs-list__link:first-child {
+.tabs-list .active {
    border: 1px solid #c6cbcd;
    border-radius: 5px 5px 0 0;
    position: relative;
 }
 
-.tabs-list__link::before {
+.tabs-list .active::before {
    content: " ";
    display: block;
    width: 100%;
