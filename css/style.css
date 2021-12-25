@@ -62,14 +62,28 @@
 
 .banner {
    padding: 208px 0 185px 0;
-   background-color: rgba(0, 0, 0, 0.5);
    background-image: url("../img/bg_1.jpg");
    background-size: cover;
    background-repeat: no-repeat;
+   background-position: center;
+   position: relative;
+}
+
+.banner:before {
+   content: " ";
+   display: block;
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.5);
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
 }
 
 .banner .container {
    display: flex;
+   position: relative;
+   z-index: 1;
 }
 
 .banner__content {
@@ -425,6 +439,7 @@ li {
 
 .pricing__list:hover {
    top: -20px;
+   box-shadow: 0 4px 10px rgba(51, 51, 51, 0.2);
 }
 
 .pricing-list__title {
@@ -591,10 +606,27 @@ li {
 
 .banner2 {
    padding: 118px 0 50px 0;
-   background-color: rgba(0, 0, 0, 0.5);
    background-image: url("../img/bg_2.jpg");
    background-size: cover;
    background-repeat: no-repeat;
+   background-position: center;
+   position: relative;
+}
+
+.banner2 .container {
+   position: relative;
+   z-index: 1;
+}
+
+.banner2::before {
+   content: " ";
+   width: 100%;
+   height: 100%;
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner2__title {
