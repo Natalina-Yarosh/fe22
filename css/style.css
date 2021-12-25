@@ -22,13 +22,12 @@
    align-items: center;
 }
 
-.header__logo {
-   display: flex;
+.header__row {
+   flex-basis: 40%;
 }
 
 .header__menu {
    flex-grow: 1;
-   flex-basis: 60%;
 }
 
 .header__list {
