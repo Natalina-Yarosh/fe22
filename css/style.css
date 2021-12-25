@@ -13,11 +13,11 @@
    padding: 0 15px;
 }
 
-.header {
+.header__wrapper {
    background: #000000;
 }
 
-.header .container {
+.header__wrapper .container {
    display: flex;
    align-items: center;
 }
@@ -720,7 +720,7 @@ li {
    background-color: #ec7979;
 }
 
-.footer {
+.footer__wrapper {
    padding: 38px 0 27px 0;
    background-color: #000000;
 }
