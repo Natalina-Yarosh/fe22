@@ -7,6 +7,39 @@
    font-family: 'Raleway', 'Open Sans';
 }
 
+/*header*/ 
+.axit-header{
+   padding: 30px 0 30px;
+   background-color: black;
+}
+
+.header-conainer{
+padding: 0 15px;
+margin: 0 auto;
+max-width: 1170px;
+display: flex;
+}
+
+.logo-header{
+margin-right: 372px;
+}
+
+.navigation-menu{
+ color: white;
+ display: flex;
+ height: 100%;
+ align-items: center;
+}
+
+.navigation-item{
+   font-family: 'Open Sans';
+   font-size: 14px;
+   line-height: 19px;
+   text-align: center;
+   padding: 0 30px;
+   list-style-type: none;
+}
+
 
 /*Block Media*/ 
 .media{
