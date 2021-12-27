@@ -554,7 +554,7 @@ li {
     margin-right: 0;
 }
 
-.footer__item path:hover {
+.footer__item:hover path {
     fill: #536dd4;
 }
 
