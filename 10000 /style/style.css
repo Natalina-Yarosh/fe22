@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+.clients{
+    padding: 547px 0 731px;
+    background:linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    position: relative;   
+}
+.clients::before{
+    content: "";
+    position: absolute;
+    background: url(../media/wave5.png);
+    width: 100%;
+    height: 423.57px;
+    top:-43.73px;
+    left:0;
+}
+.clients::after{
+    content: "";
+    position: absolute;
+    background: url(../media/wave6.png);
+    width: 100%;
+    height: 249.36px;
+    bottom:0px;
+    left:0;
+}
+.container{
+    max-width: 1097px;
+    padding:0 15px;
+    margin: 0 auto;
+}
+.clients__title{
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 700;
+    text-align: center;
+    color:#ffffff;
+    max-width: 327px;
+    margin: 0 auto;
+    margin-bottom: 73px;
+    position: relative;
+}
+.clients__title::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width:50px;
+    height:7px;
+    border-radius:3px;
+    background:#FD749B;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:-25px;
+}
+.clients__title::before{
+    content: url(../media/Mask.png);
+    position: absolute;
+    display: block;
+    width:155.4px;
+    height:130.86px;
+    left:-270.6px;
+    top:-50%;
+    transform: translateY(-50%);
+}
+.clients__text{
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+    color:#ffffff;
+    max-width: 542px;
+    margin: 0 auto 40px;
+}
+.clients__feedback{
+    max-width: 1097px;
+    margin: 0 auto;
+    position: relative;
+}
+.clients__review{
+    position:absolute;
+    background-color:  #D8D8D8;
+    border-radius:50%;
+}
+.clients__review:first-child{
+    width:84.39px;
+    height:84.39px;
+    top:228.94px;
+    left:0;
+}
+.clients__review:nth-child(2){
+    width:137.87px;
+    height:137.87px;
+    top:80.21px;
+    left:88.57px;
+}
+.clients__review:nth-child(3){
+    width:45.12px;
+    height:45.12px;
+    top:244.82px;
+    left:240.64px;
+}
+.clients__review:nth-child(4){
+    width:68.52px;
+    height:68.52px;
+    top:98.6px;
+    left:274.06px;
+}
+.clients__review:nth-child(5){
+    width:58.49px;
+    height:58.49px;
+    top:177.14px;
+    left:347.59px;
+}
+.clients__review:nth-child(6){
+    width:65.17px;
+    height:65.17px;
+    top:106.95px;
+    left:472.92px;
+}
+.clients__review:nth-child(7){
+    width:84.39px;
+    height:84.39px;
+    top:218.08px;
+    left:442.01px;
+}
+.clients__review:nth-child(8){
+    width:84.39px;
+    height:84.39px;
+    top:148.73px;
+    left:619.14px;
+}
+.clients__review:nth-child(9){
+    width:45.12px;
+    height:45.12px;
+    top:206.38px;
+    left:745.31px;
+}
+.clients__review:nth-child(10){
+    width:84.39px;
+    height:84.39px;
+    top:80.21px;
+    left:767.87px;
+}
+.clients__review:nth-child(11){
+    width:84.39px;
+    height:84.39px;
+    top:304.14px;
+    left:779.57px;
+}
+.clients__review:nth-child(12){
+    width:84.39px;
+    height:84.39px;
+    top:182.99px;
+    left:882.34px;
+}
+.clients__review:nth-child(13){
+    width:84.39px;
+    height:84.39px;
+    top:0px;
+    left:982.61px;
+}
+.clients__block{
+    padding: 17.7px 0 17.74px 26.33px;
+    width: 410px;
+    background: #ffffff;
+    opacity: 0.7;
+    border-radius: 15px;
+    position: relative;
+    display: none;
+}
+.clients__block::before{
+    content:"";
+    position: absolute;
+    display:block;
+    width: 0;
+	height: 0;
+	border-top: 30.31px solid transparent;
+	border-right: 38px solid #ffffff;
+	border-bottom: 30.31px solid transparent;
+    top:50%;
+    transform: translateY(-50%);
+    left:-24.46px;
+}
+.clients__block::after{
+    content:url(../media/Bitcoin.svg);
+    position: absolute;
+    display:block;
+    top:20.68px;
+    right:18px;
+    width: 24px;
+    height: 24px;
+}
+.block__name{
+    font-size: 14px;
+    font-weight: 400;
+    color:#333333;
+    margin-bottom: 24.1px;
+    position: relative;
+}
+.block__name::after{
+    content: url(../media/Star.svg);
+    display: block;
+    position:absolute;
+    width:76.83px;
+    height:11.07px;
+    color:#333333;
+    left:0;
+    top:calc(100% + 5.81px);
+}
+.block__short{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    color:#333333;
+}
+.block__full{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color:#333333;
+}
+.clients__review:hover .clients__block{
+    display: block;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:calc(100% + 30.6px);
+    z-index:1;
+}
