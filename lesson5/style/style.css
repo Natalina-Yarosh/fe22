@@ -33,20 +33,25 @@ li {
     list-style: none;
 }
 
-h2.title {
+.title {
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    position: relative;
 }
 
-.line {
+.title::after {
+    content: "";
+    display: block;
     width: 170px;
-    border: 1px solid #ec7979;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    border-bottom: 1px solid #ec7979;
+    position: absolute;
+    top: calc(100% + 40px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .text {
@@ -55,7 +60,7 @@ h2.title {
     line-height: 21px;
     text-align: center;
     color: #86878b;
-    margin-bottom: 83px;
+    margin-bottom: 89px;
 }
 
 /* BLOCK HEADER */
@@ -79,7 +84,7 @@ h2.title {
     flex-wrap: wrap;
 }
 
-.header__item a{
+.header__item a {
     display: inline-block;
     padding: 45px; /* НЕ УВЕРЕН В ЭТОМ ЗНАЧЕНИЕ. ВЗЯЛ ЕГО С ПОМОЩЬЮ ЛИНЕЙКИ СНИЗУ И СВЕРХУ ОТ ТЕКСТА
     ИЛИ ЭТОТ PADDING ЛУЧШЕ ЗАДАВАТЬ САМИМ ССЫЛКАМ? */
@@ -175,12 +180,14 @@ h2.title {
     text-transform: uppercase;
     color: #333333;
     padding: 10px;
+    position: relative;
 }
 
-.tabs__item:first-child {
+.tabs__item:hover {
     max-width: 201px;
     border: 1px solid #c6cbcd;
-    border-radius: 3px;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
 }
 
 .tabs__block {
@@ -215,6 +222,16 @@ h2.title {
     color: #ffffff;
 }
 
+.tabs__btn:hover {
+    color: #ffffff;
+    background-color: #ab4949;
+}
+
+.tabs__btn:active {
+    color: #ffffff;
+    box-shadow: inset 0px 0px 10px #ab4949;
+}
+
 .tabs__img {
     overflow: hidden;
 }
@@ -228,7 +245,11 @@ h2.title {
 /* BLOCK ADVANTAGES */
 
 .advantages {
-    padding: 50px 0 58px;
+    padding: 118px 0 58px;
+}
+
+.advantages__text {
+    margin-bottom: 110px;
 }
 
 .advantages__block {
@@ -287,6 +308,10 @@ h2.title {
     background: #f5f5f5;
 }
 
+.pricing__text {
+    margin-bottom: 79px;
+}
+
 .pricing__block {
     display: flex;
 }
@@ -296,8 +321,10 @@ h2.title {
     width: calc((100% - 60px) / 3);
 }
 
-.pricing__elem:nth-child(2) {
-    margin-top: -20px;
+.pricing__elem:hover {
+    position: relative;
+    top: -20px;
+    box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
 }
 
 .pricing__elem:last-child {
@@ -346,6 +373,10 @@ h2.title {
     padding: 118px 0 74px;
 }
 
+.feedback__text {
+    margin-bottom: 83px;
+}
+
 .feedback__block {
     display: flex;
 }
@@ -363,7 +394,21 @@ h2.title {
     padding: 38px 13px 37px;
     background: #e2e2e2;
     border-radius: 10px;
-    /* margin-bottom: 66px; */
+    margin-bottom: 66px;
+    position: relative;
+}
+
+.feedback__comment::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #e2e2e2;
+    position: absolute;
+    top: 100%;
+    left: 70px;
 }
 
 .feedback__comment-text {
@@ -372,16 +417,6 @@ h2.title {
     line-height: 21px;
     text-align: center;
     color: #86878b;
-}
-
-.feedback__comment-triangle {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 30px solid #e2e2e2;
-    margin-bottom: 66px;
-    margin-left: 70px;
 }
 
 .feedback__user {
@@ -426,15 +461,35 @@ h2.title {
 
 .stylish {
     padding: 50px 0;
-    background-image: url(../img/bgstylish.png);
+    background-image: url(../img/bgstylish.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.stylish::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.stylish .container {
+    position: relative;
+    z-index: 1;
 }
 
 .stylish__title {
     color: #ffffff;
 }
 
-.stylish__line {
-    border: 1px solid #ffffff;
+.stylish__title::after {
+    border-bottom: 1px solid #ffffff;
 }
 
 .stylish__text {
@@ -446,6 +501,17 @@ h2.title {
     color: #ffffff;
     border: 2px solid #ffffff;
     background: transparent;
+}
+
+.stylish__btn:hover {
+    color: #ec7979;
+    border: 2px solid #ec7979;
+}
+
+.stylish__btn:active {
+    color: #ffffff;
+    background-color: #ab4949;
+    border: 2px solid #ab4949;
 }
 
 /* BLOCK CONTACT */
@@ -471,18 +537,17 @@ h2.title {
 /* BLOCK FOOTER */
 .footer {
     padding: 35px 0 27px;
-    background: #000000;
+    background-color: #000000;
 }
 
-.footer__list {
+.footer__icons {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .footer__item {
-    margin-right: 45px;
+    margin-right: 30px;
 }
 
 .footer__item:last-child {
