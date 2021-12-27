@@ -6,6 +6,42 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.media {
+    padding: 28px 183px 18px 170px;
+    margin-bottom: 98px;
+    background-color: #F8EFEF;
+}
+
+.media .container {
+    display: flex;
+}
+
+.media__info {
+    margin-right: 45px;
+}
+
+.media__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.media__text {
+    max-width: 470px;
+    color: #86878B;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.media__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .wrapper {
     max-width: 100%;
     margin-bottom: 50px;
@@ -89,7 +125,7 @@
 
 .tabs {
     width: 100%;
-    margin: 105px auto 100px auto;
+    margin-bottom: 118px;
 }
 
 .tabs__tab {
