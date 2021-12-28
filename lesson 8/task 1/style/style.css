@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form{
+    display: flex;
+    max-width: 712px;
+    margin: 0 auto;
+}
+
+.form .input{
+    font-size: 14px;
+    line-height: 14px;
+    border: none;
+    border-bottom: 2px solid #212A2F;
+    padding: 21px 64px 14px;
+    margin-right: 12px;
+    display: block;
+    width: calc(100%  - 12px - 111px);
+}
+
+.form .input::placeholder{
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.22);
+}
+
+.form  .btn{
+    width: 100%;
+    max-width: 111px;
+    background-color: #212A2F;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

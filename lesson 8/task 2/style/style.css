@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form{
+    max-width: 366px;
+    margin: 0 auto;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.form-group .input{
+    width: calc((100% - 60px) / 2);
+}
+
+.input{
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 12px 8px 11px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.input::placeholder{
+    color: #A0A0A0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.input[type="email"]{
+    margin-bottom: 16px;
+}
+
+.input:hover{
+    box-shadow: 0 0 4px #000000;
+}
+
+.input:focus{
+    box-shadow: 0 0 4px #000000;
+}
