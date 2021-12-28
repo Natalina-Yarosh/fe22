@@ -10,15 +10,14 @@
 }
 .header > .container {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	position: relative;
+	align-items: center;
 }
 .header__logo {
 	width: 86.8px;
 	height: 30.69px;
-	position: absolute;
-	left: 15px;
-	top: 22.46px;
+	display: block;
 }
 .header__logo img {
 	width: 100%;
@@ -41,7 +40,7 @@
 	color: #ffffff;
 	display: block;
 	padding: 28px 0;
-	width: 166.63px;
+	min-width: 166.63px;
 }
 .header__link:hover {
 	font-weight: bold;
@@ -442,7 +441,7 @@ li.social__img:hover path {
 .pricing__item:last-child {
 	margin-right: 0;
 }
-.pricing__item ul {
+.pricing__item  {
 	list-style-type: none;
 }
 .pricing__item li:first-child {
