@@ -5,6 +5,7 @@
    margin: 0;
    box-sizing: border-box;
    font-family: "Raleway", sans-serif;
+   outline: none;
 }
 
 .container {
@@ -724,9 +725,19 @@ li {
    line-height: 21px;
    text-align: center;
    color: #86878b;
-   margin-bottom: 353px;
+   margin-bottom: 89px;
 }
 
+.contact__form {
+   display: flex;
+   margin-bottom: 50px;
+}
+.contact-form__row {
+   display: flex;
+   flex-direction: column;
+   margin-right: 30px;
+   flex-basis: 50%;
+}
 .contact__btn {
    background-color: #ec7979;
    border: none;

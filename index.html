@@ -302,7 +302,15 @@
          <div class="container">
             <h2 class="title contact__title">contact us</h2>
             <p class="description contact__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <div class="btn contact__btn">send message</div>
+            <form class="contact__form" action="">
+               <div class="contact-form__row">
+                  <input type="text" placeholder="Name" class="input">
+                  <input type="email" placeholder="Email" class="input">
+                  <input type="password" placeholder="Password" class="input">
+               </div>
+               <textarea placeholder="Message" class="input"></textarea>
+            </form>
+            <div class="btn contact__btn" type="submit">send message</div>
          </div>
       </section>
    </main>
