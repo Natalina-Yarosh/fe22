@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    outline: none;
+    border:none;
 }
 .container{
     max-width: 1200px;
@@ -36,7 +38,7 @@ li{
     width: 86.8px;
     height: 30.69px;
 }
-.header__logo img{
+.header__logo svg{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -46,7 +48,6 @@ li{
     flex-wrap: wrap;
 }
 .header__par{
-    
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
@@ -95,11 +96,11 @@ background-color: rgba(0, 0, 0, 0.5);
     width: 57%;
 }
 .prime__logo{
-    width:170px;
-    height: 55x;
-    margin-bottom: 72.88px;
+    width:270px;
+    height: 100px;
+    margin-bottom: 50.38px;
 }
-.prime__logo img{
+.prime__logo svg{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -157,9 +158,10 @@ color: #FFFFFF;
 width: 43%;
 }
 .prime__form{
-padding: 28px 50px 75px 50px;
+padding: 28px 50px 0px 50px;
 background-color: #FFFFFF;
-border-radius: 10px 10px 0px 0px;
+border-radius: 10px;
+position: relative;
 }
 .prime_trial{
 font-size: 24px;
@@ -168,24 +170,30 @@ font-weight: 700;
 text-align: center;
 color: #333333;
 text-transform: uppercase;
-margin-bottom: 75px;
+margin-bottom: 59px;
 }
 .prime__free{
 color: #EC7979;
 }
 .prime__input{
-margin-bottom: 52px;
-position: relative;
-}
-.prime__input::after{
-    content: "";
-display: block;
 border-bottom: 1px solid #BDBDBD;
-width: 100%;
-position: absolute;
-left:0;
-bottom:-16px;
-    }
+width: 100%;    
+margin-bottom: 20px;
+padding: 16px 0;
+font-size: 14px;
+font-weight: 400;
+line-height: 19px;
+color: #BDBDBD;
+}
+.prime__input[type="password"]{
+    margin-bottom: 138px;
+}
+input:hover{
+    border-bottom: 1px solid gray;
+}
+input:focus{
+    border-bottom: 1px solid black;
+}
 .form__btn{
 display: block;
 background-color: #EC7979;
@@ -193,26 +201,20 @@ border-radius: 0px 0px 10px 10px;
 font-weight: 600;
 font-size: 15px;
 line-height: 20px;
-padding: 22.5px;
+padding: 20px;
 text-align: center;
 color: #FFFFFF;
 width:100%;
 border:none;
+position: absolute;
+left:0;
+bottom:0;
 }
 .form__btn:hover{
 background-color: #AB4949;
 }
 .form__btn:active{
     box-shadow: 0px 0px 10px #AB4949;
-}
-
-.prime__input input{
-font-size: 14px;
-line-height: 19px;
-font-weight: 400;
-border: none;
-width: 100%;
-color: #BDBDBD;
 }
 .sm{
     padding: 18px 0 18px;
@@ -703,50 +705,57 @@ position: relative;
         line-height: 21px;
         text-align: center;
         color: #86878B;
-        margin-bottom: 89px;
+        margin-bottom: 73px;
     }
     .contacts__form{
         display: flex;
-        margin-bottom: 50px;
     }
     .contacts__form-left{
         width: calc((100% - 30px) / 2);
         margin-right: 30px;
     }
     .contacts__input{
-        margin-bottom: 69px;
-        position: relative;
+        border-bottom: 1px solid #BDBDBD;
+        width: 100%;    
+        margin-bottom: 20px;
+        padding: 16px 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #BDBDBD;
+        margin-bottom: 37px;
+    } 
+    .contacts__textarea{
+        border-bottom: 1px solid #BDBDBD;
+        width: 100%;    
+        padding: 16px 0 176px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #BDBDBD;
+        resize: none;
     }    
-    .contacts__input input{
-    border: none;
-    width: 100%;
-    }
     input::placeholder {
         font-size: 14px;
         font-weight: 400;
         line-height: 19px;
         color: #BDBDBD;
       }
-    .contacts__input::after{
-    content: "";
-    display: block;
-    border-bottom: 1px solid #BDBDBD;
-    width: 100%;
-    position: absolute;
-    left:0;
-    bottom:-16px;
-    }
-    .contacts__form-right .contacts__input::after{
-        content: "";
-        display: block;
-        border-bottom: 1px solid #BDBDBD;
-        width: 100%;
-        position: absolute;
-        left:0;
-        bottom:-198px;
-        }
     .contacts__form-right{
+        height: 176px;
         width: calc((100% - 30px) / 2);
+    }
+    textarea::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #BDBDBD;
+      }
+    textarea:hover{
+        border-bottom: 1px solid gray;
+    }
+    textarea:focus{
+        border-bottom: 1px solid black;
     }
     .contact__btn{
         display: block;
@@ -760,7 +769,6 @@ position: relative;
         color:#ffffff;
         padding: 20px;
         margin:0 auto;
-        border:none;
     }
     .contact__btn:hover{
     background-color: #AB4949;}
