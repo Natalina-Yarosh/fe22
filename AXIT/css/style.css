@@ -11,7 +11,6 @@
 .header > .container {
 	display: flex;
 	justify-content: space-between;
-	position: relative;
 	align-items: center;
 }
 .header__logo {
@@ -69,7 +68,8 @@
 .pricing__title::after,
 .reviews__title::after,
 .design__title::after,
-.banner__title::after {
+.banner__title::after,
+.contact__title::after {
 	content: "";
 	border-bottom: 1px solid#ec7979;
 	max-width: 170px;
@@ -188,7 +188,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: #333333;
-	margin-bottom: 75px;
+	margin-bottom: 59px;
 }
 .banner__span {
 	color: #ec7979;
@@ -197,17 +197,29 @@
 	line-height: 33px;
 	text-transform: uppercase;
 }
-.banner__form input {
-	width: 370px;
-	height: 38px;
-	margin: 0 auto 33px;
-	background-color: transparent;
+input,
+textarea {
+	padding: 17px 0;
 	border: none;
 	border-bottom: 1px solid #bdbdbd;
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
 	line-height: 19px;
+	color: #000;
+	outline: none;
+}
+input::placeholder,
+textarea::placeholder {
 	color: #bdbdbd;
+}
+input:hover,
+textarea:hover {
+	border-bottom-color: #000000;
+}
+.banner__form input {
+	width: 370px;
+	margin: 0 auto 17px;
+	background-color: transparent;
 }
 .banner__form input:last-of-type {
 	margin-bottom: 75px;
@@ -441,7 +453,7 @@ li.social__img:hover path {
 .pricing__item:last-child {
 	margin-right: 0;
 }
-.pricing__item  {
+.pricing__item {
 	list-style-type: none;
 }
 .pricing__item li:first-child {
@@ -596,6 +608,42 @@ li.social__img:hover path {
 	display: block;
 	margin: 0 auto;
 }
+
+.contact {
+	padding: 118px 0 50px;
+}
+.contact__title {
+	position: relative;
+}
+.contact__text {
+	margin-bottom: 73px;
+}
+.contact__block {
+	display: flex;
+	margin-bottom: 50px;
+}
+.contact__userinfo {
+	width: calc((100% - 30px) / 2);
+	display: flex;
+	flex-direction: column;
+	margin-right: 30px;	
+}
+.contact__userinfo input {
+	margin-bottom: 34px;
+}
+.contact__userinfo input:last-child {
+	margin-bottom: 0;
+}
+.contact__form textarea {
+	width: calc((100% - 30px) / 2);
+	resize: none;
+	}
+.contact__btn3 {
+	max-width: 370px;
+	display: block;
+	margin: 0 auto;
+}
+
 .footer {
 	background-color: #000000;
 	padding: 35px 0 27px;
