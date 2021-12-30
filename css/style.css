@@ -735,9 +735,69 @@ li {
 .contact-form__row {
    display: flex;
    flex-direction: column;
+}
+
+.contact-form__row:first-child {
    margin-right: 30px;
    flex-basis: 50%;
 }
+
+.contact-form__row:last-child {
+   flex-basis: 50%;
+}
+
+.contact-form__row .input {
+   font-size: 14px;
+   line-height: 19px;
+   border: none;
+   border-bottom: 1px solid #bdbdbd;
+   padding: 0 8px 18px 8px;
+   margin-bottom: 50px;
+}
+
+.contact-form__row .input:last-child {
+   margin-bottom: 0px;
+}
+
+.contact-form__row .input::placeholder {
+   font-size: 14px;
+   line-height: 19px;
+   color: #bdbdbd;
+}
+
+.input:hover {
+   border-bottom: 1px solid #333333;
+}
+
+.input:focus {
+   border-bottom: 1px solid 4px #333333;
+}
+
+textarea {
+   border: none;
+   border-bottom: 1px solid #bdbdbd;
+   padding: 0 8px 0 8px;
+   font-size: 14px;
+   line-height: 19px;
+   resize: none;
+   height: 214px;
+   width: 570px;
+}
+
+textarea::placeholder {
+   font-size: 14px;
+   line-height: 19px;
+   color: #bdbdbd;
+}
+
+textarea:hover {
+   border-bottom: 1px solid #333333;
+}
+
+textarea:focus {
+   border-bottom: 1px solid 4px #333333;
+}
+
 .contact__btn {
    background-color: #ec7979;
    border: none;
