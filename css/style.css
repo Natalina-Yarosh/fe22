@@ -83,14 +83,15 @@
    z-index: 1;
 }
 
-.banner__content {
+.banner__content:first-child {
    display: flex;
    flex-direction: column;
    flex-basis: 59%;
-   margin-right: 15px;
+   margin-right: 30px;
+   margin-top: 23px;
 }
 
-.banner__logo {
+.banner-logo__logo1 {
    display: flex;
    margin-bottom: 73px;
 }
@@ -153,6 +154,93 @@
    color: #fff;
    border: 2px solid #ab4949;
    background-color: #ab4949;
+}
+
+.banner__content:last-child {
+   display: flex;
+   flex-direction: column;
+   flex: 0 0 470px;
+   margin-right: 0;
+}
+
+.banner__form {
+   background: #fff;
+   border-radius: 10px 10px 0 0;
+   padding: 28px 0 75px 0;
+}
+
+.banner-form__title {
+   font-family: "Open Sans";
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32.68px;
+   margin-bottom: 75px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.banner-form__link {
+   text-decoration: none;
+   color: #ab7979;
+}
+
+.banner__form .input {
+   display: block;
+   max-width: 370px;
+   width: 100%;
+   font-size: 14px;
+   line-height: 19px;
+   border: none;
+   border-bottom: 1px solid #bdbdbd;
+   padding: 4px 8px 14px 8px;
+   margin: 0 50px 33px 50px;
+}
+
+.banner__form .input:last-child {
+   margin-bottom: 0px;
+}
+
+.banner__form .input::placeholder {
+   font-size: 14px;
+   line-height: 19px;
+   color: #bdbdbd;
+}
+
+.input:hover {
+   border-bottom: 1px solid #333333;
+}
+
+.input:focus {
+   border-bottom: 1px solid 4px #333333;
+}
+
+.banner-form__btn {
+   font-size: 15px;
+   line-height: 20.43px;
+   padding: 20px;
+   color: #ffffff;
+   font-family: "Open Sans";
+   font-weight: 600;
+   background-color: #ec7979;
+   border: none;
+   display: block;
+   max-width: 470px;
+   width: 100%;
+   border-radius: 0 0 10px 10px;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+.banner-form__btn:hover {
+   color: #fff;
+   background-color: #ab4949;
+   cursor: pointer;
+}
+
+.banner-form__btn:active {
+   box-shadow: 0px 0px 10px 0px #ab4949 inset;
+   color: #fff;
+   background-color: #ec7979;
 }
 
 .social-media {
