@@ -87,8 +87,7 @@
    display: flex;
    flex-direction: column;
    flex-basis: 59%;
-   margin-right: 30px;
-   margin-top: 23px;
+   margin: 23px 30px 0 0;
 }
 
 .banner-logo__logo1 {
@@ -192,7 +191,7 @@
    border: none;
    border-bottom: 1px solid #bdbdbd;
    padding: 9px;
-   margin: 0 50px 33px 50px;
+   margin: 0 auto 33px;
 }
 
 .banner__form .input:nth-child(4) {
@@ -815,22 +814,20 @@ li {
    margin-bottom: 89px;
 }
 
-.contact__form {
+.contact__form-group {
    display: flex;
    margin-bottom: 50px;
 }
+
 .contact-form__row {
    display: flex;
    flex-direction: column;
-}
-
-.contact-form__row:first-child {
+   flex: 1 1 50%;
    margin-right: 30px;
-   flex-basis: 50%;
 }
 
 .contact-form__row:last-child {
-   flex-basis: 50%;
+   margin-right: 0;
 }
 
 .contact-form__row .input {
@@ -863,7 +860,7 @@ li {
 textarea {
    border: none;
    border-bottom: 1px solid #bdbdbd;
-   padding: 0 8px 0 8px;
+   padding: 9px;
    font-size: 14px;
    line-height: 19px;
    resize: none;
@@ -899,7 +896,7 @@ textarea:focus {
    text-transform: capitalize;
    text-align: center;
    margin: 0 auto;
-   padding: 20px 0 20px 0;
+   padding: 17px 0 17px 0;
 }
 
 .contact__btn:hover {
