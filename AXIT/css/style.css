@@ -136,6 +136,7 @@
 	display: flex;
 	position: relative;
 	z-index: 1;
+	align-items: flex-start;
 }
 .banner__block {
 	max-width: 670px;
@@ -174,7 +175,7 @@
 }
 .banner__form {
 	width: 470px;
-	height: 450px;
+	/* height: 450px; */
 	background-color: #ffffff;
 	border-radius: 10px;
 	padding-top: 28px;
@@ -198,7 +199,8 @@
 	text-transform: uppercase;
 }
 .banner__form input {
-	width: 370px;
+	max-width: 370px;
+	width: 100%;
 	height: 38px;
 	margin: 0 auto 33px;
 	background-color: transparent;
@@ -223,6 +225,7 @@
 	border: none;
 	padding: 20px 0;
 	border-radius: 0px 0px 10px 10px;
+	cursor: pointer;
 }
 .banner__form button:hover {
 	background-color: #ab4949;
