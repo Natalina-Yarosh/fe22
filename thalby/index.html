@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Thalby</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+        <nav>
+            <ul class="header__navigation">
+            <li class="header__link"><a href="#">Shop</a></li>
+            <li class="header__link"><a href="#">Collections</a></li>
+            <li class="header__link"><a href="#">Try a Free Guide</a></li>
+            <li class="header__link"><a href="#">Stories</a></li>
+        </ul>
+        </nav>
+        <div class="header__logo">
+            <svg width="80" height="25" viewBox="0 0 80 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path d="M0 0H80V25H0V0Z" fill="url(#pattern0)"/>
+    <defs>
+    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <use xlink:href="#image0_1_8" transform="scale(0.00625 0.02)"/>
+    </pattern>
+    <image id="image0_1_8" width="160" height="50" xlink:href="data:image/png;base64,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"/>
+    </defs>
+    </svg>
+        </div>
+        <div class="header__sm">
+            <div class="header__icon">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.2199 14.13C18.2199 15.38 17.857 16.387 17.132 17.072C16.405 17.758 15.398 18.122 14.188 18.122H5.96195C4.75195 18.122 3.74395 17.758 3.01795 17.072C2.29295 16.347 1.92795 15.339 1.92795 14.089V5.822C1.92795 4.612 5.19195 0.702 5.91695 -0.0240002C2.41195 -0.0220002 0.0749512 2.316 0.0749512 5.822V14.088C0.0749512 15.822 0.638951 17.315 1.76795 18.403C2.85695 19.451 4.30795 19.976 5.96195 19.976H14.188C15.921 19.976 17.3729 19.411 18.4209 18.403C19.51 17.355 20.075 15.863 20.075 14.129V5.822C20.075 4.129 19.51 2.677 18.462 1.629C17.4139 0.54 15.92 -0.0240002 14.228 -0.0240002H5.91995L3.01795 2.88C3.70395 2.194 4.75195 1.831 5.96195 1.831H14.268C15.478 1.831 16.486 2.194 17.212 2.921C17.898 3.646 18.2999 4.654 18.2999 5.823V14.13H18.2199ZM15.357 5.943C15.5133 5.94757 15.6689 5.92073 15.8147 5.86407C15.9605 5.8074 16.0934 5.72206 16.2056 5.61311C16.3178 5.50415 16.4069 5.37379 16.4679 5.22974C16.5288 5.0857 16.5601 4.93089 16.5601 4.7745C16.5601 4.61811 16.5288 4.4633 16.4679 4.31926C16.4069 4.17521 16.3178 4.04485 16.2056 3.93589C16.0934 3.82693 15.9605 3.7416 15.8147 3.68493C15.6689 3.62827 15.5133 3.60143 15.357 3.606C15.053 3.61489 14.7644 3.7419 14.5525 3.96007C14.3407 4.17823 14.2221 4.47038 14.2221 4.7745C14.2221 5.07862 14.3407 5.37077 14.5525 5.58893C14.7644 5.8071 15.053 5.93411 15.357 5.943ZM10.075 13.283C9.1991 13.2791 8.36024 12.9294 7.74091 12.31C7.12158 11.6907 6.7719 10.8519 6.76795 9.976C6.7719 9.10014 7.12158 8.26129 7.74091 7.64196C8.36024 7.02263 9.1991 6.67295 10.075 6.669C10.9508 6.67295 11.7897 7.02263 12.409 7.64196C13.0283 8.26129 13.378 9.10014 13.382 9.976C13.3777 10.8517 13.0279 11.6903 12.4086 12.3094C11.7893 12.9285 10.9506 13.2781 10.075 13.282V13.283ZM10.075 4.815C7.25295 4.815 4.91395 7.113 4.91395 9.976C4.9121 10.6543 5.04434 11.3262 5.30305 11.9532C5.56176 12.5802 5.94184 13.1499 6.42145 13.6295C6.90106 14.1091 7.47074 14.4892 8.09774 14.7479C8.72473 15.0066 9.39668 15.1388 10.075 15.137C12.938 15.137 15.235 12.798 15.235 9.977C15.235 7.153 12.897 4.815 10.075 4.815Z" fill="black"/>
+                    </svg>                    
+            </div>
+            <div class="header__icon">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.873 15.884L20.965 20.976" stroke="black" stroke-width="2" stroke-miterlimit="20"/>
+                    <path d="M18.273 10.088C18.273 12.262 17.4094 14.3469 15.8722 15.8842C14.3349 17.4214 12.25 18.285 10.076 18.285C7.90205 18.285 5.81711 17.4214 4.27987 15.8842C2.74264 14.3469 1.87903 12.262 1.87903 10.088C1.87903 7.91402 2.74264 5.82908 4.27987 4.29184C5.81711 2.75461 7.90205 1.891 10.076 1.891C12.25 1.891 14.3349 2.75461 15.8722 4.29184C17.4094 5.82908 18.273 7.91402 18.273 10.088Z" stroke="black" stroke-width="2" stroke-miterlimit="20"/>
+                    </svg>                                      
+            </div>
+            <div class="header__icon">
+                <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.51794 7.4C3.51794 5.9059 4.11147 4.473 5.16796 3.41651C6.22444 2.36003 7.65735 1.7665 9.15145 1.7665C10.6455 1.7665 12.0784 2.36003 13.1349 3.41651C14.1914 4.473 14.7849 5.9059 14.7849 7.4" stroke="black" stroke-width="2" stroke-miterlimit="20"/>
+                    <path d="M16.534 22.976H1.76904V8.211H16.534V22.976Z" stroke="black" stroke-width="2" stroke-miterlimit="20"/>
+                    </svg>                                     
+            </div>
+        </div>
+    </div>
+</header>
+<section class="main">
+    <div class="container main__container">
+        <div class="main__description">
+            <h1 class="main__title">Fall deeper in love with <p>humanity.</p></h1>
+            <p class="main__text">Get to know the world through our concise, informative and inspiring guides.</p>
+            <button class="btn main__btn">Shop Now</button>
+        </div>
+        <div class="main__image">
+            <img src="media/main.png" alt="image">
+        </div>
+    </div>
+</section>
+<section class="bestseller">
+    <div class="container">
+        <h2 class="bestseller__title">Our guides explain countries and cultures.</h2>
+        <p class="bestseller__subtitle">Are you curious about the world around you? Our guides are for smart global citizens, world travelers and engaged residents who want to gain a deeper understanding of the cultures and societies they care about.</p>
+        <p class="bestseller__text">Available as ebooks here and on Amazon.</p>
+        <h2 class="bestseller__subject">Our best sellers</h2>
+        <div class="bestseller__box">
+            <div class="bestseller__column">
+                <div class="bestseller__image">
+                    <img src="media/image1.jpg" alt="image">
+                </div>
+                <h3 class="bestseller__name">Thalby Guide to French Culture and Heritage</h3>
+                <p class="bestseller__price">USD 6.99</p>
+                <a class="bestseller__link" href="#">Add to cart</a>
+            </div>
+            <div class="bestseller__column">
+                <div class="bestseller__image">
+                    <img src="media/image2.jpg" alt="image">
+                </div>
+                <h3 class="bestseller__name">Thalby Guide to French People and Society</h3>
+                <p class="bestseller__price">USD 6.99</p>
+                <a class="bestseller__link" href="#">Add to cart</a>
+            </div>
+            <div class="bestseller__column">
+                <div class="bestseller__image">
+                    <img src="media/image3.jpg" alt="image">
+                </div>
+                <h3 class="bestseller__name">Thalby Guide to German Culture and Heritage</h3>
+                <p class="bestseller__price">USD 6.99</p>
+                <a class="bestseller__link" href="#">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="people">
+    <div class="container people__container">
+        <div class="people__image">
+            <img src="media/image4.png" alt="image">
+        </div>
+        <div class="people__desc">
+            <h2 class="people__title">People and Society</h2>
+            <p class="people__text">Our guides to society deliver all the social insight you need, helping you understand how people live, love and play today and why communities are the way they are.</p>
+            <a class="people__link" href="#">Shop Society Guides</a>
+        </div>
+    </div>
+</section>
+<section class="culture">
+    <div class="container culture__container">
+        <div class="culture__desc">
+            <h2 class="culture__title">Culture and Heritage</h2>
+            <p class="culture__text">As well as covering heritage and tradition, our guides to culture introduce you to the designers, artists and chefs creating at the forefront of today's culture.</p>
+            <a class="culture__link" href="#">Shop Culture Guides</a>
+        </div>
+        <div class="culture__image">
+            <img src="media/image5.png" alt="image">
+        </div>
+    </div>
+</section>
+<section class="power">
+    <div class="container power__container">
+        <div class="power__image">
+            <img src="media/image6.png" alt="image">
+        </div>
+        <div class="power__desc">
+            <h2 class="power__title">Power and Politics</h2>
+            <p class="power__text">Our guides to power take you behind the scenes to explore the power dynamics, policies and politics shaping a country's future and its global position.</p>
+            <a class="power__link" href="#">Coming 2022!</a>
+        </div>
+    </div>
+</section>
+<section class="advantages">
+    <div class="container">
+        <h2 class="advantages__title">Some of the features that make Thalby guides unique</h2>
+        <div class="advantages__box">
+        <p class="advantages__text">Written by locals</p>
+        <p class="advantages__text">Packed with insight</p>
+        <p class="advantages__text">Interviews with diverse voices</p>
+        <p class="advantages__text">Key facts and etiquette tips</p>
+        <p class="advantages__text">A concise 1-hour read</p>
+        <p class="advantages__text">Instant digital access</p>
+    </div>
+    <h2 class="advantages__subtitle">Each Thalby guide includes interviews with a range of fascinating voices, such as</h2>
+    </div>
+</section>
+<div class="interview">
+    <div class="container interview__container">
+        <div class="interview__item">
+            <div class="interview__photo">
+                <img src="media/photo1.png" alt="photo">
+            </div>
+            <p class="interview__text">"I don’t like things to be conventional. If it’s too nice, I bring disorder."</p>
+            <p class="interview__name">Camille Muller,</p>
+            <p class="interview__position">Landscape Designer, France</p>
+            <a class="interview__link" href="#">Discover</a>
+        </div>
+        <div class="interview__item">
+            <div class="interview__photo">
+                <img src="media/photo2.png" alt="photo">
+            </div>
+            <p class="interview__text">"Magic is not magic in the sense that I can just wish for anything."</p>
+            <p class="interview__name">Sonia Kowalewski,</p>
+            <p class="interview__position">Witch, Germany</p>
+            <a class="interview__link" href="#">Discover</a>
+        </div>
+        <div class="interview__item">
+            <div class="interview__photo">
+                <img src="media/photo3.png" alt="photo">
+            </div>
+            <p class="interview__text">"I was eight years old when I entered my first competition. I won it."</p>
+            <p class="interview__name">Lilly Stoephasius,</p>
+            <p class="interview__position">Skateboarder, Germany</p>
+            <a class="interview__link" href="#">Discover</a>
+        </div>
+    </div>
+</div>
+<section class="contacts">
+    <div class="container">
+        <h2 class="contacts__title">Keep in touch</h2>
+        <p class="contacts__subtitle">Get our travel advice, global views and travel freebies in your inbox</p>
+        <form class="contacts__form">
+            <div class="contacts__item">
+            <input class="contacts__input" type="text" placeholder="First Name">
+            <input class="contacts__input" type="text" placeholder="Last Name">
+        </div>
+        <input class="contacts__input" type="email" placeholder="Email">
+        <button type="submit" class="btn contacts__button">Subscribe</button>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+<div class="container">
+    <div class="footer__box">
+    <div class="footer__icons">
+        <div class="footer__logo">
+            <svg width="129" height="41" viewBox="0 0 129 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M94.25 33.2301C91.077 33.2301 88.603 31.9231 87.016 29.5421V32.7621H80.434V0.663086H87.016V13.0641C88.603 10.6841 91.076 9.37609 94.251 9.37609C100.179 9.37609 104.894 14.6981 104.894 21.2791C104.894 27.8611 100.179 33.2291 94.251 33.2291L94.25 33.2301ZM92.757 15.6321C89.536 15.6321 87.016 18.1051 87.016 21.2791C87.016 24.5011 89.536 26.9271 92.756 26.9271C95.932 26.9271 98.499 24.4541 98.499 21.2791C98.499 18.1521 95.932 15.6321 92.757 15.6321Z" fill="#FCFCFA"/>
+                <path d="M128.078 9.84277L115.334 40.3718H108.286L112.533 30.8958L103.711 9.84277H110.806L115.894 23.2398L120.984 9.84277H128.078Z" fill="#FCFCFA"/>
+                <path d="M77.395 32.7631H70.813V0.663086H77.395V32.7631Z" fill="#FCFCFA"/>
+                <path d="M68.194 32.763H61.986V29.916C60.632 32.156 58.485 33.23 55.451 33.23C51.39 33.23 48.355 30.196 48.355 26.368C48.355 21.56 52.603 19.038 59.045 19.038H61.985V18.525C61.985 16.471 60.212 14.743 57.598 14.743C55.124 14.743 52.697 16.098 51.436 17.685L47.842 13.857C49.849 11.242 53.77 9.375 57.598 9.375C64.087 9.375 68.194 13.157 68.194 18.665V32.763ZM61.986 23.147H58.718C55.824 23.147 54.097 24.034 54.097 25.761C54.097 27.161 55.217 28.095 56.991 28.095C59.885 28.095 61.986 26.135 61.986 23.847V23.147Z" fill="#FCFCFA"/>
+                <path d="M46.017 19.7861V32.7631H39.435V20.6261C39.435 17.6391 37.615 15.6781 34.907 15.6781C32.153 15.6781 30.379 17.6391 30.379 20.6261V32.7631H23.797V0.663086H30.379V12.8311C31.826 10.6371 33.973 9.37609 36.589 9.37609C42.469 9.37609 46.017 13.2981 46.017 19.7861Z" fill="#FCFCFA"/>
+                <path d="M21.21 32.4831C20.37 32.9031 19.062 33.1361 17.848 33.1361C12.48 33.1361 8.69901 29.7281 8.69901 23.8001V0.663086H15.281V9.84309H20.929V16.0981H15.281V23.4731C15.281 25.6211 16.914 26.9741 18.828 26.9741C19.482 26.9741 20.369 26.8351 20.882 26.6481L21.21 32.4831Z" fill="#FCFCFA"/>
+                <path d="M7.435 12.97C7.43506 13.4421 7.34214 13.9096 7.16153 14.3458C6.98093 14.782 6.71618 15.1783 6.3824 15.5122C6.04862 15.846 5.65234 16.1109 5.2162 16.2916C4.78006 16.4724 4.3126 16.5654 3.8405 16.5655C3.36839 16.5655 2.9009 16.4726 2.46471 16.292C2.02852 16.1114 1.63217 15.8467 1.2983 15.5129C0.964427 15.1791 0.699566 14.7828 0.51884 14.3467C0.338113 13.9105 0.245061 13.4431 0.244995 12.971C0.244995 12.0175 0.623753 11.1031 1.29795 10.4289C1.97214 9.75473 2.88654 9.37598 3.83999 9.37598C4.79345 9.37598 5.70785 9.75473 6.38204 10.4289C7.05624 11.1031 7.435 12.0175 7.435 12.971V12.97Z" fill="#CCCC33"/>
+                </svg>
+            </div>
+                <div class="footer__sm">
+                    <div class="footer__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.3331 26V14.1409H21.9339L22.7741 9.51753H16.3352V6.56577C16.3352 5.22906 16.8546 4.31753 19.5568 4.31753H23V0.180471C22.4047 0.125412 20.3611 0 17.9819 0C13.0144 0 9.61556 2.15341 9.61556 6.10847V9.51906H4V14.1409H9.61556V26H16.3331Z" fill="white"/>
+                        </svg>                                     
+                    </div>
+                    <div class="footer__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_186)">
+                            <path d="M-6.09763 32.4687H31.0452V-6.53125H-6.09763V32.4687Z" fill="black"/>
+                            <path d="M22.5581 18.3689C22.5581 19.9939 22.1087 21.3031 21.211 22.1936C20.3109 23.0854 19.0642 23.5585 17.5661 23.5585H7.38152C5.88342 23.5585 4.63542 23.0854 3.73656 22.1936C2.83894 21.2511 2.38704 19.9406 2.38704 18.3156V7.56855C2.38704 5.99555 6.42818 0.91255 7.3258 -0.03125C2.98628 -0.02865 0.0928497 3.01075 0.0928497 7.56855V18.3144C0.0928497 20.5686 0.791135 22.5094 2.18895 23.9238C3.53723 25.2862 5.33371 25.9688 7.38152 25.9688H17.5661C19.7117 25.9688 21.5094 25.2342 22.8069 23.9238C24.1552 22.5614 24.8548 20.6218 24.8548 18.3676V7.56855C24.8548 5.36765 24.1552 3.48005 22.8577 2.11765C21.5602 0.70195 19.7105 -0.03125 17.6156 -0.03125H7.32952L3.73656 3.74395C4.5859 2.85215 5.88342 2.38025 7.38152 2.38025H17.6651C19.1632 2.38025 20.4112 2.85215 21.3101 3.79725C22.1594 4.73975 22.6571 6.05015 22.6571 7.56985V18.3689H22.5581ZM19.0134 7.72585C19.207 7.7318 19.3997 7.6969 19.5802 7.62324C19.7606 7.54957 19.9252 7.43863 20.0641 7.29699C20.203 7.15535 20.3134 6.98588 20.3888 6.79861C20.4642 6.61135 20.5031 6.41011 20.5031 6.2068C20.5031 6.00349 20.4642 5.80225 20.3888 5.61498C20.3134 5.42772 20.203 5.25825 20.0641 5.11661C19.9252 4.97497 19.7606 4.86403 19.5802 4.79036C19.3997 4.7167 19.207 4.6818 19.0134 4.68775C18.6371 4.69931 18.2798 4.86442 18.0175 5.14804C17.7551 5.43165 17.6084 5.81145 17.6084 6.2068C17.6084 6.60215 17.7551 6.98194 18.0175 7.26556C18.2798 7.54918 18.6371 7.71429 19.0134 7.72585ZM12.4738 17.2678C11.3894 17.2627 10.3508 16.8081 9.58404 16.003C8.81725 15.1979 8.38431 14.1074 8.37942 12.9688C8.38431 11.8301 8.81725 10.7396 9.58404 9.93449C10.3508 9.12937 11.3894 8.67478 12.4738 8.66965C13.5582 8.67478 14.5968 9.12937 15.3636 9.93449C16.1304 10.7396 16.5633 11.8301 16.5682 12.9688C16.563 14.1071 16.1299 15.1973 15.3631 16.0022C14.5964 16.807 13.558 17.2614 12.4738 17.2665V17.2678ZM12.4738 6.25945C8.9799 6.25945 6.08399 9.24685 6.08399 12.9688C6.08171 13.8505 6.24542 14.724 6.56573 15.5391C6.88604 16.3542 7.35662 17.0948 7.95042 17.7183C8.54423 18.3418 9.24954 18.8359 10.0258 19.1722C10.8021 19.5085 11.634 19.6805 12.4738 19.678C16.0185 19.678 18.8624 16.6374 18.8624 12.97C18.8624 9.29885 15.9677 6.25945 12.4738 6.25945Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_186">
+                            <rect width="26" height="26" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>                            
+                        </div>
+                        <div class="footer__icon"> 
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_192)">
+                                <path d="M26 3.07694C25.0455 3.60194 24.0148 3.95174 22.9385 4.10794C24.0402 3.29564 24.883 2.00844 25.2842 0.477441C24.2534 1.22724 23.1111 1.77714 21.8977 2.07084C20.9227 0.795941 19.5366 0.00244141 18.0034 0.00244141C15.0587 0.00244141 12.6726 2.93944 12.6726 6.56364C12.6726 7.07604 12.7182 7.57594 12.8095 8.05714C8.37719 7.78214 4.44761 5.17014 1.81755 1.19594C1.3606 2.16464 1.09662 3.29564 1.09662 4.49534C1.09662 6.76994 2.03587 8.78204 3.46766 9.95684C2.59422 9.92544 1.77181 9.62554 1.05088 9.13814V9.21934C1.05088 12.3999 2.88875 15.0556 5.33088 15.6555C4.88401 15.8055 4.41195 15.8867 3.92445 15.8867C3.5793 15.8867 3.24926 15.8429 2.91922 15.7679C3.59961 18.3736 5.5696 20.2733 7.89985 20.3295C6.07213 22.0917 3.77722 23.1415 1.27423 23.1415C0.842796 23.1415 0.421271 23.1102 -9.15527e-05 23.0477C2.36591 24.9161 5.16847 25.9971 8.17918 25.9971C17.9882 25.9971 23.3547 15.9928 23.3547 7.31954C23.3547 7.03214 23.3496 6.75094 23.3395 6.46974C24.3804 5.55134 25.2842 4.39534 26 3.07694Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_192">
+                                <rect width="26" height="26" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>                                       
+                </div>                 
+        </div>
+    </div>
+    <div class="footer__menu">
+        <div class="footer__about">
+            <p class="footer__des">ABOUT</p>
+            <ul class="footer__list">
+                <li class="footer__link"><a href="">About Us</a></li>
+                <li class="footer__link"><a href="">Privacy Policy</a></li>
+                <li class="footer__link"><a href="">Terms and Conditions</a></li>
+                <li class="footer__link"><a href="">Write for Us</a></li>
+            </ul>
+        </div>
+        <div class="footer__contacts">
+            <p class="footer__des">CONTACT</p>
+            <ul class="footer__list">
+            <li class="footer__link"><a href="mailto:hi@thalby.com">Email hi@thalby.com</a></li>
+            <li class="footer__link"><a href="">Help</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+<p class="footer__text">Thalby LLC © 2021</p>
+</div>
+</footer>
+</body>
+</html>
