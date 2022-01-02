@@ -40,6 +40,146 @@ margin-right: 372px;
    list-style-type: none;
 }
 
+/*Block Banner*/
+
+.main-banner{
+   padding: 185px 0 185px;
+   background: url(../img/bg_banner.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   z-index: 0;
+}
+.main-banner::after{
+content: '';
+display: block;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background: rgba(0, 0, 0, 0.5);
+z-index: -1;
+}
+
+.banner-container{
+   margin: 0 auto;
+   max-width: 1170px;
+   padding: 0 15px;
+   display: flex;
+}
+
+.banner-info{
+   max-width: 100%;
+   margin-right: 25px;
+}
+
+.logo-banner{
+max-width: 100%;
+max-height: 100%;
+margin-bottom: 72px;
+}
+
+.logo-img{
+width: 170px;
+height: 55px;
+}
+
+.banner-title{
+   font-family: 'Raleway';
+   font-size: 48px;
+   line-height: 56px;
+   align-items: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-bottom: 42px;
+   max-width: 650px;
+}
+
+.banner-title::after{
+   content: '';
+   display: block;
+   border-bottom: 1px solid #FFFFFF;
+   width: 100%;
+   max-width: 170px;
+   padding-top: 50px;
+}
+
+.colortext{
+color: #EC7979;
+font-weight: bold;
+font-family: 'Open Sans';
+}
+
+.banner-text{
+   max-width: 50%;
+   font-size: 18px;
+   line-height: 21px;
+   align-items: center;
+   color: #FFFFFF;
+   margin-bottom: 42px;
+}
+
+.btn-info{
+   border: 2px solid #FFFFFF;
+   box-sizing: border-box;
+   width: 100%;
+   max-width: 270px;
+   padding: 17px 90px;
+   background-color: transparent;
+   font-size: 18px;
+   line-height: 25px;
+   color: #FFFFFF;
+}
+
+.banner-form{
+   padding-top: 29px;
+   background-color: white;
+   height: 450px;
+   border-radius: 10px;
+}
+
+.form-title{
+   font-family: 'Open Sans';
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 33px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #333333;
+   margin-bottom: 73px;
+}
+
+.form{
+   text-align: center;
+   margin-bottom: 75px;
+}
+
+.item-form{
+   max-width: 100%;
+   width: 370px;
+   font-size: 14px;
+   line-height: 19px;
+   border: none;
+   border-bottom: 1px solid #BDBDBD;
+   padding: 33px 0 16px;
+}
+
+.form-btn{
+   box-sizing: border-box;
+   border:none;
+   width: 100%;
+   max-width: 470px;
+   background-color: #EC7979;
+   padding: 20px 193px;
+   font-size: 15px;
+   line-height: 20px;
+   color: #FFFFFF;
+   border-radius: 0 0 10px 10px;
+}
+
+
 /*Block Media*/ 
 .media{
    padding: 15px 0;
