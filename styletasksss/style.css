@@ -70,7 +70,7 @@ li{
     background-color: #AB4949;
 }
 .prime{
-    padding: 208px 0 185px;
+    padding: 288px 0 185px;
     background-image: url('../media/bgmain.jpg');
     background-repeat: no-repeat;
     background-position:center;
@@ -183,7 +183,6 @@ padding: 16px 0;
 font-size: 14px;
 font-weight: 400;
 line-height: 19px;
-color: #BDBDBD;
 }
 .prime__input[type="password"]{
     margin-bottom: 138px;
@@ -722,7 +721,6 @@ position: relative;
         font-size: 14px;
         font-weight: 400;
         line-height: 19px;
-        color: #BDBDBD;
         margin-bottom: 37px;
     } 
     .contacts__textarea{
@@ -732,7 +730,6 @@ position: relative;
         font-size: 14px;
         font-weight: 400;
         line-height: 19px;
-        color: #BDBDBD;
         resize: none;
     }    
     input::placeholder {
