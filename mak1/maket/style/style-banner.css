@@ -35,6 +35,7 @@
 
 .banner__block {
   display: flex;
+  margin-bottom: 42px;
 }
 
 .banner__logo {
