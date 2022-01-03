@@ -40,6 +40,7 @@
 .banner__logo {
   display: flex;
   height: 55px;
+  margin-bottom: 72px;
 }
 
 .banner__logo-ax {
