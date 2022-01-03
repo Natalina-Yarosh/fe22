@@ -13,7 +13,7 @@
          <div class="container">
             <div class="application-row">
                <form class="form application__form" action="">
-                  <h4 class="title application__title">Не нашли что искали? Оставьте заявку и мы разработаем программу
+                  <h4 class="application__title">Не нашли что искали? Оставьте заявку и мы разработаем программу
                      специально для вас!</h4>
                   <div class="application__form-group">
                      <input type="text" placeholder="Имя*" class="input">
@@ -29,6 +29,62 @@
             </div>
          </div>
       </section>
+      <div class="basket">
+         <div class="container">
+            <form class="form basket__form" action="">
+               <div class="delivery">
+                  <h4 class="title basket__title">Способ получения</h4>
+                  <input type="text" placeholder="Город" class="input">
+                  <input type="text" placeholder="Почта России" class="input">
+                  <div class="delivery__form-group">
+                     <input type="text" placeholder="Улица" class="input">
+                     <input type="text" placeholder="Дом" class="input">
+                     <input type="text" placeholder="Квартира" class="input">
+                     <input type="text" placeholder="Индекс" class="input">
+                  </div>
+                  <input type="text" placeholder="Добавить комментарий" class="input">
+               </div>
+               <div class="customer-data">
+                  <h4 class="title customer-data__title">Данные получателя</h4>
+                  <div class="customer-data__form-group">
+                     <input type="text" placeholder="Фамилия" class="input">
+                     <input type="text" placeholder="Имя" class="input">
+                     <input type="text" placeholder="Отчество" class="input">
+                  </div>
+                  <input type="tel" placeholder="Номер телефона" class="input">
+                  <p class="customer-data-tel__description">По этому номеру телефона мы с вяжемся с вами для
+                     подтверждения заказа</p>
+                  <input type="email" placeholder="Email" class="input">
+                  <p class="customer-data-email__description">На эту почту вам придет письмо с составом заказа, а так же
+                     трэк-номер для его отслеживания</p>
+                  <div class="customer-data__form-group-subscribe">
+                     <input type="checkbox" class="input" name="subscribe" id="news">
+                     <label class="custom-label__form-group-subscribe" for="news">
+                        <div class="custom-input__form-group-subscribe">
+                        </div>Подписаться на рассылку новинок и акций
+                     </label>
+                  </div>
+               </div>
+               <div class="payment">
+                  <h4 class="title payment__title">Способ оплаты</h4>
+                  <div class="payment__form-group">
+                     <input type="radio" class="input" name="payment" id="cash">
+                     <label class="custom-label" for="cash">
+                        <div class="custom-input"></div>
+                        Оплата при получении наличными или картой
+                     </label>
+                  </div>
+                  <div class="payment__form-group">
+                     <input type="radio" class="input" name="payment" id="card" checked>
+                     <label class="custom-label" for="card">
+                        <div class="custom-input"></div>
+                        Оплата банковской картой онлайн
+                     </label>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
    </main>
 
 </body>
