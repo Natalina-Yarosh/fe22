@@ -273,15 +273,8 @@ margin-left: 30px;
 }
 
 .tab__active{
-position: relative;
-}
-
-.tab__active::before{
-   content: '';
-   display: block;
    border: 1px solid #C6CBCD;
    border-radius: 5px 5px 0 0;
-<<<<<<< HEAD
    position: relative;
 }
 
@@ -294,14 +287,8 @@ position: relative;
    position: absolute;
    left: 0;
    bottom: -5px;
-=======
-   position: absolute;
-   width: 100%;
-   max-width: 100px;
-   margin: 0 auto;
-   margin-bottom: 40px;
->>>>>>> a15b913764fd959c2bfb5764543c0f47011796dc
 }
+
 .item__context{
    border: 1px solid #C6CBCD;
    display: flex;
