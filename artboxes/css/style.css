@@ -103,26 +103,122 @@ input:checked + label .custom-input::before {
 	width: 12px;
 	height: 6px;
 }
-.form-img {
+.catalog__tags-block {
+	display: flex;
+	max-width: 300px;
+	flex-wrap: wrap;
 }
+.catalog__tags label {
+	border: 2px solid #ffb0ba;
+	border-radius: 100px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.04em;
+	color: #ffb0ba;
+	padding: 8px 12px;
+	margin-right: 15px;
+}
+.catalog__tags .form-group:last-child {
+	margin-bottom: 0;
+}
+
+.catalog__form-img {
+	position: relative;
+}
+.catalog__form-img img.yellow {
+	position: absolute;
+	top: 55px;
+	left: 80px;
+}
+.catalog__form-img img.pink {
+	position: absolute;
+	top: 124px;
+	left: 30px;
+}
+.catalog__form-img img.green {
+	position: absolute;
+	top: 222px;
+	left: 62px;
+}
+
 .catalog__cards {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 }
 .catalog__productcard {
 	max-width: 300px;
 	margin-right: 30px;
+	background: #fbf7f6;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 15px;
+	margin-bottom: 30px;
 }
 .catalog__productcard:nth-child(3n) {
 	margin-right: 0;
 }
 .catalog__productcard-img {
+	border-radius: 15px 15px 0px 0px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 300px;
+	height: 232px;
+	margin-bottom: 29px;
+}
+.catalog__productcard:nth-of-type(3n-2) .catalog__productcard-img {
+	background-image: url(../assets/1.jpg);
+}
+.catalog__productcard:nth-of-type(3n-1) .catalog__productcard-img {
+	background-image: url(../assets/2.jpg);
+}
+.catalog__productcard:nth-of-type(3n) .catalog__productcard-img {
+	background-image: url(../assets/3.jpg);
+}
+.catalog__block {
+	padding: 0 25px 40px;
 }
 .catalog__text {
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.04em;
+	color: #000000;
+	opacity: 0.5;
+	margin-bottom: 9px;
 }
 .catalog__productprice {
+	margin-bottom: 37px;
+	display: flex;
+	justify-content: space-between;
 }
 .catalog__product {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.04em;
+	color: #371030;
 }
 .catalog__price {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: right;
+	letter-spacing: 0.04em;
+	color: #371030;
+}
+.catalog__productcard button {
+	cursor: pointer;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: #9a3c48;
+	background: #ffb0ba;
+	box-shadow: 3px 3px 0px 3px #de8e98;
+	border-radius: 100px;
+	border: none;
+	width: 250px;
+	padding: 19px 0 20px;
 }
