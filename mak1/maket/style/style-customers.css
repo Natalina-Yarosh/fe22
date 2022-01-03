@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.customers{
+    background: #fff;
+}
+
+.container__customers{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto 74px;
+}
+
+.customers__title{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.customers__title::after{
+    content: "";
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
+    position: absolute;
+    top: calc(100% + 40px );
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.customers__text{
+    font-family: Raleway;    
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.cutomers__opinions{
+    display: flex;
+}
+
+.customers__feedback{
+    font-family: Raleway;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    width: calc(100% - 60px ) /3;
+    background: #E2E2E2;
+    margin-right: 30px;
+    padding: 38px 20px 37px;
+    border-radius: 10px;
+    color: #86878B;
+    margin-bottom: 66px;
+    position: relative;    
+}
+
+.customers__feedback::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid #E2E2E2;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    left: 70px;
+    top: 100%;
+}
+
+.customers__feedback:last-child{
+margin-right: 0;
+}
+
+.customers__block{
+    display: flex;
+}
+
+.customers__item{
+    width: calc((100% - 60px) /3);
+    display: flex;
+    margin-right: 30px;
+}
+
+.customers__item:last-child{
+    margin-right: 0;
+}
+
+.customers__image img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.customers__image{
+    margin-right: 30px;
+}
+
+.customers__name{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000;
+    margin-bottom: 27px;
+}
+
+.customers__position{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+
+   

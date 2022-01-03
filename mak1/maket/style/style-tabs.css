@@ -98,6 +98,10 @@
   cursor: pointer;
 }
 
+.tabs__links{
+  text-decoration:none;
+}
+
 .tabs__btn:hover{
   background: #AB4949;
 }
