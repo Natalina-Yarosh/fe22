@@ -105,12 +105,15 @@
     <section id="features" class="tabs">
         <div class="container">
         <div class="tabs__selection">
+            <div class="tabs__list active">
+                <p class="tabs__level">TAB 1</p> 
+            </div>
             <div class="tabs__list">
-            <p class="tabs__level">TAB 1</p> </div>
+                <p class="tabs__level">TAB 2</p> 
+            </div>
             <div class="tabs__list">
-                <p class="tabs__level">TAB 2</p> </div>
-                <div class="tabs__list">
-                    <p class="tabs__level">TAB 3</p> </div>
+                <p class="tabs__level">TAB 3</p> 
+            </div>
         </div>
         <div class="tabs__block">
         <div class="tabs__item tabs__item-description">
@@ -159,7 +162,7 @@
     <section id="pricing" class="pricing">
         <div class="container">
             <h2 class="pricing__title">pricing options</h2>
-            <div class="pricing__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <p class="pricing__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="pricing__block">
                 <ul class="pricing__item">
                     <li class="pricing__type">Basic</li>
@@ -253,9 +256,10 @@
                     <input type="email" placeholder="Email" class="contacts__input">
                     <input type="password" placeholder="Password" class="contacts__input">
                 </div>
-                <div class="contacts__form-right">
-                    <textarea type="text" placeholder="Message" class="contacts__textarea"></textarea>
-                </div>
+                
+                    
+            <textarea type="text" placeholder="Message" class="contacts__textarea contacts__form-right"></textarea>
+                
             </div>
                 <button class="btn contact__btn">Send Message</button>
         </form>
