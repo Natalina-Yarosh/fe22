@@ -831,6 +831,7 @@ li {
    flex-direction: column;
    flex: 1 1 50%;
    margin-right: 30px;
+   width: calc((100% - 30px) / 2);
 }
 
 .contact-form__row:last-child {
@@ -866,14 +867,15 @@ li {
 }
 
 textarea {
+   width: calc((100% - 30px) / 2);
    border: none;
    border-bottom: 1px solid #bdbdbd;
    padding: 9px;
    font-size: 14px;
    line-height: 19px;
    resize: none;
-   height: 214px;
-   width: 570px;
+   /* height: 214px;
+   width: 570px; */
    transition: all 0.5s;
 }
 
