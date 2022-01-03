@@ -192,5 +192,9 @@
 
 .banner__btn__form:active {
   background: #ec7979;
-  box-shadow:  0px 0px 10px #AB4949;
+  box-shadow: 0px 0px 10px #ab4949;
+}
+
+.banner__form {
+  padding-top: 28px;
 }
