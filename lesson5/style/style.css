@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
+    outline: none;
 }
 
 .container {
@@ -66,7 +67,8 @@ li {
 /* BLOCK HEADER */
 
 .header {
-    background: #000000;
+    padding: 22px;
+    background-color: #000000;
 }
 
 .header .container {
@@ -75,19 +77,23 @@ li {
     align-items: center;
 }
 
-/* .header__logo {
-    padding: 30px;
-} */
+.header__logo {
+    width: 84px;
+    height: 31px;
+}
+
+.header__logo svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .header__menu {
     display: flex;
     flex-wrap: wrap;
 }
 
-.header__item a {
-    display: inline-block;
-    padding: 45px; /* НЕ УВЕРЕН В ЭТОМ ЗНАЧЕНИЕ. ВЗЯЛ ЕГО С ПОМОЩЬЮ ЛИНЕЙКИ СНИЗУ И СВЕРХУ ОТ ТЕКСТА
-    ИЛИ ЭТОТ PADDING ЛУЧШЕ ЗАДАВАТЬ САМИМ ССЫЛКАМ? */
+.header__item {
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -98,24 +104,193 @@ li {
 }
 
 .header__item a {
-    color: #ffffff;
     text-decoration: none;
+    padding: 30px;
+    color: #ffffff;
+    display: inline-block;
 }
 
-/* BLOCK SOCIAL */
-/* ЧТО-ТО МНЕ НЕ НРАВИТСЯ КАК Я СВЕРСТАЛ ЭТОТ БЛОК. НО СДЕЛАЛ, КАК СМОГ . ЕСЛИ ЗАМЕЧАНИЯ 
-ПО ВЁРСТКЕ ЭТОГО БЛОКА - ПИШИ */
-.social {
-    padding: 15px 0 18px;
-    background: #f8efef;
+.header__item a:visited {
+    color: #ffffff;
+}
+.header__item:hover {
+    background-color: #ec7979;
+}
+.header__item:active {
+    background-color: #ab4949;
 }
 
-.social__block {
+/* BLOCK BANNER */
+
+.banner {
+    padding: 210px 0 185px;
+    background-image: url(../img/bgbanner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.banner .container {
     display: flex;
 }
 
-.social__left {
-    max-width: 460px; /* 470 ДЕЛИЛ НА 1200 */
+.banner__description {
+    max-width: 57%; /*не верно считает в процентах 57%*/
+    margin-right: 30px;
+}
+
+.banner__logo {
+    width: 170px;
+    height: 55px;
+    margin-bottom: 73px;
+}
+.banner__logo svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 97px;
+    position: relative;
+}
+
+.banner__title::after {
+    content: "";
+    display: block;
+    width: 170px;
+    border-bottom: 1px solid #ffffff;
+    position: absolute;
+    top: calc(100% + 55px);
+}
+
+.banner__text {
+    max-width: 270px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    margin-bottom: 42px;
+}
+
+.banner__btn {
+    max-width: 270px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    margin-left: 0;
+}
+
+.banner__btn:hover {
+    border: 2px solid #ec7979;
+    color: #ec7979;
+}
+
+.banner__btn:active {
+    background-color: #ab4949;
+    border: 2px solid #ab4949;
+    color: #ffffff;
+}
+
+.banner__form {
+    width: 47%;
+    padding: 28px 50px 0;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.banner__form-title {
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 64px;
+}
+
+.banner__form-title span {
+    color: #ec7979;
+}
+
+.banner__input {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 16px 0;
+    display: block;
+    width: 370px;
+    margin-bottom: 22px;
+}
+
+.banner__input:last-child {
+    margin-bottom: 75px;
+}
+
+.banner__input::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #bdbdbd;
+
+    max-width: 571px;
+    width: 100%;
+    margin-bottom: 85px;
+}
+
+.banner__form-btn {
+    max-width: 470px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #ec7979;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.banner__form-btn:hover {
+    background-color: #ab4949;
+}
+
+.banner__form-btn:active {
+    background-color: #ec7979;
+}
+
+/* BLOCK SOCIAL */
+
+.social {
+    padding: 28px 18px;
+    background-color: #f8efef;
+}
+
+.social .container {
+    display: flex;
 }
 
 .social__title {
@@ -124,8 +299,7 @@ li {
     font-size: 24px;
     line-height: 33px;
     text-transform: capitalize;
-    color: #333333;
-    margin-bottom: 18px; /* при наведении на блок, показывает именно 18px */
+    margin-bottom: 20px;
 }
 
 .social__text {
@@ -135,28 +309,22 @@ li {
     color: #86878b;
 }
 
-.social__right {
-    /* width: 61%; указал остаток 100% - 39% */
+.social__icons {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.social__list {
-    display: flex;
-}
-
 .social__item {
-    margin-left: 45px;
-    width: 52px; /* размеры li нужно задавать или ссылкам? */
-    height: 52px;
+    margin-right: 30px;
 }
 
-.social__item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.social__item:hover path {
+    fill: #536dd4;
 }
 
 /* BLOCK TABS */
@@ -179,15 +347,13 @@ li {
     text-align: center;
     text-transform: uppercase;
     color: #333333;
-    padding: 10px;
-    position: relative;
+    padding: 13px;
 }
 
 .tabs__item:hover {
-    max-width: 201px;
+    max-width: 203px;
     border: 1px solid #c6cbcd;
     border-radius: 5px 5px 0px 0px;
-    cursor: pointer;
 }
 
 .tabs__block {
@@ -525,13 +691,56 @@ li {
 }
 
 .contact__form {
+    display: flex;
     margin-bottom: 50px;
+}
+
+.contact__form-group {
+    margin-right: 30px;
+}
+
+.contact__input {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 16px 0;
+    display: block;
+    width: 571px;
+    margin-bottom: 40px;
+}
+
+.contact__input:last-child {
+    margin-bottom: 0;
+}
+
+.contact__input::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #bdbdbd;
+
+    max-width: 571px;
+    width: 100%;
+    margin-bottom: 85px;
+}
+
+.contact__form textarea {
+    resize: none;
 }
 
 .contact__btn {
     color: #ffffff;
     background: #ec7979;
     border: none;
+}
+
+.contact__btn:hover {
+    color: #ffffff;
+    background-color: #ab4949;
 }
 
 /* BLOCK FOOTER */
