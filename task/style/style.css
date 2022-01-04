@@ -42,8 +42,9 @@
 
 .main__logo {
     display: block;
-    margin-top: 23px;
+    padding-top: 23px;
     width: 100%;
+    margin-bottom: 73px;
 }
 
 .main__title {
@@ -52,7 +53,7 @@
     text-transform: uppercase;
     color: #fff;
     font-weight: 500;
-    margin: 73px auto 97px;
+    margin: 0 auto 97px;
     position: relative;
 }
 
@@ -103,7 +104,7 @@
 .main__form {
     font-family: 'Open Sans', sans-serif;
     background: #FFFFFF;
-    border-radius: 10px 10 px 0 0;
+    border-radius: 10px 10px 0 0;
     max-width: 470px;
     padding: 28px 50px 0 53px;
     position: relative;
@@ -130,11 +131,11 @@
     width: 100%;
     border: none;
     border-bottom: 1px solid #BDBDBD;
-    padding: 0 1px 16px;
+    padding: 16px 1px 16px;
     font-size: 14px;
     line-height: 19px;
     color: #333333;
-    margin-bottom: 33px;
+    margin-bottom: 17px;
 }
 
 .form__input::placeholder {
@@ -147,7 +148,7 @@
 .form__btn {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
-    max-width: 470px;
+    max-width: 100%;
     background-color: #EC7979;
     border-radius: 0px 0px 10px 10px;
     font-size: 15px;
@@ -740,6 +741,10 @@
     color: #FFFFFF;
 }
 
+.contact{
+    margin-bottom: 40px;
+}
+
 .contact__title {
     font-weight: normal;
     font-size: 36px;
@@ -771,13 +776,14 @@
 
 .contact__form {
     display: flex;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    flex-wrap: wrap;
 }
 
 .form__content {
     margin-right: 30px;
-    max-width: 571px;
-    width: 100%;
+    /* max-width: 571px; */
+    width: calc((100% - 30px) / 2);
 }
 
 .contact__input {
@@ -789,8 +795,8 @@
     font-size: 14px;
     line-height: 19px;
     color: #333333;
-    padding: 0 1px 16px;
-    margin-bottom: 50px;
+    padding: 16px 1px 16px;
+    margin-bottom: 36px;
 }
 
 .contact__input:last-child {
@@ -806,11 +812,11 @@
 
 .contact__form textarea {
     font-family: 'Open Sans', sans-serif;
-    max-width: 569px;
+    /* max-width: 569px; */
     resize: none;
     border: none;
     border-bottom: 1px solid #BDBDBD;
-    width: 100%;
+    width: calc((100% - 30px) / 2);
     font-size: 14px;
     line-height: 19px;
     color: #333333;
@@ -834,7 +840,7 @@
     color: #FFFFFF;
     border: none;
     background-color: #EC7979;
-    margin: 0 auto 50px;
+    margin: 20px auto 0px;
     padding: 17px 0;
     cursor: pointer;
 }
