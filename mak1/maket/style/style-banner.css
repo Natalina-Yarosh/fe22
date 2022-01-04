@@ -8,7 +8,7 @@
   background-image: url(../image/backround.jpg);
   background-size: cover;
   background-position: center;
-  padding: 208px 170px 185px;
+  padding: 208px 0 185px;
   position: relative;
   background-repeat: no-repeat;
 }
@@ -35,7 +35,8 @@
 
 .banner__block {
   display: flex;
-  margin-bottom: 42px;
+  /* margin-bottom: 42px; */
+  align-items: flex-start;
 }
 
 .banner__logo {
@@ -101,6 +102,9 @@
   font-size: 18px;
   line-height: 25px;
   cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
 
 .banner__btn:hover {
@@ -138,6 +142,7 @@
 
 .banner__input {
   padding: 0 50px;
+  margin-bottom: 17px;
 }
 
 .banner__input input {
@@ -152,7 +157,8 @@
   max-width: 370px;
   outline: none;
   padding-bottom: 16px;
-  margin-bottom: 33px;
+  padding-top: 16px;
+  /* margin-bottom: 33px; */
 }
 
 .banner__input input::placeholder {
@@ -164,11 +170,12 @@
   color: #bdbdbd;
 }
 
-.banner__input:nth-child(4) {
-  margin-bottom: 75px;
+.banner__input:last-of-type{
+  margin-bottom: 0;
 }
 
 .banner__btn__form {
+  margin-top: 75px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -182,9 +189,9 @@
   padding: 25px;
   border-radius: 0px 0px 10px 10px;
   border: none;
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; */
   cursor: pointer;
 }
 

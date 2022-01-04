@@ -54,10 +54,10 @@
   width: calc((100% - 30px - 30px) / 3);
   /* width: 100%;  - не может быть 2 значения ширины)) */
   margin-right: 30px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .awesome__item:last-child {
@@ -72,7 +72,8 @@
   align-items: center;
   border: 1px solid #ec7979;
   border-radius: 50%;
-  margin-bottom: 71px;
+  /* margin-bottom: 71px; */
+  margin: 0 auto 71px;
 }
 
 .awesome__name {

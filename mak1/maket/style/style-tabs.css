@@ -33,7 +33,7 @@
   width: 100%;
 }
 
-.tabs__list li:nth-child(1) {
+.tabs__list li.active{
   border: 1px solid #c6cbcd;
   border-collapse: separate;
   border-radius: 5px 5px 0px 0px;
@@ -41,7 +41,7 @@
   position: relative;
 }
 
-.tabs__list li:nth-child(1)::after {
+.tabs__list li.active::after {
   content: "";
   display: block;
   width: 198px;
@@ -96,6 +96,7 @@
   background-color: #ec7979;
   border: none;
   cursor: pointer;
+  text-align: center;
 }
 
 .tabs__links{
@@ -112,8 +113,8 @@
 }
 
 .tabs__img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   display: flex;
 }
 

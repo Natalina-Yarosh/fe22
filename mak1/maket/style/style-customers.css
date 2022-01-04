@@ -6,13 +6,13 @@
 
 .customers{
     background: #fff;
-    padding-top: ;
+    margin-bottom: 74px;
 }
 
 .container__customers{
     max-width: 1200px;
     padding: 0 15px;
-    margin: 0 auto 74px;
+    margin: 0 auto ;
 }
 
 .customers__title{
@@ -98,14 +98,18 @@ margin-right: 0;
 }
 
 .customers__image img{
-    width: 70px;
-    height: 70px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .customers__image{
     margin-right: 30px;
+    width: 70px;
+    height: 70%;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .customers__name{
