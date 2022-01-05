@@ -166,7 +166,7 @@
     <div class="tabs">
         <div class="container">
             <div class="tabs__group">
-                <p class="tabs__item">
+                <p class="tabs__item active">
                     tabs 1
                 </p>
                 <p class="tabs__item">
@@ -204,8 +204,8 @@
             <p class="text advantages__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <article class="advantages__block">
-                <div class="advantages__item">
+            <div class="advantages__block">
+                <article class="advantages__item">
                     <div class="advantages__logo">
                         <img src="img/icon_1.png" alt="icon1">
                     </div>
@@ -216,8 +216,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
-                </div>
-                <div class="advantages__item">
+                </article>
+                <article class="advantages__item">
                     <div class="advantages__logo">
                         <img src="img/icon_2.png" alt="icon_2">
                     </div>
@@ -228,8 +228,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
-                </div>
-                <div class="advantages__item">
+                </article>
+                <article class="advantages__item">
                     <div class="advantages__logo">
                         <img src="img/icon_3.png" alt="icon_3">
                     </div>
@@ -240,8 +240,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
-                </div>
-            </article>
+                </article>
+            </div>
         </div>
     </section>
     <!-- BLOCK PRICING -->
@@ -252,8 +252,8 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div class="pricing__block">
-                <div class="pricing__elem">
-                    <ul class="pricing__list">
+                
+                    <ul class="pricing__list pricing__elem">
                         <li class="pricing__item">basic</li>
                         <li class="pricing__item">$10</li>
                         <li class="pricing__item">Free for life</li>
@@ -264,9 +264,8 @@
                         <li class="pricing__item">1 gb of space</li>
                         <li class="pricing__item">1 gb of space</li>
                     </ul>
-                </div>
-                <div class="pricing__elem">
-                    <ul class="pricing__list">
+                
+                    <ul class="pricing__list pricing__elem">
                         <li class="pricing__item">optima</li>
                         <li class="pricing__item">$20</li>
                         <li class="pricing__item">Free for life</li>
@@ -277,9 +276,8 @@
                         <li class="pricing__item">1 gb of space</li>
                         <li class="pricing__item">1 gb of space</li>
                     </ul>
-                </div>
-                <div class="pricing__elem">
-                    <ul class="pricing__list">
+                
+                    <ul class="pricing__list pricing__elem">
                         <li class="pricing__item">pro</li>
                         <li class="pricing__item">$30</li>
                         <li class="pricing__item">Free for life</li>
@@ -290,7 +288,7 @@
                         <li class="pricing__item">1 gb of space</li>
                         <li class="pricing__item">1 gb of space</li>
                     </ul>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -402,8 +400,9 @@
                     <input type="password" placeholder="Password" class="contact__input">
                 </div>
                 <textarea type="text" placeholder="Message" class="contact__input"></textarea>
+                <button type="submit" class="btn contact__btn">send message</button>
             </form>
-            <button type="submit" class="btn contact__btn">send message</button>
+           
         </div>
     </section>
     <!-- BLOCK FOOTER -->
