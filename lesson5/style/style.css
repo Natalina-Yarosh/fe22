@@ -149,6 +149,7 @@ li {
 
 .banner .container {
     display: flex;
+    align-items: flex-start;
 }
 
 .banner__description {
