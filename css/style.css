@@ -953,10 +953,10 @@ textarea:focus {
 
 @media (max-width: 1024px) {
    .header__wrapper {
-      padding-left: 100px;
+      /* padding-left: 100px; */
    }
    .banner {
-      padding: 137px 0 106px 100px;
+      padding: 137px 0 106px ;
    }
    .banner__content {
       margin: 17px 36px 0 0;
@@ -1074,7 +1074,7 @@ textarea:focus {
    }
    .about-item__text {
       font-size: 14px;
-      line-height: 14px;
+      line-height: 16px;
    }
    .pricing,
    .banner2,
@@ -1133,10 +1133,12 @@ textarea:focus {
       margin-right: 20px;
    }
    .reviews__content-bottom .reviews__text {
-      padding: 50px 40px 50px 40px;
+      padding: 50px 30px 50px ;
    }
    .reviews__content-bottom .reviews__text::after {
-      border-top: 25px solid #e2e2e2;
+      border-top: 20px solid #e2e2e2;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
    }
    .reviews__customer {
       max-width: 317px;
