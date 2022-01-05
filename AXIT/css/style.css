@@ -776,7 +776,7 @@ li.footer__img:hover path {
 		display: block;
 	}
 	.banner__block {
-		max-width: 288px;
+		/* max-width: 288px; */
 		margin: 0 auto 56px;
 	}
 	.banner__img {
@@ -793,16 +793,16 @@ li.footer__img:hover path {
 		transform: translateX(-50%);
 	}
 	.banner__text {
-		max-width: 288px;
-		margin-bottom: 42px;
+		max-width: 302;
+		margin:0 auto 42px;
 		text-align: center;
 	}
 	.banner__btn1 {
-		max-width: 288px;
+		max-width: 100%;
 	}
 
 	.banner__form {
-		max-width: 288px;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 	.banner__caption,
@@ -811,7 +811,7 @@ li.footer__img:hover path {
 		line-height: 19px;
 	}
 	.banner__form input {
-		width: 240px;
+		width: calc(100% - 40px);
 	}
 	.banner__form input:last-of-type {
 		margin-bottom: 51px;
