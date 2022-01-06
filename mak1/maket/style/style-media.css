@@ -8,6 +8,7 @@
 .social-media {
   background-color: #f8efef;
   margin-bottom: 100px;
+  padding: 14px 0 18px;
 }
 
 .container__social-media {
@@ -20,7 +21,7 @@
 .social-media__block:first-child {
   width: 42%;
   margin-right: 30px;
-  padding-top: 14px;
+  /* padding-top: 14px; */
 }
 
 .social-media__block:last-child {
@@ -48,7 +49,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
   color: #86878b;
 }
 
