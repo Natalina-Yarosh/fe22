@@ -421,6 +421,11 @@ img.tabs__img{
     justify-content: center;
     margin: 0 auto 72px;
 }
+.section__icon-picture{
+    width:65.49px;
+    height:65.49px;
+    object-fit: contain;
+}
 .section__title{
     font-size: 24px;
     line-height: 33px;
@@ -591,9 +596,9 @@ img.tabs__img{
     display: block;
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 30px solid #E2E2E2;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
     top:100%;
     left: 70px;
 }
@@ -950,6 +955,11 @@ textarea:focus{
         line-height: 24px;
         margin-bottom: 45.55px;
     }
+    .section__icon-picture{
+        width:56.46px;
+        height:56.46px;
+        object-fit: contain;
+    }
     .section__text{
         font-size: 14px;
         line-height: 16px;
@@ -1010,7 +1020,8 @@ textarea:focus{
         line-height: 16px;
     }
     .feedback__comment::after{
-        border-top: 25.7px solid #E2E2E2;
+        border-left: 12.85px solid transparent;
+        border-right: 12.85px solid transparent;
         left:70px;
     }
     .feedback__photo{
@@ -1230,7 +1241,7 @@ textarea:focus{
         width: calc(100%/3); 
     }
     .benefits{
-        padding: 49.5px 0 16.28px;
+        padding: 49.5px 0 60px;
     }
     .benefits__title{
         font-size: 18px;
@@ -1253,11 +1264,20 @@ textarea:focus{
     .section{
         width: 100%;
         margin-right: 0;
+        margin-bottom:43.72px;
+    }
+    .section:last-child{
+        margin-bottom:0;
     }
     .section__icon-square{
         width: 79.55px;
         height: 79.55px;
         margin: 0 auto 28.5px;
+    }
+    .section__icon-picture{
+        width:56.46px;
+        height:56.46px;
+        object-fit: contain;
     }
     .section__title{
         font-size: 18px;
@@ -1267,10 +1287,10 @@ textarea:focus{
     .section__text{
         font-size: 14px;
         line-height: 16px;
-        margin-bottom:43.72px;
+        margin-bottom:0;
     }
     .pricing{
-        padding: 46px 0 10px;
+        padding: 46px 0 26px;
     }
     .pricing__title{
         font-size: 24px;
@@ -1294,6 +1314,9 @@ textarea:focus{
         margin-right: 0;
         width: 100%;
         margin-bottom: 27px;
+    }
+    .pricing__item:last-child{
+        margin-bottom: 0;
     }
     .pricing__item:hover{
         top:0;
@@ -1319,7 +1342,7 @@ textarea:focus{
         line-height: 16px;
     }
     .feedback{
-        padding: 46px 0 23px;
+        padding: 46px 0 73px;
     }
     .feedback__title{
         font-size: 24px;
@@ -1343,6 +1366,9 @@ textarea:focus{
         margin-right: 0;
         margin-bottom: 50px;
     }
+    .feedback__review:last-child{
+        margin-bottom: 0;
+    }
     .feedback__comment{
         padding: 50px 15px 50px 15px;
         font-size: 14px;
@@ -1350,7 +1376,8 @@ textarea:focus{
         color: #86878B;
     }
     .feedback__comment::after{
-        border-top: 25.54px solid #E2E2E2;
+        border-left: 12.77px solid transparent;
+        border-right: 12.77px solid transparent;
         left:50px;
     }
     .feedback__photo{
