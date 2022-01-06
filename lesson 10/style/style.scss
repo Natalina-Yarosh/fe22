@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$wrapBgPseudo:  rgba(15, 15, 15, 0.85);
+$colorWhite: #fff;
+$footerLinkBtn: #0F0F0F;
+$formInput:rgba(255, 255, 255, 0.4);
+$formInputHover: rgba(133, 126, 126, 0.4);
+$footerLinkText: #D0D0D0;
+$placeholderText: #969696;
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+}
+
+.footer{
+    padding: 80px 0 101px;
+    position: relative;
+
+    background-image: url(../images/img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: $wrapBgPseudo;
+    }
+
+    .container{
+        position: relative;
+        z-index: 1;
+        display: flex;
+    }
+
+    &__item{
+        width: calc((100% - 62px) / 3);
+        margin-right: 31px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__title{
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 40px;
+        color: $colorWhite;
+        text-transform: uppercase;
+    }
+
+    &__text{
+        font-size: 14px;
+        line-height: 21px;
+        color: $colorWhite;
+    }
+
+    &__categories{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+
+    &__link{
+        padding: 10px 20px ;
+        color: $footerLinkText;
+        background-color: $footerLinkBtn;
+        font-size: 14px;
+        line-height: 21px;
+        margin: 10px;
+        text-decoration: none;
+    }
+
+    .form{
+        margin-top: 37px;
+        display: flex;
+
+        &__input{
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 21px;
+            background-color: $formInput;
+            color: $colorWhite;
+            border: none;
+            &::placeholder{
+                font-size: 14px;
+                line-height: 21px;
+                color: $placeholderText;
+            }
+            &:focus{
+                outline: none;
+                background-color: $formInputHover;
+            }
+        }
+        &__btn{
+            padding: 10px 20px;
+            font-size: 14px;
+            line-height: 21px;
+            color: $colorWhite;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background-color: $footerLinkBtn;
+            border: none;
+
+            &:hover{
+                
+            }
+        }
+    }
+
+
+}
+
+
+.text{
+    font-size: 20px;
+    @media(max-width:992px){
+        font-size: 40px;
+    }
+    @media(max-width:767px){
+        font-size: 40px;
+    }
+}
+
+
