@@ -191,15 +191,10 @@
 }
 
 .custom__img {
-    position: relative;
+    position: absolute;
     z-index: -1;
 }
 
 .form__group input:checked+label .custom-checkbox .custom__img {
-    display: block;
-    position: absolute;
     z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
