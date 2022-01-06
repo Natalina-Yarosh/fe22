@@ -104,10 +104,8 @@
 .main__form {
     font-family: 'Open Sans', sans-serif;
     background: #FFFFFF;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     max-width: 470px;
-    padding: 28px 50px 0 53px;
-    position: relative;
 }
 
 .form__title {
@@ -115,7 +113,7 @@
     font-size: 24px;
     line-height: 33px;
     text-transform: uppercase;
-    margin-bottom: 75px;
+    margin: 28px 50px 59px;
     color: #333333;
     text-align: center;
 }
@@ -128,14 +126,14 @@
 .form__input {
     font-family: 'Open Sans', sans-serif;
     display: block;
-    width: 100%;
+    width: calc(100% - 100px);
     border: none;
     border-bottom: 1px solid #BDBDBD;
     padding: 16px 1px 16px;
     font-size: 14px;
     line-height: 19px;
     color: #333333;
-    margin-bottom: 17px;
+    margin: 0 50px 17px;
 }
 
 .form__input::placeholder {
@@ -148,7 +146,7 @@
 .form__btn {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
-    max-width: 100%;
+    max-width: 470px;
     background-color: #EC7979;
     border-radius: 0px 0px 10px 10px;
     font-size: 15px;
@@ -157,9 +155,8 @@
     border: none;
     display: block;
     padding: 23px;
-    position: absolute;
-    left: 0;
     cursor: pointer;
+    margin-top: 75px;
 }
 
 .form__btn:hover {
@@ -741,8 +738,8 @@
     color: #FFFFFF;
 }
 
-.contact{
-    margin-bottom: 40px;
+.contact {
+    margin-bottom: 50px;
 }
 
 .contact__title {
@@ -776,13 +773,11 @@
 
 .contact__form {
     display: flex;
-    /* margin-bottom: 50px; */
     flex-wrap: wrap;
 }
 
 .form__content {
     margin-right: 30px;
-    /* max-width: 571px; */
     width: calc((100% - 30px) / 2);
 }
 
@@ -812,7 +807,6 @@
 
 .contact__form textarea {
     font-family: 'Open Sans', sans-serif;
-    /* max-width: 569px; */
     resize: none;
     border: none;
     border-bottom: 1px solid #BDBDBD;
@@ -840,7 +834,7 @@
     color: #FFFFFF;
     border: none;
     background-color: #EC7979;
-    margin: 20px auto 0px;
+    margin: 50px auto 0px;
     padding: 17px 0;
     cursor: pointer;
 }
