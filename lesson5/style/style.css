@@ -254,7 +254,7 @@ li {
 .banner__input:last-child {
     margin-bottom: 0px;
 }
-.form-group{
+.form-group {
     margin-bottom: 75px;
 }
 
@@ -358,13 +358,12 @@ li {
     position: relative;
 }
 
-.tabs__item.active{
+.tabs__item.active {
     border: 1px solid #c6cbcd;
     border-radius: 5px 5px 0px 0px;
-
 }
-.tabs__item.active::before{
-    content: '';
+.tabs__item.active::before {
+    content: "";
     display: block;
     position: absolute;
     left: 0;
@@ -373,8 +372,6 @@ li {
     height: 10px;
     background-color: #fff;
 }
-
-
 
 .tabs__block {
     display: flex;
@@ -734,12 +731,12 @@ li {
     /* margin-bottom: 40px; */
 }
 
-.contact__form-group>.contact__input {
+.contact__form-group > .contact__input {
     width: 100%;
     margin-bottom: 40px;
 }
 
-.contact__form-group>.contact__input:last-child {
+.contact__form-group > .contact__input:last-child {
     margin-bottom: 0;
 }
 

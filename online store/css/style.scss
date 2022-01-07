@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+$headerBg: #313131;
+$colorLink: #FFFFFF;
+
+// BLOCK HEADER
+.header{
+    background-color: $headerBg;
+
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link{
+        display: inline-block;
+        padding: 10px 12px;
+        color: $colorLink;
+
+        &:hover{
+            background-color: #245462;
+        }
+    }
+
+    & .contact{
+        position: relative;
+
+        &::before{
+            content: url(../img/phone.svg);
+            display: block;
+            position: absolute;
+            left: -10px;
+            transform: translate(-100%, 0);
+        }
+    }
+
+    & .delivery{
+        position: relative;
+
+        &::before{
+            content: url(../img/delivery-icon.svg);
+            display: block;
+            position: absolute;
+            left: -10px;
+            transform: translate(-100%, 0);
+        }
+    }
+
+}
