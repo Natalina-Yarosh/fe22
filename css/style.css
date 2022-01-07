@@ -1009,6 +1009,10 @@ textarea:focus {
       font-size: 14px;
       line-height: 16px;
    }
+   .social-media__icon svg {
+      width: 64px;
+      height: 64px;
+   }
    .tabs {
       padding: 50px 0 98px 0;
    }
@@ -1170,7 +1174,14 @@ textarea:focus {
       max-width: 318px;
    }
    .footer__wrapper {
-      padding: 40px 0 30px 0;
+      padding: 35px 0 30px 0;
+   }
+   .footer-items__icon svg {
+      width: 45px;
+      height: 45px;
+   }
+   .footer__items {
+      margin-bottom: 38px;
    }
 }
 @media (max-width: 767px) {
@@ -1187,16 +1198,18 @@ textarea:focus {
       padding: 84px 0 50px 0;
    }
    .banner .container {
-      display: block;
+      flex-direction: column;
+      align-items: center;
    }
    .banner__content {
-      flex-basis: auto;
+      align-items: center;
       margin: 0;
    }
    .banner-logo__logo1 {
       display: none;
    }
    .banner__title {
+      max-width: 288px;
       font-size: 36px;
       line-height: 42px;
       margin-bottom: 85px;
@@ -1221,7 +1234,8 @@ textarea:focus {
       padding: 11px 0 11px 0;
    }
    .banner__form {
-      flex: 0 0 288px;
+      max-width: 288px;
+      width: 100%;
    }
    .banner__form-row {
       padding-top: 38px;
@@ -1245,15 +1259,18 @@ textarea:focus {
       padding: 45px 0;
    }
    .social-media .container {
-      display: block;
+      flex-direction: column;
+      align-items: center;
    }
    .social-media__title {
+      max-width: 288px;
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 27px;
       text-align: center;
    }
    .social-media__description {
+      max-width: 271px;
       font-size: 14px;
       line-height: 16px;
       text-align: center;
@@ -1262,6 +1279,12 @@ textarea:focus {
    .social-media__icon svg {
       width: 35px;
       height: 35px;
+      margin-right: 20px;
+   }
+   .social-media__icon:last-child svg {
+      width: 35px;
+      height: 35px;
+      margin-right: 0;
    }
    .social-media__item:last-child {
       padding-left: 0;
@@ -1269,20 +1292,34 @@ textarea:focus {
    .tabs {
       padding: 41px 0 51px 0;
    }
+   .tabs .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
    .tabs__list li {
       max-width: 92px;
    }
    .tabs__content {
-      display: block;
+      display: flex;
+      flex-direction: column;
    }
    .tabs__item:first-child {
-      padding: 47px 20px 30px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 288px;
+      width: 100%;
+      padding: 31px 20px 30px 25px;
+   }
+   br {
+      display: none;
    }
    .tabs__title {
       font-size: 18px;
       line-height: 25px;
       text-align: center;
-      margin-bottom: 56px;
+      margin-bottom: 60px;
    }
    .tabs__text {
       font-size: 13px;
@@ -1304,10 +1341,16 @@ textarea:focus {
    .about {
       padding: 0 0 60px;
    }
+   .about .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
    .about__title {
       font-size: 18px;
       line-height: 21px;
       margin-bottom: 76px;
+      max-width: 288px;
    }
    .about__title::after {
       max-width: 134px;
@@ -1317,9 +1360,12 @@ textarea:focus {
       font-size: 13px;
       line-height: 15px;
       margin-bottom: 83px;
+      max-width: 288px;
    }
    .about__row {
-      display: block;
+      flex-direction: column;
+      max-width: 288px;
+      width: 100%;
    }
    .about__row .about-item {
       margin-right: 0;
@@ -1348,10 +1394,18 @@ textarea:focus {
    .reviews {
       padding: 48px 0 26px;
    }
+   .pricing .container,
+   .reviews .container,
+   .banner2 .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
    .pricing__title,
    .reviews__title,
    .banner2__title,
    .contact__title {
+      max-width: 288px;
       font-size: 24px;
       line-height: 28px;
       margin-bottom: 72px;
@@ -1367,12 +1421,15 @@ textarea:focus {
    .reviews .reviews__text,
    .banner2__text,
    .contact__description {
+      max-width: 288px;
       font-size: 14px;
       line-height: 16px;
       margin-bottom: 24px;
    }
    .pricing__item {
-      display: block;
+      flex-direction: column;
+      max-width: 288px;
+      width: 100%;
    }
    .pricing__list {
       margin: 0 0 27px 0;
@@ -1397,7 +1454,7 @@ textarea:focus {
       padding: 11px 0;
    }
    .reviews__content-bottom {
-      display: block;
+      flex-direction: column;
    }
    .reviews__item {
       margin: 0 0 30px 0;
@@ -1450,14 +1507,30 @@ textarea:focus {
    .contact {
       padding: 48px 0 40px 0;
    }
+   .contact .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .contact__form {
+      display: flex;
+      flex-direction: column;
+      max-width: 288px;
+      width: 100%;
+   }
    .contact__form-group {
-      display: block;
-      margin-bottom: 50px;
+      flex-direction: column;
    }
    .contact-form__row {
-      display: block;
-      margin-right: 0;
+      margin: 0 0 50px 0;
       width: 100%;
+   }
+   .contact-form__row:last-child {
+      height: 182px;
+      margin-bottom: 0;
+   }
+   .contact__description {
+      margin-bottom: 64px;
    }
    .contact__btn {
       max-width: 288px;
@@ -1468,11 +1541,14 @@ textarea:focus {
    }
    .footer__items {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       margin-bottom: 42px;
    }
    .footer-items__icon {
-      margin-right: 0;
+      margin-right: 20px;
+   }
+   .footer-items__icon:last-child {
+      margin-right: 0px;
    }
    .footer-items__icon svg {
       width: 26px;
