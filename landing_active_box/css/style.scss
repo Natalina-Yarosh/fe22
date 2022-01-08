@@ -7,3 +7,108 @@
    font-family: "Raleway", sans-serif;
    outline: none;
 }
+
+$colorTextTeamFeatures: #6c7279;
+$colorWhite: #fff;
+$colorRed: #ff4343;
+$colorBlack: #2d3033;
+$colorIconsBorderTeam: #c6cbcd;
+$sizeTextTeamFeatures: 18px;
+$lineHeitTeamFeatures: 21px;
+
+@mixin titleTeamFeatures {
+   font-size: 24px;
+   line-height: 28px;
+   margin-bottom: 6px;
+   text-transform: capitalize;
+   color: $colorBlack;
+}
+
+@mixin positionTeam {
+   font-size: $sizeTextTeamFeatures;
+   line-height: $lineHeitTeamFeatures;
+   color: $colorRed;
+   margin-bottom: 18px;
+   text-transform: uppercase;
+}
+
+@mixin textTeamFeatures {
+   font-size: $sizeTextTeamFeatures;
+   line-height: $lineHeitTeamFeatures;
+   margin-bottom: 38px;
+   color: $colorTextTeamFeatures;
+}
+
+@mixin imgTeam {
+   width: 270px;
+   height: 270px;
+   overflow: hidden;
+   margin-bottom: 31px;
+}
+
+@mixin picTeam {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+@mixin icon {
+   &-link {
+      width: 39px;
+      height: 39px;
+      border: 1px solid $colorIconsBorderTeam;
+      margin-right: 6px;
+      display: flex;
+      justify-content: center;
+      &:last-child {
+         margin-right: 0;
+      }
+      &:hover path {
+         fill: rgb(60, 60, 153);
+         color: rgb(60, 60, 153);
+      }
+      svg {
+         align-self: center;
+      }
+   }
+}
+
+.container {
+   max-width: 1200px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.team {
+   padding: 114px 0;
+
+   &__wrapper {
+      display: flex;
+   }
+   &__item {
+      margin-right: 30px;
+      width: calc((100% - 90px) / 4);
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+   &__img {
+      @include imgTeam();
+      img {
+         @include picTeam();
+      }
+   }
+   &__title-item {
+      @include titleTeamFeatures();
+   }
+   &__position {
+      @include positionTeam();
+   }
+   &__text {
+      @include textTeamFeatures();
+   }
+   &__icons {
+      display: flex;
+      @include icon();
+   }
+}
