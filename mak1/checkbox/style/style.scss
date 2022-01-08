@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+$bgColor: #333333;
+$colorForm: #ffffff;
+$colorBorder: #999999;
+$colorBtn: #ff0404;
+
+.application {
+  background-color: $bgColor;
+  padding: 80px 0px;
+  &__title {
+    color: $colorForm;
+    text-align: center;
+    font-family: Fira Sans Extra Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 44px;
+  }
+  &__block {
+    display: flex;
+    .application__item {
+      width: calc((100% - 40px) / 3);
+      margin-right: 20px;
+    }
+    .application__item:last-child {
+      margin-right: 0px;
+      font-family: Fira Sans Extra Condensed;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      opacity: 0.9;
+      align-self: flex-end;
+    }
+  }
+  &__input {
+    border-radius: 5px;
+    border: 1px solid $colorBorder;
+    color: $colorForm;
+    padding: 15px 18px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    width: 100%;
+  }
+  &__input:nth-child(2) {
+    margin-bottom: 0px;
+  }
+  &__input::placeholder {
+    color: $colorForm;
+  }
+  &__checkbox {
+    margin-bottom: 28px;
+  }
+  &__btn {
+    width: 100%;
+    padding: 13px;
+    background: $colorBtn;
+    border-radius: 5px;
+    border: none;
+    color: $colorForm;
+    cursor: pointer;
+  }
+  &__check {
+    display: none;
+  }
+
+  &__checkbox label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.container__application {
+  padding: 0 15px;
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
+label .custom-input {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $colorBorder;
+  background: transparent;
+  margin-right: 11px;
+  position: relative;
+}
+
+.application__checkbox
+  .application__check:checked
+  + label
+  .custom-input::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/img.svg);
+  background-repeat: no-repeat;
+  display: block;
+}

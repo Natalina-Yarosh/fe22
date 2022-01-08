@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.application {
+  background-color: #333333;
+  padding: 80px 0px;
+}
+
+.application__title {
+  color: #ffffff;
+  text-align: center;
+  font-family: Fira Sans Extra Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 44px;
+}
+
+.application__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.application__block .application__item {
+  width: calc((100% - 40px) / 3);
+  margin-right: 20px;
+}
+
+.application__block .application__item:last-child {
+  margin-right: 0px;
+  font-family: Fira Sans Extra Condensed;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.9;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.application__input {
+  border-radius: 5px;
+  border: 1px solid #999999;
+  color: #ffffff;
+  padding: 15px 18px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.application__input:nth-child(2) {
+  margin-bottom: 0px;
+}
+
+.application__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.application__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.application__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.application__input::placeholder {
+  color: #ffffff;
+}
+
+.application__checkbox {
+  margin-bottom: 28px;
+}
+
+.application__btn {
+  width: 100%;
+  padding: 13px;
+  background: #ff0404;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.application__check {
+  display: none;
+}
+
+.application__checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container__application {
+  padding: 0 15px;
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
+label .custom-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999999;
+  background: transparent;
+  margin-right: 11px;
+  position: relative;
+}
+
+.application__checkbox
+.application__check:checked
++ label
+.custom-input::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 60%;
+  left: 70%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(../img/img.svg);
+  background-repeat: no-repeat;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
