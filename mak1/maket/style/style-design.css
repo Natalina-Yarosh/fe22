@@ -79,10 +79,7 @@
   max-width: 370px;
   width: 100%;
   padding: 16px;
-  border: 2px solid #fff;
-  /* position: relative;
-  left: 50%;
-  transform: translateX(-50%); */
+  border: 2px solid #fff; 
   margin: 0 auto;
   text-align: center;
   cursor: pointer;
