@@ -64,7 +64,7 @@ input:focus{
       color: #FFFFFF;
       min-width: 137px;
       height: 100%;
-      padding: 40px 0;
+      padding: 28px 0;
 }
 
 .navigation__item:hover{
@@ -85,6 +85,7 @@ input:focus{
    background-size: cover;
    position: relative;
    z-index: 1;
+   padding: 200px 0 185px;
 }
 
 .mp::after{
@@ -101,7 +102,7 @@ input:focus{
 
 .mp .container {
    max-width: 1200px;
-   padding: 208px 15px 185px;
+   padding: 0px 15px ;
    margin: 0 auto;
    display: flex;
 }
@@ -172,10 +173,12 @@ input:focus{
 
 .mp__item {
    max-width: 470px;
+   width: 100%;
 }
 .mp__form {
    background-color: #FFFFFF;
    border-radius: 10px;
+   padding-top: 30px;
 }
 .mp__input_title {
    font-family: Open Sans;
@@ -187,7 +190,7 @@ input:focus{
    text-transform: uppercase;
    color: #333333;
    margin-bottom: 59px;
-   padding: 30px 52px 0px;
+   /* padding: 30px 52px 0px; */
 }
 .mp__FREE {
    color: #EC7979;
@@ -207,8 +210,10 @@ input:focus{
    font-size: 14px;
    line-height: 19px;
    color: #000;
-   padding: 16px 50px 16px 53px;
+   padding: 16px 0 ;
    border-bottom: 1px solid #BDBDBD;
+   width: calc(100% - 100px);
+   margin: 0 auto;
 }
 
 
@@ -225,7 +230,7 @@ input:focus{
    border: none;  
    color: #fff;
    padding: 20px 0;
-   margin-top: 94px;
+   margin-top: 75px;
 }
 
 /*.mp__input[type="password"]{
@@ -327,7 +332,7 @@ input:focus{
    text-align: center;
    color: #000000;
    margin-bottom: 30px;
-   padding: 15px 0;
+   /* padding: 15px 0; */
 }
 .awesome__item_text {
    font-family: Raleway;
@@ -337,7 +342,7 @@ input:focus{
    line-height: 21px;
    text-align: center;
    color: #000000;
-   padding: 0 15px;
+   /* padding: 0 15px; */
 }
 
 
@@ -493,6 +498,14 @@ input:focus{
    justify-content: center;
 }
 
+.social__img a{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 .social__img svg{
    width: 100%;
    height: 100%;
@@ -516,10 +529,11 @@ input:focus{
 
 .options{
    background: #F5F5F5;
+   padding: 50px 0;
 }
 .cont{
    max-width: 1200px;
-   padding: 50px 15px;
+   padding: 0 15px;
    margin: 0 auto;
 }
 .options__title{
@@ -532,7 +546,7 @@ input:focus{
    text-transform: uppercase;
    color: #000000;
    margin-bottom: 80px;
-   padding: 50px 0;
+   /* padding: 50px 0; */
    
 }
 .options__title::after{
@@ -659,11 +673,16 @@ input:focus{
 
 .customers__block{
    display: flex;
-   width: calc(100% - 30px) / 3;
+   /* width: calc(100% - 30px) / 3;
+   margin-right: 30px; */
+}
+
+.customers__item{
+   width: calc((100% - 30px) / 3);
    margin-right: 30px;
 }
 
-.customers__block:last-child{
+.customers__item:last-child{
    margin-right: 0;
 }
 
@@ -675,7 +694,7 @@ input:focus{
    color: #86878B;
    background-color: #e2e2e2;
    border-radius: 10px;
-   margin-right: 30px;
+   /* margin-right: 30px; */
    padding: 38px 15px;
    position: relative;
    margin-bottom: 66px;
@@ -694,9 +713,9 @@ input:focus{
    left: 70px;
    }
 
-.customers__text:last-child{
+/* .customers__text:last-child{
    margin-right: 0px;
-}
+} */
 
 .customers__manager{
    display: flex;
@@ -705,10 +724,15 @@ input:focus{
    margin-left: 30px;
 }
 
-.customers__img{
+.customers__icon{
    width: 70px;
    height: 70px;
    border-radius: 50%;
+   overflow: hidden;
+}
+.customers__img{
+   width: 100%;
+   height: 100%;
    object-fit: cover;
 }
 
@@ -825,11 +849,13 @@ input:focus{
 }
 
 /* Contact US */
-
+.contact {
+   margin-bottom: 50px;
+}
 .contact .container{
    max-width: 1200px;
    padding: 0 15px;
-   margin: 0 auto 50px
+   margin: 0 auto;
 }
 .contact__title {
    font-style: normal;
@@ -869,14 +895,14 @@ input:focus{
 .contact__info {
    margin-right: 30px;
    width: calc((100% - 30px) / 2);
-   width: 100%;
+   /* width: 100%; */
 }
 .contact__input {
    display: block;
    outline: none;
    border: none;
    border-bottom: 1px solid #BDBDBD;
-   padding: 16px;
+   padding: 16px 0;
    margin-bottom: 50px;
    width: 100%;
    align-items: center;
@@ -893,7 +919,7 @@ input:focus{
 .contact__ta {
    outline: none;
    resize: none;
-   width: 100%;
+   width: calc((100% - 30px) / 2);
    border: none;
    border-bottom: 1px solid #BDBDBD;
    font-family: Open Sans;
