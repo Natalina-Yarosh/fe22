@@ -39,37 +39,31 @@ a {
 
 .header__link {
   display: inline-block;
-  padding: 10px 12px;
+  padding: 10px 12px 10px 50px;
   color: #FFFFFF;
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .header__link:hover {
   background-color: #245462;
 }
 
-.header .contact {
-  position: relative;
+.header__link::before {
+  display: block;
+  position: absolute;
+  left: 15px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  top: 50%;
 }
 
 .header .contact::before {
   content: url(../img/phone.svg);
-  display: block;
-  position: absolute;
-  left: -10px;
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
-}
-
-.header .delivery {
-  position: relative;
 }
 
 .header .delivery::before {
   content: url(../img/delivery-icon.svg);
-  display: block;
-  position: absolute;
-  left: -10px;
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
 }
 /*# sourceMappingURL=style.css.map */

@@ -36,35 +36,33 @@ $colorLink: #FFFFFF;
 
     &__link{
         display: inline-block;
-        padding: 10px 12px;
+        padding: 10px 12px 10px 50px;
         color: $colorLink;
+        position: relative;
+        font-size: 14px;
+        line-height: 14px;
 
         &:hover{
             background-color: #245462;
         }
+        &::before{
+            display: block;
+            position: absolute;
+            left: 15px;
+            transform: translate(0, -50%);
+            top: 50%;
+        }
     }
 
     & .contact{
-        position: relative;
-
         &::before{
             content: url(../img/phone.svg);
-            display: block;
-            position: absolute;
-            left: -10px;
-            transform: translate(-100%, 0);
         }
     }
 
     & .delivery{
-        position: relative;
-
         &::before{
-            content: url(../img/delivery-icon.svg);
-            display: block;
-            position: absolute;
-            left: -10px;
-            transform: translate(-100%, 0);
+            content: url(../img/delivery-icon.svg); 
         }
     }
 
