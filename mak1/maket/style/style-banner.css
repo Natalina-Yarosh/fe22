@@ -159,6 +159,14 @@
   padding-top: 16px;
 }
 
+.banner__input input:hover {
+  border-bottom: 1px solid #ec7979;
+}
+
+.banner__input input:focus{
+  border-bottom: 1px solid #000;
+}
+
 .banner__input input::placeholder {
   font-family: Open Sans;
   font-style: normal;
