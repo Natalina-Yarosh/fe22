@@ -50,14 +50,14 @@
   list-style-type: none;
   text-align: center;
   padding: 28px;
-  width: 166.63px;
+  min-width: 166.63px;
 }
 
 .header__item:hover {
   background: #ec7979;
-  text-transform: uppercase;
+  /* text-transform: uppercase;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 18px; */
 }
 
 .header__item:active {
