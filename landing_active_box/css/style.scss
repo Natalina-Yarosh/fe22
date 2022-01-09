@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
 
 * {
    padding: 0;
@@ -11,7 +11,9 @@
 $colorTextTeamFeatures: #6c7279;
 $colorWhite: #fff;
 $colorRed: #ff4343;
-$colorBlack: #2d3033;
+$colorDarkRed: #e71414;
+$colorDarkBlack: #2d3033;
+$colorBlack: #000000;
 $colorIconsBorderTeam: #c6cbcd;
 $sizeTextTeamFeatures: 18px;
 $lineHeitTeamFeatures: 21px;
@@ -21,7 +23,17 @@ $lineHeitTeamFeatures: 21px;
    line-height: 28px;
    margin-bottom: 6px;
    text-transform: capitalize;
+   color: $colorDarkBlack;
+   font-weight: 700;
+}
+
+@mixin titleDownload {
+   font-size: 30px;
+   line-height: 35px;
+   margin-bottom: 25px;
    color: $colorBlack;
+   font-weight: 500;
+   text-align: center;
 }
 
 @mixin positionTeam {
@@ -30,6 +42,16 @@ $lineHeitTeamFeatures: 21px;
    color: $colorRed;
    margin-bottom: 18px;
    text-transform: uppercase;
+   font-weight: 400;
+}
+
+@mixin textDownload {
+   font-size: $sizeTextTeamFeatures;
+   line-height: $lineHeitTeamFeatures;
+   color: $colorBlack;
+   text-align: center;
+   margin-bottom: 50px;
+   font-weight: 700;
 }
 
 @mixin textTeamFeatures {
@@ -37,13 +59,23 @@ $lineHeitTeamFeatures: 21px;
    line-height: $lineHeitTeamFeatures;
    margin-bottom: 38px;
    color: $colorTextTeamFeatures;
+   font-weight: 400;
 }
 
 @mixin imgTeam {
-   width: 270px;
-   height: 270px;
-   overflow: hidden;
+   position: relative;
    margin: 0 auto 31px;
+   &:before {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+   }
+   & img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+   }
 }
 
 @mixin iconFeatures {
@@ -71,10 +103,37 @@ $lineHeitTeamFeatures: 21px;
       &:last-child {
          margin-right: 0;
       }
-      &:hover path {
-         fill: rgb(60, 60, 153);
-         color: rgb(60, 60, 153);
+      &:hover {
+         border: 1px solid $colorRed;
       }
+      &:hover path {
+         fill: $colorRed;
+         color: $colorRed;
+      }
+   }
+}
+
+@mixin btn {
+   font-size: 24px;
+   line-height: 28px;
+   color: $colorWhite;
+   font-weight: 900;
+   display: block;
+   max-width: 370px;
+   width: 100%;
+   text-transform: capitalize;
+   text-align: center;
+   margin: 0 auto;
+   padding: 25px 0 25px 0;
+   background-color: $colorRed;
+   transition: all 1s;
+   border: none;
+   &:hover {
+      background-color: #e71414;
+   }
+   &:active {
+      background-color: $colorRed;
+      box-shadow: 4px 4px 30px 0px $colorRed;
    }
 }
 
@@ -88,16 +147,16 @@ $lineHeitTeamFeatures: 21px;
    padding: 116px 0 133px;
    &__wrapper {
       display: flex;
-      margin-bottom: 88px;
-      &:last-child {
-         margin-bottom: 0;
-      }
+      flex-wrap: wrap;
    }
    &__item {
       margin-right: 30px;
-      width: calc((100% - 60px) / 3);
-      &:last-child {
+      width: 370px;
+      &:nth-child(3n + 3) {
          margin-right: 0;
+      }
+      &:first-child {
+         margin-bottom: 87px;
       }
    }
    &__icon {
@@ -111,10 +170,12 @@ $lineHeitTeamFeatures: 21px;
       text-transform: uppercase;
       margin-bottom: 44px;
       text-align: center;
+      font-weight: 900;
    }
    &__text {
       @include textTeamFeatures();
       margin-bottom: 0;
+      text-align: center;
    }
 }
 
@@ -133,9 +194,6 @@ $lineHeitTeamFeatures: 21px;
    }
    &__img {
       @include imgTeam();
-      img {
-         @include picTeamIconFeatures();
-      }
    }
    &__title-item {
       @include titleTeamFeatures();
@@ -149,5 +207,18 @@ $lineHeitTeamFeatures: 21px;
    &__icons {
       display: flex;
       @include icon();
+   }
+}
+
+.download {
+   padding: 159px 114px;
+   &__title {
+      @include titleDownload();
+   }
+   &__text {
+      @include textDownload();
+   }
+   &__btn {
+      @include btn();
    }
 }
