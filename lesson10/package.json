@@ -1,0 +1,26 @@
+{
+  "name": "lesson10",
+  "version": "1.0.0",
+  "description": "homework block",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "html",
+    "scc",
+    "scss",
+    "swiper"
+  ],
+  "author": "Karina Kushnir",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.1.1",
+    "parcel": "^2.1.1",
+    "sass": "^1.47.0"
+  },
+  "dependencies": {
+    "swiper": "^7.4.1"
+  }
+}
