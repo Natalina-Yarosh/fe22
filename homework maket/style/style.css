@@ -42,12 +42,12 @@
 }
 
 .banner{
-   background-image: url(/media/bgbanner.jpg);
+   padding: 208.15px 0 185px;
+   background-image: url(../media/bgbanner.jpg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    position: relative;
-   z-index: -2;
 }
 .banner::before{
    content: ' ';
@@ -58,13 +58,14 @@
    top: 0;
    position: absolute;
    background-color: rgba(0, 0, 0, 0.5);
-   z-index: -1;
 }
 .banner__container{
    max-width: 1170px;
    margin: 0 auto ;
-   padding: 208.15px 15px 185px;
+   padding: 0 15px;
    display: flex;
+   position: relative;
+   z-index: 1;
 }
 .banner__info{
    margin-right: 30px;
@@ -633,7 +634,8 @@
 }
 
 .design{
-   background-image: url(/media/bgdesign.jpg);
+   padding: 118px 0 50px;
+   background-image: url(../media/bgdesign.jpg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -652,7 +654,7 @@
 .container__design{
    max-width: 1170px;
    margin: 0 auto;
-   padding: 118px 15px 50px;
+   padding: 0 15px;
    position: relative;
    z-index: 1;
 }
