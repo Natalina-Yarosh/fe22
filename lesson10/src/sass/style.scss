@@ -119,10 +119,9 @@ $colorGrayTitle: #3C3C3C;
         }
     }
     &__logo{
-        width:113px;
-        height:25px;
-        overflow:hidden;
-        margin-right: 38px;
+        width: 156px;
+        overflow: hidden;
+        margin-right: 35px;
 
         & svg{
             @include svg()
@@ -149,7 +148,7 @@ $colorGrayTitle: #3C3C3C;
 
     &__input{
         width:100%;
-        padding:17px 0 17px 49px;
+        padding:15px 49px;
         border: 1px solid #E6E6E6;
         font-size: 14px;
         line-height: 16px;
@@ -210,11 +209,15 @@ $colorGrayTitle: #3C3C3C;
        display: flex;
        justify-content: space-between;
        align-items: center;
-       margin-right: 50px;
+       margin-right: 0px;
 
        &:last-child{
-           margin-right: 0;
+           margin-right: 40px;
        }
+
+       &:first-child{
+        margin-left: 40px;
+    }
 
        &:nth-child(7) a{
            color: $colorRed;
@@ -239,33 +242,35 @@ $colorGrayTitle: #3C3C3C;
        overflow: hidden;
        margin-right: 10px;
 
-        &:first-child{
-           width:23px;
-           height:23px;
-       }
+    //     &:first-child{
+    //        width:23px;
+    //        height:23px;
+    //    }
 
-        &:nth-child(2){
-            width:28px;
-            height:22.22px;}
+    //     &:nth-child(2){
+    //         width:28px;
+    //         height:22.22px;}
             
-        &:nth-child(3){
-            width:30px;
-            height:22.03px;}
+    //     &:nth-child(3){
+    //         width:30px;
+    //         height:22.03px;}
 
-        &:nth-child(4){
-            width:21.91px;
-            height:22px;}
+    //     &:nth-child(4){
+    //         width:21.91px;
+    //         height:22px;}
 
-        &:nth-child(5){
-            width:22px;
-            height:22px;}
+    //     &:nth-child(5){
+    //         width:22px;
+    //         height:22px;}
 
-        &:nth-child(6){
-            width:22px;
-            height:22px;}
+    //     &:nth-child(6){
+    //         width:22px;
+    //         height:22px;}
 
             & svg{
                 @include svg();
+                position: relative;
+                top: 3px;
             }
    }
    &__etc{
@@ -281,7 +286,7 @@ $colorGrayTitle: #3C3C3C;
 .swiper{
 
     &__slide{
-        padding:100px 0 141px 120px;
+        padding:100px 120px 141px ;
         background-image: url(../media/bgmain.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -346,4 +351,10 @@ $colorGrayTitle: #3C3C3C;
     &-button-next::after{
         content: url("../media/next.svg");
     }
+    .swiper-button-prev{
+        left: 26px;
     }
+    .swiper-button-next{
+        right: 26px;
+    }
+}
