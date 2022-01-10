@@ -46,17 +46,17 @@
             <p class="banner_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             <button class="banner__btn">Download</button>
          </div>
-            <div class="banner__form__container">
+            <form class="banner__form__container">
                <div class="banner__forms"> 
                <p class="banner__form__text">Try Your <span class="banner__color__text">FREE</span>  Trial Today</p>
-               <form action="" class="banner__form">
+               <div class="banner__form">
                   <input type="name" class="banner__form__input" placeholder="Name">
                   <input type="email" class="banner__form__input" placeholder="Email">
                   <input type="password" class="banner__form__input" placeholder="Password">
-               </form>
+               </div>
                </div>
                <button class="banner__form__btn">Get Started</button>
-            </div>
+            </form>
       </div>
    </section>
    <section class="social">
@@ -297,21 +297,22 @@
       <div class="container__contact">
          <h2 class="title__contact">contact us</h2>
          <p class="text__contact">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-         <div class="forms__contact">
-            <form action="" class="form__contact">
-             <input type="name" class="form__input" placeholder="Name">
+         <form class="forms__contact">
+            <div action="" class="form__contact-item">
+               <input type="name" class="form__input" placeholder="Name">
                <input type="email" class="form__input" placeholder="Email">
                <input type="password" class="form__input" placeholder="Password">
-            </form>
-            <form action="" class="form__contact">
-             <input type="message" class="messageform__input" placeholder="Message">
-            </form>
-         </div>
-         <button class="btn contact__btn">Send Message</button>
+            </div>
+            
+             <textarea type="message" class="messageform__input" placeholder="Message"></textarea>
+            
+            <button class="btn contact__btn">Send Message</button>
+
+         </form>
       </div>
    </section>
    <footer class="footer">
-      
+      <div class="container">
          <ul class="item__footer">
             <li class="icon__footer">
                <a href="">
@@ -372,8 +373,9 @@
             </li>
          </ul>
       
-      <div class="container__text__footer">
+        
          <p class="text__footer">© 2015 Axure Themes</p>
+         
       </div>
    </footer>
 </body>
