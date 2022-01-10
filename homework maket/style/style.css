@@ -5,6 +5,7 @@
    box-sizing: border-box;
    font-family: 'Open Sans', sans-serif;
 }
+<<<<<<< HEAD
 .header{
    background-color: #000000;
 }
@@ -12,6 +13,13 @@
    display: flex;
    max-width: 1510px;
    margin: 0 auto;
+=======
+.tab{
+   /* max-width: 1510px; */
+   /* width: 100%; */
+   padding: 99px 0 50px 0;
+   /* margin: 0 auto; */
+>>>>>>> 2d6550233943af525b8571d82d7bc38d44f33415
 }
 .header__logo{
    width: 645.88px;
@@ -283,6 +291,10 @@
    display: flex;
    overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2d6550233943af525b8571d82d7bc38d44f33415
 .tab__image img{
    width: 100%;
    height: 100%;
@@ -323,6 +335,7 @@
    border: none;
    display: block;
 }
+<<<<<<< HEAD
 .tab__btn:hover{
    background-color: #AB4949;
 }
@@ -333,12 +346,25 @@
    width: 100%;
    border: 1px solid #C6CBCD;
    display: flex;
+=======
+
+.tab__box{
+   /* max-width: 1170px; */
+   width: 100%;
+   border: 1px solid #C6CBCD;
+   display: flex;
+   /* margin-bottom: 50px; */
+}
+.tab__icon:first-child{
+   border: 1px solid #C6CBCD;
+>>>>>>> 2d6550233943af525b8571d82d7bc38d44f33415
 }
 
 
 .awesome{
    max-width: 1510px;
    width: 100%;
+   
    padding: 50px 0 58px;
    margin: 0 auto; 
 }
@@ -381,7 +407,11 @@
    display: flex;
 }
 .awesome__post{
-   width: calc(( 100% - 10px) / 3);
+   width: calc(( 100% - 60px) / 3);
+   margin-right: 30px;
+}
+.awesome__post:last-child{
+   margin-right: 0;
 }
 .post__title{
    font-family: 'Open Sans', sans-serif;
