@@ -139,7 +139,7 @@
    width: 100%;
    text-align: center;
    text-transform: capitalize;
-   padding: 20px 0 20px 0;
+   padding: 15px 0 15px 0;
    background-color: transparent;
    border: 2px solid #ffffff;
    transition: all 0.6s;
@@ -192,7 +192,7 @@
    line-height: 19px;
    border: none;
    border-bottom: 1px solid #bdbdbd;
-   padding: 9px;
+   padding: 9px 0 9px;
    margin: 0 auto 33px;
    transition: all 0.5s;
 }
@@ -542,7 +542,7 @@ li {
    font-size: 24px;
    line-height: 33px;
    text-align: center;
-   padding: 18px 0;
+   padding: 12.5px 0;
    background-color: #333333;
    color: #ffffff;
    border-bottom: 2px solid #f5f5f5;
@@ -554,7 +554,7 @@ li {
    font-size: 36px;
    line-height: 42.26px;
    text-align: center;
-   padding: 29px 0;
+   padding: 28px 0;
    background-color: #333333;
    color: #ffffff;
    border-bottom: 2px solid #f5f5f5;
@@ -566,7 +566,7 @@ li {
    font-size: 18px;
    line-height: 21.13px;
    text-align: center;
-   padding: 15px 0 14px 0;
+   padding: 13.5px 0;
    background-color: #333333;
    color: rgba(255, 255, 255, 0.5);
    border-bottom: 2px solid #f5f5f5;
@@ -578,7 +578,7 @@ li {
    font-size: 18px;
    line-height: 21.13px;
    text-align: center;
-   padding: 29px 0;
+   padding: 13.2px 0;
    background-color: #ffffff;
    color: #86878b;
    border-bottom: 2px solid #f5f5f5;
@@ -682,7 +682,7 @@ li {
    font-size: 24px;
    font-style: normal;
    font-weight: 700;
-   line-height: 33px;
+   line-height: 32px;
    text-align: left;
    margin-bottom: 27px;
    text-transform: capitalize;
@@ -767,7 +767,7 @@ li {
    text-transform: capitalize;
    text-align: center;
    margin: 0 auto;
-   padding: 20px 0 20px 0;
+   padding: 15px 0 15px 0;
    background-color: transparent;
    border: 2px solid #ffffff;
    transition: all 1s;
@@ -841,7 +841,7 @@ li {
    line-height: 19px;
    border: none;
    border-bottom: 1px solid #bdbdbd;
-   padding: 9px;
+   padding: 9px 0;
    margin-bottom: 50px;
    transition: all 0.5s;
 }
@@ -868,7 +868,7 @@ textarea {
    width: calc((100% - 30px) / 2);
    border: none;
    border-bottom: 1px solid #bdbdbd;
-   padding: 9px;
+   padding: 9px 0;
    font-size: 14px;
    line-height: 19px;
    resize: none;
@@ -978,7 +978,7 @@ textarea:focus {
    }
    .banner__btn {
       max-width: 183px;
-      padding: 16px 0 16px 0;
+      padding: 11px 0 11px 0;
    }
    .banner__form {
       flex: 0 0 398px;
@@ -1134,7 +1134,8 @@ textarea:focus {
       margin-right: 20px;
    }
    .reviews__content-bottom .reviews__text {
-      padding: 50px 30px 50px;
+      padding: 40px 10px;
+      margin-bottom: 66px;
    }
    .reviews__content-bottom .reviews__text::after {
       border-top: 20px solid #e2e2e2;
@@ -1154,7 +1155,7 @@ textarea:focus {
    .customer__name {
       font-size: 18px;
       line-height: 24px;
-      margin-bottom: 18px;
+      margin-bottom: 15px;
    }
    .customer__position {
       font-size: 14px;
@@ -1166,6 +1167,9 @@ textarea:focus {
    }
    .contact__description {
       margin-bottom: 72px;
+   }
+   .banner2__text {
+      margin-bottom: 32px;
    }
    .contact-form__row {
       margin-right: 20px;
@@ -1182,6 +1186,9 @@ textarea:focus {
    }
    .footer__items {
       margin-bottom: 38px;
+   }
+   .footer-items__icon {
+      margin-right: 28px;
    }
 }
 @media (max-width: 767px) {
@@ -1464,7 +1471,7 @@ textarea:focus {
    }
    .reviews__content-bottom .reviews__text {
       padding: 50px 15px;
-      margin-bottom: 62px;
+      margin-bottom: 74.5px;
    }
    .reviews__content-bottom .reviews__text::after {
       border-left: 12.5px solid transparent;
