@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+$colorHeaderBg: #313131;
+$colorWhite: #FFFFFF;
+$sizeHeader: 14px;
+$lineHeightHeader: 16px;
+$textcolor: #414141;
+@mixin headerText {
+    font-size: 14px;
+    line-height: 16px;
+    color: $colorWhite;
+    text-decoration: none;
+}
+
+@mixin menuCategories {
+    font-size: 16px;
+    line-height: 19px;
+    color: $textcolor;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: $colorHeaderBg;
+    margin-bottom: 20px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        display: flex;
+        list-style-type: none;
+    }
+    &__item {
+        margin: 10px 30px 12px 0;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__link {
+        @include headerText();
+    }
+    &__info {
+        display: flex;
+        margin: 10px 0 12px 0;
+    }
+    &__group {
+        display: flex;
+        margin-right: 30px;
+    }
+    &__group:last-child {
+        margin-right: 0;
+    }
+    &__icon {
+        margin-right: 10px;
+    }
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.menu {
+    &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        .menu__burger {
+            margin-right: 25px;
+            display: none;
+        }
+        .menu__item {
+            margin-right: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 0;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .menu__search {
+            flex-grow: 1;
+            position: relative;
+            .menu__searchIcon {
+                position: absolute;
+                left: 15px;
+                top: 18px;
+            }
+        }
+        .menu__searchBar {
+            width: 100%;
+            border: 1px solid #E6E6E6;
+            padding: 17px 49px;
+            font-size: $sizeHeader;
+            line-height: $lineHeightHeader;
+            color: $textcolor;
+            &::placeholder {
+                font-size: $sizeHeader;
+                line-height: $lineHeightHeader;
+                color: $textcolor;
+            }
+        }
+        .menu__icon {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:first-child {
+                display: none;
+            }
+        }
+        .header__link {
+            color: $textcolor;
+        }
+        @media screen and (max-width: 1024px) {
+            .menu__item {
+                margin-right: 40px;
+            }
+            .menu__icon:first-child {
+                display: flex;
+            }
+            .menu__burger {
+                display: block;
+            }
+            .menu__searchBar {
+                border: none;
+                background-color: #F9F9F9;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            padding: 40px 0 33px;
+            margin-bottom: 16px;
+        }
+    }
+    &__categories {
+        display: flex;
+        align-items: center;
+        padding: 23px 39px 24px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        .menu__group {
+            display: flex;
+            margin-right: 47px;
+        }
+        .menu__item {
+            display: flex;
+            margin-right: 50px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .menu__icon {
+            margin-right: 10px;
+        }
+        .menu__link {
+            @include menuCategories();
+        }
+        @media screen and (max-width: 1024px) {
+            padding: 23px 14px 24px 25px;
+            .menu__group {
+                margin-right: 20px;
+            }
+            .menu__item {
+                margin-right: 35px;
+                &:nth-last-child(2) {
+                    display: none;
+                }
+            }
+            .menu__link {
+                font-size: $sizeHeader;
+                line-height: $lineHeightHeader;
+            }
+        }
+    }
+}
