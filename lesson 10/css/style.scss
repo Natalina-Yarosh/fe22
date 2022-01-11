@@ -152,11 +152,13 @@ $textcolor: #414141;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
         .menu__group {
             display: flex;
+            justify-content: space-between;
+            width: 100%;
             margin-right: 47px;
         }
         .menu__item {
             display: flex;
-            margin-right: 50px;
+            /*margin-right: 50px;*/
             &:last-child {
                 margin-right: 0;
             }
