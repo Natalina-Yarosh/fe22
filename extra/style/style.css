@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.container {
+  max-width: 1015px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.subtitle_yellow {
+  background-color: #ffd773;
+}
+
+.subtitle_blue {
+  background-color: #77cbfa;
+}
+
+.fees {
+  padding: 80px 0;
+}
+
+.fees__title {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.fees__rates {
+  width: 54%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.fees__rate {
+  width: calc(100% / 4);
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.fees__rate.mobile {
+  display: none;
+}
+
+.fees__item {
+  margin-bottom: 35px;
+}
+
+.fees__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.fees__subtitle {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #333333;
+  padding: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+
+.fees__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #EAECEF;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.fees__block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.fees__left {
+  margin-right: 44px;
+  width: calc(100% - 54% - 44px);
+}
+
+.fees__right {
+  width: 54%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fees__tick {
+  width: calc(100% / 4);
+  text-align: center;
+  list-style: none;
+  border-right: 2px solid #EAECEF;
+}
+
+.fees__tick:last-child {
+  border: none;
+}
+
+.fees__tick.active path {
+  stroke: #ff0404;
+}
+
+.fees__prices {
+  width: 54%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.fees__price {
+  width: calc(100% / 4);
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

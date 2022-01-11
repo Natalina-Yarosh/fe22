@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+$colorYellow:rgba(255, 215, 115, 1);
+$colorBlue:rgba(119, 203, 250, 1);
+$colorRed:rgba(255, 4, 4, 1);
+$colorBlack:rgba(51, 51, 51, 1); 
+$colorWhite:#ffffff;
+$colorBorder: #EAECEF;
+
+@mixin subtitle{
+    font-size:30px;
+    line-height: 30px;
+    font-weight: 700;
+    color:$colorBlack;
+    padding:8px;
+    text-transform: uppercase;
+    text-align:center;
+    border-radius: 5px;
+}
+@mixin name{
+    font-size:22px;
+    line-height: 22px;
+    font-weight: 700;
+    color:$colorBlack;
+    text-transform: uppercase;
+}
+@mixin text{
+    font-size:16px;
+    line-height: 19px;
+    font-weight: 500;
+    color:$colorBlack;
+    opacity: 0.9;
+}
+@mixin cost{
+    font-size:24px;
+    line-height: 24px;
+    font-weight: 700;
+    color:$colorBlack;
+}
+@mixin btn{
+    font-size:16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align:center;
+    color:$colorRed;
+    border: 1px solid $colorRed;
+    border-radius: 5px;
+    padding: 8px 27px;
+    background-color: $colorWhite;
+}
+
+.container{
+    max-width: 1015px; // 1442 - 229 - 229 + 15 + 15 =  1014
+    padding: 0 15px;
+    margin: 0 auto;
+}   
+
+.subtitle_yellow{
+    background-color: $colorYellow;
+}
+
+.subtitle_blue{
+    background-color: $colorBlue;
+}
+
+.fees{
+    padding: 80px 0;
+
+    &__title{
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 700;
+        margin-bottom: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $colorBlack;
+    }
+
+    &__rates{
+        width: 54%;
+        margin-left: auto;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__rate{
+        width: calc(100% / 4);
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: $colorBlack;
+        text-transform: uppercase;
+
+        &.mobile{
+            display: none;
+        }
+    }
+
+    &__item{
+        margin-bottom: 35px;
+
+        &:last-of-type{
+            margin-bottom: 0
+        }
+    }
+
+    &__subtitle{
+        @include subtitle();
+        margin-bottom: 35px;
+    }
+
+    &__block{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $colorBorder;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        &:last-child{
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &__left{
+        margin-right: 44px; //982  411-left
+        width: calc(100% - 54% - 44px);
+    }
+
+    &__right{
+        width: 54%;
+        display: flex;
+    }
+
+    &__tick{
+        width: calc(100% / 4);
+        text-align: center;
+        list-style: none;
+        border-right: 2px solid $colorBorder;
+        &:last-child{
+            border: none;
+        }
+
+        &.active path{
+            stroke: $colorRed;
+        }
+    }
+
+    &__prices{
+        width: 54%;
+        display: flex;
+        margin-left: auto;
+    }
+
+    &__price{
+        width: calc(100% / 4);
+        text-align: center;
+    }
+
+
+}
