@@ -42,9 +42,9 @@
 	min-width: 166.63px;
 }
 .header__link:hover {
-	font-weight: bold;
+	/* font-weight: bold;
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 18px; */
 	background-color: #ec7979;
 }
 .header__link:active {
@@ -552,6 +552,10 @@ li.social__img:hover path {
 	left: 70px;
 	bottom: 0;
 	transform: translateY(100%);
+}
+
+.reviews__info{
+	width: calc(100% - 70px - 30px);
 }
 .reviews__user {
 	display: flex;
