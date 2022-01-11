@@ -17,6 +17,7 @@
 .header {
   background-color: #313131;
   margin-bottom: 20px;
+  padding: 10px 0 12px;
 }
 
 .header .container {
@@ -26,6 +27,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__list {
@@ -36,7 +40,7 @@
 }
 
 .header__item {
-  margin: 10px 30px 12px 0;
+  margin: 0  30px 0 0;
 }
 
 .header__item:last-child {
@@ -48,20 +52,32 @@
   line-height: 16px;
   color: #FFFFFF;
   text-decoration: none;
+  display: inline-block;
+}
+
+.header__group-tel svg {
+  position: relative;
+  top: 4px;
+  left: -5px;
+}
+
+.header__group-delivery svg {
+  position: relative;
+  top: 4px;
+  left: -5px;
 }
 
 .header__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px 0 12px 0;
 }
 
 .header__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 30px;
+  margin-right: 35px;
 }
 
 .header__group:last-child {

@@ -35,33 +35,51 @@ $textcolor: #414141;
 .header {
     background-color: $colorHeaderBg;
     margin-bottom: 20px;
+    padding: 10px 0 12px;
     .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__list {
         display: flex;
         list-style-type: none;
     }
     &__item {
-        margin: 10px 30px 12px 0;
+        margin: 0  30px 0 0;
     }
     &__item:last-child {
         margin-right: 0;
     }
     &__link {
         @include headerText();
+        // padding: 10px 0 12px;
+        display: inline-block;
+    }
+    &__group-tel{
+        svg{
+            position: relative;
+            top: 4px;
+            left: -5px;
+        }
+    }
+    &__group-delivery{
+        svg{
+            position: relative;
+            top: 4px;
+            left: -5px;
+        }
     }
     &__info {
         display: flex;
-        margin: 10px 0 12px 0;
+        // margin: 10px 0 12px 0;
     }
     &__group {
         display: flex;
-        margin-right: 30px;
+        margin-right: 35px;
     }
     &__group:last-child {
-        margin-right: 0;
+        margin-right: 0; 
     }
     &__icon {
         margin-right: 10px;

@@ -9,6 +9,7 @@
 
 .ordering {
     max-width: 100%;
+    padding: 100px 0;
 }
 
 .container {
@@ -119,9 +120,9 @@
     margin-bottom: 27px;
 }
 
-.form__payment {
+/* .form__payment {
     margin-bottom: 293px;
-}
+} */
 
 .form__group {
     margin-bottom: 8px;
