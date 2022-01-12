@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+$colorYellow:rgba(255, 215, 115, 1);
+$colorBlue:rgba(119, 203, 250, 1);
+$colorRed:rgba(255, 4, 4, 1);
+$colorBlack:rgba(51, 51, 51, 1);
+$colorWhite:#ffffff;
+$colorBorder:#EAECEF;
+
+@mixin subtitle{
+    font-size:30px;
+    line-height: 30px;
+    font-weight: 700;
+    color:$colorBlack;
+    padding:8px;
+    text-transform: uppercase;
+    text-align:center;
+    border-radius: 5px;
+}
+@mixin name{
+    font-size:22px;
+    line-height: 22px;
+    font-weight: 700;
+    color:$colorBlack;
+    text-transform: uppercase;
+}
+@mixin text{
+    font-size:16px;
+    line-height: 19px;
+    font-weight: 500;
+    color:$colorBlack;
+    opacity: 0.9;
+}
+@mixin cost{
+    font-size:24px;
+    line-height: 24px;
+    font-weight: 700;
+    color:$colorBlack;
+}
+@mixin btn{
+    font-size:16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align:center;
+    color:$colorRed;
+    border: 1px solid $colorRed;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: $colorWhite;
+    text-align: center;
+}
+
+.subtitle-blue{
+    background-color: $colorBlue;
+}
+.subtitle-yellow{
+    background-color: $colorYellow;
+}
+.container{
+    max-width: 1015px;
+    padding: 0 15px;
+    margin:0 auto;
+
+    @media (max-width:767px){
+        padding: 0 20px;
+    }
+}
+.fees{
+    padding:80px 0;
+
+    &__title{
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 700;
+        margin-bottom: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        color:$colorBlack;
+
+        @media (max-width:932px){
+            font-size: 42px;
+            line-height: 42px;
+        }
+
+        @media (max-width:767px){
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 30px;
+        }
+    }
+    &__rates{
+        width:54%;
+        margin-left:auto;
+        display: flex;
+        margin-bottom: 20px;
+
+        @media (max-width:767px){
+            display: none;
+        }
+    }
+    &__rate{
+        width: calc(100%/4);
+        text-align:center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color:$colorBlack;
+        text-transform: uppercase;
+
+        @media (max-width:932px){
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &.mobile{
+            display: none;
+
+            @media (max-width:767px){
+                display: block;
+                text-align: left;
+                width: 100%;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+    &__item{
+        margin-bottom: 35px;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+    }
+    &__subtitle{
+        @include subtitle();
+        margin-bottom: 35px;
+
+        @media (max-width:932px){
+            font-size: 27px;
+            line-height: 27px;
+        }
+        @media (max-width:767px){
+            font-size: 25px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $colorBorder;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        @media (max-width:932px){
+            padding-bottom: 18px;
+            margin-bottom: 18px;
+        }
+        @media (max-width:767px){
+            display: block;
+        }
+
+    
+        &:last-child{
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+    &__left{
+        margin-right: 44px;
+        width:calc(100% - 54% - 44px);
+
+        @media (max-width:767px){
+            margin-right: 0;
+            width:100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__right{
+        width:54%;
+        display: flex;
+
+        @media (max-width:767px){
+            width:36%;
+            display: block;
+        }
+
+    }
+
+    &__tick{
+        width:calc(100% / 4);
+        text-align: center;
+        list-style: none;
+        border-right: 2px solid $colorBorder;
+
+        &:last-child{
+            border:none;
+        }
+        &.active path{
+            stroke:$colorRed;
+        }
+
+        @media (max-width:767px){
+            border-right: none;
+            width: 100%;
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+    }
+
+    &__prices{
+        width:54%;
+        display:flex;
+        margin-left: auto;
+
+        @media (max-width:767px){
+            width:100%;
+            display: block;
+    }
+}
+    &__price{
+        width:calc(100% / 4);
+        text-align: center;
+
+        @media (max-width:767px){
+            width:100%;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: $colorBorder;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        &:last-child{
+            @media (max-width:767px){
+                margin-bottom: 0;}
+        }
+    }
+    &__name{
+        @include name();
+        margin-bottom: 10px;
+
+        @media (max-width:932px){
+            font-size: 19px;
+            line-height: 20px;
+        }
+        @media (max-width:767px){
+            font-size: 21px;
+            line-height: 21px;
+        }
+    }
+
+    &__text{
+        @include text();
+
+        @media (max-width:932px){
+            line-height: 18px;
+        }
+        @media (max-width:767px){
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__cost{
+        @include cost();
+        margin-bottom: 15.77px;
+
+        @media (max-width:932px){
+            font-size: 20px;
+            line-height: 20px;
+        }
+        @media (max-width:767px){
+            font-size: 24px;
+            line-height: 24px;
+            padding-top: 3px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__btn{
+        @include btn();
+        display: block;
+        width: 100%;
+        max-width:120px;
+        margin: 0 auto;
+
+        @media (max-width:932px){
+            font-size: 15px;
+            line-height: 22px;
+            max-width:85px;
+        }
+
+        @media (max-width:767px){
+            @include btn();
+            display: block;
+            width: 100%;
+            max-width:120px;
+            margin:0;
+        }
+        &:hover{
+            box-shadow: 0 0 2px 0 $colorRed;
+            cursor: pointer;
+        }
+
+        &:active{
+            box-shadow: 0 0 4px 0 $colorRed;
+        }
+    }
+}
