@@ -1,0 +1,396 @@
+@font-face {
+  font-family: "Fira Sans Extra Condensed";
+  src: url("../fonts/font/FiraSansExtraCondensed-Bold.eot");
+  src: local("../fonts/font/Fira Sans Extra Condensed Bold"), local("../fonts/font/FiraSansExtraCondensed-Bold"), url("../fonts/font/FiraSansExtraCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/font/FiraSansExtraCondensed-Bold.woff2") format("woff2"), url("../fonts/font/FiraSansExtraCondensed-Bold.woff") format("woff"), url("../fonts/font/FiraSansExtraCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans Extra Condensed";
+  src: url("../fonts/font/FiraSansExtraCondensed-SemiBold.eot");
+  src: local("Fira Sans Extra Condensed SemiBold"), local("../fonts/font/FiraSansExtraCondensed-SemiBold"), url("../fonts/font/FiraSansExtraCondensed-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/font/FiraSansExtraCondensed-SemiBold.woff2") format("woff2"), url("../fonts/font/iraSansExtraCondensed-SemiBold.woff") format("woff"), url("../fonts/font/FiraSansExtraCondensed-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans Extra Condensed";
+  src: url("../fonts/font/FiraSansExtraCondensed-Medium.eot");
+  src: local("../fonts/font/Fira Sans Extra Condensed Medium"), local("../fonts/font/FiraSansExtraCondensed-Medium"), url("../fonts/font/FiraSansExtraCondensed-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/font/FiraSansExtraCondensed-Medium.woff2") format("woff2"), url("../fonts/font/FiraSansExtraCondensed-Medium.woff") format("woff"), url("../fonts/font/FiraSansExtraCondensed-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/f/Gilroy-Semibold.eot");
+  src: local("../fonts/f/Gilroy Semibold"), local("../fonts/f/Gilroy-Semibold"), url("../fonts/f/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/f/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/f/Gilroy-Semibold.woff") format("woff"), url("../fonts/f/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/f/Gilroy-Medium.eot");
+  src: local("../fonts/f/Gilroy Medium"), local("../fonts/f/Gilroy-Medium"), url("../fonts/f/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/f/Gilroy-Medium.woff2") format("woff2"), url("../fonts/f/Gilroy-Medium.woff") format("woff"), url("../fonts/f/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1025px;
+}
+
+.subtitle_yellow {
+  background-color: #ffd773;
+}
+
+.subtitle_blue {
+  background-color: #77cbfa;
+}
+
+.fees {
+  padding: 80px 0;
+}
+
+@media (max-width: 1024px) {
+  .fees {
+    padding: 60px 0;
+  }
+}
+
+.fees__title {
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+  text-align: center;
+  color: #333333;
+}
+
+@media (max-width: 1024px) {
+  .fees__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fees__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.fees__rates {
+  margin-left: auto;
+  width: 54%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .fees__rates {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fees__rates {
+    display: none;
+  }
+}
+
+.fees__rate {
+  width: calc(100% / 4);
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.fees__rate.mobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .fees__rate {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fees__rate.mobile {
+    display: block;
+  }
+}
+
+.fees__item {
+  margin-bottom: 35px;
+}
+
+.fees__item:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .fees__item {
+    margin-bottom: 29px;
+  }
+}
+
+.fees__subtitle {
+  font-size: 30px;
+  line-height: 30px;
+  color: #333333;
+  font-weight: 700;
+  padding: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 1024px) {
+  .fees__subtitle {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+.fees__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaecef;
+}
+
+.fees__block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .fees__block {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fees__block {
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.fees__left {
+  margin-right: 44px;
+  width: calc(100% - 54% - 44px);
+}
+
+@media (max-width: 1024px) {
+  .fees__left {
+    width: calc(100% - 60% - 20px);
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fees__left {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+.fees__name {
+  font-size: 22px;
+  line-height: 22px;
+  color: #333333;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .fees__name {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+.fees__text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  font-weight: 500;
+  opacity: 0.9;
+  font-family: "Gilroy";
+}
+
+.fees__right {
+  width: 54%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .fees__right {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fees__right {
+    display: block;
+    width: 40%;
+  }
+}
+
+.fees__tick {
+  width: calc(100% / 4);
+  text-align: center;
+  border-right: 2px solid #eaecef;
+}
+
+.fees__tick svg {
+  width: 12px;
+  height: 8px;
+}
+
+.fees__tick:last-child {
+  border-right: none;
+}
+
+.fees__tick.active path {
+  stroke: #ff0404;
+}
+
+@media (max-width: 767px) {
+  .fees__tick {
+    width: 100%;
+    border-right: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+  }
+  .fees__tick:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fees__prices {
+  width: 54%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-top: 25px;
+}
+
+@media (max-width: 1024px) {
+  .fees__prices {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fees__prices {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+.fees__price {
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .fees__price {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#f5f7f9), to(#f5f7f9)), #eaecef;
+    background: linear-gradient(0deg, #f5f7f9, #f5f7f9), #eaecef;
+    border-radius: 5px;
+  }
+}
+
+.fees__cost {
+  font-size: 24px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 767px) {
+  .fees__cost {
+    margin-bottom: 0;
+  }
+  .fees__cost span {
+    margin-bottom: 3px;
+  }
+}
+
+.fees__btn {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff0404;
+  font-weight: 600;
+  font-family: "Gilroy";
+  border: 1px solid #ff0404;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px 27px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .fees__btn {
+    padding: 8px 20px;
+  }
+}

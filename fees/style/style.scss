@@ -1,0 +1,325 @@
+@font-face {
+	font-family: "Fira Sans Extra Condensed";
+	src: url("../fonts/font/FiraSansExtraCondensed-Bold.eot");
+	src: local("../fonts/font/Fira Sans Extra Condensed Bold"), local("../fonts/font/FiraSansExtraCondensed-Bold"),
+		url("../fonts/font/FiraSansExtraCondensed-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/font/FiraSansExtraCondensed-Bold.woff2") format("woff2"),
+		url("../fonts/font/FiraSansExtraCondensed-Bold.woff") format("woff"),
+		url("../fonts/font/FiraSansExtraCondensed-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Fira Sans Extra Condensed";
+	src: url("../fonts/font/FiraSansExtraCondensed-SemiBold.eot");
+	src: local("Fira Sans Extra Condensed SemiBold"), local("../fonts/font/FiraSansExtraCondensed-SemiBold"),
+		url("../fonts/font/FiraSansExtraCondensed-SemiBold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/font/FiraSansExtraCondensed-SemiBold.woff2") format("woff2"),
+		url("../fonts/font/iraSansExtraCondensed-SemiBold.woff") format("woff"),
+		url("../fonts/font/FiraSansExtraCondensed-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Fira Sans Extra Condensed";
+	src: url("../fonts/font/FiraSansExtraCondensed-Medium.eot");
+	src: local("../fonts/font/Fira Sans Extra Condensed Medium"), local("../fonts/font/FiraSansExtraCondensed-Medium"),
+		url("../fonts/font/FiraSansExtraCondensed-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/font/FiraSansExtraCondensed-Medium.woff2") format("woff2"),
+		url("../fonts/font/FiraSansExtraCondensed-Medium.woff") format("woff"),
+		url("../fonts/font/FiraSansExtraCondensed-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/f/Gilroy-Semibold.eot");
+	src: local("../fonts/f/Gilroy Semibold"), local("../fonts/f/Gilroy-Semibold"),
+		url("../fonts/f/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/f/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/f/Gilroy-Semibold.woff") format("woff"),
+		url("../fonts/f/Gilroy-Semibold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/f/Gilroy-Medium.eot");
+	src: local("../fonts/f/Gilroy Medium"), local("../fonts/f/Gilroy-Medium"),
+		url("../fonts/f/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/f/Gilroy-Medium.woff2") format("woff2"), url("../fonts/f/Gilroy-Medium.woff") format("woff"),
+		url("../fonts/f/Gilroy-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+$colorYellow: #ffd773;
+$colorBlue: #77cbfa;
+$colorRed: #ff0404;
+$colorBlack: #333333;
+$colorWhite: #ffffff;
+$colorBorder: #eaecef;
+
+@mixin subtitle {
+	font-size: 30px;
+	line-height: 30px;
+	color: $colorBlack;
+	font-weight: 700;
+	padding: 8px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 5px;
+}
+@mixin name {
+	font-size: 22px;
+	line-height: 22px;
+	color: $colorBlack;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+@mixin text {
+	font-size: 16px;
+	line-height: 19px;
+	color: $colorBlack;
+	font-weight: 500;
+	opacity: 0.9;
+	font-family: "Gilroy";
+}
+@mixin cost {
+	font-size: 24px;
+	line-height: 24px;
+	color: $colorBlack;
+	font-weight: 700;
+}
+@mixin btn {
+	font-size: 16px;
+	line-height: 24px;
+	color: $colorRed;
+	font-weight: 600;
+	font-family: "Gilroy";
+	border: 1px solid $colorRed;
+	border-radius: 5px;
+	text-align: center;
+	padding: 8px 27px;
+	background-color: $colorWhite;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 1025px;
+}
+.subtitle_yellow {
+	background-color: $colorYellow;
+}
+.subtitle_blue {
+	background-color: $colorBlue;
+}
+
+.fees {
+	padding: 80px 0;
+	@media (max-width: 1024px) {
+		padding: 60px 0;
+	}
+	&__title {
+		font-size: 50px;
+		line-height: 50px;
+		text-transform: uppercase;
+		margin-bottom: 45px;
+		text-align: center;
+		color: $colorBlack;
+		@media (max-width: 1024px) {
+			font-size: 40px;
+			line-height: 40px;
+			margin-bottom: 30px;
+		}
+		@media (max-width: 767px) {
+			font-size: 35px;
+			line-height: 35px;
+		}
+	}
+	&__rates {
+		margin-left: auto;
+		width: 54%;
+		display: flex;
+		margin-bottom: 20px;
+		@media (max-width: 1024px) {
+			width: 60%;
+		}
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	&__rate {
+		width: calc(100% / 4);
+		text-align: center;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		text-transform: uppercase;
+		color: $colorBlack;
+		&.mobile {
+			display: none;
+		}
+		@media (max-width: 1024px) {
+			font-size: 15px;
+			line-height: 20px;
+		}
+		@media (max-width: 767px) {
+			&.mobile {
+				display: block;
+			}
+		}
+	}
+	&__item {
+		margin-bottom: 35px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		@media (max-width: 1024px) {
+			margin-bottom: 29px;
+		}
+	}
+	&__subtitle {
+		@include subtitle();
+		margin-bottom: 35px;
+		@media (max-width: 1024px) {
+			margin-bottom: 30px;
+			font-size: 25px;
+			line-height: 25px;
+		}
+	}
+	&__block {
+		display: flex;
+		align-items: center;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $colorBorder;
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		@media (max-width: 1024px) {
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+		}
+		@media (max-width: 767px) {
+			display: block;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__left {
+		margin-right: 44px;
+		width: calc(100% - 54% - 44px);
+		@media (max-width: 1024px) {
+			width: calc(100% - 60% - 20px);
+			margin-right: 20px;
+		}
+		@media (max-width: 767px) {
+			margin-right: 0;
+			margin-bottom: 20px;
+			width: 100%;
+		}
+	}
+	&__name {
+		@include name();
+		margin-bottom: 10px;
+		@media (max-width: 767px) {
+			font-size: 21px;
+			line-height: 21px;
+		}
+	}
+	&__text {
+		@include text();
+	}
+	&__right {
+		width: 54%;
+		display: flex;
+		@media (max-width: 1024px) {
+			width: 60%;
+		}
+		@media (max-width: 767px) {
+			display: block;
+			width: 40%;
+		}
+	}
+
+	&__tick {
+		width: calc(100% / 4);
+		text-align: center;
+		border-right: 2px solid $colorBorder;
+		svg {
+			width: 12px;
+			height: 8px;
+		}
+		&:last-child {
+			border-right: none;
+		}
+		&.active path {
+			stroke: $colorRed;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+			border-right: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__prices {
+		width: 54%;
+		display: flex;
+		margin-left: auto;
+		margin-top: 25px;
+		@media (max-width: 1024px) {
+			width: 60%;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+			display: block;
+			margin-top: 40px;
+		}
+	}
+	&__price {
+		width: calc(100% / 4);
+		text-align: center;
+		@media (max-width: 767px) {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			padding: 20px;
+			margin-bottom: 10px;
+			background: linear-gradient(0deg, #f5f7f9, #f5f7f9), #eaecef;
+			border-radius: 5px;
+		}
+	}
+	&__cost {
+		@include cost();
+		margin-bottom: 16px;
+		@media (max-width: 767px) {
+			margin-bottom: 0;
+			span {
+				margin-bottom: 3px;
+			}
+		}
+	}
+	&__btn {
+		@include btn();
+		@media (max-width: 1024px) {
+			padding: 8px 20px;
+		}
+	}
+}
