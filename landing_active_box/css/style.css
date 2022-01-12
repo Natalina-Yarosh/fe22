@@ -224,4 +224,115 @@
   -webkit-box-shadow: 4px 4px 30px 0px #ff4343;
           box-shadow: 4px 4px 30px 0px #ff4343;
 }
+
+.footer {
+  padding: 71px 0 24px;
+  background-color: #353c65;
+  position: relative;
+}
+
+.footer:before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: #2c3154;
+  left: 0;
+  top: 73.529%;
+  width: 100%;
+  height: 90px;
+  z-index: 1;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 91px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__item {
+  margin-right: 30px;
+  width: calc((100% - 60px) / 3);
+}
+
+.footer__item:last-child {
+  margin-right: 0;
+}
+
+.footer__item-title {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__item-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.footer .title {
+  margin-bottom: 49px;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__icons-link {
+  width: 39px;
+  height: 39px;
+  border: 1px solid #c6cbcd;
+  margin-right: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__icons-link:last-child {
+  margin-right: 0;
+}
+
+.footer__icons-link:hover {
+  border: 1px solid #ff4343;
+}
+
+.footer__icons-link:hover path {
+  fill: #ff4343;
+  color: #ff4343;
+}
+
+.footer__rights {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 21px;
+  max-width: 370px;
+}
+
+.footer span {
+  color: #fff;
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=style.css.map */
