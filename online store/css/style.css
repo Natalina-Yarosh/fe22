@@ -149,7 +149,7 @@ a {
   position: relative;
 }
 
-.furniture__item:nth-child(3n) {
+.furniture__item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -195,5 +195,9 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #414141;
+}
+
+.footer {
+  padding: 54px 0 32px;
 }
 /*# sourceMappingURL=style.css.map */

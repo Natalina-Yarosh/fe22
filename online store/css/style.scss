@@ -146,7 +146,7 @@ $colorFurniture: #414141;
         margin-right: 29px;
         position: relative;
 
-        &:nth-child(3n){
+        &:nth-child(4n){
             margin-right: 0;
         }
 
@@ -194,4 +194,9 @@ $colorFurniture: #414141;
         line-height: 19px;
         color: $colorFurniture;
     }
+}
+
+//BLOCK FOOTER
+.footer{
+    padding: 54px 0 32px;
 }
