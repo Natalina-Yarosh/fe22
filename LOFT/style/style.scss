@@ -12,6 +12,7 @@ $colorLinkHeaderActive: #245462;
 $borderFormHead: 1px solid #e6e6e6;
 $colorFormHead: #414141;
 $colorNotifHead: #d74444;
+$colorBgForm: #f9f9f9;
 
 .textForm {
 	font-size: 14px;
@@ -161,10 +162,15 @@ button {
 		align-items: center;
 		padding: 17px 15px;
 		margin-right: 37px;
+		&:focus {
+			border: $colorLinkHeaderActive;
+		}
 		@media (max-width: 1024px) {
 			max-width: 243px;
 			margin-right: 41px;
 			padding: 12px 15px;
+			border: none;
+			background-color: $colorBgForm;
 		}
 		@media (max-width: 767px) {
 			max-width: none;
@@ -245,11 +251,11 @@ button {
 			max-width: 92px;
 			margin-left: auto;
 		}
-		button:first-of-type {
+		&_wishlist {
 			width: 20px;
 			height: 17px;
 		}
-		button:nth-of-type(2) {
+		&_cart {
 			width: 19px;
 			height: 18px;
 			position: relative;
@@ -270,7 +276,7 @@ button {
 				object-fit: contain;
 			}
 		}
-		button:last-of-type {
+		&_profile {
 			width: 13px;
 			height: 18px;
 		}

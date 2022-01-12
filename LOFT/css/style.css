@@ -243,11 +243,17 @@ button {
   margin-right: 37px;
 }
 
+.head__form:focus {
+  border: #245462;
+}
+
 @media (max-width: 1024px) {
   .head__form {
     max-width: 243px;
     margin-right: 41px;
     padding: 12px 15px;
+    border: none;
+    background-color: #f9f9f9;
   }
 }
 
@@ -352,18 +358,18 @@ button {
   }
 }
 
-.head__usericons button:first-of-type {
+.head__usericons_wishlist {
   width: 20px;
   height: 17px;
 }
 
-.head__usericons button:nth-of-type(2) {
+.head__usericons_cart {
   width: 19px;
   height: 18px;
   position: relative;
 }
 
-.head__usericons button:nth-of-type(2)::before {
+.head__usericons_cart::before {
   content: "";
   display: block;
   width: 8px;
@@ -375,14 +381,14 @@ button {
   left: 11px;
 }
 
-.head__usericons button:nth-of-type(2) svg {
+.head__usericons_cart svg {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.head__usericons button:last-of-type {
+.head__usericons_profile {
   width: 13px;
   height: 18px;
 }
