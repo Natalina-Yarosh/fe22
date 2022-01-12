@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.container {
+  max-width: 1015px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.subtitle_yellow {
+  background-color: #ffd773;
+}
+
+.subtitle_blue {
+  background-color: #77cbfa;
+}
+
+.fees {
+  padding: 80px 0px;
+}
+
+.fees__title {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.fees__rates {
+  width: 54%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.fees__rate {
+  width: calc(100% / 4);
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.fees__rate.mobile {
+  display: none;
+}
+
+.fees__item {
+  margin-bottom: 35px;
+}
+
+.fees__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.fees__subtitle {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #333333;
+  padding: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+
+.fees__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #eaecef;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.fees__block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.fees__left {
+  margin-right: 44px;
+  width: calc(100% - 54% -44px);
+}
+
+.fees__right {
+  width: 54%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fees__tick {
+  width: calc(100% / 4);
+  text-align: center;
+  list-style: none;
+  border-right: 2px solid #eaecef;
+}
+
+.fees__tick:last-child {
+  border: none;
+}
+
+.fees__tick.active path {
+  stroke: #ff0404;
+}
+
+.fees__prices {
+  width: 54%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.fees__price {
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+.fees__cost {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 15.77px;
+}
+
+.fees__btn {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #ff0404;
+  border: 1px solid #ff0404;
+  border-radius: 5px;
+  padding: 8px 27px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .fees {
+    padding: 60px 0 72px;
+  }
+  .fees__title {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+  .fees__rates {
+    display: none;
+  }
+  .fees__subtitle {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .fees__name {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+  .fees__block {
+    display: block;
+  }
+  .fees__rate.mobile {
+    display: inline-block;
+    margin-right: 23px;
+  }
+  .fees__text {
+    margin-bottom: 20px;
+  }
+  .fees__right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .fees__tick {
+    width: 100%;
+    text-align: left;
+  }
+  .fees__item:nth-last-of-type(2) {
+    margin-bottom: 40px;
+  }
+  .fees__prices {
+    width: 100%;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fees__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#f5f7f9), to(#f5f7f9));
+    background: linear-gradient(0deg, #f5f7f9, #f5f7f9);
+    border-radius: 5px;
+  }
+  .fees__btn {
+    max-width: 120px;
+    width: 100%;
+    max-height: 40px;
+  }
+  .fees__cost {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .fees__ratemobile-cost .fees__rate.mobile {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 3px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
