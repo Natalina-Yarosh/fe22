@@ -58,7 +58,7 @@
 }
 
 .tabs__item:first-child {
-  width: 60%;
+  width: calc(60% + 30px);
   padding: 42px 30px 54px 100px;
 }
 
@@ -68,7 +68,7 @@
   font-style: normal;
   line-height: 40px;
   color: #000;
-  margin-bottom: 69px;
+  margin-bottom: 56px;
 }
 
 .tabs__common-text {
@@ -97,6 +97,7 @@
   border: none;
   cursor: pointer;
   text-align: center;
+  
 }
 
 .tabs__links {
@@ -113,8 +114,9 @@
 }
 
 .tabs__img {
-  display: flex;
-  position: relative;
+  display: flex;  
+  max-width: 470px;
+  max-height: 500px;
 }
 
 .tabs__img img {
@@ -124,50 +126,62 @@
 }
 
 @media (max-width: 1024px) {
-.tabs__list li{
-  padding: 10px;
-}
+  .tabs__list li {
+    padding: 10px;
+  }
 
   .tabs__title {
     font-size: 24px;
-    line-height: 33px;    
-    margin-bottom: 38px;
-    padding-top: 28px;
+    line-height: 33px;
+    margin-bottom: 38px;    
     margin-bottom: 38px;
   }
   .tabs__item:first-child {
-    padding: 0;
+    padding: 28px 0px 0px 85px;   
+    width: 60%; 
   }
+
+  .tabs__common-text{
+    margin-bottom: 38px;
+  }
+
   .tabs__text-item {
     font-size: 14px;
     line-height: 16px;
     align-items: center;
-    margin-bottom: 38px;
+    
   }
   .tabs__block .tabs__item {
     padding-left: 84px;
     width: 60%;
     margin-right: 26.21px;
   }
-  .tabs__img{
-    max-width: 398.21px;
-    width: 100%;
-    max-height: 385px;
+  .tabs__img {
+    max-width: 398.21px;    
+    object-fit: cover;
+    
+    
   }
-  .tabs__btn{
+  .tabs__btn {
     max-width: 231px;
     width: 100%;
     padding: 16.5px;
   }
-  
 }
 
 @media (max-width: 767px) {
+  
+  .tabs__block{
+    padding-top: 43px;
+  }
+
+  .tabs__block .tabs__item{
+    margin-right: 0;
+  }
   .tabs__title {
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    padding: 43.5px;
     margin-bottom: 29px;
   }
   .tabs__img {
