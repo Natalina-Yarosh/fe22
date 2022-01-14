@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+$colorYellow: #FFD773;
+$colorBlue: #77CBFA;
+$colorRed: #FF0404;
+$colorBlack: #333333;
+$colorWhite: #FFFFFF;
+$colorBorder: #EAECEF;
+@mixin subtitle {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $colorBlack;
+    padding: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@mixin name {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    color: $colorBlack;
+    text-transform: uppercase;
+}
+
+@mixin nameTablet {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    color: $colorBlack;
+    text-transform: uppercase;
+}
+
+@mixin text {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: $colorBlack;
+    opacity: 0.9;
+}
+
+@mixin textTablet {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    color: $colorBlack;
+    opacity: 0.9;
+}
+
+@mixin cost {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $colorBlack;
+}
+
+@mixin btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $colorRed;
+    border: 1px solid $colorRed;
+    border-radius: 5px;
+    background-color: $colorWhite;
+    padding: 8px 27px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1015px;
+    padding: 0 15px;
+}
+
+.fees {
+    padding: 80px 0;
+    @media (max-width: 767px) and (min-width: 320px) {
+        padding: 60px 0;
+    }
+    &__title {
+        font-size: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 45px;
+        color: $colorBlack;
+        text-align: center;
+        @media (max-width: 767px) and (min-width: 320px) {
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 30px;
+        }
+    }
+    &__rates {
+        width: 54%;
+        margin-left: auto;
+        display: flex;
+        margin-bottom: 20px;
+        @media (max-width: 1024px) and (min-width: 768px) {
+            width: 64%;
+        }
+        @media (max-width: 767px) and (min-width: 320px) {
+            display: none;
+        }
+    }
+    &__rate {
+        width: calc(100% / 4);
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $colorBlack;
+        &.mobile {
+            display: none;
+            @media (max-width: 767px) and (min-width: 320px) {
+                display: block;
+                text-align: start;
+                line-height: 19px;
+                margin-right: 20px;
+            }
+        }
+        @media (max-width:1024px) and (min-width:768px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    &__item {
+        margin-bottom: 35px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        @media (max-width: 767px) and (min-width: 320px) {
+            margin-bottom: 29px;
+        }
+    }
+    &__subtitle {
+        @include subtitle();
+        margin-bottom: 35px;
+    }
+    .subtitle_yellow {
+        background-color: $colorYellow;
+    }
+    .subtitle_blue {
+        background-color: $colorBlue;
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $colorBorder;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        @media (max-width: 767px) and (min-width: 320px) {
+            flex-direction: column;
+        }
+    }
+    &__left {
+        margin-right: 44px;
+        width: calc(100% - 54% - 44px);
+        @media (max-width: 1024px) and (min-width: 768px) {
+            width: calc(100% - 64% - 44px);
+        }
+        @media (max-width: 767px) and (min-width: 320px) {
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__name {
+        @include name();
+        margin-bottom: 10px;
+        @media (max-width: 1024px) and (min-width: 768px) {
+            @include nameTablet();
+        }
+    }
+    &__text {
+        @include text();
+        @media (max-width: 1024px) and (min-width: 768px) {
+            @include textTablet();
+        }
+    }
+    &__right {
+        width: 54%;
+        display: flex;
+        @media (max-width: 1024px) and (min-width: 768px) {
+            width: 64%;
+        }
+        @media (max-width: 767px) and (min-width: 320px) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    &__tick {
+        width: calc(100% / 4);
+        border-right: 2px solid $colorBorder;
+        text-align: center;
+        list-style-type: none;
+        &:last-child {
+            border: none;
+        }
+        &.active path {
+            stroke: $colorRed
+        }
+        @media (max-width: 767px) and (min-width: 320px) {
+            display: flex;
+            align-items: center;
+            border: none;
+            width: 100%;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            position: relative;
+            svg {
+                position: absolute;
+                left: 37%;
+            }
+        }
+    }
+    &__prices {
+        width: 54%;
+        display: flex;
+        margin-left: auto;
+        @media (max-width: 1024px) and (min-width: 768px) {
+            width: 64%;
+        }
+        @media (max-width: 767px) and (min-width: 320px) {
+            width: 100%;
+            margin-top: 40px;
+            margin-left: 0;
+            flex-direction: column;
+        }
+    }
+    &__price {
+        width: calc(100% / 4);
+        text-align: center;
+        @media (max-width: 767px) and (min-width: 320px) {
+            width: 100%;
+            text-align: start;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(0deg, #F5F7F9, #F5F7F9), $colorBorder;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__cost {
+        @include cost();
+        margin-bottom: 16px;
+    }
+    &__btn {
+        @include btn();
+        cursor: pointer;
+        @media (max-width: 767px) and (min-width: 320px) {
+            background: linear-gradient(0deg, #F5F7F9, #F5F7F9), $colorBorder;
+        }
+    }
+}

@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -20,6 +19,7 @@
 }
 
 .form__title {
+    font-weight: bold;
     font-size: 28px;
     line-height: 34px;
     color: #424242;
@@ -28,6 +28,7 @@
 
 .form__shipping {
     margin-bottom: 64px;
+    border: none;
 }
 
 .form__shipping>.form__input {
@@ -74,6 +75,7 @@
     line-height: 17px;
     color: #000;
     margin-bottom: 24px;
+    cursor: text;
 }
 
 .form__input::placeholder {
@@ -82,8 +84,14 @@
     color: #BDBDBD;
 }
 
+.form__input:focus {
+    outline: none;
+    box-shadow: 0px 0px 6px #976464;
+}
+
 .form__info {
     margin-bottom: 65px;
+    border: none;
 }
 
 .form__group2 {
@@ -99,8 +107,8 @@
     width: calc((100% - 32px) / 3);
 }
 
-.form__group2 .form__input:last-child {
-    margin-bottom: 0;
+.form__group2 .form__input:last-of-type {
+    margin-bottom: 8px;
 }
 
 .form__group2 .form__input:nth-child(3n) {
@@ -120,9 +128,10 @@
     margin-bottom: 27px;
 }
 
-/* .form__payment {
-    margin-bottom: 293px;
-} */
+.form__payment {
+    border: none;
+    position: relative;
+}
 
 .form__group {
     margin-bottom: 8px;
@@ -133,7 +142,8 @@
 }
 
 .form__group input {
-    display: none;
+    position: absolute;
+    opacity: 0;
 }
 
 .custom-radio {
@@ -146,6 +156,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: pointer;
 }
 
 .custom-radio::before {
@@ -163,6 +174,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #424242;
+    cursor: pointer;
 }
 
 .form__group input:checked+label .custom-radio::after {
@@ -189,6 +201,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: pointer;
+}
+
+.form__group input:focus+label .custom-radio {
+    box-shadow: 0px 0px 6px #976464;
+}
+
+.form__group input:active+label .custom-radio {
+    box-shadow: 0px 0px 6px #976464;
 }
 
 .custom-checkbox::before {
@@ -208,4 +229,8 @@
 
 .form__group input:checked+label .custom-checkbox .custom__img {
     z-index: 1;
+}
+
+.form__group input:focus+label .custom-checkbox {
+    box-shadow: 0px 0px 6px #976464;
 }
