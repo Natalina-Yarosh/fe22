@@ -1,1 +1,1 @@
-new Swiper('testimonials__slider');
+new Swiper('.testimonials__slider');
