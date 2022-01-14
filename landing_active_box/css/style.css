@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -247,6 +247,55 @@
 .team__icons-link:hover path {
   fill: #ff4343;
   color: #ff4343;
+}
+
+.testimonials .swiper-container {
+  max-width: 1511px;
+  margin: 0 auto;
+}
+
+.testimonials .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonials .swiper-slide .testimonials__description {
+  -ms-flex-preferred-size: 51%;
+      flex-basis: 51%;
+}
+
+.testimonials .swiper-slide .testimonials__pic {
+  overflow: hidden;
+}
+
+.testimonials .swiper-slide .testimonials__pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonials__description {
+  background-color: #5c3249;
+  padding: 135px 170px 122px 129px;
+}
+
+.testimonials .swiper-slide__title {
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.testimonials .swiper-slide__text {
+  font-size: 13px;
+  line-height: 15px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .download {

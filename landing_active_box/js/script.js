@@ -1,0 +1,1 @@
+new Swiper('testimonials__slider');

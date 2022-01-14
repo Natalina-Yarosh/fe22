@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap");
 
 * {
    padding: 0;
@@ -18,6 +18,7 @@ $colorFooterTop: #353c65;
 $colorFooterBottom: #2c3154;
 $colorIconsBorderTeam: #c6cbcd;
 $colorBackground: #252b49;
+$colorBackgroundSwiper: #5c3249;
 $sizeTextTeamFeatures: 18px;
 $lineHeitTeamFeatures: 21px;
 
@@ -54,6 +55,22 @@ $lineHeitTeamFeatures: 21px;
    color: $colorBlack;
    font-weight: 500;
    text-align: center;
+}
+
+@mixin titleSwiper {
+   font-size: 36px;
+   line-height: 48px;
+   font-family: "Cardo", serif;
+   font-weight: 400;
+   color: $colorWhite;
+}
+
+@mixin textSwiper {
+   font-size: 13px;
+   line-height: 15px;
+   color: $colorWhite;
+   font-weight: 700;
+   text-transform: uppercase;
 }
 
 @mixin positionTeam {
@@ -291,6 +308,39 @@ $lineHeitTeamFeatures: 21px;
    &__icons {
       display: flex;
       @include iconTeam();
+   }
+}
+
+.testimonials {
+   .swiper-container {
+      max-width: 1511px;
+      margin: 0 auto;
+   }
+   .swiper-slide {
+      display: flex;
+      .testimonials__description {
+         flex-basis: 51%;
+      }
+      .testimonials__pic {
+         overflow: hidden;
+         & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+
+   &__description {
+      background-color: $colorBackgroundSwiper;
+      padding: 135px 170px 122px 129px;
+   }
+   .swiper-slide__title {
+      @include titleSwiper();
+      margin-bottom: 25px;
+   }
+   .swiper-slide__text {
+      @include textSwiper();
    }
 }
 
