@@ -12,6 +12,7 @@ $colorTextTeamFeatures: #6c7279;
 $colorWhite: #fff;
 $colorRed: #ff4343;
 $colorDarkRed: #e71414;
+$colorRedActive: #b90c0ccc;
 $colorDarkBlack: #2d3033;
 $colorBlack: #000000;
 $colorFooterTop: #353c65;
@@ -19,6 +20,7 @@ $colorFooterBottom: #2c3154;
 $colorIconsBorderTeam: #c6cbcd;
 $colorBackground: #252b49;
 $colorBackgroundSwiper: #5c3249;
+$colorHeaderBottom: #babbc5;
 $sizeTextTeamFeatures: 18px;
 $lineHeitTeamFeatures: 21px;
 
@@ -209,6 +211,46 @@ $lineHeitTeamFeatures: 21px;
    margin: 0 auto;
 }
 
+.header {
+   .container {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      left: 90px;
+      top: 0;
+      border-bottom: 1px solid $colorHeaderBottom;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__menu {
+      flex-basis: 57%;
+   }
+   &__list {
+      display: flex;
+      & li {
+         flex-grow: 1;
+         text-align: center;
+         list-style-type: none;
+      }
+   }
+   &-list__item {
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 15px;
+      color: $colorWhite;
+      text-transform: uppercase;
+      display: block;
+      padding: 42px 5px;
+      transition: all 1s;
+      &:hover {
+         border-bottom: 2px solid $colorHeaderBottom;
+         transition: none;
+      }
+   }
+}
+
 .banner {
    padding: 230px 0 120px;
    background-image: url(../img/banner.png);
@@ -315,6 +357,9 @@ $lineHeitTeamFeatures: 21px;
       &:hover {
          opacity: 80%;
          cursor: pointer;
+      }
+      &:active {
+         background-color: $colorRedActive;
       }
    }
    .block-information__title {
