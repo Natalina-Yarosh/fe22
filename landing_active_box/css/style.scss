@@ -491,27 +491,16 @@ $lineHeitTeamFeatures: 21px;
 }
 
 .footer {
-   padding: 71px 0 24px;
-   background-color: $colorFooterTop;
-   position: relative;
-   &:before {
-      display: block;
-      content: "";
-      position: absolute;
+   &__top {
+      padding: 71px 0;
+      background-color: $colorFooterTop;
+   }
+   &__bottom {
+      padding: 24px 0;
       background-color: $colorFooterBottom;
-      left: 0;
-      top: 73.529%;
-      width: 100%;
-      height: 90px;
    }
-   .container {
-      position: relative;
-      z-index: 1;
-   }
-
    &__wrapper {
       display: flex;
-      margin-bottom: 91px;
       justify-content: center;
    }
    &__item {
