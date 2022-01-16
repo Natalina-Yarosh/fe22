@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap");
 * {
   padding: 0;
@@ -172,7 +173,7 @@
   width: 100px;
   height: 100px;
   overflow: hidden;
-  margin: 0 auto 53px;
+  margin: 0 auto 49px;
 }
 
 .features__icon svg {
@@ -393,6 +394,13 @@
 
 .testimonials .swiper-slide .testimonials__pic {
   overflow: hidden;
+  position: relative;
+}
+
+.testimonials .swiper-slide .testimonials__pic:before {
+  content: "";
+  display: block;
+  /*padding-bottom: 66.127%;*/
 }
 
 .testimonials .swiper-slide .testimonials__pic img {
@@ -400,6 +408,9 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  /*position: absolute; исчезает картинка, не могу понять почему*/
+  top: 0;
+  left: 0;
 }
 
 .testimonials__description {
