@@ -91,6 +91,8 @@ $lineHeitTeamFeatures: 21px;
    text-align: center;
    margin-bottom: 50px;
    font-weight: 700;
+   text-transform: uppercase;
+
 }
 
 @mixin textTeamFeatures {
@@ -414,14 +416,21 @@ $lineHeitTeamFeatures: 21px;
    }
 }
 
-.testimonials {
+.testimonials { 
+   overflow: hidden;
+   &__slider{
+      position: relative;
+   }
    .swiper-container {
-      max-width: 1511px;
+      // max-width: 1511px;
    }
    .swiper-slide {
-      display: flex;
+      display: grid;
+      grid-template-columns: 49% 51%;
+      align-items: center;
+      background-color: $colorBackgroundSwiper;
       .testimonials__description {
-         flex-basis: 51%;
+         // flex-basis: 51%;
       }
       .testimonials__pic {
          overflow: hidden;
@@ -429,20 +438,21 @@ $lineHeitTeamFeatures: 21px;
          &:before {
             content: "";
             display: block;
-            /*padding-bottom: 66.127%;*/
+            padding-bottom: 66.127%;
          }
          & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             /*position: absolute; исчезает картинка, не могу понять почему*/
+            position: absolute;
             top: 0;
             left: 0;
          }
       }
    }
    &__description {
-      background-color: $colorBackgroundSwiper;
+      // background-color: $colorBackgroundSwiper;
       padding: 135px 170px 122px 129px;
    }
    .swiper-slide__title {
@@ -455,7 +465,7 @@ $lineHeitTeamFeatures: 21px;
 }
 
 .download {
-   padding: 159px 114px;
+   padding: 159px 0px;
    &__title {
       @include titleDownload();
    }

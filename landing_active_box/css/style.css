@@ -377,19 +377,23 @@
   color: #ff4343;
 }
 
-.testimonials .swiper-container {
-  max-width: 1511px;
+.testimonials {
+  overflow: hidden;
+}
+
+.testimonials__slider {
+  position: relative;
 }
 
 .testimonials .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.testimonials .swiper-slide .testimonials__description {
-  -ms-flex-preferred-size: 51%;
-      flex-basis: 51%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 49% 51%;
+      grid-template-columns: 49% 51%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5c3249;
 }
 
 .testimonials .swiper-slide .testimonials__pic {
@@ -400,7 +404,7 @@
 .testimonials .swiper-slide .testimonials__pic:before {
   content: "";
   display: block;
-  /*padding-bottom: 66.127%;*/
+  padding-bottom: 66.127%;
 }
 
 .testimonials .swiper-slide .testimonials__pic img {
@@ -409,12 +413,12 @@
   -o-object-fit: cover;
      object-fit: cover;
   /*position: absolute; исчезает картинка, не могу понять почему*/
+  position: absolute;
   top: 0;
   left: 0;
 }
 
 .testimonials__description {
-  background-color: #5c3249;
   padding: 135px 170px 122px 129px;
 }
 
@@ -436,7 +440,7 @@
 }
 
 .download {
-  padding: 159px 114px;
+  padding: 159px 0px;
 }
 
 .download__title {
@@ -455,6 +459,7 @@
   text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .download__btn {
