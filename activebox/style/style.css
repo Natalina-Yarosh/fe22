@@ -169,12 +169,14 @@
 
 .banner__button:hover {
   background-color: #E71414;
+  cursor: pointer;
 }
 
 .banner__button:active {
   -webkit-box-shadow: 4px 4px 30px #FF4343;
           box-shadow: 4px 4px 30px #FF4343;
   background-color: #FF4343;
+  cursor: pointer;
 }
 
 .features {
@@ -510,12 +512,14 @@
 
 .download__btn:hover {
   background-color: #E71414;
+  cursor: pointer;
 }
 
 .download__btn:active {
   -webkit-box-shadow: 4px 4px 30px #FF4343;
           box-shadow: 4px 4px 30px #FF4343;
   background-color: #FF4343;
+  cursor: pointer;
 }
 
 .footer__first {
