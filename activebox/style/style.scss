@@ -74,12 +74,12 @@ $colorSwiper:#7E5D6F;
     }
 
     &__navigation{
-        flex-basis:57%;
+        // flex-basis:57%;
     }
     &__nav{
         list-style: none;
         width:100%;
-        max-width:134px;
+        min-width:134px;
         margin:0 auto;
 
         a{
@@ -227,11 +227,12 @@ $colorSwiper:#7E5D6F;
 .works{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 2px;
-    row-gap: 2px;
-
+    // column-gap: 2px;
+    // row-gap: 2px;
+ 
     &__picture{
         position: relative;
+        border: 1px solid #fff;
 
         &::before{
             content: "";
@@ -259,18 +260,20 @@ $colorSwiper:#7E5D6F;
         top:0;
         background-color:$colorRed;
         opacity: 0.8;
-        padding-top: 90%;
+        // padding-top: 90%;
         display:none;
         width: 100%;
-        height: 100%
+        height: 100%;
+        align-items: center;
+        justify-content: center
     }
 
     &__content{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-right: -50%;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // margin-right: -50%;
     }
     &__title{
         @include subtitle();
@@ -285,10 +288,10 @@ $colorSwiper:#7E5D6F;
     }
 
     &__picture:hover &__hover{
-        display: block;
+        display: flex;
     }
     &__picture:active &__hover{
-        display: block;
+        display: flex;
         background-color: $colorRedActive;
         opacity: 0.8;
     }
@@ -390,7 +393,7 @@ $colorSwiper:#7E5D6F;
 .testimonials{
 
     &__picture{
-        height: 490px;
+        min-height: 490px;
         width: 50%;
         overflow: hidden;
 
@@ -428,7 +431,7 @@ $colorSwiper:#7E5D6F;
         font-weight: 700;
         color: $colorWhite;
         max-width: 471px;
-        margin: 0 auto 13px;
+        margin: 0 auto ;
         text-transform: uppercase;
     }
 }
