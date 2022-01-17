@@ -135,6 +135,10 @@ font-family: 'Open Sans';
    margin-bottom: 42px;
 }
 
+.form-item:last-of-type{
+   margin-bottom: 48px;
+}
+
 .btn-info{
    border: 2px solid #FFFFFF;
    box-sizing: border-box;
