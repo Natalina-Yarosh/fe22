@@ -28,7 +28,10 @@ $colorCopyright: #808080;
 	text-align: center;
 	text-transform: uppercase;
 	color: $colorWhite;
-	padding: 42px 0;
+	padding: 41px 0;
+	display: block;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
 	&:hover {
 		border-bottom: 3px solid $borderHeader;
 	}
@@ -74,6 +77,35 @@ $colorCopyright: #808080;
 	}
 }
 
+@mixin title {
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $colorBlack;
+}
+@mixin text {
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: $colorGrey;
+}
+@mixin name {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: capitalize;
+	color: $colorBlack;
+}
+@mixin position {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: $bgBtn;
+}
+
 .container {
 	padding: 0 20px;
 	margin: 0 auto;
@@ -84,7 +116,7 @@ $colorCopyright: #808080;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 	width: 100%;
 
 	&__border {
@@ -128,6 +160,7 @@ $colorCopyright: #808080;
 	&__link {
 		@include headerLink();
 		min-width: 134px;
+
 		@media (max-width: 1024px) {
 			min-width: 112px;
 			font-size: 12px;
@@ -240,6 +273,274 @@ $colorCopyright: #808080;
 		@media (max-width: 767px) {
 			max-width: 280px;
 			padding: 16px 0;
+		}
+	}
+}
+.features {
+	padding: 116px 0 134px;
+	@media (max-width: 1024px) {
+		padding: 78px 0 80px;
+	}
+	@media (max-width: 767px) {
+		padding: 40px 0 35px;
+	}
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 30px;
+		row-gap: 89px;
+		@media (max-width: 1024px) {
+			column-gap: 20px;
+			row-gap: 50px;
+		}
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+	&__item {
+		@media (max-width: 767px) {
+			margin-bottom: 42px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__icon {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto 29px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media (max-width: 1024px) {
+			width: 85px;
+			height: 85px;
+			margin-bottom: 23px;
+		}
+		@media (max-width: 767px) {
+			width: 76px;
+			height: 76px;
+			margin-bottom: 21px;
+		}
+		svg {
+			width: 75%;
+			height: 75%;
+			object-fit: cover;
+		}
+	}
+	&__title {
+		@include title();
+		margin-bottom: 20px;
+		padding: 22px 0;
+		@media (max-width: 1024px) {
+			font-size: 18px;
+			line-height: 21px;
+			padding: 20px 0;
+			margin-bottom: 4px;
+		}
+		@media (max-width: 767px) {
+			padding: 10px 0;
+		}
+	}
+	&__text {
+		@include text();
+		@media (max-width: 1024px) {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+}
+.examples {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	@media (max-width: 767px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	&__work {
+		border: 1px solid $colorWhite;
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			padding-top: 90%;
+		}
+		&:hover .examples__hover {
+			display: flex;
+			align-content: center;
+			flex-wrap: wrap;
+			cursor: pointer;
+		}
+		&:active .examples__hover {
+			background-color: rgba(185, 12, 12, 0.8);
+		}
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	&__hover {
+		display: none;
+		background-color: rgba(255, 67, 67, 0.8);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	&__title {
+		@include title();
+		color: $colorWhite;
+		margin-bottom: 21px;
+		padding: 18px 0;
+		width: 100%;
+		@media (max-width: 1024px) {
+			font-size: 18px;
+			line-height: 21px;
+			padding: 10px 0;
+			margin-bottom: 13px;
+		}
+		@media (max-width: 767px) {
+			padding: 2px 0;
+			margin-bottom: 5px;
+		}
+	}
+	&__text {
+		@include text();
+		color: $colorWhite;
+		width: 100%;
+		@media (max-width: 1024px) {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+}
+.employees {
+	padding: 114px 0;
+	@media (max-width: 1024px) {
+		padding: 78px 0;
+	}
+	@media (max-width: 767px) {
+		padding: 35px 0;
+	}
+	.container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		/*grid-auto-rows: 1fr;*/
+		column-gap: 30px;
+		row-gap: 50px;
+		@media (max-width: 1024px) {
+			column-gap: 25px;
+			row-gap: 40px;
+		}
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+	&__item {
+		display: grid;
+		/*grid-auto-flow: row;*/
+		grid-template: auto 60px 44px 1fr 39px / 1fr;
+		@media (max-width: 1024px) {
+			grid-template: auto 50px 43px 1fr 33px / 1fr;
+		}
+		@media (max-width: 767px) {
+			grid-template: auto 50px 59px 1fr 40px / 1fr;
+			margin-bottom: 49px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__photo {
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			padding-top: 100%;
+		}
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	&__name {
+		@include name();
+		align-self: center;
+		padding-top: 30px;
+		@media (max-width: 1024px) {
+			font-size: 18px;
+			line-height: 21px;
+			padding-top: 25px;
+		}
+	}
+	&__position {
+		@include position();
+		padding: 5px 0 18px;
+		@media (max-width: 1024px) {
+			font-size: 14px;
+			line-height: 16px;
+			padding: 5px 0 22px;
+		}
+	}
+	&__text {
+		@include text();
+		text-align: left;
+		padding-bottom: 38px;
+		@media (max-width: 1024px) {
+			font-size: 14px;
+			line-height: 16px;
+			padding-bottom: 39px;
+		}
+		@media (max-width: 767px) {
+			padding-bottom: 55px;
+		}
+	}
+	&__social {
+		display: flex;
+		&_icon {
+			border: 1px solid $borderSocial;
+			width: 39px;
+			height: 39px;
+			margin-right: 5px;
+			padding: 9px 0;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				border-color: $colorBlack;
+				path {
+					fill: $colorBlack;
+				}
+			}
+			&:active {
+				border-color: $bgBtn;
+				path {
+					fill: $bgBtn;
+				}
+			}
+			@media (max-width: 1024px) {
+				width: 33px;
+				height: 33px;
+				padding: 8px 0;
+			}
+			@media (max-width: 767px) {
+				width: 40px;
+				height: 40px;
+				padding: 10px 0;
+			}
+		}
+		svg {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 }
