@@ -60,6 +60,7 @@ $colorSwiper:#7E5D6F;
         width:184px;
         overflow: hidden;
         margin-right: 316px;
+        display: block;
 
         & svg{
             width:100%;
@@ -73,9 +74,6 @@ $colorSwiper:#7E5D6F;
         justify-content: space-between;
     }
 
-    &__navigation{
-        // flex-basis:57%;
-    }
     &__nav{
         list-style: none;
         width:100%;
@@ -227,8 +225,6 @@ $colorSwiper:#7E5D6F;
 .works{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    // column-gap: 2px;
-    // row-gap: 2px;
  
     &__picture{
         position: relative;
@@ -260,7 +256,6 @@ $colorSwiper:#7E5D6F;
         top:0;
         background-color:$colorRed;
         opacity: 0.8;
-        // padding-top: 90%;
         display:none;
         width: 100%;
         height: 100%;
@@ -268,13 +263,6 @@ $colorSwiper:#7E5D6F;
         justify-content: center
     }
 
-    &__content{
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
-        // margin-right: -50%;
-    }
     &__title{
         @include subtitle();
         font-weight: 900;
@@ -364,6 +352,7 @@ $colorSwiper:#7E5D6F;
        border:1px solid $colorBorder;
        margin-right: 6px;
        position: relative;
+       display: block;
 
        &:last-child{
            margin-right: 0;
@@ -529,6 +518,7 @@ $colorSwiper:#7E5D6F;
         border:1px solid $colorBorder;
         margin-right: 27px;
         position: relative;
+        display: block;
  
         &:last-child{
             margin-right: 0;

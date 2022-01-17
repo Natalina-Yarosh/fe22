@@ -37,6 +37,7 @@
   width: 184px;
   overflow: hidden;
   margin-right: 316px;
+  display: block;
 }
 
 .header__logo svg {
@@ -387,6 +388,7 @@
   border: 1px solid #C6CBCD;
   margin-right: 6px;
   position: relative;
+  display: block;
 }
 
 .team__icon:last-child {
@@ -576,6 +578,7 @@
   border: 1px solid #C6CBCD;
   margin-right: 27px;
   position: relative;
+  display: block;
 }
 
 .footer__icon:last-child {
