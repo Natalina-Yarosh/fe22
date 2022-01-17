@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    // font-family: 'Cardo', serif;
+}
+
+.container {
+    max-width: 1210px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+$colorWhite: #FFFFFF;
+$bgBanner: #252B49;
+$colorHeaderBorder: #BABBC5;
+$bgButton: #FF4343;
+$bgButtonHover: #E71414;
+$bgButtonActive: #FF4343;
+
+@mixin headerLink {
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $colorWhite;
+    text-decoration: none;
+    padding: 42px 0;
+
+    &:hover {
+        border-bottom: 3px solid #BABBC5;
+    }
+
+    &:active {
+        border-bottom: 3px solid #E71414;
+        color: #E71414;
+    }
+}
+
+@mixin svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin bannerTitle {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $colorWhite;
+    margin-bottom: 32px;
+}
+
+@mixin bannerText {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: $colorWhite;
+    margin-bottom: 82px;
+}
+
+@mixin btn {
+    display: block;
+    max-width: 369px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: $bgButton;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $colorWhite;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $bgButtonHover;
+    }
+
+    &:active {
+        background-color: $bgButtonActive;
+        box-shadow: 4px 4px 30px #FF4343;
+    }
+}
+
+// block header
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $colorHeaderBorder;
+    }
+
+    &__logo {
+        width: 184px;
+        height: 27px;
+        overflow: hidden;
+
+        & svg {
+            @include svg();
+        }
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+        max-width: 134px;
+        width: 100%;
+
+        & a {
+            @include headerLink();
+        }
+    }
+}
+
+.banner {
+    padding: 230px 0 120px;
+    background-image: url(../img/bgHeader.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $bgBanner;
+        opacity: 0.8;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        @include bannerTitle();
+    }
+
+    &__text {
+        @include bannerText();
+    }
+
+    &__btn {
+        @include btn();
+    }
+}
+
+// block features
+.features {
+    padding: 116px 0 134px;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 89px;
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        margin: 0 auto 51px;
+
+        & svg {
+            @include svg();
+        }
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2D3033;
+        margin-bottom: 42px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #6C7279;
+    }
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2px;
+    row-gap: 2px;
+
+    &__item {
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            padding-top: 90%;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__img {
+        @include img();
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__description {
+        display: none;
+    }
+
+    &__description:hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
