@@ -31,6 +31,14 @@ $lineHeitTeamFeatures: 21px;
    text-align: center;
    color: $colorWhite;
    text-transform: uppercase;
+   @media (max-width: 1024px) {
+      font-size: 48px;
+      line-height: 56px;
+   }
+   @media (max-width: 767px) {
+      font-size: 36px;
+      line-height: 42px;
+   }
 }
 
 @mixin textBanner {
@@ -39,15 +47,28 @@ $lineHeitTeamFeatures: 21px;
    font-weight: 400;
    text-align: center;
    color: $colorWhite;
+   @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 21px;
+   }
+   @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 16px;
+   }
 }
 
 @mixin titleTeamFeatures {
    font-size: 24px;
    line-height: 28px;
-   margin-bottom: 6px;
+   margin-bottom: 7px;
    text-transform: capitalize;
    color: $colorDarkBlack;
    font-weight: 700;
+   @media (min-width: 320px) and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 6px;
+   }
 }
 
 @mixin titleDownload {
@@ -57,6 +78,16 @@ $lineHeitTeamFeatures: 21px;
    color: $colorBlack;
    font-weight: 500;
    text-align: center;
+   @media (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 21px;
+   }
+   @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 33px;
+   }
 }
 
 @mixin titleSwiper {
@@ -65,14 +96,25 @@ $lineHeitTeamFeatures: 21px;
    font-family: "Cardo", serif;
    font-weight: 400;
    color: $colorWhite;
+   @media (min-width: 319px) and (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 32px;
+   }
 }
-
 @mixin textSwiper {
    font-size: 13px;
    line-height: 15px;
    color: $colorWhite;
    font-weight: 700;
    text-transform: uppercase;
+   @media (max-width: 1024px) {
+      font-size: 13px;
+      line-height: 15px;
+   }
+   @media (max-width: 767px) {
+      font-size: 12px;
+      line-height: 14px;
+   }
 }
 
 @mixin positionTeam {
@@ -82,6 +124,16 @@ $lineHeitTeamFeatures: 21px;
    margin-bottom: 18px;
    text-transform: uppercase;
    font-weight: 400;
+   @media (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 22px;
+   }
+   @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 38px;
+   }
 }
 
 @mixin textDownload {
@@ -92,6 +144,16 @@ $lineHeitTeamFeatures: 21px;
    margin-bottom: 50px;
    font-weight: 700;
    text-transform: uppercase;
+   @media (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 45px;
+   }
+   @media (max-width: 767px) {
+      font-size: 13px;
+      line-height: 15px;
+      margin-bottom: 13px;
+   }
 }
 
 @mixin textTeamFeatures {
@@ -100,11 +162,24 @@ $lineHeitTeamFeatures: 21px;
    margin-bottom: 38px;
    color: $colorTextTeamFeatures;
    font-weight: 400;
+   @media (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 39px;
+   }
+   @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 55px;
+   }
 }
 
 @mixin imgTeam {
    position: relative;
    margin: 0 auto 31px;
+   @media (min-width: 319px) and (max-width: 1024px) {
+      margin: 0 auto 27px;
+   }
    &:before {
       content: "";
       display: block;
@@ -125,6 +200,12 @@ $lineHeitTeamFeatures: 21px;
    height: 100px;
    overflow: hidden;
    margin: 0 auto 49px;
+   @media (max-width: 1024px) {
+      margin: 0 auto 42px;
+   }
+   @media (max-width: 767px) {
+      margin: 0 auto 37px;
+   }
 }
 
 @mixin picTeamIconFeatures {
@@ -142,6 +223,11 @@ $lineHeitTeamFeatures: 21px;
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (max-width: 1024px) {
+         width: 33px;
+         height: 33px;
+         margin-right: 4px;
+      }
       &:last-child {
          margin-right: 0;
       }
@@ -164,6 +250,14 @@ $lineHeitTeamFeatures: 21px;
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (max-width: 1024px) {
+         width: 33px;
+         height: 33px;
+         margin-right: 23px;
+      }
+      @media (max-width: 767px) {
+         margin-right: 16px;
+      }
       &:last-child {
          margin-right: 0;
       }
@@ -206,6 +300,10 @@ $lineHeitTeamFeatures: 21px;
    line-height: $lineHeitTeamFeatures;
    color: $colorWhite;
    text-align: center;
+   @media (min-width: 319px) and (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 16px;
+   }
 }
 
 .container {
@@ -236,6 +334,9 @@ $lineHeitTeamFeatures: 21px;
          list-style-type: none;
          max-width: 134px;
          width: 100%;
+         @media (max-width: 1024px) {
+            max-width: 119px;
+         }
       }
    }
    &-list__item {
@@ -249,6 +350,11 @@ $lineHeitTeamFeatures: 21px;
       padding: 42px 0;
       transition: all 1s;
       position: relative;
+      @media (max-width: 1024px) {
+         font-size: 12px;
+         line-height: 14px;
+         padding: 43px 0;
+      }
       &:hover::after {
          content: "";
          display: block;
@@ -402,14 +508,9 @@ $lineHeitTeamFeatures: 21px;
    padding: 114px 0;
 
    &__wrapper {
-      display: flex;
-   }
-   &__item {
-      margin-right: 30px;
-      width: calc((100% - 90px) / 4);
-      &:last-child {
-         margin-right: 0;
-      }
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      column-gap: 30px;
    }
    &__img {
       @include imgTeam();
@@ -434,17 +535,11 @@ $lineHeitTeamFeatures: 21px;
    &__slider {
       position: relative;
    }
-   .swiper-container {
-      // max-width: 1511px;
-   }
    .swiper-slide {
       display: grid;
       grid-template-columns: 49% 51%;
       align-items: center;
       background-color: $colorBackgroundSwiper;
-      .testimonials__description {
-         // flex-basis: 51%;
-      }
       .testimonials__pic {
          overflow: hidden;
          position: relative;
@@ -457,7 +552,6 @@ $lineHeitTeamFeatures: 21px;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /*position: absolute; исчезает картинка, не могу понять почему*/
             position: absolute;
             top: 0;
             left: 0;
@@ -465,8 +559,7 @@ $lineHeitTeamFeatures: 21px;
       }
    }
    &__description {
-      // background-color: $colorBackgroundSwiper;
-      padding: 135px 170px 122px 129px;
+      padding: 0 170px 0 129px;
    }
    .swiper-slide__title {
       @include titleSwiper();
@@ -474,6 +567,14 @@ $lineHeitTeamFeatures: 21px;
    }
    .swiper-slide__text {
       @include textSwiper();
+   }
+   .swiper-pagination {
+      bottom: 0px;
+   }
+   .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      background-color: #7e5d6f;
    }
 }
 
