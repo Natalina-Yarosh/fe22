@@ -177,11 +177,13 @@ $colorSwiper:#7E5D6F;
 
         &:hover{
             background-color: $colorRedDark;
+            cursor: pointer;
         }
 
         &:active{
             box-shadow: 4px 4px 30px $colorRed;
             background-color: $colorRed;
+            cursor: pointer;
         }
     }
 }
@@ -466,11 +468,13 @@ $colorSwiper:#7E5D6F;
 
         &:hover{
             background-color: $colorRedDark;
+            cursor: pointer;
         }
 
         &:active{
             box-shadow: 4px 4px 30px $colorRed;
             background-color: $colorRed;
+            cursor: pointer;
         }
     }
 }
