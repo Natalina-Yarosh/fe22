@@ -31,6 +31,12 @@ margin: 27px 0;
  align-items: center;
 }
 
+.link-navigation{
+   color: white;
+   text-decoration: none;
+
+}
+
 .navigation-item{
    font-family: 'Open Sans';
    font-size: 14px;
@@ -893,7 +899,7 @@ textarea{
       box-shadow: inset 0px 0px 10px #AB4949;
    } 
 
-   
+
 /*footer*/
 
 .footer-axit{
