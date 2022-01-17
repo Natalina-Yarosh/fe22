@@ -790,7 +790,96 @@ border-radius: 50%;
    color: #FFFFFF;
 }
 
-/*Footer*/ 
+/*Contact us*/ 
+
+.contacts{   
+   padding: 104px 0 50px;
+}
+
+.contacts-container{
+padding: 0 15px;
+margin: 0 auto;
+max-width: 1170px;
+}
+
+.contacts-title{
+      font-family: 'Raleway';
+      text-transform: uppercase;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      margin-bottom: 54px;
+}
+
+.contacts-title::after{
+      content: '';
+      display: block;
+      border-bottom: 1px solid #EC7979;
+      padding-bottom: 54px;
+      width: 100%;
+      max-width: 100px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+}
+
+.contacts-text{
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   color: #86878B;
+   margin-bottom: 90px;
+}
+
+.form-items{
+   display: flex;
+   margin-bottom: 50px;
+}
+
+.form-items-left{
+   margin-right: 30px;
+   
+}
+
+.contacts-form-btn{
+   box-sizing: border-box;
+   font-family: Open Sans;
+   font-style: normal;
+   font-size: 14px;
+   max-width: 600px;
+   width: 100%;
+   line-height: 20px;
+   border: none;
+   background-color: #EC7979;
+   padding: 10px;
+   border: 1px solid transparent;
+   color: #FFFFFF;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+
+.contacts-form-item{
+max-width: 100%;
+width: 571px;
+font-size: 14px;
+line-height: 19px;
+padding-bottom: 19px;
+}
+
+
+
+.contacts-item-form{
+   max-width: 100%;
+   width: 600px;
+   font-size: 14px;
+   line-height: 19px;
+   border: none;
+   border-bottom: 1px solid #BDBDBD;
+   padding-bottom: 19px;
+
+}
+
+/*footer*/
 
 .footer-axit{
    padding: 41px 0 27px;
