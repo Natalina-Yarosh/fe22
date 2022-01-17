@@ -101,7 +101,9 @@ $bgButtonActive: #FF4343;
 
 // block header
 .header {
-    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
     z-index: 100;
 
@@ -114,7 +116,7 @@ $bgButtonActive: #FF4343;
 
     &__logo {
         width: 184px;
-        height: 27px;
+        // height: 27px;
         overflow: hidden;
 
         & svg {
@@ -128,10 +130,11 @@ $bgButtonActive: #FF4343;
     }
 
     &__item {
-        max-width: 134px;
+        min-width: 134px;
         width: 100%;
 
         & a {
+            border-bottom: 3px solid transparent;
             @include headerLink();
         }
     }
@@ -219,11 +222,12 @@ $bgButtonActive: #FF4343;
 .work {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 2px;
-    row-gap: 2px;
+    // column-gap: 2px;
+    // row-gap: 2px;
 
     &__item {
         position: relative;
+        border: 1px solid $colorWhite;
 
         &::before {
             content: "";
@@ -244,12 +248,20 @@ $bgButtonActive: #FF4343;
     }
 
     &__description {
-        display: none;
-    }
-
-    &__description:hover {
+        opacity: 0;
         position: absolute;
         top: 0;
         left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: $colorWhite;
+        flex-wrap: wrap;
+    }
+
+    &__item:hover .work__description{
+        opacity: 1;
     }
 }
