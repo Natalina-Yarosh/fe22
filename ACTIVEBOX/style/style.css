@@ -372,10 +372,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #5C3249;
 }
 
 .testimonials__image {
   overflow: hidden;
+  width: 49%;
 }
 
 .testimonials__image img {
@@ -388,7 +390,16 @@
 .testimonials__description {
   width: 51%;
   padding: 116px 170px 144px 129px;
-  background-color: #5C3249;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .testimonials__title {
@@ -399,6 +410,7 @@
   line-height: 49px;
   text-transform: capitalize;
   color: #FFFFFF;
+  margin-bottom: 30px;
 }
 
 .testimonials__text {

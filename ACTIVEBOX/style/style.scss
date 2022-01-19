@@ -378,9 +378,11 @@ $bgFooterBottom: #2C3154;
 // section testimonials
 .testimonials {
     display: flex;
+    background-color: $bgTestimonial;
 
     &__image {
         overflow: hidden;
+        width: 49%;
 
         & img {
             @include img();
@@ -390,7 +392,10 @@ $bgFooterBottom: #2C3154;
     &__description {
         width: 51%;
         padding: 116px 170px 144px 129px;
-        background-color: $bgTestimonial;
+        // background-color: $bgTestimonial;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
     }
 
     &__title {
@@ -401,6 +406,7 @@ $bgFooterBottom: #2C3154;
         line-height: 49px;
         text-transform: capitalize;
         color: $colorWhite;
+        margin-bottom: 30px;
     }
 
     &__text {
