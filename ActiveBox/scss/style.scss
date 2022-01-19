@@ -12,14 +12,24 @@ $bgBtnHover: #e71414;
 $shadowBtnActive: 4px 4px 30px #ff4343;
 $bgBanner: rgba(37, 43, 73, 0.8);
 $colorBlack: #2d3033;
+$colorTotalBlack: #000000;
 $colorGrey: #6c7279;
 $bgPseudo: rgba(255, 67, 67, 0.8);
 $borderSocial: #c6cbcd;
-$bgStatement: #5c3249;
+$bgReviews: #5c3249;
 $sliderDot: #7e5d6f;
 $bgFooter: #353c65;
 $bgCopyright: #2c3154;
 $colorCopyright: #808080;
+
+@keyframes hover {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 @mixin headerLink {
 	font-weight: bold;
@@ -31,12 +41,7 @@ $colorCopyright: #808080;
 	padding: 41px 0;
 	display: block;
 	text-decoration: none;
-	border-bottom: 3px solid transparent;
-	&:hover {
-		border-bottom: 3px solid $borderHeader;
-	}
 	&:active {
-		border-bottom: 3px solid $bgBtnHover;
 		color: $bgBtnHover;
 	}
 }
@@ -68,6 +73,8 @@ $colorCopyright: #808080;
 	cursor: pointer;
 	border: none;
 	width: 100%;
+	display: block;
+	transition: all 0.2s linear;
 	&:hover {
 		background-color: $bgBtnHover;
 	}
@@ -105,6 +112,36 @@ $colorCopyright: #808080;
 	text-transform: uppercase;
 	color: $bgBtn;
 }
+@mixin reviewText {
+	font-family: "Cardo";
+	font-style: italic;
+	font-size: 36px;
+	line-height: 49px;
+	color: $colorWhite;
+	text-transform: capitalize;
+}
+@mixin reviewName {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	color: $colorWhite;
+	text-transform: uppercase;
+}
+@mixin downloadTitle {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 35px;
+	text-align: center;
+	color: $colorTotalBlack;
+}
+@mixin downloadText {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $colorTotalBlack;
+}
 
 .container {
 	padding: 0 20px;
@@ -130,8 +167,7 @@ $colorCopyright: #808080;
 	}
 	&__logo {
 		width: 270px;
-		// height: 100px;
-		// padding: 38px 0 36px;
+
 		img {
 			width: 184px;
 			height: 26px;
@@ -160,6 +196,24 @@ $colorCopyright: #808080;
 	&__link {
 		@include headerLink();
 		min-width: 134px;
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			width: 0;
+			height: 3px;
+			background-color: $borderHeader;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transition: width 0.2s linear, background-color 0.2s linear 0.2s;
+		}
+		&:hover::before {
+			width: 100%;
+		}
+		&:active::before {
+			background-color: $bgBtnHover;
+		}
 
 		@media (max-width: 1024px) {
 			min-width: 112px;
@@ -174,6 +228,8 @@ $colorCopyright: #808080;
 			padding: 24px 0;
 			text-align: left;
 			color: $colorWhite;
+			display: block;
+			text-decoration: none;
 		}
 	}
 	&__menuBurger {
@@ -184,13 +240,20 @@ $colorCopyright: #808080;
 			height: 56px;
 			padding: 19px 15px;
 			cursor: pointer;
-
+			.close {
+				display: none;
+			}
 			svg {
 				width: 24px;
 				height: 18px;
 			}
-			&:hover path {
-				fill: $borderHeader;
+			&:hover {
+				.burger {
+					display: none;
+				}
+				.close {
+					display: block;
+				}
 			}
 			&:hover .header__nav_mobile {
 				display: block;
@@ -266,7 +329,7 @@ $colorCopyright: #808080;
 		@include btn();
 		max-width: 369px;
 		margin: 0 auto;
-		display: block;
+
 		@media (max-width: 1024px) {
 			max-width: 314px;
 		}
@@ -355,9 +418,15 @@ $colorCopyright: #808080;
 	@media (max-width: 767px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	&__hover {
+		display: none;
+		transition: all 0.3s linear;
+		animation: hover 0.3s linear;
+	}
 	&__work {
 		border: 1px solid $colorWhite;
 		position: relative;
+
 		&::before {
 			content: "";
 			display: block;
@@ -368,6 +437,12 @@ $colorCopyright: #808080;
 			align-content: center;
 			flex-wrap: wrap;
 			cursor: pointer;
+			background-color: rgba(255, 67, 67, 0.8);
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
 		}
 		&:active .examples__hover {
 			background-color: rgba(185, 12, 12, 0.8);
@@ -381,15 +456,7 @@ $colorCopyright: #808080;
 		left: 0;
 		top: 0;
 	}
-	&__hover {
-		display: none;
-		background-color: rgba(255, 67, 67, 0.8);
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		left: 0;
-		top: 0;
-	}
+
 	&__title {
 		@include title();
 		color: $colorWhite;
@@ -510,11 +577,16 @@ $colorCopyright: #808080;
 			height: 39px;
 			margin-right: 5px;
 			padding: 9px 0;
+			transition: all 0.3s linear;
+
 			&:last-child {
 				margin-right: 0;
 			}
 			&:hover {
 				border-color: $colorBlack;
+				svg {
+					transform: scale(1.4);
+				}
 				path {
 					fill: $colorBlack;
 				}
@@ -540,6 +612,264 @@ $colorCopyright: #808080;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			transition: all 0.3s linear;
+		}
+	}
+}
+.reviews {
+	padding-bottom: 45px;
+	@media (max-width: 1024px) {
+		padding-bottom: 33px;
+	}
+	&__slider {
+		background-color: $bgReviews;
+		display: grid;
+		grid-template-columns: 49% 51%;
+		align-items: center;
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+
+	&__img {
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			padding-top: 66%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__review {
+		padding: 0 20px 0 17%;
+		@media (max-width: 767px) {
+			padding: 0 20px 95px;
+			margin-top: 25px;
+		}
+	}
+	&__text {
+		@include reviewText();
+		margin-bottom: 25px;
+		max-width: 471px;
+		@media (max-width: 1024px) {
+			max-width: 330px;
+			margin-bottom: 17px;
+			font-size: 24px;
+			line-height: 32px;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 23px;
+			text-align: center;
+		}
+	}
+	&__name {
+		@include reviewName();
+		@media (max-width: 1024px) {
+			font-size: 12px;
+			line-height: 14px;
+		}
+		@media (max-width: 767px) {
+			max-width: 100%;
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
+.download {
+	padding: 130px 0 114px;
+	@media (max-width: 1024px) {
+		padding: 92px 0 78px;
+	}
+	@media (max-width: 767px) {
+		padding: 53px 0 45px;
+	}
+	&__title {
+		@include downloadTitle();
+		margin-bottom: 15px;
+		@media (max-width: 1024px) {
+			margin-bottom: 20px;
+			font-size: 24px;
+			line-height: 28px;
+		}
+		@media (max-width: 767px) {
+			margin-bottom: 22px;
+			font-size: 18px;
+			line-height: 21px;
+		}
+	}
+	&__text {
+		@include downloadText();
+		margin-bottom: 48px;
+		@media (max-width: 1024px) {
+			margin-bottom: 46px;
+			font-size: 14px;
+			line-height: 16px;
+		}
+		@media (max-width: 767px) {
+			margin-bottom: 13px;
+			font-size: 13px;
+			line-height: 15px;
+		}
+	}
+	&__btn {
+		@include btn();
+		max-width: 369px;
+		margin: 0 auto;
+		@media (max-width: 1024px) {
+			font-size: 18px;
+			line-height: 21px;
+			max-width: 314px;
+			padding: 29px 0;
+		}
+		@media (max-width: 767px) {
+			max-width: 100%;
+		}
+	}
+}
+.footer {
+	background-color: $bgFooter;
+	padding: 71px 0 0;
+	@media (max-width: 1024px) {
+		padding-top: 47px;
+	}
+	@media (max-width: 767px) {
+		padding-top: 34px;
+	}
+	&__block {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 30px;
+		margin-bottom: 67px;
+		@media (max-width: 1024px) {
+			column-gap: 20px;
+			margin-bottom: 43px;
+		}
+		@media (max-width: 767px) {
+			display: block;
+			margin-bottom: 33px;
+		}
+	}
+	&__title {
+		@include downloadText();
+		color: $colorWhite;
+		margin-bottom: 29px;
+		@media (max-width: 1024px) {
+			font-size: 14px;
+			line-height: 16px;
+			margin-bottom: 18px;
+		}
+		@media (max-width: 767px) {
+			margin-bottom: 34px;
+		}
+	}
+	&__text {
+		@include text();
+		text-transform: capitalize;
+		color: $colorWhite;
+		@media (max-width: 1024px) {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+	&__social {
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+		@media (max-width: 1024px) {
+			padding-top: 16px;
+		}
+		@media (max-width: 767px) {
+			padding-top: 3px;
+		}
+	}
+	&__icon {
+		display: block;
+		border: 1px solid $borderSocial;
+		width: 39px;
+		height: 39px;
+		margin-right: 27px;
+		padding: 9px 0;
+		transition: all 0.3s linear;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			border-color: $colorBlack;
+			svg {
+				transform: scale(1.4);
+			}
+			path {
+				fill: $colorBlack;
+			}
+		}
+		&:active {
+			border-color: $bgBtn;
+			path {
+				fill: $bgBtn;
+			}
+		}
+		@media (max-width: 1024px) {
+			width: 33px;
+			height: 33px;
+			padding: 8px 0;
+		}
+		svg {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: all 0.3s linear;
+		}
+	}
+	&__location {
+		@media (max-width: 767px) {
+			margin-bottom: 69px;
+		}
+	}
+	&__socials {
+		@media (max-width: 767px) {
+			margin-bottom: 59px;
+		}
+	}
+	&__about {
+		@media (max-width: 767px) {
+			.footer__title {
+				margin-bottom: 39px;
+			}
+		}
+	}
+	&__copy {
+		background-color: $bgCopyright;
+		padding: 24px 0;
+		@media (max-width: 1024px) {
+			padding: 14px 0;
+		}
+		@media (max-width: 767px) {
+			padding: 30px 0 28px;
+		}
+		&_text {
+			max-width: 370px;
+			width: 100%;
+			margin: 0 auto;
+			@media (max-width: 1024px) {
+				max-width: 314px;
+			}
+			@media (max-width: 767px) {
+				max-width: 100%;
+			}
+		}
+		&__span {
+			color: $colorCopyright;
 		}
 	}
 }
