@@ -184,6 +184,9 @@ $lineHeitTeamFeatures: 21px;
       content: "";
       display: block;
       padding-bottom: 100%;
+      @media (max-width: 767px) {
+         padding-bottom: 81.1%;
+      }
    }
    & img {
       width: 100%;
@@ -271,7 +274,7 @@ $lineHeitTeamFeatures: 21px;
    }
 }
 
-@mixin btn {
+@mixin btnHeader {
    font-size: 24px;
    line-height: 28px;
    color: $colorWhite;
@@ -294,6 +297,50 @@ $lineHeitTeamFeatures: 21px;
       background-color: $colorRed;
       box-shadow: 4px 4px 30px 0px $colorRed;
    }
+   @media (max-width: 1024px) {
+      max-width: 313px;
+   }
+   @media (max-width: 767px) {
+      max-width: 279px;
+      padding: 15px 0 15px 0;
+   }
+}
+@mixin btnDownload {
+   font-size: 24px;
+   line-height: 28px;
+   color: $colorWhite;
+   font-weight: 900;
+   display: block;
+   max-width: 370px;
+   width: 100%;
+   text-transform: capitalize;
+   text-align: center;
+   margin: 0 auto;
+   padding: 25px 0 25px 0;
+   background-color: $colorRed;
+   transition: all 1s;
+   border: none;
+   cursor: pointer;
+   &:hover {
+      background-color: #e71414;
+   }
+   &:active {
+      background-color: $colorRed;
+      box-shadow: 4px 4px 30px 0px $colorRed;
+   }
+   @media (max-width: 1024px) {
+      max-width: 313px;
+      font-size: 18px;
+      line-height: 21px;
+      padding: 28px 0 28px 0;
+   }
+   @media (max-width: 767px) {
+      max-width: 278px;
+      padding: 15px 0 15px 0;
+      font-size: 18px;
+      line-height: 21px;
+      padding: 28px 0 28px 0;
+   }
 }
 @mixin footerTitleDescription {
    font-size: $sizeTextTeamFeatures;
@@ -307,8 +354,8 @@ $lineHeitTeamFeatures: 21px;
 }
 
 .container {
-   max-width: 1200px;
-   padding: 0 15px;
+   max-width: 1210px;
+   padding: 0 20px;
    margin: 0 auto;
 }
 
@@ -326,6 +373,9 @@ $lineHeitTeamFeatures: 21px;
    }
    &__menu {
       flex-basis: 57%;
+      @media (max-width: 1024px) {
+         flex-basis: 54.7%;
+      }
    }
    &__list {
       display: flex;
@@ -335,7 +385,7 @@ $lineHeitTeamFeatures: 21px;
          max-width: 134px;
          width: 100%;
          @media (max-width: 1024px) {
-            max-width: 119px;
+            max-width: 113px;
          }
       }
    }
@@ -387,6 +437,12 @@ $lineHeitTeamFeatures: 21px;
    background-repeat: no-repeat;
    background-position: center;
    position: relative;
+   @media (max-width: 1024px) {
+      padding: 257px 0 126px;
+   }
+   @media (max-width: 767px) {
+      padding: 106px 0 52px;
+   }
    &:before {
       content: " ";
       display: block;
@@ -405,23 +461,49 @@ $lineHeitTeamFeatures: 21px;
    &__title {
       @include titleBanner();
       margin-bottom: 31px;
+      @media (max-width: 1024px) {
+         margin-bottom: 61px;
+      }
+      @media (max-width: 767px) {
+         margin-bottom: 32px;
+      }
    }
    &__text {
       @include textBanner();
       margin-bottom: 82px;
+      @media (max-width: 1024px) {
+         margin-bottom: 91px;
+      }
+      @media (max-width: 767px) {
+         margin-bottom: 51px;
+      }
    }
    &__btn {
-      @include btn();
+      @include btnHeader();
    }
 }
 
 .features {
    padding: 116px 0 133px;
+   @media (max-width: 1024px) {
+      padding: 78px 0 80px;
+   }
+   @media (max-width: 767px) {
+      padding: 40px 0 35px;
+   }
    &__wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       row-gap: 88px;
       column-gap: 30px;
+      @media (max-width: 1024px) {
+         row-gap: 49px;
+         column-gap: 20px;
+      }
+      @media (max-width: 767px) {
+         grid-template-columns: 1fr;
+         row-gap: 41px;
+      }
    }
    &__icon {
       @include iconFeatures();
@@ -435,6 +517,12 @@ $lineHeitTeamFeatures: 21px;
       margin-bottom: 44px;
       text-align: center;
       font-weight: 900;
+      @media (max-width: 1024px) {
+         margin-bottom: 23px;
+      }
+      @media (max-width: 767px) {
+         margin-bottom: 8px;
+      }
    }
    &__text {
       @include textTeamFeatures();
@@ -446,6 +534,9 @@ $lineHeitTeamFeatures: 21px;
 .work {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
+   @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+   }
    &__block {
       position: relative;
       border: 1px solid $colorWhite;
@@ -494,6 +585,16 @@ $lineHeitTeamFeatures: 21px;
       text-transform: uppercase;
       margin-bottom: 36px;
       font-weight: 900;
+      @media (max-width: 1024px) {
+         font-size: 18px;
+         line-height: 21px;
+         margin-bottom: 23px;
+      }
+      @media (max-width: 767px) {
+         font-size: 18px;
+         line-height: 21px;
+         margin-bottom: 8px;
+      }
    }
    .block-information__description {
       font-size: $sizeTextTeamFeatures;
@@ -506,11 +607,23 @@ $lineHeitTeamFeatures: 21px;
 
 .team {
    padding: 114px 0;
+   @media (max-width: 1024px) {
+      padding: 78px 0;
+   }
+   @media (max-width: 767px) {
+      padding: 35px 0;
+   }
 
    &__wrapper {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       column-gap: 30px;
+      @media (max-width: 1024px) {
+         column-gap: 25px;
+      }
+      @media (max-width: 767px) {
+         grid-template-columns: 1fr;
+      }
    }
    &__img {
       @include imgTeam();
@@ -579,7 +692,13 @@ $lineHeitTeamFeatures: 21px;
 }
 
 .download {
-   padding: 159px 0px;
+   padding: 131px 0 114px;
+   @media (max-width: 1024px) {
+      padding: 93px 0 78px;
+   }
+   @media (max-width: 767px) {
+      padding: 53px 0 45px;
+   }
    &__title {
       @include titleDownload();
    }
@@ -587,7 +706,7 @@ $lineHeitTeamFeatures: 21px;
       @include textDownload();
    }
    &__btn {
-      @include btn();
+      @include btnDownload();
    }
 }
 
@@ -595,18 +714,37 @@ $lineHeitTeamFeatures: 21px;
    &__top {
       padding: 71px 0;
       background-color: $colorFooterTop;
+      @media (max-width: 1024px) {
+         padding: 46px 0 41px;
+      }
    }
    &__bottom {
       padding: 24px 0;
       background-color: $colorFooterBottom;
+      @media (max-width: 1024px) {
+         padding: 14px 0;
+      }
    }
    &__wrapper {
       display: flex;
       justify-content: center;
+      @media (max-width: 767px) {
+         flex-direction: column;
+         align-items: center;
+      }
    }
    &__item {
       margin-right: 30px;
       width: calc((100% - 60px) / 3);
+      @media (max-width: 1024px) {
+         margin-right: 20px;
+         width: calc((100% - 40px) / 2);
+      }
+      @media (max-width: 767px) {
+         margin: 0 auto;
+         max-width: 280px;
+         width: 100%;
+      }
       &:last-child {
          margin-right: 0;
       }
@@ -615,6 +753,12 @@ $lineHeitTeamFeatures: 21px;
          margin-bottom: 29px;
          font-weight: 700;
          text-transform: uppercase;
+         @media (max-width: 1024px) {
+            margin-bottom: 17px;
+         }
+         @media (max-width: 767px) {
+            margin-bottom: 34px;
+         }
       }
       &-description {
          @include footerTitleDescription();
@@ -623,6 +767,9 @@ $lineHeitTeamFeatures: 21px;
    }
    .title {
       margin-bottom: 49px;
+      @media (max-width: 1024px) {
+         margin-bottom: 32px;
+      }
    }
    &__icons {
       display: flex;
@@ -637,6 +784,16 @@ $lineHeitTeamFeatures: 21px;
       line-height: $lineHeitTeamFeatures;
       max-width: 370px;
       color: $colorTextTeamFeatures;
+      @media (max-width: 1024px) {
+         font-size: 14px;
+         line-height: 16px;
+         max-width: 314px;
+      }
+      @media (max-width: 767px) {
+         font-size: 14px;
+         line-height: 16px;
+         max-width: 280px;
+      }
    }
    span {
       color: $colorWhite;
