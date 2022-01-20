@@ -52,10 +52,10 @@ body, html {
   position: fixed;
   width: 100%;
   z-index: 20;
-  padding: 0 20px;
 }
 
 .header .container {
+  max-width: 1170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,10 +72,11 @@ body, html {
 .header__logo {
   width: 184px;
   overflow: hidden;
-  margin-right: 316px;
+  margin-right: 315px;
   display: block;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
+  padding-top: 5px;
 }
 
 @media (max-width: 767px) {
@@ -301,7 +302,7 @@ body, html {
 }
 
 .features {
-  padding: 116px 0 133.57px;
+  padding: 114px 0 133.57px;
 }
 
 @media (max-width: 1024px) {
@@ -795,7 +796,7 @@ body, html {
 
 .testimonials__picture {
   min-height: 490px;
-  width: 50%;
+  width: 49%;
   overflow: hidden;
 }
 
@@ -820,8 +821,8 @@ body, html {
 }
 
 .testimonials__description {
-  width: 50%;
-  padding: 129px 0 116px;
+  width: 51%;
+  padding: 134px 0 116px;
   margin: 0 auto;
   background-color: #5C3249;
   text-transform: capitalize;
@@ -859,7 +860,7 @@ body, html {
   font-style: italic;
   color: #ffffff;
   max-width: 471px;
-  margin: 0 auto 13px;
+  margin: 0 auto 24px 129px;
 }
 
 @media (max-width: 1024px) {
@@ -885,7 +886,7 @@ body, html {
   font-weight: 700;
   color: #ffffff;
   max-width: 471px;
-  margin: 0 auto;
+  margin: 0 auto 0 129px;
   text-transform: uppercase;
 }
 
@@ -905,7 +906,7 @@ body, html {
 }
 
 .download {
-  padding: 84px 0 114px;
+  padding: 118px 0 113px;
 }
 
 @media (max-width: 1024px) {
@@ -924,7 +925,7 @@ body, html {
   font-size: 30px;
   line-height: 35px;
   font-weight: 500;
-  margin-bottom: 25.29px;
+  margin-bottom: 23.29px;
   color: #000000;
   text-align: center;
 }
@@ -950,7 +951,7 @@ body, html {
   line-height: 21px;
   text-align: center;
   color: #000000;
-  margin-bottom: 50.14px;
+  margin-bottom: 49.14px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -979,7 +980,7 @@ body, html {
   font-weight: 900;
   display: block;
   background-color: #FF4343;
-  padding: 26px;
+  padding: 25px;
   max-width: 370px;
   width: 100%;
   text-transform: uppercase;
@@ -1132,6 +1133,7 @@ body, html {
   text-align: center;
   font-weight: 400;
   color: #ffffff;
+  text-transform: capitalize;
 }
 
 @media (max-width: 1024px) {
@@ -1212,7 +1214,7 @@ body, html {
 }
 
 .footer__second {
-  padding: 24px 0;
+  padding: 23.86px 0 24.14px;
   background-color: #2C3154;
 }
 
@@ -1235,6 +1237,7 @@ body, html {
   color: #808080;
   max-width: 370px;
   margin: 0 auto;
+  text-transform: capitalize;
 }
 
 @media (max-width: 1024px) {
@@ -1257,7 +1260,7 @@ body, html {
 }
 
 .swiper-wrapper {
-  padding-bottom: 55px;
+  padding-bottom: 39px;
 }
 
 @media (max-width: 1024px) {
