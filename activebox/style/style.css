@@ -179,6 +179,11 @@ body, html {
   position: relative;
 }
 
+.banner .container {
+  position: relative;
+  z-index: 1;
+}
+
 @media (max-width: 1024px) {
   .banner {
     padding: 257px 0 126px;
@@ -210,8 +215,6 @@ body, html {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  position: relative;
-  z-index: 2;
   margin-bottom: 31.43px;
 }
 
@@ -237,8 +240,6 @@ body, html {
   text-align: center;
   color: #ffffff;
   margin-bottom: 82px;
-  position: relative;
-  z-index: 2;
 }
 
 @media (max-width: 1024px) {
@@ -267,8 +268,6 @@ body, html {
   max-width: 370px;
   width: 100%;
   text-transform: uppercase;
-  position: relative;
-  z-index: 2;
   color: #ffffff;
   text-align: center;
   margin: 0 auto;
@@ -1051,14 +1050,14 @@ body, html {
 }
 
 .footer__item {
-  width: calc((100% - 130px - 130px) / 3);
-  margin-right: 130px;
+  width: calc((100% - 30px - 30px) / 3);
+  margin-right: 30px;
 }
 
 @media (max-width: 1024px) {
   .footer__item {
-    width: calc((100% - 105px - 105px) / 3);
-    margin-right: 105px;
+    width: calc((100% - 20px - 20px) / 3);
+    margin-right: 20px;
   }
 }
 
