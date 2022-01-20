@@ -69,12 +69,14 @@ body,html{
     position: fixed;
     width: 100%;
     z-index: 20;
+    padding: 0 20px;
 
     .container{
         display: flex;
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid $colorHeaderBorder;
+        padding: 0;
 
     }
 
