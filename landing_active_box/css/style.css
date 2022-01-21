@@ -75,9 +75,9 @@
   text-transform: uppercase;
   display: block;
   padding: 42px 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  position: relative;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border-bottom: 3px solid transparent;
 }
 
 @media (max-width: 1024px) {
@@ -88,30 +88,12 @@
   }
 }
 
-.header-list__item:hover::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  -webkit-transition: none;
-  transition: none;
-  background-color: #babbc5;
+.header-list__item:hover {
+  border-bottom: 3px solid #babbc5;
 }
 
-.header-list__item:active::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  -webkit-transition: none;
-  transition: none;
-  background-color: #e71414;
+.header-list__item:active {
+  border-bottom: 3px solid #e71414;
 }
 
 .banner {
@@ -236,10 +218,10 @@
   margin: 0 auto;
   padding: 25px 0 25px 0;
   background-color: #ff4343;
-  -webkit-transition: all 1s;
-  transition: all 1s;
   border: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .banner__btn:hover {
@@ -452,6 +434,8 @@
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .work__block-information:hover {
@@ -655,6 +639,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 @media (max-width: 1024px) {
@@ -850,8 +836,8 @@
   margin: 0 auto;
   padding: 25px 0 25px 0;
   background-color: #ff4343;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   border: none;
   cursor: pointer;
 }
@@ -1029,6 +1015,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 @media (max-width: 1024px) {
