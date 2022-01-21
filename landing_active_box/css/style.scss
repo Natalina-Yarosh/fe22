@@ -176,10 +176,6 @@ $lineHeitTeamFeatures: 21px;
 
 @mixin imgTeam {
    position: relative;
-   margin: 0 auto 31px;
-   @media (min-width: 319px) and (max-width: 1024px) {
-      margin: 0 auto 27px;
-   }
    &:before {
       content: "";
       display: block;
@@ -367,6 +363,7 @@ $lineHeitTeamFeatures: 21px;
    width: 100%;
    left: 0;
    top: 0;
+   background-color: $colorFooterTop;
    .container {
       border-bottom: 1px solid $colorHeaderBottom;
       display: flex;
@@ -491,6 +488,9 @@ $lineHeitTeamFeatures: 21px;
          row-gap: 41px;
       }
    }
+   &__item {
+      display: grid;
+   }
    &__icon {
       @include iconFeatures();
       & svg {
@@ -501,6 +501,7 @@ $lineHeitTeamFeatures: 21px;
       @include titleTeamFeatures();
       text-transform: uppercase;
       margin-bottom: 44px;
+      margin-top: auto;
       text-align: center;
       font-weight: 900;
       @media (max-width: 1024px) {
@@ -511,6 +512,7 @@ $lineHeitTeamFeatures: 21px;
       }
    }
    &__text {
+      margin-top: auto;
       @include textTeamFeatures();
       margin-bottom: 0;
       text-align: center;
@@ -600,20 +602,27 @@ $lineHeitTeamFeatures: 21px;
    @media (max-width: 767px) {
       padding: 35px 0;
    }
-
    &__wrapper {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      column-gap: 30px;
-      @media (max-width: 1024px) {
-         column-gap: 25px;
-      }
+      display: flex;
       @media (max-width: 767px) {
-         grid-template-columns: 1fr;
+         flex-direction: column;
+      }
+   }
+   &__item {
+      display: flex;
+      flex-direction: column;
+      margin-right: 30px;
+      width: calc((100% - 90px) / 4);
+      &:last-child {
+         margin-right: 0;
       }
    }
    &__img {
       @include imgTeam();
+      margin-bottom: 31px;
+      @media (min-width: 319px) and (max-width: 1024px) {
+         margin-bottom: 27px;
+      }
    }
    &__title-item {
       @include titleTeamFeatures();
@@ -626,6 +635,7 @@ $lineHeitTeamFeatures: 21px;
    }
    &__icons {
       display: flex;
+      margin-top: auto;
       @include iconTeam();
    }
 }
