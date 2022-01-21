@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 100px;
+    background-color: green;
+}
+
+.mm-icons{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 18px;
+    margin-right: 11px;
+    top: 0;
+    transition: transform 0.5s;
+
+    & span{
+        display: block;
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background: #C29952;
+        left: 0;
+    }
+
+    .mm-1{
+        top: 0;
+        transition: transform .5s .25s, top .5s .2s, background .25s;
+    }
+
+    .mm-2{
+        transform: translateX(-4px);
+        top: 50%;
+        margin-top: -1px;
+        transition: transform .25s, background .25s;
+    }
+
+    .mm-3{
+        top: 100%;
+        margin-top: -2px;
+        transition: transform .5s .25s, top .5s .2s, background .25s;
+    }
+
+    &:hover{
+        span{
+            background: #FFF;
+        }
+        .mm-2{
+            transform: translateX(4px);
+        }
+    }
+}
+
+.mm-icons.opened{
+    transform: rotate(180deg);
+
+    .mm-1{
+        transform: rotate(-45deg);
+        top: 50%;
+        margin-top: -1px;
+    }
+
+    .mm-2{
+        background: transparent;
+        opacity: 0;
+    }
+
+    .mm-3{
+        transform: rotate(45deg);
+        top: 50%;
+        margin-top: -1px;
+    }
+}

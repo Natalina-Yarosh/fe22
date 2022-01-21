@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 100px;
+  background-color: green;
+}
+
+.mm-icons {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 18px;
+  margin-right: 11px;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.mm-icons span {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background: #C29952;
+  left: 0;
+}
+
+.mm-icons .mm-1 {
+  top: 0;
+  -webkit-transition: top .5s .2s, background .25s, -webkit-transform .5s .25s;
+  transition: top .5s .2s, background .25s, -webkit-transform .5s .25s;
+  transition: transform .5s .25s, top .5s .2s, background .25s;
+  transition: transform .5s .25s, top .5s .2s, background .25s, -webkit-transform .5s .25s;
+}
+
+.mm-icons .mm-2 {
+  -webkit-transform: translateX(-4px);
+          transform: translateX(-4px);
+  top: 50%;
+  margin-top: -1px;
+  -webkit-transition: background .25s, -webkit-transform .25s;
+  transition: background .25s, -webkit-transform .25s;
+  transition: transform .25s, background .25s;
+  transition: transform .25s, background .25s, -webkit-transform .25s;
+}
+
+.mm-icons .mm-3 {
+  top: 100%;
+  margin-top: -2px;
+  -webkit-transition: top .5s .2s, background .25s, -webkit-transform .5s .25s;
+  transition: top .5s .2s, background .25s, -webkit-transform .5s .25s;
+  transition: transform .5s .25s, top .5s .2s, background .25s;
+  transition: transform .5s .25s, top .5s .2s, background .25s, -webkit-transform .5s .25s;
+}
+
+.mm-icons:hover span {
+  background: #FFF;
+}
+
+.mm-icons:hover .mm-2 {
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
+}
+
+.mm-icons.opened {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.mm-icons.opened .mm-1 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 50%;
+  margin-top: -1px;
+}
+
+.mm-icons.opened .mm-2 {
+  background: transparent;
+  opacity: 0;
+}
+
+.mm-icons.opened .mm-3 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 50%;
+  margin-top: -1px;
+}
+/*# sourceMappingURL=style.css.map */

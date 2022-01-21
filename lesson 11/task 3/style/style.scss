@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+
+    @media(max-width:992px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(max-width:767px){
+        display: block;
+    }
+
+    &__block{
+        position: relative;
+
+        &::before{
+            content: '';
+            display: block;
+            padding-top: 75%;
+
+            @media(max-width:992px){
+                padding-top: 66%;
+            }
+
+            @media(max-width:767px){
+                padding-top: 73%;
+            }
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+ 
+}

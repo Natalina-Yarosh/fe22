@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    &__block{
+        position: relative;
+
+        &::before{
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .spanTwo{
+        grid-column-start: 3;
+        grid-column-end: 4;
+
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
