@@ -82,13 +82,23 @@
           </div>
         </div>
         <form class="mainblock-form">
-          <input class="input-location" type="text" placeholder="Where are you going?" id="Location">
-          <label for="Location">Location</label>
-          <input class="input-date" type="text" placeholder="Add dates" id="date">
-          <label for="date">Dates</label>
-          <input class="input-guests" type="text" placeholder="Add guests" id="guests">
-          <label for="guests">Add guests</label>
-          <input class="input-work" type="text"> I'm travelling for work
+          <div class="mainblock-form-item">
+            <label for="Location">Location</label>
+            <input class="input-location" type="text" placeholder="Where are you going?" id="Location">
+          </div>
+          <div class="mainblock-form-item">
+            <label for="date">Dates</label>
+            <input class="input-date" type="text" placeholder="Add dates" id="date">
+          </div>
+          <div class="mainblock-form-item">
+            <label for="guests">Add guests</label>
+            <input class="input-guests" type="text" placeholder="Add guests" id="guests">
+          </div>
+
+          <div class="mainblock-form-item">
+            <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+            <label class="checkbox-name" for="happy">I'm travelling for work</label>
+          </div>
           <button class="form-btn" type="submit">Search</button>
         </form>
       </div>
@@ -102,18 +112,31 @@
         <div class="destination-item">
           <div class="destination-img-container">
             <img class="destination-img" src="imgs/vilnius.png" alt="Kaunas">
+            <div class="destination-cost">
+              <p class="destination-cost-text">Average price</p>
+              <p class="destination-cost-sum">$60</p>
+            </div>
             <p class="destination-text">Lithunia, Kaunas</p>
+
           </div>
         </div>
         <div class="destination-item">
           <div class="destination-img-container">
             <img class="destination-img" src="imgs/moscow.png" alt="Moscow">
+            <div class="destination-cost">
+              <p class="destination-cost-text">Average price</p>
+              <p class="destination-cost-sum">$60</p>
+            </div>
             <p class="destination-text">Russia, Moscow</p>
           </div>
         </div>
         <div class="destination-item">
           <div class="destination-img-container">
             <img class="destination-img" src="imgs/gdansk.png" alt="Gdansk">
+            <div class="destination-cost">
+              <p class="destination-cost-text">Average price</p>
+              <p class="destination-cost-sum">$60</p>
+            </div>
             <p class="destination-text">Poland,Gdańsk</p>
           </div>
         </div>
