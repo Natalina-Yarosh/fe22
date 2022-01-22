@@ -90,7 +90,7 @@ $lineHeitTeamFeatures: 21px;
    @media (max-width: 767px) {
       font-size: 18px;
       line-height: 21px;
-      margin-bottom: 33px;
+      margin-bottom: 22px;
    }
 }
 
@@ -208,7 +208,9 @@ $lineHeitTeamFeatures: 21px;
       height: 85px;
    }
    @media (max-width: 767px) {
-      margin: 0 auto 37px;
+      margin: 0 auto 40px;
+      width: 75px;
+      height: 74px;
    }
 }
 
@@ -232,6 +234,11 @@ $lineHeitTeamFeatures: 21px;
          width: 33px;
          height: 33px;
          margin-right: 4px;
+      }
+      @media (max-width: 767px) {
+         width: 39px;
+         height: 39px;
+         margin-right: 6px;
       }
       &:last-child {
          margin-right: 0;
@@ -369,14 +376,36 @@ $lineHeitTeamFeatures: 21px;
    left: 0;
    top: 0;
    background-color: $colorFooterTop;
-   .container {
+   @media (max-width: 767px) {
+      padding: 21px 0 10px;
+   }
+   &__wrapper {
       border-bottom: 1px solid $colorHeaderBottom;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 1024px) {
+         max-width: 984px;
+         width: 100%;
+         margin: 0 auto;
+      }
+      @media (max-width: 767px) {
+         border-bottom: transparent;
+      }
+   }
+   &-logo svg {
+      width: 184px;
+      height: 27px;
+      @media (max-width: 767px) {
+         width: 101px;
+         height: 14px;
+      }
    }
    &__menu {
       flex-basis: 57%;
+      @media (max-width: 767px) {
+         display: none;
+      }
    }
    &__list {
       display: flex;
@@ -422,6 +451,13 @@ $lineHeitTeamFeatures: 21px;
    background-repeat: no-repeat;
    background-position: center;
    position: relative;
+   br {
+      display: none;
+      @media (max-width: 767px) {
+         display: inline-block;
+      }
+   }
+
    @media (max-width: 1024px) {
       padding: 257px 0 126px;
    }
@@ -474,7 +510,7 @@ $lineHeitTeamFeatures: 21px;
       padding: 78px 0 80px;
    }
    @media (max-width: 767px) {
-      padding: 40px 0 35px;
+      padding: 40px 0 39px;
    }
    &__wrapper {
       display: grid;
@@ -487,7 +523,7 @@ $lineHeitTeamFeatures: 21px;
       }
       @media (max-width: 767px) {
          grid-template-columns: 1fr;
-         row-gap: 41px;
+         row-gap: 40px;
       }
    }
    &__item {
@@ -622,12 +658,26 @@ $lineHeitTeamFeatures: 21px;
       &:last-child {
          margin-right: 0;
       }
+      @media (max-width: 1024px) {
+         margin-right: 0;
+         width: 100%;
+         margin-right: 25px;
+      }
+      @media (max-width: 767px) {
+         margin: 0 0 50px 0;
+         &:last-child {
+            margin: 0;
+         }
+      }
    }
    &__img {
       @include imgTeam();
       margin-bottom: 31px;
-      @media (min-width: 319px) and (max-width: 1024px) {
+      @media (max-width: 1024px) {
          margin-bottom: 30px;
+      }
+      @media (max-width: 767px) {
+         margin-bottom: 29px;
       }
    }
    &__title-item {
@@ -639,8 +689,11 @@ $lineHeitTeamFeatures: 21px;
    &__text {
       @include textTeamFeatures();
       margin-bottom: 37px;
-      @media (width: 1024px) {
+      @media (max-width: 1024px) {
          margin-bottom: 39px;
+      }
+      @media (max-width: 767px) {
+         margin-bottom: 55px;
       }
    }
    &__icons {
@@ -660,6 +713,9 @@ $lineHeitTeamFeatures: 21px;
       grid-template-columns: 49% 51%;
       align-items: center;
       background-color: $colorBackgroundSwiper;
+      @media (max-width: 767px) {
+         grid-template-columns: 1fr;
+      }
       .testimonials__pic {
          overflow: hidden;
          position: relative;
@@ -683,13 +739,22 @@ $lineHeitTeamFeatures: 21px;
       @media (max-width: 1024px) {
          padding: 0 90px 0 88px;
       }
+      @media (max-width: 767px) {
+         padding: 26px 25px 101px 20px;
+      }
    }
    .swiper-slide__title {
       @include titleSwiper();
       margin-bottom: 25px;
+      @media (max-width: 767px) {
+         text-align: center;
+      }
    }
    .swiper-slide__text {
       @include textSwiper();
+      @media (max-width: 767px) {
+         text-align: center;
+      }
    }
    .swiper-pagination {
       bottom: 0px;
@@ -707,7 +772,7 @@ $lineHeitTeamFeatures: 21px;
       padding: 128px 0 78px;
    }
    @media (max-width: 767px) {
-      padding: 53px 0 45px;
+      padding: 87px 0 45px;
    }
    &__title {
       @include titleDownload();
@@ -727,12 +792,18 @@ $lineHeitTeamFeatures: 21px;
       @media (max-width: 1024px) {
          padding: 46px 0 41px;
       }
+      @media (max-width: 767px) {
+         padding: 34px 0;
+      }
    }
    &__bottom {
       padding: 23px 0;
       background-color: $colorFooterBottom;
       @media (max-width: 1024px) {
          padding: 14px 0;
+      }
+      @media (max-width: 767px) {
+         padding: 28.5px 0;
       }
    }
    &__wrapper {
@@ -746,19 +817,24 @@ $lineHeitTeamFeatures: 21px;
    &__item {
       margin-right: 30px;
       width: calc((100% - 60px) / 3);
+      &:last-child {
+         margin-right: 0;
+      }
       @media (max-width: 1024px) {
          margin-right: 20px;
          width: calc((100% - 40px) / 2);
       }
       @media (max-width: 767px) {
-         margin: 0 auto;
+         &:first-child {
+            margin: 0 0 69px 0;
+         }
+         &:nth-child(2) {
+            margin: 0 0 61px 0;
+         }
          max-width: 280px;
          width: 100%;
       }
-      &:last-child {
-         margin-right: 0;
-      }
-      &-title {
+      &-title-1 {
          @include footerTitleDescription();
          margin-bottom: 29px;
          font-weight: 700;
@@ -770,15 +846,34 @@ $lineHeitTeamFeatures: 21px;
             margin-bottom: 34px;
          }
       }
+      &-title-2 {
+         @include footerTitleDescription();
+         margin-bottom: 49px;
+         font-weight: 700;
+         text-transform: uppercase;
+         @media (max-width: 1024px) {
+            margin-bottom: 32px;
+         }
+         @media (max-width: 767px) {
+            margin-bottom: 36px;
+         }
+      }
+      &-title-3 {
+         @include footerTitleDescription();
+         margin-bottom: 29px;
+         font-weight: 700;
+         text-transform: uppercase;
+         @media (max-width: 1024px) {
+            margin-bottom: 17px;
+         }
+         @media (max-width: 767px) {
+            margin-bottom: 38px;
+         }
+      }
       &-description {
          @include footerTitleDescription();
+         text-transform: capitalize;
          font-weight: 400;
-      }
-   }
-   .title {
-      margin-bottom: 49px;
-      @media (max-width: 1024px) {
-         margin-bottom: 32px;
       }
    }
    &__icons {
@@ -797,12 +892,14 @@ $lineHeitTeamFeatures: 21px;
       @media (max-width: 1024px) {
          font-size: 14px;
          line-height: 16px;
-         max-width: 314px;
+         max-width: 330px;
+         width: 100%;
       }
       @media (max-width: 767px) {
          font-size: 14px;
          line-height: 16px;
          max-width: 280px;
+         width: 100%;
       }
    }
    span {
