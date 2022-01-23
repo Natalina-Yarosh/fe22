@@ -38,7 +38,7 @@ $colorCopyright: #808080;
 	text-align: center;
 	text-transform: uppercase;
 	color: $colorWhite;
-	padding: 41px 0;
+	padding: 43px 0 41px;
 	display: block;
 	text-decoration: none;
 	&:active {
@@ -168,7 +168,7 @@ $colorCopyright: #808080;
 	&__logo,
 	.header__logo_mobile {
 		width: 270px;
-
+		padding-top: 7px;
 		img {
 			width: 184px;
 			height: 26px;
@@ -219,6 +219,10 @@ $colorCopyright: #808080;
 			min-width: 112px;
 			font-size: 12px;
 			line-height: 14px;
+			&:hover::before {
+				width: 107%;
+				left: -7px;
+			}
 		}
 		&_mobile {
 			text-transform: uppercase;
@@ -346,15 +350,16 @@ $colorCopyright: #808080;
 	}
 	&__text {
 		@include bannerText();
-		margin-bottom: 92px;
+		margin-bottom: 81px;
 		@media (max-width: 1024px) {
 			font-size: 18px;
 			line-height: 21px;
+			margin-bottom: 91px;
 		}
 		@media (max-width: 767px) {
 			font-size: 14px;
 			line-height: 16px;
-			margin-bottom: 51px;
+			margin-bottom: 49px;
 		}
 	}
 	&__btn {
@@ -372,12 +377,12 @@ $colorCopyright: #808080;
 	}
 }
 .features {
-	padding: 116px 0 134px;
+	padding: 117px 0 133px;
 	@media (max-width: 1024px) {
-		padding: 78px 0 80px;
+		padding: 78px 0 79px;
 	}
 	@media (max-width: 767px) {
-		padding: 40px 0 35px;
+		padding: 39px 0 33px;
 	}
 	.container {
 		display: grid;
@@ -394,7 +399,7 @@ $colorCopyright: #808080;
 	}
 	&__item {
 		@media (max-width: 767px) {
-			margin-bottom: 42px;
+			margin-bottom: 40px;
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -418,8 +423,8 @@ $colorCopyright: #808080;
 			margin-bottom: 37px;
 		}
 		svg {
-			width: 75%;
-			height: 75%;
+			width: 82%;
+			height: 86%;
 			object-fit: cover;
 		}
 	}
@@ -475,6 +480,9 @@ $colorCopyright: #808080;
 			left: 0;
 			top: 0;
 			transition: all 0.3s linear;
+			@media (max-width:767px) {
+			padding-bottom: 3px;
+							}
 		}
 		&:active .examples__hover {
 			background-color: rgba(185, 12, 12, 0.8);
@@ -553,10 +561,14 @@ $colorCopyright: #808080;
 			content: "";
 			display: block;
 			padding-top: 100%;
+			@media (max-width: 767px) {
+			padding-top: 81%;
+			}
 		}
 		@media (max-width: 1024px) {
-			margin-bottom: 25px;
+			margin-bottom: 27px;
 		}
+		
 	}
 	&__img {
 		width: 100%;
@@ -572,6 +584,8 @@ $colorCopyright: #808080;
 		@media (max-width: 1024px) {
 			font-size: 18px;
 			line-height: 21px;
+		margin-bottom: 7px;
+
 		}
 	}
 	&__position {
@@ -583,7 +597,7 @@ $colorCopyright: #808080;
 			margin-bottom: 22px;
 		}
 		@media (max-width: 767px) {
-			margin-bottom: 38px;
+			margin-bottom: 39px;
 		}
 	}
 	&__text {
@@ -649,7 +663,7 @@ $colorCopyright: #808080;
 	}
 }
 .reviews {
-	padding-bottom: 45px;
+	padding-bottom: 49px;
 	@media (max-width: 1024px) {
 		padding-bottom: 33px;
 	}
@@ -658,6 +672,9 @@ $colorCopyright: #808080;
 		display: grid;
 		grid-template-columns: 49% 51%;
 		align-items: center;
+		@media (max-width: 1024px) {
+			align-items:stretch;
+		}
 		@media (max-width: 767px) {
 			display: block;
 		}
@@ -680,9 +697,13 @@ $colorCopyright: #808080;
 		}
 	}
 	&__review {
-		padding: 0 20px 0 17%;
+		padding: 17px 20px 0 17%;
+		@media (max-width: 1024px) {
+		padding: 62px 20px 0 17%;
+
+		}
 		@media (max-width: 767px) {
-			padding: 0 20px 95px;
+			padding: 0 20px 100px;
 			margin-top: 25px;
 		}
 	}
@@ -692,14 +713,14 @@ $colorCopyright: #808080;
 		max-width: 471px;
 		@media (max-width: 1024px) {
 			max-width: 330px;
-			margin-bottom: 17px;
+			margin-bottom: 18px;
 			font-size: 24px;
 			line-height: 32px;
 		}
 		@media (max-width: 767px) {
 			width: 100%;
 			max-width: 100%;
-			margin-bottom: 23px;
+			margin-bottom: 27px;
 			text-align: center;
 		}
 	}
@@ -717,18 +738,18 @@ $colorCopyright: #808080;
 	}
 }
 .download {
-	padding: 130px 0 114px;
+	padding: 133px 0 114px;
 	@media (max-width: 1024px) {
-		padding: 92px 0 78px;
+		padding: 95px 0 78px;
 	}
 	@media (max-width: 767px) {
 		padding: 53px 0 45px;
 	}
 	&__title {
 		@include downloadTitle();
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 		@media (max-width: 1024px) {
-			margin-bottom: 20px;
+			margin-bottom: 22px;
 			font-size: 24px;
 			line-height: 28px;
 		}
@@ -742,7 +763,7 @@ $colorCopyright: #808080;
 		@include downloadText();
 		margin-bottom: 48px;
 		@media (max-width: 1024px) {
-			margin-bottom: 46px;
+			margin-bottom: 44px;
 			font-size: 14px;
 			line-height: 16px;
 		}
@@ -778,6 +799,12 @@ $colorCopyright: #808080;
 	}
 	.container {
 		margin-bottom: 67px;
+	@media (max-width: 1024px) {
+margin-bottom: 42px;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 33px;
+			}
 	}
 	&__block {
 		display: grid;
@@ -795,11 +822,11 @@ $colorCopyright: #808080;
 	&__title {
 		@include downloadText();
 		color: $colorWhite;
-		margin-bottom: 29px;
+		margin-bottom: 31px;
 		@media (max-width: 1024px) {
 			font-size: 14px;
 			line-height: 16px;
-			margin-bottom: 18px;
+			margin-bottom: 16px;
 		}
 		@media (max-width: 767px) {
 			margin-bottom: 34px;
@@ -857,6 +884,11 @@ $colorCopyright: #808080;
 			width: 33px;
 			height: 33px;
 			padding: 8px 0;
+			margin-right: 23px;
+		}
+		@media (max-width: 767px) {
+			
+			margin-right: 16px;
 		}
 		svg {
 			width: 100%;
@@ -866,6 +898,7 @@ $colorCopyright: #808080;
 		}
 	}
 	&__location {
+		
 		@media (max-width: 767px) {
 			margin-bottom: 69px;
 		}
@@ -876,6 +909,11 @@ $colorCopyright: #808080;
 		}
 	}
 	&__about {
+		@media (max-width: 1024px) {
+			.footer__title {
+				margin-bottom: 15px;
+			}
+		}
 		@media (max-width: 767px) {
 			.footer__title {
 				margin-bottom: 39px;
@@ -889,7 +927,7 @@ $colorCopyright: #808080;
 			padding: 14px 0;
 		}
 		@media (max-width: 767px) {
-			padding: 30px 0 28px;
+			padding: 30px 20px 28px;
 		}
 		&_text {
 			max-width: 370px;
