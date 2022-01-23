@@ -78,8 +78,10 @@ $bgInteger: #5c3249;
   position: absolute;
   z-index: 5;
   width: 100%;
+  padding: 0 20px;
 
   &__container {
+    padding: 0;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #babbc5;
@@ -87,21 +89,22 @@ $bgInteger: #5c3249;
     position: relative;
     z-index: 2;
   }
-
-  &__logotype {
-    width: calc(100% - 57%);
-    max-width: 270px;
-    max-height: 100px;
-    & img {
-      width: 100%;
-      height: 100%;
-    }
+  
+  &__logotype{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  &__logotype svg{
+    width: 184px;
+    height: 26px;
   }
 
   &__list {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
   }
   &__navigation {
@@ -187,6 +190,8 @@ $bgInteger: #5c3249;
 
   position: relative;
   margin-bottom: 116px;
+  padding-top: 230px;
+  padding-bottom: 120px;
 
   &::before {
     content: "";
@@ -202,8 +207,7 @@ $bgInteger: #5c3249;
   &__container {
     position: relative;
     z-index: 1;
-    padding-top: 230px;
-    padding-bottom: 120px;
+    
   }
 
   &__title {
@@ -290,7 +294,7 @@ $bgInteger: #5c3249;
     width: 100px;
     height: 100px;
     text-align: center;
-    margin-bottom: 29px;
+    margin-bottom: 51px;
     img {
       width: 100%;
       height: 100%;
@@ -305,8 +309,8 @@ $bgInteger: #5c3249;
     text-align: center;
     text-transform: uppercase;
     color: $colorCloseBlack;
-    padding: 22px 0;
-    margin-bottom: 20px;
+    
+    margin-bottom: 42px;
   }
 
   &__text {
@@ -329,13 +333,13 @@ $bgInteger: #5c3249;
     &__logo {
       width: 85px;
       height: 85px;
-      margin-bottom: 23px;
+      margin-bottom: 42.5px;
     }
     &__title {
       font-size: 18px;
       line-height: 21px;
-      margin-bottom: 4px;
-      padding: 19.5px 0;
+      margin-bottom: 23.5px;
+      
     }
     &__text {
       font-size: 14px;
@@ -352,11 +356,10 @@ $bgInteger: #5c3249;
     &__logo {
       width: 75px;
       height: 75px;
-      margin-bottom: 20px;
+      margin-bottom: 36px;
     }
-    &__title {
-      padding: 16px 0;
-      margin: 0;
+    &__title {     
+      margin-bottom:16px ;
     }
   }
 }
@@ -415,8 +418,8 @@ $bgInteger: #5c3249;
   text-align: center;
   text-transform: uppercase;
   color: $colorWhite;
-  padding: 16px;
-  margin-bottom: 20px;
+  
+  margin-bottom: 36px;
 }
 .interface__text {
   font-family: Raleway;
@@ -434,8 +437,8 @@ $bgInteger: #5c3249;
   .interface__title {
     font-size: 18px;
     line-height: 21px;
-    padding: 9px;
-    margin-bottom: 12px;
+    
+    margin-bottom: 21px;
   }
   .interface__text {
     font-size: 14px;
@@ -448,8 +451,8 @@ $bgInteger: #5c3249;
     grid-template-columns: 1fr 1fr;
   }
   .interface__title {
-    margin-bottom: 4px;
-    padding: 2px 0;
+    margin-bottom: 6px;
+    
   }
 }
 
@@ -458,8 +461,9 @@ $bgInteger: #5c3249;
   &__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 30px;
-  }
+    grid-column-gap: 30px; 
+    
+  }  
 
   &__photo {
     position: relative;
@@ -506,7 +510,10 @@ $bgInteger: #5c3249;
   }
   &__icons {
     display: flex;
+    
+    
   }
+
   &__icon {
     width: 39px;
     height: 39px;
@@ -545,6 +552,7 @@ $bgInteger: #5c3249;
 }
 @media (max-width: 1024px) {
   .team {
+    margin-bottom: 29px;
     &__photo {
       margin-bottom: 25px;
     }
@@ -581,6 +589,7 @@ $bgInteger: #5c3249;
 
 @media (max-width: 450px) {
   .team {
+    margin-bottom: 0;
     &__container {
       grid-template-columns: 1fr;
     }
@@ -593,7 +602,8 @@ $bgInteger: #5c3249;
 .integer {
   display: grid;
   grid-template-columns: 49% 51%;
-  margin-bottom: 159px;
+  margin-bottom: 176.5px;
+ background-color: $bgInteger;
 
   &__img {
     position: relative;
@@ -620,8 +630,9 @@ $bgInteger: #5c3249;
 
     grid-column-start: 2;
     grid-column-end: 3;
-    background-color: $bgInteger;
-    padding: 0 170px 0 129px;
+    
+    margin-left: 129px;
+    max-width: 471px;
   }
 
   &__title {
@@ -646,7 +657,7 @@ $bgInteger: #5c3249;
 
 @media (max-width: 1024px) {
   .integer {
-    margin-bottom: 110px;
+    margin-bottom: 126px;
     &__title {
       font-size: 24px;
       line-height: 32px;
@@ -656,25 +667,36 @@ $bgInteger: #5c3249;
       line-height: 14px;
     }
     &__block {
-      padding: 0 104px 0 88px;
+      margin-left: 88px;
+      max-width: 330px;
     }
   }
 }
 @media (max-width: 767px) {
   .integer {
-    margin-bottom: 67px;
+    margin-bottom: 86px;
     display: block;
     &__block {
-      padding: 0 25px 95px 20px;
-      justify-content: center;
+      margin: 0 auto;
+      padding: 30px 0 100px;
+      max-width: 275px;
+      
+      
+      
+      
     }
     &__title {
-      padding: 23px 0;
+      font-size: 24px;
+      line-height: 32px;
+      
       text-align: center;
+      margin-bottom: 37.5px;
     }
     &__text {
       text-align: center;
-      padding: 5.5px;
+      font-size: 12px;
+      height: 14px;
+      
     }
   }
 }
@@ -687,9 +709,8 @@ $bgInteger: #5c3249;
     font-size: 30px;
     line-height: 35px;
     text-align: center;
-    color: $colorBlack;
-    padding: 17.5px 0;
-    margin-bottom: 5px;
+    color: $colorBlack;    
+    margin-bottom: 23.5px;
   }
   &__text {
     font-family: Raleway;
@@ -714,8 +735,8 @@ $bgInteger: #5c3249;
     &__title {
       font-size: 24px;
       line-height: 28px;
-      padding: 16px 0;
-      margin-bottom: 4.7px;
+     
+      margin-bottom: 21px;
     }
     &__text {
       font-size: 14px;
@@ -862,7 +883,7 @@ $bgInteger: #5c3249;
     &__text {
       font-size: 14px;
       line-height: 16px;
-      margin-bottom: 69px;
+      
     }
 
     &__icons {
@@ -872,6 +893,9 @@ $bgInteger: #5c3249;
 }
 
 .about {
+  &__container{
+    max-width: 400px;
+  }
   background: #2c3154;
   padding: 24px 0;
   &__title {
@@ -890,7 +914,10 @@ $bgInteger: #5c3249;
 
 @media (max-width: 1024px) {
   .about {
-    padding: 14px;
+    padding: 14px 0;
+    &__container{
+      max-width: 344px;
+    }
     &__title {
       font-size: 14px;
       line-height: 16px;
@@ -899,6 +926,10 @@ $bgInteger: #5c3249;
 }
 @media (max-width: 767px) {
   .about {
+    padding: 28px 0;
+    &__container{
+      max-width: 310px;
+    }
     &__title {
       font-size: 14px;
       line-height: 16px;
