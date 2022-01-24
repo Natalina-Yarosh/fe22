@@ -18,7 +18,7 @@
    top: 0;
    width: 100%;
    padding: 0 15px;
-   z-index: 1;
+   z-index: 2;
  }
  .header.fixed{
    background: #252B49;
@@ -134,7 +134,6 @@
    background-repeat: no-repeat;
    background-size: cover;
    position: relative;
-   z-index: -2;
 }
 .banner::before{
    content: ' ';
@@ -147,12 +146,14 @@
    background-color: #252B49;
    mix-blend-mode: normal;
    opacity: 0.8;
-   z-index: -1;
+   z-index: 0;
 }
 .banner__container{
    max-width: 1200px;
    margin: 0 auto ;
    padding: 0 15px;
+   position: relative;
+   z-index: 1;
 }
 .banner__title{
    font-weight: 900;
@@ -192,10 +193,12 @@
 }
 .banner__btn:hover{
    background-color: #E71414;
+   transition: all 0.3s linear;
 }
 .banner__btn:active{
    background: #FF4343;
    box-shadow: 4px 4px 30px #FF4343;
+   transition: all 0.6s linear;
 }
 @media (max-width: 1024px) {
    .banner{
@@ -332,7 +335,7 @@
 }
 .work__hover{
    display: none;
-   animation: hover 0.3s linear;
+   animation: hover 0.6s linear;
 }
 .work__block{
    border: 1px solid #ffffff;
@@ -353,10 +356,11 @@
    position: absolute;
    left: 0;
    top: 0;
-   transition: all 0.3s linear;
+   transition: all 1s linear;
 }
 .work__block:active .work__hover{
    background-color: rgba(185, 12, 12, 0.8);
+   transition: all 0.3s linear;
 }
 .work__img{
    width: 100%;
@@ -478,10 +482,12 @@
 }
 .personcard__social__icon:hover{
    border: 1px solid #E71414;
+   transition: all 0.3s linear;
 }
 .personcard__social__icon:hover path{
    fill:#E71414;
    color:#E71414;
+   transition: all 0.3s linear;
 }
 @media (max-width: 1024px) {
    .team{
@@ -607,7 +613,7 @@
       line-height: 14px;      
    }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px){
    .testimonials{
       padding-bottom: 43px;
    }
@@ -616,11 +622,12 @@
       padding-bottom: 100.5px;
    }
    .testimonials__info{
-      margin-left: 20px;
+      margin: 0 auto;
+      padding: 0 20px;
    }
    .testimonials__title{
       max-width: 275px;
-      margin-bottom: 28.5px;
+      margin: 23px 0 28.5px;
       text-align: center;
    }
 }
@@ -671,10 +678,12 @@
 }
 .download__btn:hover{
    background-color: #E71414;
+   transition: all 0.6s linear;
 }
 .download__btn:active{
    background: #FF4343;
    box-shadow: 4px 4px 30px #FF4343;
+   transition: all 0.3s linear;
 }
 @media (max-width: 1024px) {
    .download{
@@ -798,10 +807,12 @@
 }
 .footer__icon:hover{
    border: 1px solid #E71414;
+   transition: all 0.3s linear;
 }
 .footer__icon:hover path{
    fill:#E71414;
    color:#E71414;
+   transition: all 0.3s linear;
 }
 @media (max-width: 1024px) {
    .footer__info{
