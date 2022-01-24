@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+}
+$colorWhite: #ffffff;
+$borderHeader: #babbc5;
+$bgBtn: #ff4343;
+$bgBtnHover: #e71414;
+$shadowBtnActive: 4px 4px 30px #ff4343;
+$bgBanner: rgba(37, 43, 73, 0.8);
+$colorBlack: #2d3033;
+$colorTotalBlack: #000000;
+$colorGrey: #6c7279;
+$bgPseudo: rgba(255, 67, 67, 0.8);
+$borderSocial: #c6cbcd;
+$bgReviews: #5c3249;
+$sliderDot: #7e5d6f;
+$bgFooter: #353c65;
+$bgCopyright: #2c3154;
+$colorCopyright: #808080;
+
+@keyframes hover {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@mixin headerLink {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $colorWhite;
+	padding: 43px 0 41px;
+	display: block;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		color: $colorWhite;
+	}
+	&:active {
+		color: $bgBtnHover;
+	}
+}
+
+@mixin reviewText {
+	font-family: "Cardo";
+	font-style: italic;
+	font-size: 36px;
+	line-height: 49px;
+	color: $colorWhite;
+	text-transform: capitalize;
+}
+@mixin reviewName {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	color: $colorWhite;
+	text-transform: uppercase;
+}
+
+.container-h {
+	padding: 0 20px;
+	max-width: 1210px;
+	margin: 0 auto;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+
+	&__border {
+		border-bottom: 1px solid $borderHeader;
+		padding: 0;
+
+		@media (max-width: 767px) {
+			border-bottom: none;
+		}
+	}
+	/*&__logo,
+	.header__logo_mobile {
+		width: 270px;
+
+		img {
+			width: 184px;
+			height: 26px;
+			object-fit: cover;
+		}
+		@media (max-width: 1024px) {
+			width: 231px;
+		}
+		@media (max-width: 767px) {
+			width: 130px;
+
+			img {
+				width: 104px;
+				height: 15px;
+			}
+		}
+	}*/
+	&__navigation {
+		justify-content: flex-end;
+	}
+	/*&__nav {
+		list-style: none;
+		display: flex;
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}*/
+
+	&__link {
+		@include headerLink();
+
+		min-width: 134px;
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			width: 0;
+			height: 3px;
+			background-color: $borderHeader;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transition: width 0.2s linear, background-color 0.2s linear 0.2s;
+		}
+		&:hover::before {
+			width: 100%;
+		}
+		&:active::before {
+			background-color: $bgBtnHover;
+		}
+
+		@media (max-width: 1024px) {
+			min-width: 112px;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		&_mobile {
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height: 15px;
+			font-weight: 700;
+			padding: 24px 0;
+			text-align: left;
+			color: $colorWhite;
+			display: block;
+			text-decoration: none;
+		}
+	}
+	&__menuBurger {
+		display: none;
+		&_icon {
+			width: 55px;
+			height: 56px;
+			padding: 19px 15px;
+			cursor: pointer;
+		}
+		svg {
+			width: 24px;
+			height: 18px;
+		}
+		@media (max-width: 767px) {
+			display: block;
+
+			.close,
+			.header__logo_mobile {
+				display: none;
+			}
+
+			&:hover {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 20px;
+				background-image: url(../img/bgNavMobile.png);
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 100%;
+				position: absolute;
+
+				left: 0;
+				top: 0;
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(37, 43, 73, 0.8);
+				}
+
+				.header__nav_mobile {
+					display: block;
+					list-style: none;
+					width: 100%;
+					margin-top: 28px;
+
+					z-index: 1;
+				}
+				.burger {
+					display: none;
+				}
+				.close,
+				.header__logo_mobile {
+					display: block;
+					position: relative;
+					z-index: 1;
+				}
+			}
+		}
+	}
+	&__nav_mobile {
+		display: none;
+	}
+}
+
+.banner {
+	background-image: url(../img/bgBanner.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 230px 0 120px;
+	position: relative;
+	&::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $bgBanner;
+	}
+	@media (max-width: 1024px) {
+		padding: 257px 0 126px;
+	}
+	@media (max-width: 767px) {
+		padding: 106px 0 52px;
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+	&__title {
+		@include bannerTitle();
+		margin-bottom: 31px;
+		@media (max-width: 1024px) {
+			font-size: 48px;
+			line-height: 56px;
+			margin-bottom: 62px;
+		}
+		@media (max-width: 767px) {
+			font-size: 36px;
+			line-height: 42px;
+			margin-bottom: 33px;
+		}
+	}
+	&__text {
+		@include bannerText();
+		margin-bottom: 92px;
+		@media (max-width: 1024px) {
+			font-size: 18px;
+			line-height: 21px;
+		}
+		@media (max-width: 767px) {
+			font-size: 14px;
+			line-height: 16px;
+			margin-bottom: 51px;
+		}
+	}
+	&__btn {
+		@include btn();
+		max-width: 369px;
+		margin: 0 auto;
+
+		@media (max-width: 1024px) {
+			max-width: 314px;
+		}
+		@media (max-width: 767px) {
+			max-width: 280px;
+			padding: 16px 0;
+		}
+	}
+}
+
+.reviews {
+	padding-bottom: 45px;
+	@media (max-width: 1024px) {
+		padding-bottom: 33px;
+	}
+	&__slider {
+		background-color: $bgReviews;
+		display: grid;
+		grid-template-columns: 49% 51%;
+		align-items: center;
+		.active {
+			display: grid;
+	  }
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+	
+	&__img {
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			padding-top: 66%;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	&__review {
+		padding: 0 20px 0 17%;
+		@media (max-width: 767px) {
+			padding: 0 20px 95px;
+			margin-top: 25px;
+		}
+	}
+	&__text {
+		@include reviewText();
+		margin-bottom: 25px;
+		max-width: 471px;
+		@media (max-width: 1024px) {
+			max-width: 330px;
+			margin-bottom: 17px;
+			font-size: 24px;
+			line-height: 32px;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 23px;
+			text-align: center;
+		}
+	}
+	&__name {
+		@include reviewName();
+		@media (max-width: 1024px) {
+			font-size: 12px;
+			line-height: 14px;
+		}
+		@media (max-width: 767px) {
+			max-width: 100%;
+			text-align: center;
+			width: 100%;
+		}
+	
+	}
+	&__dot{
+		display: none;
+		opacity: 0;
+		position: relative;
+		&::after{
+			content: '';
+			display: block;
+		position: absolute;
+		left: 0;top: 0;
+			border: 1px solid $sliderDot;
+			border-radius: 50%;
+		}
+	}
+}
+.carousel-item.active {
+	display: grid;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="scss/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>bootstrap</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container-h">
+
+			<nav class="navbar navbar-expand-lg header__border">
+
+				<a class="navbar-brand header__logo" href="#"><img src="img/logoHeader.png" alt="logo"></a>
+				<button class="navbar-toggler header__menuBurger" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse header__navigation" id="navbarSupportedContent">
+					<ul class="navbar-nav header__nav">
+						<li class="nav-item">
+							<a class="nav-link header__link" href="#">features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link header__link" href="#">works</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link header__link" href="#">our team</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link header__link" href="#">testimonials</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link header__link" href="#">download</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</nav>
+
+
+
+
+
+					<div class="header__menuBurger">
+						<a class="header__logo_mobile" href="">
+							<img src="img/logoHeader.png" alt="logo">
+						</a>
+						<div class="header__menuBurger_icon">
+							<svg class="burger" width="24" height="18" viewBox="0 0 24 18" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 0H24V3H0V0ZM0 7.5H24V10.5H0V7.5ZM0 15H24V18H0V15Z" fill="white" />
+							</svg>
+							<svg class="close" width="20" height="21" viewBox="0 0 20 21" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.454102 17.9248L8.93938 9.43952L17.4247 0.954242L19.546 3.07556L2.57542 20.0461L0.454102 17.9248Z"
+									fill="white" />
+								<path
+									d="M2.57544 0.954102L11.0607 9.43938L19.546 17.9247L17.4247 20.046L0.454119 3.07542L2.57544 0.954102Z"
+									fill="white" />
+							</svg>
+						</div>
+
+						<ul class="header__nav_mobile">
+							<li>
+								<a class="header__link_mobile" href="">features</a>
+							</li>
+							<li>
+								<a class="header__link_mobile" href="">works</a>
+							</li>
+							<li>
+								<a class="header__link_mobile" href="">our team</a>
+							</li>
+							<li>
+								<a class="header__link_mobile" href="">testimonials</a>
+							</li>
+							<li>
+								<a class="header__link_mobile" href="">download</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="banner">
+			<div class="container">
+				<h1 class="banner__title">Your Favorite One Page
+					Multi Purpose Template</h1>
+				<p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus
+					magna
+					vel scelerisque nisl consectetur et.</p>
+				<button class="banner__btn">Find Out More</button>
+			</div>
+		</section>
+
+
+
+		<section class="reviews">
+
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				  <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active reviews__dot" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  class="reviews__dot" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="reviews__dot" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+				  <div class="carousel-item active reviews__slider">
+					<div class="reviews__img">
+					 <img src="img/review.png" class="d-block w-100" alt="photo">
+					</div>
+					<div class="reviews__review">
+						<p class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed
+							odio dui. Aenean eu leo quam...”</p>
+						<h4 class="reviews__name">Susan Sims, Interaction Designer at XYZ</h4>
+					</div>
+				  </div>
+				  <!--<div class="carousel-item reviews__slider">
+					<div class="reviews__img">
+					 <img src="img/work_1.png" class="d-block w-100" alt="photo">
+					</div>
+					<div class="reviews__review">
+						<p class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed
+							odio dui. Aenean eu leo quam...”</p>
+						<h4 class="reviews__name">Susan Sims, Interaction Designer at XYZ</h4>
+					</div>
+				  </div>
+				  <div class="carousel-item reviews__slider">
+					<div class="reviews__img">
+					 <img src="img/work_2.png" class="d-block w-100" alt="photo">
+					</div>
+					<div class="reviews__review">
+						<p class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed
+							odio dui. Aenean eu leo quam...”</p>
+						<h4 class="reviews__name">Susan Sims, Interaction Designer at XYZ</h4>
+					</div>
+				  </div>-->
+				</div>
+				
+			 </div>
+		</section>
+
+	</main>
+
+	<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
