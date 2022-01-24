@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;600;700;900&display=swap');
 *{
 		margin: 0;
 		padding: 0;
@@ -16,7 +16,7 @@ a {
 		text-decoration: none;
 }
 
-btn {
+.btn {
 		cursor: pointer;
 }
 
@@ -265,6 +265,7 @@ body, html{
 		grid-column-gap: 31px;
 		grid-row-gap: 88px;
 		@media (max-width:1024px){
+			grid-template-columns: 1fr 1fr 1fr;
 			grid-column-gap: 20px;
 			grid-row-gap: 50px;
 			padding: 0 20px;
@@ -327,6 +328,10 @@ body, html{
 .projects{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	@media (max-width:767px){
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 	
 	&__item{
 		position: relative;
@@ -339,6 +344,7 @@ body, html{
 	}
 	&__item:hover &__hover{
 		display: flex;
+		opacity: 0.8;
 	}
 	&__item:active &__hover{
 			display: flex;
@@ -361,11 +367,10 @@ body, html{
 			width: 100%;
 			height: 100%;
 			background-color: $colorRed;
-			opacity: 0.8;
+			opacity: 0;
 			align-items: center;
 			justify-content: center;
-			display: none;
-			transition: all .1s linear;
+			transition: all .2s linear;
 	}
 	&__title{
 		font-weight: 900;
@@ -374,11 +379,28 @@ body, html{
 		text-transform: uppercase;
 		color: $colorWhite;
 		margin-bottom: 30px;
+		text-align: center;
+		@media (max-width:1024px){
+			font-size: 18px;
+			line-height: 21px;
+		}
+		@media (max-width:767px){
+			font-size: 14px;
+			line-height: 16px;
+		}
 	}
 	&__text{
 		font-size: 18px;
 		line-height: 21px;
 		color: $colorWhite;
+		@media (max-width:1024px){
+			font-size: 18px;
+			line-height: 21px;
+		}
+		@media (max-width:767px){
+			font-size: 14px;
+			line-height: 16px;
+		}
 	}
 }
 
@@ -399,6 +421,7 @@ body, html{
 		grid-template-columns: repeat(4, minmax(227px, 270px));
 		grid-column-gap: 30px;
 		@media (max-width:1024px){
+			grid-template-columns: 1fr 1fr 1fr 1fr;
 			padding: 0 20px;
 			grid-column-gap: 20px;
 		}
@@ -557,37 +580,42 @@ body, html{
 
 	&__right{
 		width: 51%;
-		padding: 130px 0 116px;
+		padding: 130px 0 116px 129px;
 		background-color: #5C3249;
 		@media (max-width:1024px){
 			max-height: 332px;
 			min-height: 100%;
-			padding: 55px 0 110px;
+			padding: 55px 0 110px 88px;
 		}
 		@media (max-width:767px){
 			width: 100%;
 			height: 100%;
-			padding: 18px 0 95px;
+			padding: 18px 20px 95px;
 		}
 	}
 	&__title{
+		font-family: Cardo;
+		font-style: italic;
+		font-weight: normal;
 		font-size: 36px;
 		line-height: 49px;
 		text-transform: capitalize;
 		color: $colorWhite;
 		max-width: 471px;
-		margin: 0 auto 25px 129px;
+		margin-bottom: 25px;
 		@media (max-width:1024px){
-			margin: 0 auto 15px 88px;
+			margin-bottom: 15px;
 			max-width: 330px;
 			font-size: 24px;
 			line-height: 32px;
 		}
 		@media (max-width:767px){
-			margin: 0 auto 25px;
+			margin-bottom: 25px;
 			max-width: 275px;
 			font-size: 24px;
 			line-height: 32px;
+			margin: 0 auto 25px;
+			text-align: center;
 		}
 	}
 	&__text{
@@ -597,12 +625,10 @@ body, html{
 		text-transform: uppercase;
 		color: $colorWhite;
 		max-width: 471px;
-		margin: 0 auto 0 129px;
 		@media (max-width:1024px){
 			max-width: 330px;
 			font-size: 12px;
 			line-height: 14px;
-			margin: 0 auto 0 88px;
 		}
 		@media (max-width:767px){
 			max-width: 275px;
@@ -704,7 +730,7 @@ body, html{
 
 	.container{
 		max-width: 1200px;
-		padding: 71px 15px;
+		padding: 71px 0;
 		margin: 0 auto;
 		@media (max-width:1024px){
 			padding: 45px 20px;
@@ -718,8 +744,12 @@ body, html{
 		grid-template-columns: repeat(3, minmax(280px, 370px));
 		grid-column-gap: 30px;
 		text-align: center;
+		padding: 0 15px;
 		@media (max-width:1024px){
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
 			grid-column-gap: 20px;
+			padding: 0 20px;
 		}
 		@media (max-width:767px){
 			display: block;
@@ -781,6 +811,7 @@ body, html{
 		max-width: 370px;
 		margin: 0 auto;
 		text-align: center;
+		padding: 0 15px;
 		@media (max-width:1024px){
 			max-width: 314px;
 			padding: 0 20px;
