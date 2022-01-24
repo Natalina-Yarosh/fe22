@@ -37,12 +37,7 @@ $bgFooterBottom: #2C3154;
     text-decoration: none;
     padding: 42px 0;
 
-    &:hover {
-        border-bottom: 3px solid #BABBC5;
-    }
-
     &:active {
-        border-bottom: 3px solid #E71414;
         color: #E71414;
     }
 }
@@ -67,6 +62,18 @@ $bgFooterBottom: #2C3154;
     text-transform: uppercase;
     color: $colorWhite;
     margin-bottom: 32px;
+
+    @media (max-width: 1024px) {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 62px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 33px;
+    }
 }
 
 @mixin bannerText {
@@ -76,6 +83,18 @@ $bgFooterBottom: #2C3154;
     text-align: center;
     color: $colorWhite;
     margin-bottom: 82px;
+
+    @media (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 92px;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 49px;
+    }
 }
 
 @mixin btn {
@@ -93,6 +112,7 @@ $bgFooterBottom: #2C3154;
     color: $colorWhite;
     border: none;
     cursor: pointer;
+    transition: all .3s linear;
 
     &:hover {
         background-color: $bgButtonHover;
@@ -112,17 +132,24 @@ $bgFooterBottom: #2C3154;
     width: 100%;
     z-index: 100;
 
-    .container {
+    &__border {
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid $colorHeaderBorder;
+        @media (max-width: 767px) {
+            border-bottom: none;
+        }
     }
 
     &__logo {
         width: 184px;
         overflow: hidden;
         display: block;
+
+        @media (max-width: 767px) {
+            width: 103px;
+        }
 
         & svg {
             @include svg();
@@ -131,13 +158,54 @@ $bgFooterBottom: #2C3154;
 
     &__menu {
         display: flex;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     &__item {
-        border-bottom: 3px solid transparent;
-        min-width: 134px;
         @include headerLink();
+        min-width: 134px;
+        position: relative;
+        transition: color .3s linear;
+
+        @media (max-width: 1024px) {
+            min-width: 119px;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: $colorHeaderBorder;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: all .3s linear;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        &:active::after {
+            background-color: #E71414;
+        }
     }
+
+    &__icon {
+        display: none;
+        width: 55px;
+        height: 56px;
+        padding: 19px 15px;
+
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
 }
 
 // block banner
@@ -161,6 +229,14 @@ $bgFooterBottom: #2C3154;
         opacity: 0.8;
     }
 
+    @media (max-width: 1024px) {
+        padding: 257px 0 126px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 106px 0 52px;
+    }
+
     .container {
         position: relative;
         z-index: 1;
@@ -176,6 +252,15 @@ $bgFooterBottom: #2C3154;
 
     &__btn {
         @include btn();
+
+        @media (max-width: 1024px) {
+            max-width: 313px;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 280px;
+            padding: 15px;
+        }
     }
 }
 
@@ -183,11 +268,29 @@ $bgFooterBottom: #2C3154;
 .features {
     padding: 116px 0 134px;
 
+    @media (max-width: 1024px) {
+        padding: 78px 0 80px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 40px 0 35px;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 30px;
         row-gap: 89px;
+
+        @media (max-width: 1024px) {
+            column-gap: 20px;
+            row-gap: 50px;
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            row-gap: 42px;
+        }
     }
 
     &__img {
@@ -195,6 +298,18 @@ $bgFooterBottom: #2C3154;
         height: 100px;
         overflow: hidden;
         margin: 0 auto 51px;
+
+        @media (max-width: 1024px) {
+            width: 85px;
+            height: 85px;
+            margin-bottom: 43px;
+        }
+
+        @media (max-width: 767px) {
+            width: 76px;
+            height: 76px;
+            margin-bottom: 38px;
+        }
 
         & svg {
             @include svg();
@@ -209,6 +324,16 @@ $bgFooterBottom: #2C3154;
         text-transform: uppercase;
         color: #2D3033;
         margin-bottom: 42px;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__text {
@@ -217,12 +342,22 @@ $bgFooterBottom: #2C3154;
         line-height: 21px;
         text-align: center;
         color: #6C7279;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 }
 
+// section work
 .work {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     &__img {
         position: relative;
@@ -238,7 +373,7 @@ $bgFooterBottom: #2C3154;
             cursor: pointer;
         }
 
-        & img {
+        img {
             @include img();
             position: absolute;
             top: 0;
@@ -257,6 +392,7 @@ $bgFooterBottom: #2C3154;
         display: none;
         flex-wrap: wrap;
         align-content: center;
+        // align-items: center;
         justify-content: center;
     }
 
@@ -268,6 +404,16 @@ $bgFooterBottom: #2C3154;
         text-transform: uppercase;
         color: $colorWhite;
         margin-bottom: 36px;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 23px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 7px;
+        }
     }
 
     &__text {
@@ -276,6 +422,11 @@ $bgFooterBottom: #2C3154;
         line-height: 21px;
         text-align: center;
         color: $colorWhite;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
     &__img:hover &__hover{
@@ -293,20 +444,45 @@ $bgFooterBottom: #2C3154;
 .team {
     padding: 114px 0;
 
+    @media (max-width: 1024px) {
+        padding: 78px 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 35px 0;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 30px;
+
+        @media (max-width: 1024px) {
+            column-gap: 25px;
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            row-gap: 49px;
+        }
     }
 
     &__photo {
         position: relative;
-        margin-bottom: 30px;
+        margin-bottom: 31px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 27px;
+        }
 
         &::before {
             content: '';
             display: block;
             padding-top: 100%;
+
+            @media (max-width: 767px) {
+                padding-top: 81%;
+            }
         }
 
         & img {
@@ -323,7 +499,13 @@ $bgFooterBottom: #2C3154;
         line-height: 28px;
         text-transform: capitalize;
         color: #2D3033;
-        margin-bottom: 5.29px;
+        margin-bottom: 5px;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 7px;
+        }
     }
 
     &__position {
@@ -332,7 +514,17 @@ $bgFooterBottom: #2C3154;
         line-height: 21px;
         text-transform: uppercase;
         color: #FF4343;
-        margin-bottom: 17.86px;
+        margin-bottom: 18px;
+
+        @media (max-width: 1024px) {
+			font-size: 14px;
+			line-height: 16px;
+			margin-bottom: 22px;
+		}
+
+        @media (max-width: 767px) {
+			margin-bottom: 39px;
+		}
     }
 
     &__description {
@@ -340,7 +532,21 @@ $bgFooterBottom: #2C3154;
         font-size: 18px;
         line-height: 21px;
         color: #6C7279;
-        margin-bottom: 37.86px;
+        margin-bottom: 38px;
+
+        @media (max-width: 1024px) {
+			font-size: 14px;
+			line-height: 16px;
+			margin-bottom: 39px;
+		}
+
+        @media (max-width: 767px) {
+			margin-bottom: 55px;
+		}
+    }
+
+    &__sm {
+        display: flex;
     }
 
     &__icon {
@@ -348,7 +554,7 @@ $bgFooterBottom: #2C3154;
         height: 39px;
         overflow: hidden;
         margin-right: 6px;
-        display: inline-block;
+        display: block;
         border: 1px solid $colorIconBorder;
         position: relative;
 
@@ -377,25 +583,62 @@ $bgFooterBottom: #2C3154;
 
 // section testimonials
 .testimonials {
-    display: flex;
-    background-color: $bgTestimonial;
+    &__slider {
+        background-color: $bgTestimonial;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     &__image {
-        overflow: hidden;
         width: 49%;
+        position: relative;
 
-        & img {
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            padding-top: 66%;
+        }
+
+        img {
             @include img();
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     }
 
     &__description {
         width: 51%;
-        padding: 116px 170px 144px 129px;
-        // background-color: $bgTestimonial;
-        display: flex;
-        justify-content: center;
-        flex-direction: column; 
+        padding: 116px 0;
+
+        @media (max-width: 1024px) {
+            padding: 60px 0 110px;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 22px 20px 95px;
+        }
+    }
+
+    &__info {
+        max-width: 471px;
+        margin-left: 130px;
+
+        @media (max-width: 1024px) {
+            max-width: 330px;
+            margin-left: 88px;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 100%;
+            margin: 0;
+        }
+
     }
 
     &__title {
@@ -406,7 +649,18 @@ $bgFooterBottom: #2C3154;
         line-height: 49px;
         text-transform: capitalize;
         color: $colorWhite;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+
+        @media (max-width: 1024px) {
+            font-size: 24px;
+            line-height: 33px;
+            margin-bottom: 18px;
+        }
+
+        @media (max-width: 767px) {
+			text-align: center;
+            margin-bottom: 27px;
+		}
     }
 
     &__text {
@@ -415,12 +669,29 @@ $bgFooterBottom: #2C3154;
         line-height: 15px;
         text-transform: uppercase;
         color: $colorWhite;
+
+        @media (max-width: 1024px) {
+			font-size: 12px;
+			line-height: 14px;
+		}
+
+        @media (max-width: 767px) {
+			text-align: center;
+		}
     }
 }
 
 // section download
 .download {
-    padding: 114px 0;
+    padding: 131px 0 114px;
+
+    @media (max-width: 1024px) {
+		padding: 95px 0 78px;
+	}
+
+	@media (max-width: 767px) {
+		padding: 53px 0 45px;
+	}
 
     &__title {
         font-weight: 500;
@@ -429,6 +700,17 @@ $bgFooterBottom: #2C3154;
         text-align: center;
         color: $colorBlack;
         margin-bottom: 22px;
+
+        @media (max-width: 1024px) {
+			font-size: 24px;
+			line-height: 28px;
+            margin-bottom: 22px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 18px;
+			line-height: 21px;
+		}
     }
 
     &__text {
@@ -438,11 +720,34 @@ $bgFooterBottom: #2C3154;
         text-align: center;
         text-transform: uppercase;
         color: $colorBlack;
-        margin-bottom: 47.71px;
+        margin-bottom: 48px;
+
+        @media (max-width: 1024px) {
+			font-size: 14px;
+			line-height: 16px;
+            margin-bottom: 44px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 13px;
+			line-height: 15px;
+            margin-bottom: 13px;
+		}
     }
 
     &__btn {
         @include btn();
+
+        @media (max-width: 1024px) {
+            max-width: 314px;
+			font-size: 18px;
+			line-height: 21px;
+			padding: 29px 0;
+		}
+
+        @media (max-width: 767px) {
+			max-width: 278px;
+		}
     }
 }
 
@@ -453,16 +758,18 @@ $bgFooterBottom: #2C3154;
         background-color: $bgFooterTop;
 
         .container {
-            display: flex;
-        }
-    }
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 30px;
 
-    &__item {
-        width: calc((100% - 60px) / 3);
-        margin-right: 30px;
+            @media (max-width: 1024px) {
+                column-gap: 20px;
+            }
 
-        &:last-child {
-            margin-right: 0;
+            @media (max-width: 767px) {
+                grid-template-columns: 1fr;
+                row-gap: 59px;
+            }
         }
     }
 
@@ -474,10 +781,16 @@ $bgFooterBottom: #2C3154;
         text-transform: uppercase;
         color: $colorWhite;
         margin-bottom: 29px;
-    }
 
-    .icons {
-        margin-bottom: 48.86px;
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 17px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 34px;
+        }
     }
 
     &__text {
@@ -487,11 +800,25 @@ $bgFooterBottom: #2C3154;
         text-align: center;
         text-transform: capitalize;
         color: $colorWhite;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
     &__sm {
         display: flex;
         justify-content: center;
+        padding-top: 20px;
+
+        @media (max-width: 1024px) {
+            padding-top: 15px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 3px;
+        }
     }
 
     &__icon {
@@ -499,35 +826,57 @@ $bgFooterBottom: #2C3154;
         height: 39px;
         overflow: hidden;
         margin-right: 27px;
-        display: inline-block;
+        display: block;
         border: 1px solid $colorIconBorder;
         position: relative;
+        transition: all .3s linear;
+
+        @media (max-width: 1024px) {
+			width: 33px;
+			height: 33px;
+			margin-right: 23px;
+		}
+
+        @media (max-width: 767px) {
+			margin-right: 16px;
+		}
 
         &:last-child {
             margin-right: 0;
         }
 
-        & svg {
+        &:hover {
+            border-color: $colorBlack;
+
+            svg {
+                transition: all .3s linear;
+            }
+
+            path {
+                fill: $colorBlack;
+            }
+        }
+
+        svg {
             object-fit: contain;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
-        &:hover {
-            border: 1px solid $colorBlack;
-        }
-
-        &:hover path {
-            fill: $colorBlack;
-        }
-
     }
 
     &__bottom {
         padding: 24px 0;
         background-color: $bgFooterBottom;
+
+        @media (max-width: 1024px) {
+            padding: 14px 0;
+        }
+
+        @media (max-width: 767px) {
+            padding: 30px 0;
+        }
     }
 
     &__copyright {
@@ -539,6 +888,16 @@ $bgFooterBottom: #2C3154;
         text-align: center;
         text-transform: capitalize;
         color: #808080;
+
+        @media (max-width: 1024px) {
+            max-width: 314px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 100%;
+        }
 
         & span {
             color: $colorWhite;
