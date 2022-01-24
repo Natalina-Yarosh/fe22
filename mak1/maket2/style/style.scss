@@ -81,7 +81,6 @@ $bgInteger: #5c3249;
   padding: 0 20px;
 
   &__container {
-    
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #babbc5;
@@ -144,6 +143,10 @@ $bgInteger: #5c3249;
   .header {
     &__logotype {
       max-width: 231px;
+      padding: 21px 0;
+    }
+    &__navigation {
+      width: 65%;
     }
 
     &__item {
@@ -162,6 +165,10 @@ $bgInteger: #5c3249;
 }
 @media (max-width: 767px) {
   .header {
+    &__container {
+      border-bottom: none;
+    }
+
     display: flex;
 
     &__logotype {
@@ -235,9 +242,7 @@ $bgInteger: #5c3249;
 @media (max-width: 1024px) {
   .banner {
     margin-bottom: 78px;
-    .container {
-      padding-bottom: 126px;
-    }
+    padding-bottom: 126px;
     &__title {
       font-size: 48px;
       line-height: 56px;
@@ -257,10 +262,10 @@ $bgInteger: #5c3249;
 
 @media (max-width: 767px) {
   .banner {
+    padding-top: 106px;
     margin-bottom: 40px;
-    .container {
-      padding-bottom: 52px;
-    }
+    padding-bottom: 52px;
+
     &__title {
       font-size: 36px;
       line-height: 42px;
@@ -659,6 +664,7 @@ $bgInteger: #5c3249;
       line-height: 14px;
     }
     &__block {
+      padding-top: 61px;
       margin-left: 88px;
       max-width: 330px;
     }
@@ -758,11 +764,12 @@ $bgInteger: #5c3249;
 
 .footer {
   background-color: #353c65;
-  padding: 71px 0 67px;
+  padding: 71px 0 0;
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
+    padding-bottom: 71px;
   }
   &__title {
     font-family: Raleway;
@@ -833,7 +840,7 @@ $bgInteger: #5c3249;
 
 @media (max-width: 1024px) {
   .footer {
-    padding: 46px 0 43px;
+    padding: 46px 0 0;
     &__title {
       font-size: 14px;
       line-height: 16px;
@@ -850,9 +857,9 @@ $bgInteger: #5c3249;
 }
 @media (max-width: 767px) {
   .footer {
-    padding-bottom: 33px;
     &__container {
       grid-template-columns: 1fr;
+      padding-bottom: 33px;
     }
     &__title {
       font-size: 14px;
