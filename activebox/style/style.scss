@@ -718,13 +718,12 @@ body.-lock{
     
     &__description{
         width:51%;
-        padding:134px 0 116px;
-        margin: 0 auto;
+        padding:134px 0 116px 129px;
         background-color: $colorPurple;
         text-transform: capitalize;
 
         @media (max-width:1024px){
-            padding:62px 0 104px;}
+            padding:62px 0 104px 88px;}
 
         @media (max-width:767px){
             width:100%; 
@@ -746,13 +745,13 @@ body.-lock{
         font-style: italic;
         color:$colorWhite;
         max-width: 471px;
-        margin: 0 auto 24px 129px;
+        margin-bottom:24px;
 
         @media (max-width:1024px){
             font-size: 24px;
             line-height: 33px;
             max-width: 330px;
-            margin: 0 auto 13.5px 88px}
+            margin-bottom:13.5px;}
 
         @media (max-width:767px){
             max-width: 275px;
@@ -766,30 +765,28 @@ body.-lock{
         font-weight: 700;
         color: $colorWhite;
         max-width: 471px;
-        margin: 0 auto 0 129px;
         text-transform: uppercase;
 
         @media (max-width:1024px){
             font-size: 12px;
             line-height: 14px;
-            max-width: 330px;
-            margin: 0 auto 0 88px}
+            max-width: 330px;}
 
         @media (max-width:767px){
             max-width: 100%;
             text-align: center;
-            margin:0 auto 0 0}
+            margin:0 auto;}
     }
 }
 
 .download{
-    padding:118px 0 113px;
+    padding:128px 0 113px;
 
     @media (max-width:1024px){
-        padding:80px 0 78px;}
+        padding:90px 0 78px;}
 
     @media (max-width:767px){
-        padding:39px 0 45px;}
+        padding:49px 0 45px;}
 
     &__title{
         font-size:30px;
@@ -1029,13 +1026,13 @@ body.-lock{
     }
 }
 .swiper-wrapper{
-    padding-bottom: 39px;
+    padding-bottom: 29px;
 
     @media (max-width:1024px){ 
-        padding-bottom: 33.5px;}
+        padding-bottom: 23.5px;}
 
     @media (max-width:767px){ 
-        padding-bottom: 44.5px;}
+        padding-bottom: 34.5px;}
     
 }
 .swiper-pagination-bullet-active{
@@ -1058,5 +1055,9 @@ body.-lock{
         margin: 0 10px;}
 }
 
-    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
     background-color: $colorSwiper;}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom:0;
+}
