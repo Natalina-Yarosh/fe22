@@ -712,7 +712,7 @@
 
 .testimonials__info {
   max-width: 471px;
-  margin-left: 130px;
+  margin: 0 20px 0 129px;
 }
 
 @media (max-width: 1024px) {
