@@ -1,0 +1,808 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Raleway:wght@400;500;700;900&display=swap');
+
+@import "preStyle.scss";
+@import "styleMenu.scss";
+
+
+
+
+
+.container{
+	margin: 0 auto;
+	max-width: 1210px;
+	padding: 0 20px;
+}
+
+
+// header
+
+.header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-self: flex-start;
+	}
+	.container::after{
+		content: '';
+		display: block;
+		position: fixed;
+		top: 100px;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 1170px;
+		width: 100%;
+		border-bottom: 1px solid #BABBC5;
+	}
+	&__logo{
+		align-self: center;
+	}
+	&__menu{
+		display: flex;
+
+		& li{
+			min-width: 134px;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			
+			&::after{
+				content: '';
+				display: block;
+				width: 100%;
+				border-bottom: 0px solid #BABBC5;
+				position: absolute;
+				bottom: 0;
+				transition: width .2s linear, border-bottom .1s linear;
+			}
+			&:hover::after{
+				border-bottom: 3px solid #BABBC5;
+			}
+			&:active::after{
+				border-bottom: 3px solid #E71414;
+			}
+		}
+	}
+	&__nav{
+		@include hamburgerMenu;
+		.menu__btn{
+			display: none;
+		}
+	}
+
+	&__link{
+		@include headerLink;
+		display: block;
+		padding: 42.5px 0;
+		transition: all .1s linear;
+
+		&:active{
+			color: #E71414;
+		}
+	}
+}
+
+// banner
+
+.banner{
+	background-image: url(../img/bgbanner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+	&::after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #252B49;
+		opacity: 0.8;
+	}
+	.container{
+		padding: 230px 20px 120px;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+	}
+	&__title{
+	@include bannerTitle;
+	margin-bottom: 31.43px;
+	}
+	&__text{
+		@include bannerText;
+	}
+	&__btn{
+		@include btn;
+		margin: 79.57px 0 0;
+		transition: background .2s linear, box-shadow .1s linear;
+
+		&:hover{
+			background: #E71414;
+		}
+		&:active{
+			background: #FF4343;
+			box-shadow: 4px 4px 30px #FF4343;
+		}
+	}
+}
+
+// features
+
+.features{
+	padding: 116px 0;
+
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 88.57px 30px;
+	}
+	&__block{
+		text-align: center;
+	}
+	&__img{
+		width: 100px;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto 53px;
+
+		img{
+			width: 90%;
+			height: 90%;
+			object-fit: contain;
+		}
+	}
+	&__title{
+		@include featuresTitle;
+		margin-bottom: 43.43px;
+	}
+	&__text{
+		@include featuresText;
+	}
+}
+
+// works
+
+.work{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+	&__block{
+		border: 1px solid #FFFFFF;
+		position: relative;
+	}
+	&__img{
+		position: relative;
+
+		&::before{
+			content: '';
+			display: block;
+			padding-top: (340px / 378.5px) * 100%;
+		}
+		img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+	&__hover{
+		background-color: rgba(255, 67, 67, 0.8);
+		text-align: center;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		opacity: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		transition: all .3s linear;
+
+		
+		&:hover{
+			opacity: 1;
+
+		}
+		&:active{
+			background: rgba(185, 12, 12, 0.8);
+
+		}
+	}
+	&__title{
+		@include workHoverTitle;
+		margin-bottom: 39px;
+	}
+	&__text{
+		@include workHoverText;
+	}
+}
+
+// our team
+
+.team{
+	padding: 114px 0;
+
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 30px;
+	}
+
+	&__card{
+
+	}
+	&__img{
+		position: relative;
+		margin-bottom: 30px;
+
+		&::before{
+			content: '';
+			display: block;
+			padding-top: 100%;
+		}
+		img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+	&__title{
+		@include teamTitle;
+		margin-bottom: 5.29px;
+	}
+	&__text-red{
+		@include teamTextRed;
+		margin-bottom: 17.86px;
+	}
+	&__text{
+		@include teamText;
+		margin-bottom: 37.86px;
+	}
+	&__soc{
+		
+	}
+	&__soc ul{
+		display: flex;
+
+		& li{
+			border: 1px solid #C6CBCD;
+			width: 39px;
+			height: 39px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 6px;
+			transition: all .1s linear;
+			&:hover{
+				border-radius: 50%;
+			}
+		}
+	}
+	&__soc-link{
+		width: 100%;
+    height: 100%;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+}
+
+// testimonials
+
+.testimonials{
+	display: grid;
+	grid-template-columns: 49% 51%;
+	background-color: #5C3249;
+
+	&__img{
+		position: relative;
+
+		&::before{
+			content: '';
+			display: block;
+			padding-top: (490px / 741px) * 100%;
+		}
+		img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+	&__info{
+		margin-left: 129px;
+		align-self: center;
+		max-width: 471px;
+	}
+	&__title{
+		@include testimonialsTitle;
+		margin-bottom: 20px;
+	}
+	&__text{
+		@include testimonialsText;
+	}
+}
+
+// download
+
+.download{
+	padding: 114px 0;
+	text-align: center;
+
+	&__title{
+		@include downloadTitle;
+		margin-bottom: 20px;
+	}
+	&__text{
+		@include downloadText;
+	}
+	&__btn{
+		@include btn;
+		margin-top: 50.14px;
+		transition: background .2s linear, box-shadow .1s linear;
+
+		&:hover{
+			background: #E71414;
+		}
+		&:active{
+			background: #FF4343;
+			box-shadow: 4px 4px 30px #FF4343;
+		}
+	}
+}
+
+// footer
+
+.footer{
+	padding: 71.14px 0 0;
+	background-color: #353C65;
+	text-align: center;
+
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 30px;
+		padding: 0 20px 70px;
+	}
+	&__block__title{
+		@include footerBlockTitle;
+		margin-bottom: 29px;
+	}
+	&__block__text{
+		@include footerBlockText;
+	}
+
+
+	&__copyright{
+		background-color: #2C3154;
+		padding: 24px 0;
+		
+		&__text{
+			@include footerCopyrightText;
+			max-width: 370px;
+			display: inline-block;
+			span{
+				color: #FFFFFF;
+			}
+		}
+	}
+	&__block__link ul{
+		display: grid;
+		grid-template-columns: 39px 39px 39px;
+		grid-column-gap: 27px;
+		justify-content: center;
+
+		& li{
+			border: 1px solid #C6CBCD;
+			width: 39px;
+			height: 39px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all .1s linear;
+			&:hover{
+				border-radius: 50%;
+			}
+		}
+	}
+	&__soc-link{
+		width: 100%;
+    height: 100%;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+	.social{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+
+// tablet
+@media (max-width:1024px) {
+.btn{
+	max-width: 313.15px;
+}
+
+// header
+	.header{
+		&__menu li{
+			min-width: 112px;
+		}
+		&__link{
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+
+	// banner
+	.banner{
+		.container{
+		padding: 257px 20px 126px;
+		}
+		&__title{
+			font-size: 48px;
+			line-height: 56px;
+			margin-bottom: 61.86px;
+		}
+		&__text{
+			font-size: 18px;
+			line-height: 21px;
+		}
+		&__btn{
+			margin-top: 91.57px;
+		}
+	}
+
+// features
+	.features{
+		padding: 78px 0 80.11px;
+		.container{
+			grid-gap: 49px 20px;
+		}
+		&__img{
+			width: 85px;
+			height: 85px;
+			margin-bottom: 45px;
+		}
+		&__title{
+			font-size: 18px;
+			line-height: 21px;
+			margin-bottom: 10px;
+		}
+		&__text{
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	// works
+	.work{
+		&__title{
+			font-size: 18px;
+			line-height: 21px;
+			margin-bottom: 23px;
+		}
+		&__text{
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	// our team
+	.team{
+		padding: 78.22px 0 78.41px;
+		&__img{
+			margin-bottom: 25.23px;
+		}
+		&__title{
+			font-size: 18px;
+			line-height: 21px;
+			margin-bottom: 4.6px;
+		}
+		&__text-red{
+			font-size: 14px;
+			line-height: 16px;
+			margin-bottom: 22.45px;
+		}
+		&__text{
+			font-size: 14px;
+			line-height: 16px;
+			margin-bottom: 39.2px;
+		}
+		&__soc ul li{
+			width: 32.8px;
+			height: 32.8px;
+			margin-right: 5px;
+		}
+	}
+
+// testimonials
+	.testimonials{
+		&__info{
+			margin-left: 88px;
+			max-width: 330px;
+		}
+		&__title{
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 10px;
+		}
+		&__text{
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+
+// download
+	.download{
+		padding: 78px 0;
+
+		&__title{
+			font-size: 24px;
+			line-height: 28px;
+			margin-bottom: 14px;
+		}
+		&__text{
+			font-size: 14px;
+			line-height: 16px;
+		}
+		&__btn{
+			margin-top: 45.71px;
+		}
+	}
+
+// footer
+	.footer{
+		padding: 46.59px 0 0;
+
+		.container{
+		padding: 0 20px 42px;
+		grid-column-gap: 20px;
+		}
+		&__block__title{
+			font-size: 14px;
+			line-height: 16px;
+			margin-bottom: 17.72px;
+		}
+		&__block__text{
+			font-size: 14px;
+			line-height: 16px;
+		}
+		&__copyright{
+			padding: 14.28px 0 14.43px;
+			&__text{
+				font-size: 14px;
+				line-height: 16px;
+				max-width: 314px;
+			}
+		}
+		&__block__link ul{
+			grid-template-columns: 33px 33px 33px;
+			grid-column-gap: 22.5px;
+
+			& li{
+				width: 33px;
+				height: 33px;
+			}
+		}
+	}
+}
+
+
+// mobile
+@media (max-width: 767px){
+	.btn{
+		max-width: 279px;
+		padding: 16px;
+		margin-top: 91.57px;
+	}
+	
+// header
+	.header{
+		.container{
+			position: relative;
+			top: 20px;
+		}
+		.container::after{
+			display: none;
+		}
+		&__logo img{
+			max-width: 103.47px;
+			width: 100%;
+		}
+		&__menu{
+			display: none;
+		}
+		.menu__btn{
+			display: block;
+		}
+	}
+
+// banner
+.banner{
+	.container{
+	padding: 106px 20px 52px;
+	}
+	&__title{
+		font-size: 36px;
+		line-height: 42px;
+		margin-bottom: 32.71px;
+	}
+	&__text{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	&__btn{
+		margin-top: 51.1px;
+	}
+}
+
+// features
+.features{
+	padding: 40px 0 34.85px;
+	.container{
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		grid-row-gap: 41.55px;
+	}
+	&__img{
+		width: 75.56px;
+		height: 75.56px;
+		margin-bottom: 20.88px;
+	}
+	&__title{
+		margin-bottom: 7px;
+	}
+}
+
+	// works
+	.work{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		&__title{
+			margin-bottom: 7px;
+		}
+	}
+
+	// our team
+	.team{
+		padding: 35px 0 41px;
+		.container{
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+			grid-row-gap: 56px;
+		}
+		&__img{
+			margin-bottom: 25.25px;
+		}
+		&__title{
+			margin-bottom: 4.61px;
+		}
+		&__text-red{
+			margin-bottom: 38.49px;
+		}
+		&__text{
+			margin-bottom: 55.15px;
+		}
+		&__soc ul li{
+			width: 39.61px;
+			height: 39.61px;
+			margin-right: 5.5px;
+		}
+	}
+
+// testimonials
+.testimonials{
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	&__info{
+		padding: 10px 20px 95px;
+		margin: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+	&__title{
+		margin-bottom: 10px;
+	}
+	&__img img{
+		object-fit: contain;
+	}
+}
+
+// download
+.download{
+	padding: 34.51px 0 45px;
+
+	&__title{
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 14px;
+	}
+	&__text{
+		font-size: 13px;
+		line-height: 15px;
+	}
+	&__btn{
+		margin-top: 13.42px;
+	}
+}
+
+// footer
+.footer{
+	padding: 46.59px 0 0;
+
+	.container{
+		padding: 0 20px 33.14px;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		grid-row-gap: 62px;
+	}
+	&__block__title{
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 36px;
+	}
+	&__block__text{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	&__copyright{
+		padding: 29.86px 20px 28.14px;
+		&__text{
+			font-size: 14px;
+			line-height: 16px;
+			max-width: 314px;
+		}
+	}
+	&__block__link ul{
+		grid-template-columns: 33px 33px 33px;
+		grid-column-gap: 16.2px;
+
+		& li{
+			width: 33px;
+			height: 33px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+}

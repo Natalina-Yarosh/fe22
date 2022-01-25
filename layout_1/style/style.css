@@ -618,6 +618,9 @@
 					height: 100%;
 					object-fit: cover;
 				}
+				.reviews__item__info{
+					width: calc(100% - 70px - 30px);
+				}
 				.reviews__item__customer__name {
 						font-family: 'Open Sans';
 						font-style: normal;
@@ -864,7 +867,7 @@
 @media(max-width:1024px) {
 	/*header*/
 	.header__container{
-		padding: 0 20px 0 115px;
+		padding: 0 20px;
 	}
 	.header__menu li{
 		min-width: 113px;
@@ -1230,9 +1233,11 @@
 	.banner__form__titll{
 		font-size: 14px;
 		line-height: 19px;
+		margin-bottom: 28px;
 	}
 	.banner__form__input{
 		padding: 0 20px;
+		margin-bottom: 51px;
 	}
 	.banner__form__input input{
 		max-width: 298px;
@@ -1395,50 +1400,40 @@
 		width: 100%;
 		margin: 0;
 	}
-	.reviews__item:first-child{
-		display: none;
-	}
-	.reviews__item:last-child{
-		display: none;
-	}
 	.reviews__item__text:after{
 		border-top: 20px solid #E2E2E2;
 		border-left: 12,77px solid transparent;
 		border-right: 12,77px solid transparent;
 		left: 46.59px;
 	}
-	.reviews__cirle{
-		width: 9.49px;
-		height: 9.49px;
-		border: 1px solid #86878B;
-		border-radius: 50%;
-		background: #86878B;
-		position: relative;
-		left: 50%;
-		transform: translateX(-50%);
+	/*slick-slide*/
+	.slick-list{
+		overflow: hidden;
 	}
-	.reviews__cirle::before{
-		content: '';
-		display: block;
-		width: 9.49px;
-		height: 9.49px;
-		border: 1px solid #86878B;
-		border-radius: 50%;
-		position: relative;
-		left: -50px;
-		transform: translateY(-2px);
+	.slick-track{
+		display: flex;
 	}
-	.reviews__cirle::after{
-		content: '';
-		display: block;
+	.slick-dots{
+		display: flex;
+		margin: 23px auto 0;
+	}
+	.slick-dots li{
+		list-style: none;
+		margin: 0 10px;
+	}
+	.slick-dots button{
+		font-size: 0;
 		width: 9.49px;
 		height: 9.49px;
-		border: 1px solid #86878B;
+		border-radius: 1px solid #86878B;
 		border-radius: 50%;
-		position: relative;
-		left: 50px;
-		bottom: 100%;
-		transform: translateY(-6px);
+	}
+	.slick-dots li.slick-active button{
+		background-color: #86878B;
+		border-radius: 1px solid #86878B;
+	}
+	.reviews__block .slick-arrow{
+		display: none;
 	}
 
 /*STYLISH AXURE DESIGN*/

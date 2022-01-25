@@ -1,0 +1,192 @@
+*{margin: 0; padding: 0; box-sizing: border-box; outline: none; resize: none;}
+button{cursor: pointer;}
+ul li{list-style: none;}
+a, a:link, a:visited, a:hover{text-decoration: none;}
+
+// font-family: 'Cardo', serif;
+// font-family: 'Raleway', sans-serif;
+
+
+// btn mixin
+
+@mixin btn {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	max-width: 370px;
+	width: 100%;
+	padding: 26px 0;
+	border: none;
+	background-color: #FF4343;
+}
+
+
+// text mixin
+
+	// header
+@mixin headerLink {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+	// banner
+@mixin bannerTitle {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 75px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+@mixin bannerText {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #FFFFFF;
+}
+
+	// features
+@mixin featuresTitle {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #2D3033;
+}
+@mixin featuresText {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #6C7279;
+}
+
+	// works
+@mixin workHoverTitle {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+@mixin workHoverText {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+
+	// our team
+@mixin teamTitle {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: capitalize;
+	color: #2D3033;
+}
+@mixin teamTextRed {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #FF4343;
+}
+@mixin teamText {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #6C7279;
+}
+
+	// testimonials
+@mixin testimonialsTitle {
+	font-family: 'Cardo';
+	font-style: italic;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 49px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+@mixin testimonialsText {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+	// download
+@mixin downloadTitle {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 35px;
+	color: #000000;
+}
+@mixin downloadText {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+	// footer
+@mixin footerBlockTitle {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+} 
+@mixin footerBlockText {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+@mixin footerCopyrightText {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: capitalize;
+	color: #808080;
+}
