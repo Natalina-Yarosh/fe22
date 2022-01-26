@@ -16,11 +16,10 @@
 
 .header {
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
   left: 0;
   top: 0;
-  background-color: #353c65;
 }
 
 @media (max-width: 767px) {
@@ -73,16 +72,16 @@
       flex-basis: 57%;
 }
 
-@media (max-width: 767px) {
-  .header__menu {
-    display: none;
-  }
-}
-
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
 }
 
 .header__list li {
@@ -95,6 +94,12 @@
 @media (max-width: 1024px) {
   .header__list li {
     max-width: 113px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__list li {
+    text-align: left;
   }
 }
 
@@ -120,12 +125,30 @@
   }
 }
 
+@media (max-width: 767px) {
+  .header-list__item {
+    padding: 25px 0;
+  }
+}
+
 .header-list__item:hover {
   border-bottom: 3px solid #babbc5;
 }
 
+@media (max-width: 767px) {
+  .header-list__item:hover {
+    border-bottom: 3px solid transparent;
+  }
+}
+
 .header-list__item:active {
   border-bottom: 3px solid #e71414;
+}
+
+@media (max-width: 767px) {
+  .header-list__item:active {
+    border-bottom: 3px solid transparent;
+  }
 }
 
 .header__burger {
@@ -161,6 +184,26 @@
     height: 3px;
     left: -61%;
     top: 4px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .header__burger .active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 9px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .header__burger .active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 9px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .header__burger .active span {
+    -webkit-transform: scale 0;
+            transform: scale 0;
   }
 }
 
@@ -469,6 +512,9 @@
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  row-gap: 2px;
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
 }
 
 @media (max-width: 767px) {
@@ -480,7 +526,6 @@
 
 .work__block {
   position: relative;
-  border: 1px solid #fff;
 }
 
 .work__block::before {
