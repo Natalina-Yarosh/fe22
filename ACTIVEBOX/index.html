@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/style.css">
     <title>ACTIVEBOX</title>
 </head>
@@ -43,11 +44,11 @@
                     </svg>
                 </a>
                 <nav class="header__menu">
-                    <a class="header__item" href="#">features</a>
-                    <a class="header__item" href="#">works</a>
-                    <a class="header__item" href="#">our team</a>
-                    <a class="header__item" href="#">testimonials</a>
-                    <a class="header__item" href="#">download</a>
+                    <a class="header__item" href="#features">features</a>
+                    <a class="header__item" href="#works">works</a>
+                    <a class="header__item" href="#team">our team</a>
+                    <a class="header__item" href="#testimonials">testimonials</a>
+                    <a class="header__item" href="#download">download</a>
                 </nav>
                 <a href="#" class="header__icon">
                     <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +74,7 @@
         </div>
     </section>
     <!-- block features -->
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
             <article class="features__item">
                 <div class="features__img">
@@ -223,99 +224,99 @@
             </article>
         </div>
     </section>
-    <!-- block work -->
-    <section class="work">
-        <div class="work__img">
-            <img src="img/work_1.png" alt="work_1">
-            <div class="work__hover">
+    <!-- block works -->
+    <section class="work" id="works">
+        <a class="work__block">
+            <img class="work__img" src="img/work_1.png" alt="work_1">
+            <article class="work__hover">
                 <h3 class="work__title">
                     Project Name
                 </h3>
                 <p class="work__text">
                     User Interface Design
                 </p>
-            </div>
-        </div>
-        <div class="work__img">
-            <img src="img/work_2.png" alt="work_2">
-            <div class="work__hover">
+            </article>
+        </a>
+        <a class="work__block">
+            <img class="work__img" src="img/work_2.png" alt="work_2">
+            <article class="work__hover">
                 <h3 class="work__title">
                     Project Name
                 </h3>
                 <p class="work__text">
                     User Interface Design
                 </p>
-            </div>
-        </div>
-        <div class="work__img">
-            <img src="img/work_3.png" alt="work_3">
-            <div class="work__hover">
+            </article>
+        </a>
+        <a class="work__block">
+            <img class="work__img" src="img/work_3.png" alt="work_3">
+            <article class="work__hover">
                 <h3 class="work__title">
                     Project Name
                 </h3>
                 <p class="work__text">
                     User Interface Design
                 </p>
-            </div>
-        </div>
-        <div class="work__img">
-            <img src="img/work_4.png" alt="work_4">
-            <div class="work__hover">
+            </article>
+        </a>
+        <a class="work__block">
+            <img class="work__img" src="img/work_4.png" alt="work_4">
+            <article class="work__hover">
                 <h3 class="work__title">
                     Project Name
                 </h3>
                 <p class="work__text">
                     User Interface Design
                 </p>
-            </div>
-        </div>
-        <div class="work__img">
-            <img src="img/work_5.png" alt="work_5">
-            <div class="work__hover">
+            </article>
+        </a>
+        <a class="work__block">
+            <img class="work__img" src="img/work_5.png" alt="work_5">
+            <article class="work__hover">
                 <h3 class="work__title">
                     Project Name
                 </h3>
                 <p class="work__text">
                     User Interface Design
                 </p>
-            </div>
-        </div>
-        <div class="work__img">
-            <img src="img/work_6.png" alt="work_6">
-            <div class="work__hover">
+            </article>
+        </a>
+        <a class="work__block">
+            <img class="work__img" src="img/work_6.png" alt="work_6">
+            <article class="work__hover">
                 <h3 class="work__title">
                     Project Name
                 </h3>
                 <p class="work__text">
                     User Interface Design
                 </p>
-            </div>
-        </div>
-        <div class="work__img">
-            <img src="img/work_7.png" alt="work_7">
-            <div class="work__hover">
+            </article>
+        </a>
+        <a class="work__block">
+            <img class="work__img" src="img/work_7.png" alt="work_7">
+            <article class="work__hover">
                 <h3 class="work__title">
                     Project Name
                 </h3>
                 <p class="work__text">
                     User Interface Design
                 </p>
-            </div>
-        </div>
-        <div class="work__img">
-            <img src="img/work_8.png" alt="work_8">
-            <div class="work__hover">
+            </article>
+        </a>
+        <a class="work__block">
+            <img class="work__img" src="img/work_8.png" alt="work_8">
+            <article class="work__hover">
                 <h3 class="work__title">
                     Project Name
                 </h3>
                 <p class="work__text">
                     User Interface Design
                 </p>
-            </div>
-        </div>
+            </article>
+        </a>
     </section>
     <!-- section team -->
-    <section class="team">
+    <section class="team" id="team">
         <div class="container">
             <article class="team__person">
                 <div class="team__photo">
@@ -476,27 +477,103 @@
         </div>
     </section>
     <!-- section testimonials -->
-    <section class="testimonials">
-        <div class="testimonials__slider">
-            <div class="testimonials__image">
-                <img src="img/testimonial.png" alt="testimonial">
+    <section class="swiper testimonials-slider" id="testimonials">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide testimonials">
+                <div class="testimonials__image">
+                    <img src="img/testimonial.png" alt="testimonial">
+                </div>
+                <div class="testimonials__description">
+                    <div class="testimonials__info">
+                        <h2 class="testimonials__title">
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+                            Aenean
+                            eu
+                            leo quam...”
+                        </h2>
+                        <p class="testimonials__text">
+                            Susan Sims, Interaction Designer at XYZ
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="testimonials__description">
-                <div class="testimonials__info">
-                    <h2 class="testimonials__title">
-                        “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean
-                        eu
-                        leo quam...”
-                    </h2>
-                    <p class="testimonials__text">
-                        Susan Sims, Interaction Designer at XYZ
-                    </p>
+            <div class="swiper-slide testimonials">
+                <div class="testimonials__image">
+                    <img src="img/testimonial.png" alt="testimonial">
+                </div>
+                <div class="testimonials__description">
+                    <div class="testimonials__info">
+                        <h2 class="testimonials__title">
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+                            Aenean
+                            eu
+                            leo quam...”
+                        </h2>
+                        <p class="testimonials__text">
+                            Susan Sims, Interaction Designer at XYZ
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide testimonials">
+                <div class="testimonials__image">
+                    <img src="img/testimonial.png" alt="testimonial">
+                </div>
+                <div class="testimonials__description">
+                    <div class="testimonials__info">
+                        <h2 class="testimonials__title">
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+                            Aenean
+                            eu
+                            leo quam...”
+                        </h2>
+                        <p class="testimonials__text">
+                            Susan Sims, Interaction Designer at XYZ
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide testimonials">
+                <div class="testimonials__image">
+                    <img src="img/testimonial.png" alt="testimonial">
+                </div>
+                <div class="testimonials__description">
+                    <div class="testimonials__info">
+                        <h2 class="testimonials__title">
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+                            Aenean
+                            eu
+                            leo quam...”
+                        </h2>
+                        <p class="testimonials__text">
+                            Susan Sims, Interaction Designer at XYZ
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide testimonials">
+                <div class="testimonials__image">
+                    <img src="img/testimonial.png" alt="testimonial">
+                </div>
+                <div class="testimonials__description">
+                    <div class="testimonials__info">
+                        <h2 class="testimonials__title">
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+                            Aenean
+                            eu
+                            leo quam...”
+                        </h2>
+                        <p class="testimonials__text">
+                            Susan Sims, Interaction Designer at XYZ
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
     <!-- section download -->
-    <section class="download">
+    <section class="download" id="download">
         <div class="container">
             <h3 class="download__title">
                 Are You Ready to Start? Download Now For Free!
@@ -573,6 +650,17 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".testimonials-slider", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
