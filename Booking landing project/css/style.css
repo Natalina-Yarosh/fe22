@@ -655,6 +655,42 @@ label {
   margin-bottom: 43px;
 }
 
+.subscribe-form {
+  position: relative;
+  max-width: 579px;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-transform: translate(60%, 0%);
+          transform: translate(60%, 0%);
+}
+
+.input-subscribe {
+  font-size: 24px;
+  line-height: 26px;
+  margin-left: 40px;
+}
+
+.subscribe-btn {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 150px;
+  width: 100%;
+  padding: 12px 31px;
+  background-color: #F0C11A;
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 19px;
+  color: #092B82;
+  cursor: pointer;
+  border: none;
+  margin-right: 248px;
+  left: 72%;
+  bottom: 11%;
+}
+
 .footer-booking {
   background-color: #F0C11A;
   padding: 19px 0 28px;
