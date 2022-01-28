@@ -1,4 +1,4 @@
-var swiper = new Swiper(".testimonials__slider", {
+var swiper = new Swiper(".testimonials-slider", {
    pagination: {
       el: ".swiper-pagination",
       clickable: true

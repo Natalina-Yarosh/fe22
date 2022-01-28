@@ -104,7 +104,7 @@ $lineHeitTeamFeatures: 21px;
    @media (min-width: 319px) and (max-width: 1024px) {
       font-size: 24px;
       line-height: 32px;
-      max-width: 300px;
+      max-width: 350px;
    }
 }
 @mixin textSwiper {
@@ -773,9 +773,16 @@ $lineHeitTeamFeatures: 21px;
    }
 }
 
-.testimonials {
+.testimonials-slider {
    overflow: hidden;
-   &__slider {
+   padding-bottom: 50px;
+   @media (max-width: 1024px) {
+      padding-bottom: 38px;
+   }
+   @media (max-width: 767px) {
+      padding-bottom: 35px;
+   }
+   .swiper-wrapper {
       position: relative;
    }
    .swiper-slide {
@@ -804,10 +811,10 @@ $lineHeitTeamFeatures: 21px;
          }
       }
    }
-   &__description {
-      padding: 15px 170px 0 129px;
+   .testimonials__description {
+      padding: 15px 100px 0 129px;
       @media (max-width: 1024px) {
-         padding: 0 90px 0 88px;
+         padding: 0 90px 40px 88px;
       }
       @media (max-width: 767px) {
          padding: 26px 25px 101px 20px;
@@ -827,22 +834,40 @@ $lineHeitTeamFeatures: 21px;
       }
    }
    .swiper-pagination {
-      bottom: 0px;
+      bottom: 0;
    }
+
    .swiper-pagination-bullet {
       width: 14px;
       height: 14px;
+      background-color: $colorWhite;
+      border: 1px solid #7e5d6f;
+      opacity: 1;
+      margin: 0 12.5px !important;
+      @media (max-width: 1024px) {
+         width: 9.5px;
+         height: 9.5px;
+         margin: 0 13px !important;
+      }
+      @media (max-width: 767px) {
+         width: 9.5px;
+         height: 9.5px;
+         margin: 0 10px !important;
+      }
+   }
+
+   .swiper-pagination-bullet-active {
       background-color: #7e5d6f;
    }
 }
 
 .download {
-   padding: 177px 0 114px;
+   padding: 127px 0 114px;
    @media (max-width: 1024px) {
-      padding: 128px 0 78px;
+      padding: 89px 0 78px;
    }
    @media (max-width: 767px) {
-      padding: 87px 0 45px;
+      padding: 50px 0 45px;
    }
    &__title {
       @include titleDownload();
