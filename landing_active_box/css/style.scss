@@ -399,11 +399,11 @@ $lineHeitTeamFeatures: 21px;
    }
    &-logo {
       @media (max-width: 767px) {
-         z-index: 4;
-         position: fixed;
          padding: 21px 0 0 18px;
-         top: 0;
-         left: 0;
+         position: relative;
+         z-index: 4;
+         top: -22px;
+         left: -20px;
          width: 100%;
          height: 100%;
       }
@@ -856,8 +856,14 @@ $lineHeitTeamFeatures: 21px;
    }
    .testimonials__description {
       padding: 15px 100px 0 129px;
+      @media (min-width: 1025px) and (max-width: 1075px) {
+         padding: 0 90px 0 88px;
+      }
       @media (max-width: 1024px) {
          padding: 0 90px 40px 88px;
+      }
+      @media (min-width: 768px) and (max-width: 816px) {
+         padding: 0 30px 0 90px;
       }
       @media (max-width: 767px) {
          padding: 26px 25px 101px 20px;
