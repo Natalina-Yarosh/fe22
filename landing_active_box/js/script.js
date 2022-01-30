@@ -1,3 +1,11 @@
+// swiper
+var swiper = new Swiper(".testimonials-slider", {
+   pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+   },
+});
+
 // menu burger
 const headerBurger = document.querySelector('.header__burger');
 if (headerBurger) {
@@ -9,31 +17,23 @@ if (headerBurger) {
    })
 }
 
-// smooth scroll
-const menuHeader = document.querySelectorAll('.header-list__item[data-goto]');
+// nav + smooth scroll
+const menuHeader = document.querySelectorAll('.headerItem[data-goto]');
 if (menuHeader.length > 0) {
-   menuHeader.forEach(headerlistitem => {
-      headerlistitem.addEventListener("click", onMenuHeaderClick);
+   menuHeader.forEach(headerItem => {
+      headerItem.addEventListener("click", onMenuHeaderClick);
    });
    function onMenuHeaderClick(e) {
-      const headerlistitem = e.target;
-      if (headerlistitem.dataset.goto && document.querySelector(headerlistitem.dataset.goto)) {
-         const gotoBlock = document.querySelector(headerlistitem.dataset.goto);
+      const headerItem = e.target;
+      if (headerItem.dataset.goto && document.querySelector(headerItem.dataset.goto)) {
+         const gotoBlock = document.querySelector(headerItem.dataset.goto);
          const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYoffset - document.querySelector('header').offsetHeight;
 
          window.scrollTo({
             top: gotoBlockValue,
             behavior: "smooth"
          });
-         e.preventDefault();
+         e.preventDefault(); //отключить работу ссылки, чтобы не переходила в href
       }
    }
 }
-
-// swiper
-var swiper = new Swiper(".testimonials-slider", {
-   pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-   },
-});
