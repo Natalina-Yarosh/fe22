@@ -77,7 +77,7 @@
    .header-list__item{
       font-size: 12px;
       line-height: 14px;
-      min-width: 119px;
+      min-width: 111px;
       padding: 44px 10px;
    }
    .header__container{
@@ -175,14 +175,6 @@
    margin-bottom: 79.57px;
 }
 .banner__btn{
-   font-weight: 900;
-   font-size: 24px;
-   line-height: 28px;
-   display: flex;
-   align-items: center;
-   text-align: center;
-   text-transform: uppercase;
-   color: #FFFFFF;
    padding: 26px 0;
    max-width: 370px;
    width: 100%;
@@ -190,6 +182,7 @@
    border: none;
    display: block;
    margin: 0 auto;
+   cursor: pointer;
 }
 .banner__btn:hover{
    background-color: #E71414;
@@ -199,6 +192,18 @@
    background: #FF4343;
    box-shadow: 4px 4px 30px #FF4343;
    transition: all 0.6s linear;
+}
+.banner__btn__link{
+   text-decoration: none;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 28px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   display: block;
 }
 @media (max-width: 1024px) {
    .banner{
@@ -334,8 +339,17 @@
    grid-template-columns: repeat(4, 1fr);
 }
 .work__hover{
-   display: none;
-   animation: hover 0.6s linear;
+   display: flex;
+   align-content: center;
+   flex-wrap: wrap;
+   background-color: rgba(255, 67, 67, 0.8);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   transition: all 1s linear;
+   opacity: 0;
 }
 .work__block{
    border: 1px solid #ffffff;
@@ -347,16 +361,7 @@
    padding-top: 90%;
 }
 .work__block:hover .work__hover{
-   display: flex;
-   align-content: center;
-   flex-wrap: wrap;
-   background-color: rgba(255, 67, 67, 0.8);
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   left: 0;
-   top: 0;
-   transition: all 1s linear;
+   opacity: 1;
 }
 .work__block:active .work__hover{
    background-color: rgba(185, 12, 12, 0.8);
@@ -420,6 +425,11 @@
    grid-template-columns: repeat(4, 1fr);
    grid-column-gap: 30px;
 }
+
+.personcard{
+   display: flex;
+   flex-direction: column;
+}
 .personcard__img{
    position: relative;
    margin-bottom: 30px;
@@ -465,26 +475,26 @@
 }
 .personcard__social{
    display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   flex-grow: 1;
+   margin-top: auto;
 }
 .personcard__social__icon{
    list-style-type: none;
    margin-right: 6px;
-   border: 1px solid #C6CBCD;
+}
+.personcard__icon{
    width: 39px;
    height: 39px;
+   border: 1px solid #C6CBCD;
    align-items: center;
    text-align: center;
    display: flex;
    justify-content: center;
 }
-.personcard__social__icon:hover{
+.personcard__icon:hover{
    border: 1px solid #E71414;
    transition: all 0.3s linear;
 }
-.personcard__social__icon:hover path{
+.personcard__icon:hover path{
    fill:#E71414;
    color:#E71414;
    transition: all 0.3s linear;
@@ -517,6 +527,8 @@
    }
    .personcard__social__icon{
       margin-right: 5.05px;
+   }
+   .personcard__icon{
       width: 32.8px;
       height: 32.8px;
    }
@@ -542,15 +554,12 @@
    .personcard__info{
       margin-bottom: 55.15px;
    }
-   .personcard__social__icon{
+   .personcard__icon{
       width: 39.61px;
       height: 39.61px;
    }
 }
 
-.testimonials{
-   padding-bottom: 45px;
-}
 .testimonials__container{
    display: grid;
    grid-template-columns: 49% 51%;
@@ -595,12 +604,34 @@
    text-transform: uppercase;
    color: #FFFFFF;
 }
+.testimonials-slider{
+   padding-bottom: 45px;
+}
+.swiper-pagination{
+   bottom: 0 !important;
+}
+.swiper-pagination-bullet{
+   width: 14px;
+   height: 14px;
+   border: 1px solid #7e5d6f;
+   background-color: #fff;
+   opacity: 1;
+   margin: 0 12.5px !important;
+}
+.swiper-pagination-bullet-active{
+   background-color: #7e5d6f;
+}
 @media (max-width: 1024px) {
-   .testimonials{
+   .testimonials-slider{
       padding-bottom: 34px;
+   }
+   .swiper-pagination-bullet{
+      width: 9.49px;
+      height: 9.49px;
    }
    .testimonials__info{
       margin-left: 88px;
+      padding-right: 39px;
    }
    .testimonials__title{
       font-size: 24px;
@@ -614,20 +645,23 @@
    }
 }
 @media (max-width: 767px){
-   .testimonials{
+   .testimonials-slider{
       padding-bottom: 43px;
    }
    .testimonials__container{
       grid-template-columns: 1fr;
-      padding-bottom: 100.5px;
    }
    .testimonials__info{
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 23px 20px 100.5px;
+      width: 100%;
    }
    .testimonials__title{
-      max-width: 275px;
-      margin: 23px 0 28.5px;
+      max-width: 100%;
+      margin-bottom: 28.5px;
+      text-align: center;
+   }
+   .testimonials__text{
       text-align: center;
    }
 }
@@ -675,6 +709,7 @@
    border: none;
    display: block;
    margin: 0 auto;
+   cursor: pointer;
 }
 .download__btn:hover{
    background-color: #E71414;
@@ -749,9 +784,6 @@
    text-align: center;
    text-transform: uppercase;
    color: #FFFFFF;
-   margin-bottom: 48.86px;
-}
-.footer__title__location{
    margin-bottom: 29px;
 }
 .footer__text{
@@ -791,9 +823,12 @@
    align-items: center;
    flex-grow: 1;
 }
-.footer__icon{
+.footer__social__icon{
    list-style-type: none;
    margin-right: 27px;
+   margin-top: 20px;
+}
+.footer__icon{
    border: 1px solid #C6CBCD;
    width: 39px;
    height: 39px;
@@ -802,7 +837,7 @@
    display: flex;
    justify-content: center;
 }
-.footer__icon:last-child{
+.footer__social__icon:last-child{
    margin-right: 0;
 }
 .footer__icon:hover{
@@ -825,10 +860,7 @@
    .footer__title{
       font-size: 14px;
       line-height: 16px;
-      margin-bottom: 32.51px;
-   }
-   .footer__title__location{
-      margin-bottom: 17.72px;
+      margin-bottom: 17.5px;
    }
    .footer__text{
       font-size: 14px;
@@ -844,8 +876,11 @@
       font-size: 14px;
       line-height: 16px;
    }
-   .footer__icon{
+   .footer__social__icon{
       margin-right: 23px;
+      margin-top: 15px;
+   }
+   .footer__icon{
       width: 33px;
       height: 33px;
    }
@@ -860,10 +895,7 @@
       grid-row-gap: 69.24px;
    }
    .footer__title{
-      margin-bottom: 36.71px;
-   }
-   .footer__title__location{
-      margin-bottom: 34px;
+      margin-bottom: 36px;
    }
    .footer__copyright{
       padding: 29.86px 0 28.14px;
@@ -871,7 +903,7 @@
    .footer__copyright__container{
       max-width: 280px;
    }
-   .footer__icon{
+   .footer__social__icon{
       margin-right: 16.5px;
    }
 }
