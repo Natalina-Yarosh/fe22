@@ -59,7 +59,7 @@
 }
 
 .banner {
-   padding: 208px 0 185px 0;
+   padding: 203px 0 185px 0;
    background-image: url("../img/bg_1.jpg");
    background-size: cover;
    background-repeat: no-repeat;
@@ -166,7 +166,7 @@
 .banner__form-row {
    background: #fff;
    border-radius: 10px 10px 0 0;
-   padding-top: 28px;
+   padding-top: 29px;
 }
 
 .banner-form__title {
@@ -174,7 +174,7 @@
    font-weight: 700;
    font-size: 24px;
    line-height: 32.68px;
-   margin-bottom: 75px;
+   margin-bottom: 66px;
    text-transform: uppercase;
    text-align: center;
 }
@@ -193,12 +193,12 @@
    border: none;
    border-bottom: 1px solid #bdbdbd;
    padding: 9px 0 9px;
-   margin: 0 auto 33px;
+   margin: 0 auto 35px;
    transition: all 0.5s;
 }
 
 .banner__form .input:nth-child(4) {
-   margin-bottom: 75px;
+   margin-bottom: 78px;
 }
 
 .banner__form .input::placeholder {
@@ -246,7 +246,7 @@
 }
 
 .social-media {
-   padding: 30px 0 18px 0;
+   padding: 25px 0 18px 0;
    background-color: #f8efef;
 }
 
@@ -282,7 +282,7 @@
    justify-content: space-between;
    align-items: center;
    flex-grow: 1;
-   padding-left: 50px;
+   padding-left: 32px;
 }
 
 .tabs {
@@ -301,6 +301,10 @@
    max-width: 203px;
 }
 
+.tabs-list li:last-child {
+   padding-right: 58px;
+}
+
 .tabs-list__link {
    text-decoration: none;
    font-family: "Open Sans";
@@ -310,7 +314,7 @@
    color: #333333;
    text-transform: uppercase;
    display: block;
-   padding: 13px;
+   padding: 10px 21px 10px 0;
    border: transparent;
 }
 
@@ -318,6 +322,7 @@
    border: 1px solid #c6cbcd;
    border-radius: 5px 5px 0 0;
    position: relative;
+   padding: 10px;
 }
 
 .tabs-list .active::before {
@@ -345,7 +350,7 @@
    font-size: 30px;
    line-height: 40.85px;
    font-family: "Open Sans";
-   margin-bottom: 56px;
+   margin-bottom: 55px;
 }
 
 .tabs__text {
@@ -586,7 +591,7 @@ li {
 }
 
 .reviews {
-   padding: 118px 0 75px 0;
+   padding: 141px 0 75px 0;
 }
 
 .reviews__title {
@@ -699,7 +704,7 @@ li {
 }
 
 .banner2 {
-   padding: 118px 0 50px 0;
+   padding: 117px 0 50px 0;
    background-image: url("../img/bg_2.jpg");
    background-size: cover;
    background-repeat: no-repeat;
@@ -817,7 +822,7 @@ li {
    line-height: 21px;
    text-align: center;
    color: #86878b;
-   margin-bottom: 89px;
+   margin-bottom: 87px;
 }
 
 .contact__form-group {
@@ -927,7 +932,7 @@ textarea:focus {
 .footer__items {
    display: flex;
    justify-content: center;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
 }
 
 .footer-items__icon {
@@ -952,14 +957,19 @@ textarea:focus {
 }
 
 @media (max-width: 1024px) {
+   .header-list__item {
+      padding: 28px 15px;
+   }
    .banner {
       padding: 137px 0 106px;
    }
    .banner__content {
-      margin: 17px 36px 0 0;
+      margin: 9px 36px 0 0;
    }
    .banner-logo__logo1 {
-      margin-bottom: 54px;
+      width: 115px;
+      height: 43px;
+      margin-bottom: 60px;
    }
    .banner__title {
       font-size: 36px;
@@ -984,12 +994,12 @@ textarea:focus {
       flex: 0 0 398px;
    }
    .banner__form-row {
-      padding-top: 36px;
+      padding-top: 34px;
    }
    .banner-form__title {
       font-size: 18px;
       line-height: 24px;
-      margin-bottom: 81px;
+      margin-bottom: 68px;
    }
    .banner__form .input {
       max-width: 298px;
@@ -998,12 +1008,15 @@ textarea:focus {
       max-width: 398px;
    }
    .social-media {
-      padding: 12px 0 10px 0;
+      padding: 12px 0;
+   }
+   .social-media__item:last-child {
+      padding: 14px 0 0 25px;
    }
    .social-media__title {
       font-size: 18px;
       line-height: 25px;
-      margin-bottom: 27px;
+      margin-bottom: 24px;
    }
    .social-media__description {
       font-size: 14px;
@@ -1014,19 +1027,22 @@ textarea:focus {
       height: 64px;
    }
    .tabs {
-      padding: 50px 0 98px 0;
+      padding: 50px 0 68px 0;
    }
    .tabs__list li {
-      max-width: 156px;
+      max-width: 173px;
+   }
+   .tabs-list .active {
+      padding: 9px;
    }
    .tabs__item:first-child {
-      padding: 33px 26px 50px 100px;
+      padding: 28px 26px 75px 83px;
       flex-basis: 72.8%;
    }
    .tabs__title {
       font-size: 24px;
       line-height: 33px;
-      margin-bottom: 70px;
+      margin-bottom: 66px;
    }
    .tabs__text {
       font-size: 14px;
@@ -1045,7 +1061,7 @@ textarea:focus {
       object-fit: cover;
    }
    .about {
-      padding: 0 0 60px 0;
+      padding: 0 0 67px 0;
    }
    .about__title {
       font-size: 24px;
@@ -1058,7 +1074,7 @@ textarea:focus {
    .about__description {
       font-size: 14px;
       line-height: 16px;
-      margin-bottom: 65px;
+      margin-bottom: 58px;
    }
    .about__row .about-item {
       margin-right: 20px;
@@ -1077,8 +1093,12 @@ textarea:focus {
       font-size: 14px;
       line-height: 16px;
    }
-   .pricing,
-   .banner2,
+   .pricing {
+      padding: 98px 0 59px 0;
+   }
+   .banner2 {
+      padding: 98px 0 47px 0;
+   }
    .contact {
       padding: 98px 0 50px 0;
    }
@@ -1087,6 +1107,9 @@ textarea:focus {
    .contact__title {
       font-size: 24px;
       line-height: 28px;
+   }
+   .pricing__title {
+      margin-bottom: 74px;
    }
    .pricing__title::after,
    .banner2__title::after,
@@ -1100,6 +1123,9 @@ textarea:focus {
       font-size: 14px;
       line-height: 16px;
       margin-bottom: 49px;
+   }
+   .pricing__description {
+      margin-bottom: 52px;
    }
    .pricing__list {
       margin-right: 20px;
@@ -1115,7 +1141,7 @@ textarea:focus {
       padding: 10px 0 10px 0;
    }
    .reviews {
-      padding: 95px 0 59px 0;
+      padding: 95px 0 52px 0;
    }
    .reviews__title {
       font-size: 24px;
@@ -1128,14 +1154,14 @@ textarea:focus {
    .reviews .reviews__text {
       font-size: 14px;
       line-height: 16px;
-      margin-bottom: 32px;
+      margin-bottom: 27px;
    }
    .reviews__item {
       margin-right: 20px;
    }
    .reviews__content-bottom .reviews__text {
-      padding: 40px 10px;
-      margin-bottom: 66px;
+      padding: 50px 50px;
+      margin-bottom: 72px;
    }
    .reviews__content-bottom .reviews__text::after {
       border-top: 20px solid #e2e2e2;
@@ -1166,13 +1192,16 @@ textarea:focus {
       padding: 15px 0 15px 0;
    }
    .contact__description {
-      margin-bottom: 72px;
+      margin-bottom: 66px;
    }
    .banner2__text {
       margin-bottom: 32px;
    }
    .contact-form__row {
       margin-right: 20px;
+   }
+   .contact__form-group {
+      margin-bottom: 56px;
    }
    .contact__btn {
       max-width: 318px;
@@ -1185,10 +1214,14 @@ textarea:focus {
       height: 45px;
    }
    .footer__items {
-      margin-bottom: 38px;
+      margin-bottom: 29px;
    }
    .footer-items__icon {
       margin-right: 28px;
+   }
+   .footer__text {
+      font-size: 14px;
+      line-height: 16px;
    }
 }
 @media (max-width: 767px) {
