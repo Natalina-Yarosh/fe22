@@ -1,0 +1,1024 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@keyframes projectName {
+  0% {
+    top: -100%;
+  }
+
+  20% {
+    top: -80%;
+  }
+
+  40% {
+    top: -60%;
+  }
+
+  60% {
+    top: -40%;
+  }
+
+  80% {
+    top: -20%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes socialsRotate {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes mobileMenu {
+  0% {
+    right: 100%;
+  }
+
+  20% {
+    right: 80%;
+  }
+
+  40% {
+    right: 60%;
+  }
+
+  60% {
+    right: 40%;
+  }
+
+  80% {
+    right: 20%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+// Стили для хэдера
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(37, 43, 73, 0.3);
+  width: 100%;
+  z-index: 1;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #babbc5;
+  }
+
+  &__logo {
+    max-width: 183.86px;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__ref {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  &__item {
+    min-width: 134px;
+    padding: 42.5px 15px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    list-style: none;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: 3px solid #babbc5;
+      padding: 42.5px 15px 39.5px;
+    }
+
+    &:active {
+      cursor: pointer;
+      border-bottom: 3px solid #e71414;
+      color: #e71414;
+      padding: 42.5px 15px 39.5px;
+      text-decoration-color: #e71414;
+    }
+  }
+}
+
+// Стили для главной страницы
+
+.mainpage {
+  position: relative;
+  background-image: url(../images/main/background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  &__bg {
+    background-color: rgba(37, 43, 73, 0.8);
+  }
+
+  &__wrapper {
+    padding: 230px 0 120px;
+  }
+
+  &__title {
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 31.43px;
+  }
+
+  &__text {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 82px;
+  }
+}
+
+.btn {
+  max-width: 370px;
+  width: 100%;
+  background-color: #ff4343;
+  border: none;
+  padding: 26px 15px;
+  display: block;
+  margin: 0 auto;
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #e71414;
+    transform: scale(1.2);
+    transition: transform 0.5s linear;
+  }
+
+  &:active {
+    cursor: pointer;
+    background: #ff4343;
+    box-shadow: 4px 4px 30px #ff4343;
+  }
+}
+
+// Стили для второй страницы
+
+.advantages {
+  &__wrapper {
+    padding: 120.97px 0 133.57px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 88.57px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 51px;
+  }
+
+  &__title {
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #2d3033;
+    margin-bottom: 32.43px;
+  }
+
+  &__text {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #6c7279;
+  }
+}
+
+// Стили для третьей страницы
+
+.projects {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__block {
+    position: relative;
+    border: 0.5px solid #ffffff;
+    overflow: hidden;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 89.89%;
+    }
+  }
+
+  &__block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+
+    background: rgba(255, 67, 67, 0.8);
+    border: 0.5px solid #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__block:hover &__info {
+    cursor: pointer;
+    z-index: 1;
+    animation: projectName 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+
+  &__block:active &__info {
+    cursor: pointer;
+    z-index: 1;
+    background: rgba(185, 12, 12, 0.8);
+    border: 0.5px solid #ffffff;
+  }
+
+  &__title {
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 36.57px;
+  }
+
+  &__text {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+}
+
+// Стили для четвертой страницы
+
+.people {
+  &__wrapper {
+    padding: 114px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+
+  &__card {
+    position: relative;
+  }
+
+  &__img {
+    margin-bottom: 31px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  }
+
+  &__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__name {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #2d3033;
+    margin-bottom: 6.29px;
+  }
+
+  &__position {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ff4343;
+    margin-bottom: 17.86px;
+  }
+
+  &__info {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6c7279;
+    margin-bottom: 76.86px;
+  }
+
+  &__socials {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__soc {
+    width: 39px;
+    height: 39px;
+    border: 1px solid #c6cbcd;
+    margin-right: 6px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid #ff4343;
+      border-radius: 50%;
+      transform: scale(1.2);
+
+      &:hover svg path {
+        fill: #ff4343;
+      }
+
+      &:hover svg {
+        animation: socialsRotate 1s linear infinite;
+      }
+    }
+
+    &:active {
+      cursor: pointer;
+      border: 1px solid #2d3033;
+
+      &:active svg path {
+        fill: #2d3033;
+      }
+    }
+  }
+}
+
+// Стили для пятой страницы
+
+.testimonials {
+  &__wrapper {
+    background: #5c3249;
+    display: flex;
+  }
+
+  &__img {
+    width: 49%;
+    height: 66%;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 66%;
+    }
+  }
+
+  &__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__text {
+    margin-left: 129px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 471px;
+  }
+
+  &__quote {
+    font-family: Cardo;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 23.5px;
+  }
+
+  &__author {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+// Стили для шестой страницы
+
+.download {
+  &__wrapper {
+    padding: 176.5px 0 114px;
+  }
+
+  &__title {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 17.5px;
+  }
+
+  &__text {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 50.14px;
+  }
+}
+
+// Стили для футера
+
+.footer {
+  &__wrapperAbout {
+    background-color: #353c65;
+  }
+
+  &__about {
+    padding: 71.14px 0 71px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  &__block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 29px;
+  }
+
+  &__titleShare {
+    margin-bottom: 48.86px;
+  }
+
+  &__text {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+
+  &__socials {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  &__soc {
+    width: 39px;
+    height: 39px;
+    border: 1px solid #c6cbcd;
+    margin-right: 27px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid #ff4343;
+      border-radius: 50%;
+      transform: scale(1.5);
+
+      &:hover svg path {
+        fill: #ff4343;
+      }
+
+      &:hover svg {
+        animation: socialsRotate 1s linear infinite;
+      }
+    }
+
+    &:active {
+      cursor: pointer;
+      border: 1px solid #2d3033;
+
+      &:active svg path {
+        fill: #2d3033;
+      }
+    }
+  }
+
+  &__wrapperCopyright {
+    background: #2c3154;
+    padding: 23.86px 0 24.14px;
+  }
+
+  &__copyright {
+    max-width: 370px;
+    margin: 0 auto;
+  }
+
+  &__copyright p {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #808080;
+  }
+
+  &__copyright p span {
+    color: #ffffff;
+  }
+}
+
+// Закончились стили для Desktop
+
+// Для Tablets
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    max-width: 984px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .header {
+    &__item {
+      flex-shrink: 1;
+      min-width: 119px;
+      padding: 42.5px 10px 39px;
+      font-size: 12px;
+      line-height: 14px;
+
+      &:hover {
+        padding: 42.5px 10px 36px;
+      }
+
+      &:active {
+        padding: 42.5px 10px 36px;
+      }
+    }
+  }
+
+  // Tablets - стили для главной страницы
+
+  .mainpage {
+    &__wrapper {
+      padding: 257px 0 126px;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 56px;
+      margin-bottom: 61.86px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 91.57px;
+    }
+  }
+
+  .btn {
+    max-width: 314px;
+    width: 100%;
+    padding: 26px 10px;
+  }
+
+  // Tablets - стили для второй страницы
+
+  .advantages {
+    &__wrapper {
+      padding: 82.22px 0 80.11px;
+      grid-column-gap: 20px;
+      grid-row-gap: 57.35px;
+    }
+
+    &__img {
+      width: 85px;
+      height: 100%;
+      margin-bottom: 43.265px;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 23.775px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  // Tablets - стили для третьей страницы
+
+  .projects {
+    &__title {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 22.655px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  // Tablets - стили для четвертой страницы
+
+  .people {
+    &__wrapper {
+      padding: 78.22px 0 78.41px;
+      grid-column-gap: 25.23px;
+    }
+
+    &__img {
+      margin-bottom: 27.345px;
+    }
+
+    &__name {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 6.715px;
+    }
+
+    &__position {
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 22.45px;
+    }
+
+    &__info {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 72px;
+    }
+
+    &__soc {
+      width: 32.8px;
+      height: 32.8px;
+      border: 1px solid #c6cbcd;
+      margin-right: 5.05px;
+    }
+  }
+
+  // Tablets - стили для пятой страницы
+
+  .testimonials {
+    &__text {
+      margin-left: 88px;
+      max-width: 330px;
+    }
+
+    &__quote {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 14px;
+    }
+
+    &__author {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  // Tablets - стили для шестой страницы
+
+  .download {
+    &__wrapper {
+      padding: 126.93px 0 78px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 21.71x;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 45.71px;
+    }
+
+    &__btn {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 29.5px 10px;
+    }
+  }
+
+  // Tablets - стили для Footer
+
+  .footer {
+    &__about {
+      padding: 46.59px 0 41.19px;
+      grid-column-gap: 104.87px;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 17.72px;
+    }
+
+    &__titleShare {
+      margin-bottom: 32.51px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__soc {
+      width: 33px;
+      height: 33px;
+      margin-right: 23.01px;
+    }
+
+    &__wrapperCopyright {
+      padding: 14.28px 0 14.43px;
+    }
+
+    &__copyright {
+      max-width: 314px;
+    }
+
+    &__copyright p {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  // Закончились стили для Tablets
+}
+
+// Для Mobile Phones
+
+@media (max-width: 767.99px) and (min-width: 320px) {
+  .container {
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .header {
+    background-color: transparent;
+    position: absolute;
+
+    &__wrapper {
+      border-bottom: none;
+      padding: 19px 15px 19px 0;
+    }
+
+    &__logo {
+      min-width: 103.47px;
+      max-width: 119px;
+    }
+
+    &__burger {
+      display: block;
+      position: relative;
+      width: 24px;
+      height: 18px;
+
+      & .header__burgerItem {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s linear;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 3px;
+        background-color: #ffffff;
+        transition: all 0.3s linear;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all 0.3s linear;
+      }
+    }
+
+    &__menu {
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      right: 100%;
+      background: rgba(37, 43, 73, 0.8);
+      padding-left: 20px;
+      margin-top: 55px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__ref {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    &__item {
+      padding: 24px 0;
+      font-family: Raleway;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: start;
+      text-transform: uppercase;
+      list-style: none;
+
+      &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid #babbc5;
+        padding: 24px 0 21px;
+      }
+
+      &:active {
+        cursor: pointer;
+        border-bottom: 3px solid #e71414;
+        color: #e71414;
+        padding: 24px 0 21px;
+        text-decoration-color: #e71414;
+      }
+    }
+
+    &__burger:hover + &__menu {
+      animation: mobileMenu 0.3s linear;
+      animation-fill-mode: forwards;
+    }
+
+    &__burger:hover {
+      cursor: pointer;
+
+      & .header__burgerItem {
+        opacity: 0;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        top: 50%;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        top: 50%;
+      }
+    }
+  }
+
+  // Mobile - стили для главной страницы
+}
