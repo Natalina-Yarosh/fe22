@@ -114,7 +114,7 @@ $bgInteger: #5c3249;
   &__item {
     @include header;
     list-style-type: none;
-    
+
     position: relative;
     max-width: 134px;
     width: 100%;
@@ -135,7 +135,7 @@ $bgInteger: #5c3249;
     padding: 40px 0;
     color: $colorWhite;
     text-decoration: none;
-    &:hover{
+    &:hover {
       color: #ee9999;
     }
     &:active {
@@ -292,7 +292,6 @@ $bgInteger: #5c3249;
     grid-column-gap: 31px;
     grid-row-gap: 88px;
   }
-
 
   &__logo {
     width: 100px;
@@ -458,7 +457,6 @@ $bgInteger: #5c3249;
   }
 }
 
-
 .team {
   margin-bottom: 114px;
   &__container {
@@ -467,13 +465,11 @@ $bgInteger: #5c3249;
     grid-column-gap: 30px;
   }
 
-  &__profile{
+  &__profile {
     position: relative;
     display: flex;
     flex-direction: column;
   }
-
-  
 
   &__photo {
     position: relative;
@@ -529,14 +525,25 @@ $bgInteger: #5c3249;
     border: 1px solid $colorBorder;
     margin-right: 6px;
     transition: all 0.3s linear;
+    fill: $colorRed;
     &:hover {
       transform: scale(1.2) rotate(360deg);
-      background-color: $colorGrey;
+      a {
+        svg path {
+          fill: $colorHover;
+        }
+      }
+
       border-radius: 50%;
     }
     &:active {
       transform: scale(1);
       border-radius: 0;
+      a {
+        svg path {
+          fill: $colorRed;
+        }
+      }
     }
 
     & a {
@@ -545,13 +552,6 @@ $bgInteger: #5c3249;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      & svg:hover path {
-        fill: $colorBlack;
-      }
-      & svg:active path {
-        fill: $colorBlack;
-      }
     }
 
     &:last-child {
@@ -613,6 +613,7 @@ $bgInteger: #5c3249;
   grid-template-columns: 49% 51%;
   margin-bottom: 176.5px;
   background-color: $bgInteger;
+  align-items: center;
 
   &__img {
     position: relative;
@@ -633,13 +634,10 @@ $bgInteger: #5c3249;
     }
   }
   &__block {
-    padding-top: 134px;
-
+    padding: 20px 0 10px;
     grid-column-start: 2;
     grid-column-end: 3;
-
     margin-left: 129px;
-    max-width: 471px;
   }
 
   &__title {
@@ -663,6 +661,24 @@ $bgInteger: #5c3249;
   }
 }
 
+@media (max-width: 1200px) {
+  .integer__block {
+    margin-left: 99px;
+  }
+}
+
+@media (max-width: 1097px) {
+  .integer__block {
+    margin-left: 75px;
+  }
+}
+
+@media (max-width: 1053px) {
+  .integer__block {
+    margin-left: 52px;
+  }
+}
+
 @media (max-width: 1024px) {
   .integer {
     margin-bottom: 126px;
@@ -675,20 +691,23 @@ $bgInteger: #5c3249;
       line-height: 14px;
     }
     &__block {
-      padding-top: 61px;
       margin-left: 88px;
-      max-width: 330px;
     }
   }
 }
+@media (max-width: 794px) {
+  .integer__block {
+    margin-left: 68px;
+  }
+}
+
 @media (max-width: 767px) {
   .integer {
     margin-bottom: 86px;
     display: block;
     &__block {
       margin: 0 auto;
-      padding: 30px 0 100px;
-      max-width: 275px;
+      padding: 30px 22px 100px;
     }
     &__title {
       font-size: 24px;
@@ -774,14 +793,17 @@ $bgInteger: #5c3249;
 }
 
 .footer {
-  background-color: #353c65;
-  padding: 71px 0 0;
+  &__top {
+    background-color: #353c65;
+    padding: 70px 0;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
-    padding-bottom: 71px;
   }
+
   &__title {
     font-family: Raleway;
     font-weight: 700;
@@ -824,12 +846,18 @@ $bgInteger: #5c3249;
     }
     &:hover {
       transform: scale(1.2) rotate(360deg);
-      background-color: $colorGrey;
+
       border-radius: 50%;
+      a path {
+        fill: $colorHover;
+      }
     }
     &:active {
       transform: scale(1);
       border-radius: 0;
+      a path {
+        fill: $colorRed;
+      }
     }
 
     & a {
@@ -838,20 +866,16 @@ $bgInteger: #5c3249;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      & svg:hover path {
-        fill: $colorBlack;
-      }
-      & svg:active path {
-        fill: $colorBlack;
-      }
     }
   }
 }
 
 @media (max-width: 1024px) {
   .footer {
-    padding: 46px 0 0;
+    &__top {
+      padding: 40px 0;
+    }
+
     &__title {
       font-size: 14px;
       line-height: 16px;
@@ -868,9 +892,18 @@ $bgInteger: #5c3249;
 }
 @media (max-width: 767px) {
   .footer {
+    &__top {
+      padding: 33px 0;
+    }
+    &-marg {
+      margin-bottom: 65px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     &__container {
       grid-template-columns: 1fr;
-      padding-bottom: 33px;
+      display: block;
     }
     &__title {
       font-size: 14px;
