@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="style/style.css">
 	<title>Document</title>
 </head>
@@ -247,7 +248,7 @@
 
 		<!--Reviews Customers-->
 
-		<section class="reviews">
+		<section class="reviews reviews-off">
 			<div class="container">
 				<h2 class="reviews__title">WHAT OUR CUSTOMERS ARE SAYING</h2>
 				<p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -288,7 +289,7 @@
 							accusamus expedita repellat similique
 							odio aspernatur ex, architecto eaque
 							quo suscipit.</p>
-						<div class="reviews__item__customer reviews-slider__slide swiper-slide">
+						<div class="reviews__item__customer">
 							<div class="reviews__item__img"><img src="assets/Manager3.jpg" alt="Manager3">
 							</div>
 							<div class="reviews__item__info">
@@ -298,6 +299,62 @@
 						</div>
 					</article>
 				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+
+		<section class="reviews swiper-slider">
+			<div class="container swiper mySwiper reviews-slider">
+				<h2 class="reviews__title">WHAT OUR CUSTOMERS ARE SAYING</h2>
+				<p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<div class="reviews__block swiper-wrapper">
+					<article class="reviews__item swiper-slide">
+						<p class="reviews__item__text">Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Doloribus
+							accusamus expedita repellat similique
+							odio aspernatur ex, architecto eaque
+							quo suscipit.</p>
+						<div class="reviews__item__customer">
+							<div class="reviews__item__img"><img src="assets/Manager1.jpg" alt="Manager1">
+							</div>
+							<div class="reviews__item__info">
+								<h4 class="reviews__item__customer__name">Davis Rhiel Madsen</h4>
+								<p class="reviews__item__customer__position">Manager</p>
+							</div>
+						</div>
+					</article>
+					<article class="reviews__item swiper-slide">
+						<p class="reviews__item__text">Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Doloribus
+							accusamus expedita repellat similique
+							odio aspernatur ex, architecto eaque
+							quo suscipit.</p>
+						<div class="reviews__item__customer">
+							<div class="reviews__item__img "><img src="assets/Manager2.jpg" alt="Manager2">
+							</div>
+							<div class="reviews__item__info">
+								<h4 class="reviews__item__customer__name">Jaydon Rosser</h4>
+								<p class="reviews__item__customer__position">Manager</p>
+							</div>
+						</div>
+					</article>
+					<article class="reviews__item swiper-slide">
+						<p class="reviews__item__text">Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Doloribus
+							accusamus expedita repellat similique
+							odio aspernatur ex, architecto eaque
+							quo suscipit.</p>
+						<div class="reviews__item__customer">
+							<div class="reviews__item__img"><img src="assets/Manager3.jpg" alt="Manager3">
+							</div>
+							<div class="reviews__item__info">
+								<h4 class="reviews__item__customer__name">Cooper Dorwart</h4>
+								<p class="reviews__item__customer__position">Manager</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</section>
 
@@ -412,9 +469,18 @@
 		<p class="footer__text">© 2015 Axure Themes</p>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script>
+		var swiper = new Swiper(".reviews-slider", {
+			spaceBetween: 20,
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	</script>
 </body>
 
 </html>

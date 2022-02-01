@@ -4,7 +4,9 @@
 @import "styleMenu.scss";
 
 
-
+html{
+	scroll-behavior: smooth;
+}
 
 
 .container{
@@ -22,25 +24,20 @@
 	top: 0;
 	width: 100%;
 	z-index: 2;
+	padding: 0 20px;
+	background-color: #252840;
 
 	.container{
 		display: flex;
 		justify-content: space-between;
 		align-self: flex-start;
-	}
-	.container::after{
-		content: '';
-		display: block;
-		position: fixed;
-		top: 100px;
-		left: 50%;
-		transform: translateX(-50%);
-		max-width: 1170px;
-		width: 100%;
 		border-bottom: 1px solid #BABBC5;
+		padding: 0;
+		max-width: 1170px;
 	}
 	&__logo{
 		align-self: center;
+		z-index: 3;
 	}
 	&__menu{
 		display: flex;
@@ -95,6 +92,7 @@
 	background-position: center;
 	background-size: cover;
 	position: relative;
+	padding: 230px 0 120px;
 
 	&::after{
 		content: '';
@@ -108,7 +106,7 @@
 		opacity: 0.8;
 	}
 	.container{
-		padding: 230px 20px 120px;
+		padding: 0 20px;
 		text-align: center;
 		position: relative;
 		z-index: 1;
@@ -138,7 +136,7 @@
 // features
 
 .features{
-	padding: 116px 0;
+	padding: 116px 0 132px;
 
 	.container{
 		display: grid;
@@ -154,7 +152,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 0 auto 53px;
+		margin: 0 auto 51px;
 
 		img{
 			width: 90%;
@@ -180,6 +178,7 @@
 	&__block{
 		border: 1px solid #FFFFFF;
 		position: relative;
+		cursor: pointer;
 	}
 	&__img{
 		position: relative;
@@ -244,7 +243,8 @@
 	}
 
 	&__card{
-
+		display: flex;
+    flex-direction: column;
 	}
 	&__img{
 		position: relative;
@@ -277,7 +277,7 @@
 		margin-bottom: 37.86px;
 	}
 	&__soc{
-		
+		margin-top: auto;
 	}
 	&__soc ul{
 		display: flex;
@@ -290,9 +290,13 @@
 			justify-content: center;
 			align-items: center;
 			margin-right: 6px;
-			transition: all .1s linear;
 			&:hover{
 				border-radius: 50%;
+				transition: all .1s linear;
+			}
+			&:hover path{
+				fill: rgba(255, 67, 67, 0.8);
+				transition: all .15s linear;
 			}
 		}
 	}
@@ -342,11 +346,29 @@
 		@include testimonialsText;
 	}
 }
+.testimonials-slider{
+	padding-bottom: 45px;
+	.swiper-pagination{
+		bottom: 0 !important;
+		top: calc(100% - 14px);
+	}
+	.swiper-pagination-bullet{
+		width: 14px;
+		height: 14px;
+		border: 1px solid #7E5D6F;
+		background-color: #fff;
+		opacity: 1;
+		margin: 0 12.5px !important;
+	}
+	.swiper-pagination-bullet-active{
+		background-color: #7E5D6F;
+	}
+}
 
 // download
 
 .download{
-	padding: 114px 0;
+	padding: 132.51px 0 113px;
 	text-align: center;
 
 	&__title{
@@ -374,15 +396,18 @@
 // footer
 
 .footer{
-	padding: 71.14px 0 0;
 	background-color: #353C65;
 	text-align: center;
 
-	.container{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-column-gap: 30px;
-		padding: 0 20px 70px;
+	&__top{
+		padding: 71.14px 0 67.14px;
+
+		.container{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-column-gap: 30px;
+			padding: 0 20px;
+		}
 	}
 	&__block__title{
 		@include footerBlockTitle;
@@ -423,6 +448,11 @@
 			&:hover{
 				border-radius: 50%;
 			}
+			&:hover path{
+				fill: rgba(255, 67, 67, 0.8);
+				transition: all .15s linear;
+			}
+
 		}
 	}
 	&__soc-link{
@@ -459,8 +489,9 @@
 
 	// banner
 	.banner{
+		padding: 257px 0 124px;
 		.container{
-		padding: 257px 20px 126px;
+		padding: 0 20px;
 		}
 		&__title{
 			font-size: 48px;
@@ -485,12 +516,12 @@
 		&__img{
 			width: 85px;
 			height: 85px;
-			margin-bottom: 45px;
+			margin-bottom: 44px;
 		}
 		&__title{
 			font-size: 18px;
 			line-height: 21px;
-			margin-bottom: 10px;
+			margin-bottom: 23px;
 		}
 		&__text{
 			font-size: 14px;
@@ -515,12 +546,12 @@
 	.team{
 		padding: 78.22px 0 78.41px;
 		&__img{
-			margin-bottom: 25.23px;
+			margin-bottom: 30.8px;
 		}
 		&__title{
 			font-size: 18px;
 			line-height: 21px;
-			margin-bottom: 4.6px;
+			margin-bottom: 7.5px;
 		}
 		&__text-red{
 			font-size: 14px;
@@ -555,15 +586,26 @@
 			line-height: 14px;
 		}
 	}
+	.testimonials-slider{
+		padding-bottom: 33.49px;
+		.swiper-pagination{
+			top: calc(100% - 14px);
+		}
+		.swiper-pagination-bullet{
+			width: 9.49px;
+			height: 9.49px;
+			margin: 0 12.76px !important;
+		}
+	}
 
 // download
 	.download{
-		padding: 78px 0;
+		padding: 95.5px 0 82px;
 
 		&__title{
 			font-size: 24px;
 			line-height: 28px;
-			margin-bottom: 14px;
+			margin-bottom: 21px;
 		}
 		&__text{
 			font-size: 14px;
@@ -571,16 +613,20 @@
 		}
 		&__btn{
 			margin-top: 45.71px;
+			font-size: 18px;
+			line-height: 21px;
 		}
 	}
 
 // footer
 	.footer{
-		padding: 46.59px 0 0;
 
-		.container{
-		padding: 0 20px 42px;
-		grid-column-gap: 20px;
+		&__top{
+			padding: 46.59px 0 41.19px;
+			
+			.container{
+				grid-column-gap: 20px;
+			}
 		}
 		&__block__title{
 			font-size: 14px;
@@ -622,9 +668,12 @@
 	
 // header
 	.header{
+		padding: 20px 0 10px;
+		background: rgb(2,0,36);
+		background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(37,40,64,1) 80%, rgba(37,40,64,0.5410539215686274) 100%);
 		.container{
-			position: relative;
-			top: 20px;
+			padding: 0 20px;
+			border: none;
 		}
 		.container::after{
 			display: none;
@@ -643,8 +692,9 @@
 
 // banner
 .banner{
+	padding: 106px 0 52px;
 	.container{
-	padding: 106px 20px 52px;
+	padding: 0 20px;
 	}
 	&__title{
 		font-size: 36px;
@@ -671,7 +721,7 @@
 	&__img{
 		width: 75.56px;
 		height: 75.56px;
-		margin-bottom: 20.88px;
+		margin-bottom: 38.88px;
 	}
 	&__title{
 		margin-bottom: 7px;
@@ -689,17 +739,23 @@
 
 	// our team
 	.team{
-		padding: 35px 0 41px;
+		padding: 35px 0 34px;
 		.container{
-			grid-template-columns: 1fr;
-			grid-template-rows: 1fr 1fr 1fr 1fr;
-			grid-row-gap: 56px;
+			display: flex;
+			flex-direction: column;
+		}
+		&__card{
+			display: block;
+			margin-bottom: 56px;
+			&:last-child{
+				margin-bottom: 0;
+			}
 		}
 		&__img{
-			margin-bottom: 25.25px;
+			margin-bottom: 27.25px;
 		}
 		&__title{
-			margin-bottom: 4.61px;
+			margin-bottom: 7.61px;
 		}
 		&__text-red{
 			margin-bottom: 38.49px;
@@ -716,30 +772,36 @@
 
 // testimonials
 .testimonials{
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
+	display: flex;
+	flex-direction: column;
 	&__info{
-		padding: 10px 20px 95px;
+		padding: 24px 20px 100px;
 		margin: 0;
 		width: 100%;
 		max-width: 100%;
 	}
 	&__title{
-		margin-bottom: 10px;
+		margin-bottom: 28px;
 	}
 	&__img img{
 		object-fit: contain;
 	}
 }
+.testimonials-slider{
+	padding-bottom: 33.49px;
+	.swiper-pagination-bullet{
+		margin: 0 10px !important;
+	}
+}
 
 // download
 .download{
-	padding: 34.51px 0 45px;
+	padding: 52.51px 0 46px;
 
 	&__title{
 		font-size: 18px;
 		line-height: 21px;
-		margin-bottom: 14px;
+		margin-bottom: 22px;
 	}
 	&__text{
 		font-size: 13px;
@@ -747,18 +809,20 @@
 	}
 	&__btn{
 		margin-top: 13.42px;
+		padding: 28px;
 	}
 }
 
 // footer
 .footer{
-	padding: 46.59px 0 0;
-
-	.container{
-		padding: 0 20px 33.14px;
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-template-columns: 1fr;
-		grid-row-gap: 62px;
+	&__top{
+		padding: 34.14px 0 33.14px;
+		.container{
+			padding: 0 20px;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-columns: 1fr;
+			grid-row-gap: 36px;
+		}
 	}
 	&__block__title{
 		font-size: 14px;
@@ -770,7 +834,7 @@
 		line-height: 16px;
 	}
 	&__copyright{
-		padding: 29.86px 20px 28.14px;
+		padding: 29.86px 0 28.14px;
 		&__text{
 			font-size: 14px;
 			line-height: 16px;
@@ -785,6 +849,9 @@
 			width: 33px;
 			height: 33px;
 		}
+	}
+	.social{
+		justify-content: flex-start;
 	}
 }
 

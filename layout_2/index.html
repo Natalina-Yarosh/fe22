@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<title>Document</title>
 </head>
@@ -18,11 +19,11 @@
 			<a href="#" class="header__logo"><img src="img/activeBox.png" alt="activebox"></a>
 			<nav class="header__nav">
 				<ul class="header__menu">
-					<li><a href="#" class="header__link">features</a></li>
-					<li><a href="#" class="header__link">works</a></li>
-					<li><a href="#" class="header__link">our team</a></li>
-					<li><a href="#" class="header__link">testimonials</a></li>
-					<li><a href="#" class="header__link">download</a></li>
+					<li><a href="#features" class="header__link">features</a></li>
+					<li><a href="#works" class="header__link">works</a></li>
+					<li><a href="#ourTeam" class="header__link">our team</a></li>
+					<li><a href="#testimonials" class="header__link">testimonials</a></li>
+					<li><a href="#download" class="header__link">download</a></li>
 				</ul>
 				<div class="hamburger-menu">
 					<input id="menu__toggle" type="checkbox" />
@@ -30,11 +31,11 @@
 						<span></span>
 					</label>
 					<ul class="menu__box">
-						<li><a class="menu__item" href="#">features</a></li>
-						<li><a class="menu__item" href="#">works</a></li>
-						<li><a class="menu__item" href="#">our team</a></li>
-						<li><a class="menu__item" href="#">testimonials</a></li>
-						<li><a class="menu__item" href="#">download</a></li>
+						<li><a class="menu__item" href="#features">features</a></li>
+						<li><a class="menu__item" href="#works">works</a></li>
+						<li><a class="menu__item" href="#ourTeam">our team</a></li>
+						<li><a class="menu__item" href="#testimonials">testimonials</a></li>
+						<li><a class="menu__item" href="#download">download</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -57,7 +58,7 @@
 
 		<!-- features -->
 
-		<div class="features">
+		<div class="features" id="features">
 			<div class="container">
 				<article class="features__block">
 					<div class="features__img"><img src="img/ec.png" alt="ec"></div>
@@ -100,68 +101,68 @@
 
 		<!-- works -->
 
-		<div class="work">
-			<div class="work__block">
+		<div class="work" id="works">
+			<a href="#" class="work__block">
 				<div class="work__img"><img src="img/work_1.jpg" alt="work"></div>
 				<article class="work__hover">
 					<h4 class="work__title">Project Name</h4>
 					<p class="work__text">User Interface Design</p>
 				</article>
-			</div>
-			<div class="work__block">
+			</a>
+			<a href="#" class="work__block">
 				<div class="work__img"><img src="img/work_2.jpg" alt="work"></div>
 				<article class="work__hover">
 					<h4 class="work__title">Project Name</h4>
 					<p class="work__text">User Interface Design</p>
 				</article>
-			</div>
-			<div class="work__block">
+			</a>
+			<a href="#" class="work__block">
 				<div class="work__img"><img src="img/work_3.jpg" alt="work"></div>
 				<article class="work__hover">
 					<h4 class="work__title">Project Name</h4>
 					<p class="work__text">User Interface Design</p>
 				</article>
-			</div>
-			<div class="work__block">
+			</a>
+			<a href="#" class="work__block">
 				<div class="work__img"><img src="img/work_4.jpg" alt="work"></div>
 				<article class="work__hover">
 					<h4 class="work__title">Project Name</h4>
 					<p class="work__text">User Interface Design</p>
 				</article>
-			</div>
-			<div class="work__block">
+			</a>
+			<a href="#" class="work__block">
 				<div class="work__img"><img src="img/work_5.jpg" alt="work"></div>
 				<article class="work__hover">
 					<h4 class="work__title">Project Name</h4>
 					<p class="work__text">User Interface Design</p>
 				</article>
-			</div>
-			<div class="work__block">
+			</a>
+			<a href="#" class="work__block">
 				<div class="work__img"><img src="img/work_6.jpg" alt="work"></div>
 				<article class="work__hover">
 					<h4 class="work__title">Project Name</h4>
 					<p class="work__text">User Interface Design</p>
 				</article>
-			</div>
-			<div class="work__block">
+			</a>
+			<a href="#" class="work__block">
 				<div class="work__img"><img src="img/work_7.jpg" alt="work"></div>
 				<article class="work__hover">
 					<h4 class="work__title">Project Name</h4>
 					<p class="work__text">User Interface Design</p>
 				</article>
-			</div>
-			<div class="work__block">
+			</a>
+			<a href="#" class="work__block">
 				<div class="work__img"><img src="img/work_8.jpg" alt="work"></div>
 				<article class="work__hover">
 					<h4 class="work__title">Project Name</h4>
 					<p class="work__text">User Interface Design</p>
 				</article>
-			</div>
+			</a>
 		</div>
 
 		<!-- our team -->
 
-		<div class="team">
+		<div class="team" id="ourTeam">
 			<div class="container">
 				<article class="team__card">
 					<div class="team__img"><img src="img/person_1.jpg" alt="person"></div>
@@ -283,18 +284,41 @@
 
 		<!-- testimonials -->
 
-		<div class="testimonials">
-			<div class="testimonials__img"><img src="img/bg.jpg" alt="testimonials"></div>
-			<section class="testimonials__info">
-				<h2 class="testimonials__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed
-					odio dui. Aenean eu leo quam...”</h2>
-				<p class="testimonials__text">Susan Sims, Interaction Designer at XYZ</p>
-			</section>
+		<div class="swiper mySwiper testimonials-slider">
+			<div class="swiper-wrapper" id="testimonials">
+				<div class="testimonials swiper-slide">
+					<div class="testimonials__img"><img src="img/bg.jpg" alt="testimonials"></div>
+					<div class="testimonials__info">
+						<h2 class="testimonials__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec
+							sed
+							odio dui. Aenean eu leo quam...”</h2>
+						<p class="testimonials__text">Susan Sims, Interaction Designer at XYZ</p>
+					</div>
+				</div>
+				<div class="testimonials swiper-slide">
+					<div class="testimonials__img"><img src="img/bg.jpg" alt="testimonials"></div>
+					<div class="testimonials__info">
+						<h2 class="testimonials__title">“Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis
+							quidem itaque soluta doloribus eius vitae laborum recusandae inventore doloremque, facere qui.”</h2>
+						<p class="testimonials__text">Susan Sims, Interaction Designer at XYZ</p>
+					</div>
+				</div>
+				<div class="testimonials swiper-slide">
+					<div class="testimonials__img"><img src="img/bg.jpg" alt="testimonials"></div>
+					<div class="testimonials__info">
+						<h2 class="testimonials__title">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptas.
+							Aliquid cumque cupiditate quasi eveniet dignissimos error odit. Aliquid iure eligendi rerum? Nulla eius
+							maiores optio molestiae dicta, dolorum aliquid?”</h2>
+						<p class="testimonials__text">Susan Sims, Interaction Designer at XYZ</p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
 		</div>
 
 		<!-- download -->
 
-		<section class="download">
+		<section class="download" id="download">
 			<div class="container">
 				<h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>
 				<p class="download__text">Fusce dapibus, tellus ac cursus commodo</p>
@@ -307,46 +331,63 @@
 	<!-- footer -->
 
 	<footer class="footer">
-		<div class="container">
-			<div class="footer__block location">
-				<div class="footer__block__title">Location</div>
-				<div class="footer__block__text">3481 Melrose Place
-					Beverly Hills, CA 90210</div>
-			</div>
-			<div class="footer__block social">
-				<div class="footer__block__title">Share with Love</div>
-				<div class="footer__block__link">
-					<ul>
-						<li><a href="#" class="footer__soc-link"><svg width="10" height="18" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path d="M6 18v-8h3l1-3H6V5l2-2h2V0H7C5 0 3 1 3 4v3H0v3h3v8h3Z" fill="#C6CBCD" />
-								</svg></a></li>
-						<li><a href="#" class="footer__soc-link"><svg width="20" height="16" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M18 4v1c0 5-4 11-12 11l-6-2a8 8 0 0 0 6-2 4 4 0 0 1-4-2h2a4 4 0 0 1-3-4h2a4 4 0 0 1-2-5 11 11 0 0 0 9 4V4a4 4 0 0 1 7-3l2-1-2 3 3-1-2 2Z"
-										fill="#C6CBCD" />
-								</svg></a></li>
-						<li><a href="#" class="footer__soc-link"><svg width="18" height="18" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M17 0H1a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1ZM5 15H3V7h2v8ZM4 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm11 9h-2v-4c0-1 0-2-2-2l-1 2v4H7V7h3v1l2-1c3 0 3 1 3 4v4Z"
-										fill="#C6CBCD" />
-								</svg></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer__block about">
-				<div class="footer__block__title">About ActiveBox</div>
-				<div class="footer__block__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper
-					nulla non metus auctor fringilla.</div>
+		<div class="footer__top">
+			<div class="container">
+				<article class="footer__block location">
+					<div class="footer__block__title">Location</div>
+					<div class="footer__block__text">3481 Melrose Place
+						Beverly Hills, CA 90210</div>
+				</article>
+				<article class="footer__block social">
+					<div class="footer__block__title">Share with Love</div>
+					<div class="footer__block__link">
+						<ul>
+							<li><a href="#" class="footer__soc-link"><svg width="10" height="18" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 18v-8h3l1-3H6V5l2-2h2V0H7C5 0 3 1 3 4v3H0v3h3v8h3Z" fill="#C6CBCD" />
+									</svg></a></li>
+							<li><a href="#" class="footer__soc-link"><svg width="20" height="16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M18 4v1c0 5-4 11-12 11l-6-2a8 8 0 0 0 6-2 4 4 0 0 1-4-2h2a4 4 0 0 1-3-4h2a4 4 0 0 1-2-5 11 11 0 0 0 9 4V4a4 4 0 0 1 7-3l2-1-2 3 3-1-2 2Z"
+											fill="#C6CBCD" />
+									</svg></a></li>
+							<li><a href="#" class="footer__soc-link"><svg width="18" height="18" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M17 0H1a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1ZM5 15H3V7h2v8ZM4 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm11 9h-2v-4c0-1 0-2-2-2l-1 2v4H7V7h3v1l2-1c3 0 3 1 3 4v4Z"
+											fill="#C6CBCD" />
+									</svg></a></li>
+						</ul>
+					</div>
+				</article>
+				<article class="footer__block about">
+					<div class="footer__block__title">About ActiveBox</div>
+					<div class="footer__block__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+						ullamcorper
+						nulla non metus auctor fringilla.</div>
+				</article>
 			</div>
 		</div>
 		<div class="footer__copyright">
-			<p class="footer__copyright__text">Copyright © 2015 ActiveBox. All Rights Reserved
-				Made with <span>by Kamal Chaneman</span></p>
+			<div class="container">
+				<p class="footer__copyright__text">Copyright © 2015 ActiveBox. All Rights Reserved
+					Made with <span>by Kamal Chaneman</span></p>
+			</div>
 		</div>
 	</footer>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper(".testimonials-slider", {
+			autoHeight: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	</script>
+
 </body>
 
 </html>

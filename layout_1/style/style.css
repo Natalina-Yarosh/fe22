@@ -636,6 +636,10 @@
 						font-size: 18px;
 						line-height: 21px;
 				}
+	/* reviews-slider */
+	.swiper-slider{
+		display: none;
+	}
 
 /*STYLISH AXURE DESIGN*/
 
@@ -1394,7 +1398,7 @@
 		margin-bottom: 24px;
 	}
 	.reviews__block{
-		margin-bottom: 23px;
+		flex-wrap: nowrap;
 	}
 	.reviews__item{
 		width: 100%;
@@ -1406,34 +1410,30 @@
 		border-right: 12,77px solid transparent;
 		left: 46.59px;
 	}
-	/*slick-slide*/
-	.slick-list{
-		overflow: hidden;
+	/* reviews-slider */
+	.swiper-slider{
+		display: block;
 	}
-	.slick-track{
-		display: flex;
+	.reviews-off{
+		display: none;
 	}
-	.slick-dots{
-		display: flex;
-		margin: 23px auto 0;
+	.reviews-slider{
+		padding-bottom: 41.49px;
 	}
-	.slick-dots li{
-		list-style: none;
-		margin: 0 10px;
+	.swiper-pagination{
+		bottom: 0 !important;
+		top: calc(100% - 14px);
 	}
-	.slick-dots button{
-		font-size: 0;
+	.swiper-pagination-bullet{
 		width: 9.49px;
 		height: 9.49px;
-		border-radius: 1px solid #86878B;
-		border-radius: 50%;
+		border: 1px solid #86878B;
+		background-color: #fff;
+		opacity: 1;
+		margin: 0 25.25px !important;
 	}
-	.slick-dots li.slick-active button{
+	.swiper-pagination-bullet-active{
 		background-color: #86878B;
-		border-radius: 1px solid #86878B;
-	}
-	.reviews__block .slick-arrow{
-		display: none;
 	}
 
 /*STYLISH AXURE DESIGN*/
