@@ -114,7 +114,7 @@ $bgInteger: #5c3249;
   &__item {
     @include header;
     list-style-type: none;
-    padding: 40px 0;
+    
     position: relative;
     max-width: 134px;
     width: 100%;
@@ -131,8 +131,13 @@ $bgInteger: #5c3249;
   }
 
   &__link {
+    display: inline-block;
+    padding: 40px 0;
     color: $colorWhite;
     text-decoration: none;
+    &:hover{
+      color: #ee9999;
+    }
     &:active {
       color: $colorRed;
     }
@@ -287,17 +292,13 @@ $bgInteger: #5c3249;
     grid-column-gap: 31px;
     grid-row-gap: 88px;
   }
-  &__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
 
   &__logo {
     width: 100px;
     height: 100px;
     text-align: center;
-    margin-bottom: 51px;
+    margin: 0 auto 51px;
     img {
       width: 100%;
       height: 100%;
@@ -457,6 +458,7 @@ $bgInteger: #5c3249;
   }
 }
 
+
 .team {
   margin-bottom: 114px;
   &__container {
@@ -465,9 +467,17 @@ $bgInteger: #5c3249;
     grid-column-gap: 30px;
   }
 
+  &__profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+
   &__photo {
     position: relative;
-    margin: 0 auto 30px;
+    margin-bottom: 30px;
     &::before {
       content: "";
       display: block;
@@ -510,6 +520,7 @@ $bgInteger: #5c3249;
   }
   &__icons {
     display: flex;
+    margin-top: auto;
   }
 
   &__icon {
