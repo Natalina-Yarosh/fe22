@@ -8,8 +8,9 @@
    outline: none;
 }
 
-body ._lock {
+body._lock {
    overflow: hidden;
+   height: 100vh;
 }
 
 $colorTextTeamFeatures: #6c7279;

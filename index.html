@@ -3,6 +3,7 @@
 
 <head>
    <title>AXIT</title>
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
    <link rel="stylesheet" href="css/style.css">
    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum scale=1.0, user-scalable=0">
@@ -23,6 +24,9 @@
                <path d="M86.8026 5.68633H77.8644V31.1461H72.4699V5.68633H63.5317V0.456055H86.8026V5.68633Z"
                   fill="#EC7979" />
             </svg></a>
+         <div class="header__burger">
+            <span></span>
+         </div>
          <nav class="menu header__menu">
             <ul class="header__list header-list">
                <li><a href="#" class="header-list__item">features</a></li>
@@ -300,6 +304,65 @@
                   </div>
                </article>
             </div>
+            <div class="swiper mySwiper reviews-slider">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <p class="text reviews__text">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Doloribus
+                        accusamus expedita repellat similique
+                        odio aspernatur ex, architecto eaque
+                        quo suscipit.
+                     </p>
+                     <div class="customer reviews__customer">
+                        <div class="customer__image">
+                           <img src="img/customer_1.jpg" alt="customer-image">
+                        </div>
+                        <div class="customer__data">
+                           <h4 class="customer__name">davis rhiel madsen</h4>
+                           <p class="customer__position">manager</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <p class="text reviews__text">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Doloribus
+                        accusamus expedita repellat similique
+                        odio aspernatur ex, architecto eaque
+                        quo suscipit.
+                     </p>
+                     <div class="customer reviews__customer">
+                        <div class="customer__image">
+                           <img src="img/customer_2.jpg" alt="customer-image">
+                        </div>
+                        <div class="customer__data">
+                           <h4 class="customer__name">jaydon rosser</h4>
+                           <p class="customer__position">manager</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <p class="text reviews__text">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Doloribus
+                        accusamus expedita repellat similique
+                        odio aspernatur ex, architecto eaque
+                        quo suscipit.
+                     </p>
+                     <div class="customer reviews__customer">
+                        <div class="customer__image">
+                           <img src="img/customer_3.jpg" alt="customer-image">
+                        </div>
+                        <div class="customer__data">
+                           <h4 class="customer__name">cooper dorwart</h4>
+                           <p class="customer__position">manager</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
          </div>
       </section>
       <section class="banner2">
@@ -391,7 +454,8 @@
          </p>
       </div>
    </footer>
-
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
