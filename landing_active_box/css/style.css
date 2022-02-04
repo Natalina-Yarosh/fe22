@@ -101,7 +101,7 @@ body._lock {
     -webkit-transition: left 0.3s ease-out 0s;
     transition: left 0.3s ease-out 0s;
     overflow: auto;
-    background-image: url(../img/banner/burger_bg.png);
+    background-image: url(../img/banner/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1039,6 +1039,7 @@ body._lock {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {

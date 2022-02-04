@@ -118,6 +118,7 @@ $lineHeitTeamFeatures: 21px;
    color: $colorWhite;
    font-weight: 700;
    text-transform: uppercase;
+   text-align: center;
    @media (max-width: 1024px) {
       font-size: 12px;
       line-height: 14px;
@@ -429,7 +430,7 @@ $lineHeitTeamFeatures: 21px;
          height: 100%;
          transition: left 0.3s ease-out 0s;
          overflow: auto;
-         background-image: url(../img/banner/burger_bg.png);
+         background-image: url(../img/banner/banner.png);
          background-size: cover;
          background-repeat: no-repeat;
          background-position: center;
