@@ -432,8 +432,8 @@ body._lock {
 
 @media (max-width: 767px) {
   .banner__btn {
-    max-width: 279px;
     padding: 15px 0 15px 0;
+    max-width: none;
   }
 }
 
@@ -577,9 +577,6 @@ body._lock {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  row-gap: 2px;
-  -webkit-column-gap: 2px;
-          column-gap: 2px;
 }
 
 @media (max-width: 767px) {
@@ -591,6 +588,7 @@ body._lock {
 
 .work__block {
   position: relative;
+  border: 1px solid #fff;
 }
 
 .work__block::before {
@@ -633,7 +631,6 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #fff;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -1019,17 +1016,23 @@ body._lock {
   margin-bottom: 25px;
 }
 
-@media (min-width: 319px) and (max-width: 1024px) {
+@media (min-width: 319px) and (max-width: 767px) {
+  .testimonials-slider .swiper-slide__title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .testimonials-slider .swiper-slide__title {
     font-size: 24px;
     line-height: 32px;
     max-width: 350px;
-  }
-}
-
-@media (max-width: 767px) {
-  .testimonials-slider .swiper-slide__title {
-    text-align: center;
+    text-align: left;
+    margin: 0 auto 13.5px;
   }
 }
 
@@ -1039,7 +1042,7 @@ body._lock {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 
 @media (max-width: 1024px) {
@@ -1053,6 +1056,7 @@ body._lock {
   .testimonials-slider .swiper-slide__text {
     font-size: 12px;
     line-height: 14px;
+    text-align: center;
   }
 }
 
@@ -1196,10 +1200,10 @@ body._lock {
 
 @media (max-width: 767px) {
   .download__btn {
-    max-width: 278px;
     padding: 15px 0 15px 0;
     font-size: 18px;
     line-height: 21px;
+    max-width: none;
     padding: 28px 0 28px 0;
   }
 }
@@ -1271,13 +1275,12 @@ body._lock {
 @media (max-width: 1024px) {
   .footer__item {
     margin-right: 20px;
-    width: calc((100% - 40px) / 2);
+    width: calc((100% - 40px) / 3);
   }
 }
 
 @media (max-width: 767px) {
   .footer__item {
-    max-width: 280px;
     width: 100%;
   }
   .footer__item:first-child {
@@ -1468,8 +1471,7 @@ body._lock {
   .footer__rights {
     font-size: 14px;
     line-height: 16px;
-    max-width: 280px;
-    width: 100%;
+    max-width: none;
   }
 }
 

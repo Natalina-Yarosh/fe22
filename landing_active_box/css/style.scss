@@ -106,10 +106,19 @@ $lineHeitTeamFeatures: 21px;
    font-weight: 400;
    color: $colorWhite;
    text-transform: capitalize;
-   @media (min-width: 319px) and (max-width: 1024px) {
+   @media (min-width: 319px) and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      max-width: 350px;
+      margin: 0 auto 25px;
+   }
+   @media (min-width: 768px) and (max-width: 1024px) {
       font-size: 24px;
       line-height: 32px;
       max-width: 350px;
+      text-align: left;
+      margin: 0 auto 13.5px;
    }
 }
 @mixin textSwiper {
@@ -118,7 +127,7 @@ $lineHeitTeamFeatures: 21px;
    color: $colorWhite;
    font-weight: 700;
    text-transform: uppercase;
-   text-align: center;
+   text-align: left;
    @media (max-width: 1024px) {
       font-size: 12px;
       line-height: 14px;
@@ -126,6 +135,7 @@ $lineHeitTeamFeatures: 21px;
    @media (max-width: 767px) {
       font-size: 12px;
       line-height: 14px;
+      text-align: center;
    }
 }
 
@@ -317,8 +327,8 @@ $lineHeitTeamFeatures: 21px;
       max-width: 313px;
    }
    @media (max-width: 767px) {
-      max-width: 279px;
       padding: 15px 0 15px 0;
+      max-width: none;
    }
 }
 @mixin btnDownload {
@@ -351,10 +361,10 @@ $lineHeitTeamFeatures: 21px;
       padding: 28px 0 28px 0;
    }
    @media (max-width: 767px) {
-      max-width: 278px;
       padding: 15px 0 15px 0;
       font-size: 18px;
       line-height: 21px;
+      max-width: none;
       padding: 28px 0 28px 0;
    }
 }
@@ -674,13 +684,12 @@ $lineHeitTeamFeatures: 21px;
 .work {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   row-gap: 2px;
-   column-gap: 2px;
    @media (max-width: 767px) {
       grid-template-columns: repeat(2, 1fr);
    }
    &__block {
       position: relative;
+      border: 1px solid $colorWhite;
       &::before {
          content: " ";
          display: block;
@@ -709,7 +718,6 @@ $lineHeitTeamFeatures: 21px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 1px solid $colorWhite;
       transition: all 0.3s linear;
       &:hover {
          opacity: 80%;
@@ -874,9 +882,6 @@ $lineHeitTeamFeatures: 21px;
    .swiper-slide__title {
       @include titleSwiper();
       margin-bottom: 25px;
-      @media (max-width: 767px) {
-         text-align: center;
-      }
    }
    .swiper-slide__text {
       @include textSwiper();
@@ -965,17 +970,16 @@ $lineHeitTeamFeatures: 21px;
       }
       @media (max-width: 1024px) {
          margin-right: 20px;
-         width: calc((100% - 40px) / 2);
+         width: calc((100% - 40px) / 3);
       }
       @media (max-width: 767px) {
+         width: 100%;
          &:first-child {
             margin: 0 0 69px 0;
          }
          &:nth-child(2) {
             margin: 0 0 61px 0;
          }
-         max-width: 280px;
-         width: 100%;
       }
       &-title-1 {
          @include footerTitleDescription();
@@ -1041,8 +1045,7 @@ $lineHeitTeamFeatures: 21px;
       @media (max-width: 767px) {
          font-size: 14px;
          line-height: 16px;
-         max-width: 280px;
-         width: 100%;
+         max-width: none;
       }
    }
    span {
