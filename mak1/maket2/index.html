@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/style.css" />
 
     <title>maket2</title>
@@ -327,18 +326,48 @@
         </div>
     </div>
 
-    <div class="integer" id="integer">
-      <div class="integer__img">
-        <img src="img/integer.png" alt="integer">
+    <div class=" swiper mySwiper integer-slider" id="integer" >
+      <div class="swiper-wrapper"> 
+        <div class="swiper-slide integer ">
+          <div class="integer__img">
+            <img src="img/integer.png" alt="integer">
+          </div>
+          <div class="integer__block">
+            <h4 class="integer__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”          
+            </h4>
+            <p class="integer__text">
+              Susan Sims, Interaction Designer at XYZ
+            </p>
+          </div>
+        </div> 
+        <div class="swiper-slide integer ">
+          <div class="integer__img">
+            <img src="img/integer.png" alt="integer">
+          </div>
+          <div class="integer__block">
+            <h4 class="integer__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”          
+            </h4>
+            <p class="integer__text">
+              Susan Sims, Interaction Designer at XYZ
+            </p>
+          </div>
+        </div> 
+        <div class="swiper-slide integer ">
+          <div class="integer__img">
+            <img src="img/integer.png" alt="integer">
+          </div>
+          <div class="integer__block">
+            <h4 class="integer__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”          
+            </h4>
+            <p class="integer__text">
+              Susan Sims, Interaction Designer at XYZ
+            </p>
+          </div>
+        </div>        
       </div>
-      <div class="integer__block">
-        <h4 class="integer__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”          
-        </h4>
-        <p class="integer__text">
-          Susan Sims, Interaction Designer at XYZ
-        </p>
-      </div>
-    </div>
+      <div class="swiper-pagination"></div>
+     
+    </div>   
 
     <section class="download" id="download">
       <div class="container download__container">
@@ -398,5 +427,16 @@
     
 
     
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".integer-slider", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
