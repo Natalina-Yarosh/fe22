@@ -127,7 +127,8 @@ html {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  text-decoration: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #D4D6D4;
 }
 
@@ -212,7 +213,8 @@ html {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  text-decoration: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #D4D6D4;
 }
 
@@ -372,6 +374,8 @@ html {
   overflow: hidden;
   border-radius: 50%;
   margin-right: 14px;
+  -webkit-box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+          box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
 }
 
 .wall__person-img img {
@@ -433,7 +437,136 @@ html {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  text-decoration: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #D4D6D4;
+}
+
+.model {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.model__info {
+  max-width: 421px;
+  margin-right: 58px;
+}
+
+.model__info .model__title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #4D533C;
+  margin-bottom: 24px;
+}
+
+.model__info .model__text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(33, 56, 66, 0.6);
+  margin-bottom: 24px;
+}
+
+.model__info .model__text:last-child {
+  margin-bottom: 90px;
+}
+
+.model__info .model__link {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #D4D6D4;
+}
+
+.model__block {
+  max-width: 50%;
+  width: 100%;
+  background-image: url(../img/Bitmap_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 275px 0;
+  position: relative;
+}
+
+.model__comment {
+  background: #FFFFFF;
+  -webkit-box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+          box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+  border-radius: 8px;
+  max-width: 453px;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.model__comment .model__text {
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4D533C;
+  margin-bottom: 24px;
+}
+
+.model__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.model__person-img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 14px;
+  -webkit-box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+          box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+}
+
+.model__person-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  right: 20px;
+}
+
+.model__person-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4D533C;
+  margin-bottom: 4px;
+}
+
+.model__person-post {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #152934;
 }
 /*# sourceMappingURL=style.css.map */
