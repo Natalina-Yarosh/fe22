@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
 * {
   margin: 0;
@@ -76,6 +77,141 @@ html {
   position: absolute;
   right: 0;
   top: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .burg #menu__toggle {
+  opacity: 0;
+  display: none;
+}
+
+.header .burg .menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* используем flex для центрирования содержимого */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* центрируем содержимое кнопки */
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.header .burg .menu__btn > span,
+.header .burg .menu__btn > span::before,
+.header .burg .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  height: 1.8px;
+  background: #000000;
+}
+
+.header .burg .menu__btn > span::before {
+  content: '';
+  top: -3.6px;
+}
+
+.header .burg .menu__btn > span::after {
+  content: '';
+  top: 3.6px;
+}
+
+.header .burg .menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 100px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #4F553D;
+  -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  opacity: 0;
+}
+
+.header .burg .menu__item {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #FFFFFF;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 200px;
+  border-radius: 10% / 50%;
+}
+
+.header .burg .menu__item:hover {
+  background-color: #FFD723;
+}
+
+.header .burg #menu__toggle:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .burg #menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.header .burg #menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.header .burg #menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  top: 0;
+  opacity: 1;
+}
+
+.header .burg .menu__btn > span,
+.header .burg .menu__btn > span::before,
+.header .burg .menu__btn > span::after {
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.header .burg .menu__box {
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.header .burg .menu__item {
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
 }
 
 .banner {

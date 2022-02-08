@@ -51,6 +51,14 @@ html{
 		position: absolute;
 		right: 0;
 		top: 24px;
+		@include hamburgerMenu;
+		background-color: #fff;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		display: flex;
+    align-items: center;
+    justify-content: center;
 	}
 }
 

@@ -13,7 +13,7 @@
 		position: relative;
 		top: 0;
 		right: 0;
-		width: 24px;
+		width: 18px;
 		height: 18px;
 		cursor: pointer;
 		z-index: 3;
@@ -26,16 +26,16 @@
 		position: absolute;
 		top: 8px;
 		width: 100%;
-		height: 2px;
-		background: #FFFFFF;
+		height: 1.8px;
+		background: #000000;
 	}
 	.menu__btn > span::before {
 		content: '';
-		top: -8px;
+		top: -3.6px;
 	}
 	.menu__btn > span::after {
 		content: '';
-		top: 8px;
+		top: 3.6px;
 	}
 
 // Теперь стилизуем само меню. По-умолчанию оно будет скрыто — visibility: hidden, а открываться будет при установки галки на чекбокс.
@@ -53,14 +53,14 @@
 		padding: 100px 0;
 		list-style: none;
 		text-align: center;
-		background-color: #252840;
+		background-color: #4F553D;
 		box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 		z-index: 2;
 		opacity: 0;
 	}
 	// /* элементы меню */
 	.menu__item {
-		display: block;
+		display: inline-block;
 		padding: 12px 24px;
 		color: #FFFFFF;
 		font-family: Raleway;
@@ -70,9 +70,11 @@
 		line-height: 15px;
 		text-transform: uppercase;
 		text-decoration: none;
+		width: 200px;
+		border-radius: 10% / 50%;
 	}
 	.menu__item:hover {
-		background-color: #CFD8DC;
+		background-color: #FFD723;
 	}
 
 	// открытие / закрытие меню
