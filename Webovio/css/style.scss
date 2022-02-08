@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@import "preStyle.scss";
+@import "styleMenu.scss";
+
+html{
+	scroll-behavior: smooth;
+}
+
+.container{
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.text__link a::before{
+	content: '';
+	display: inline-block;
+	width: 0; 
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 5px solid;
+	border-bottom: 5px solid transparent;
+	margin-right: 5px;
+}
+.text__link a:hover{
+	color: #FFD723;
+}
+.text__link a:active{
+	color: #D4D6D4;
+}
+
+
+
+// header
+
+.header{
+	position: relative;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+	}
+	.logo{
+		position: absolute;
+		left: 0;
+		top: 24px;
+	}
+	.burg{
+		position: absolute;
+		right: 0;
+		top: 24px;
+	}
+}
+
+// banner
+
+.banner{
+	background-image: url(../img/Banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 188px 0 211px;
+
+	&__block{
+		max-width: (616px / 1110px) * 100%;
+		margin-right: auto;
+	}
+	&__text-small{
+		@include bannerTextSmall;
+		margin-bottom: 22px;
+	}
+	&__title{
+		@include bannerTitle;
+		margin-bottom: 24px;
+	}
+	&__text{
+		@include bannerText;
+		margin-bottom: 45px;
+	}
+	&__link{
+		@include textLink;
+	}
+}
+
+// clients
+
+.client{
+	background: #FFFFFF;
+	box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+	border-radius: 2px;
+	padding: 60px 0 54px;
+	position: absolute;
+	right: 0;
+	transform: translateY(-50%);
+	z-index: 1;
+	.container {
+		padding: 0;
+	}
+	&__block{
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__logo {
+		margin-left: 66px;
+	}
+}
+
+// services
+
+.services {
+	padding: 0 15px;
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 160px;
+		border-bottom: 1px solid rgba(33, 56, 66, 0.0955529);
+		padding: 0 0 150px;
+	}
+	&__block{
+
+	}
+	&__text-small{
+		@include servicesTextSmall;
+		margin-bottom: 29px;
+		padding: 244px 0 0;
+	}
+	&__title{
+		@include servicesTitle;
+		margin-bottom: 35px;
+	}
+	&__text{
+		@include servicesText;
+		margin-bottom: 42px;
+	}
+	&__link{
+		@include textLink;
+	}
+
+	&__comment{
+		padding: 244px 8px 60px 40px;
+		background: #FFFFFF;
+		box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
+	}
+	&__comment-text{
+		@include servicesComment;
+		margin-bottom: 50px;
+	}
+	&__person{
+		display: flex;
+		align-items: center;
+	}
+	&__person-img{
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		overflow: hidden;
+		box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+		margin-right: 30px;
+		img{
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__person-name{
+		@include servicesPersonName;
+		margin-bottom: 6px;
+	}
+	&__person-post{
+		@include servicesPersonPost;
+	}
+}
+
+// project
+
+.project{
+	padding: 150px 0 104px;
+	.container{
+		display: flex;
+		align-items: center;
+	}
+	&__title{
+		@include projectTitle;
+		margin-right: 133px;
+		max-width: 331px;
+	}
+	&__text{
+		@include projectText;
+		max-width: 518px;
+	}
+}
+
+// wall
+
+.wall{
+	display: flex;
+	align-items: center;
+	margin-bottom: 165px;
+
+	&__block{
+		margin-right: 97px;
+		width: 50%;
+		background-image: url(../img/Bitmap_1.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 275px 0;
+		position: relative;
+	}
+	&__comment{
+		background: #FFFFFF;
+		box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+		border-radius: 8px;
+		max-width: 453px;
+		padding: 30px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		transform: translate(40px, 50px);
+		.wall__text{
+			@include productComments;
+			margin-bottom: 24px;
+		}
+	}
+	// &__text{
+	// 	@include productComments;
+	// 	margin-bottom: 24px;
+	// }
+	&__person{
+		display: flex;
+		align-items: center;
+	}
+	&__person-img{
+		width: 46px;
+		height: 46px;
+		overflow: hidden;
+		border-radius: 50%;
+		margin-right: 14px;
+		img{
+			// width: 100%;
+			height: 100%;
+			object-fit: cover;
+			// position: relative;
+			// left: 12px;
+		}
+	}
+	&__person-name{
+		@include productPersonName;
+		margin-bottom: 4px;
+	}
+	&__person-post{
+		@include productPersonPost;
+	}
+
+	&__info {
+		max-width: 475px;
+		.wall__title{
+			@include productTitle;
+			margin-bottom: 24px;
+		}
+		.wall__text{
+			@include productText;
+			margin-bottom: 24px;
+			&:last-child{
+				margin-bottom: 90px;
+			}
+		}
+		.wall__link{
+			@include textLink;
+		}
+	}
+	// &__title {
+	// 	@include productTitle;
+	// 	margin-bottom: 24px;
+	// }
+	// &__text {
+	// 	@include productText;
+	// 	margin-bottom: 24px;
+	// 	&:last-child{
+	// 		margin-bottom: 0 !important;
+	// 	}
+	// }
+	// &__link {
+	// 	@include textLink;
+	// }
+}
+
+// model
+
+
+
+
+
+
+
+
+

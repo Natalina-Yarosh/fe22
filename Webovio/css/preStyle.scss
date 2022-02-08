@@ -1,0 +1,270 @@
+*{margin: 0; padding: 0; box-sizing: border-box; outline: none; resize: none;}
+button{cursor: pointer;}
+ul li{list-style: none;}
+a, a:link, a:visited, a:hover{text-decoration: none;}
+
+
+// textLink
+
+@mixin textLink {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+	color: #D4D6D4;
+}
+
+// banner
+
+@mixin bannerTextSmall {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+
+@mixin bannerTitle {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 74px;
+	color: #FFFFFF;
+}
+
+@mixin bannerText {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #FFFFFF;
+}
+
+// services
+
+@mixin servicesTextSmall {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: rgba(77, 83, 60, 0.9);
+}
+
+@mixin servicesTitle {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 46px;
+	color: #4D533C;
+}
+
+@mixin servicesText {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: rgba(33, 56, 66, 0.6);
+}
+
+@mixin servicesComment {
+	font-family: Poppins;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 40px;
+	color: #4D533C;
+}
+
+@mixin servicesPersonName {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 33px;
+	color: #4D533C;
+}
+
+@mixin servicesPersonPost {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #152934;
+}
+
+// project
+
+@mixin projectTitle {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 54px;
+	color: #4D533C;
+}
+
+@mixin projectText {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: rgba(33, 56, 66, 0.6);
+}
+
+// product (wall, model, booking)
+
+@mixin productTitle {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	color: #4D533C;
+}
+
+@mixin productText {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: rgba(33, 56, 66, 0.6);
+}
+
+@mixin productComments {
+	font-family: Poppins;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #4D533C;
+}
+
+@mixin productPersonName {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	color: #4D533C;
+}
+
+@mixin productPersonPost {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #152934;
+}
+
+// idea
+
+@mixin ideaTitle {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 46px;
+	color: #4D533C;
+}
+
+@mixin ideaBlockTitle {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 34px;
+	text-transform: uppercase;
+	color: #4D533C;
+}
+
+@mixin ideaBlockText {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 26px;
+	color: rgba(33, 56, 66, 0.6);
+}
+
+// action
+
+@mixin action {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 74px;
+	color: #4D533C;
+}
+
+// footer
+
+// footer contact
+@mixin contactText {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 40px;
+	color: #B6C197;
+}
+
+@mixin contactTextBold {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 40px;
+	color: #FFFFFF;
+}
+
+// footer info
+@mixin infoTitle {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 38px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+@mixin infoText {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 40px;
+	color: #B6C197;
+}
+
+@mixin infoTextBold {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 38px;
+	color: #FFFFFF;
+}
+
+// footer copyright
+@mixin copyrightText {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #B5C096;
+}

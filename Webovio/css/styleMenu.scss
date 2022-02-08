@@ -1,0 +1,114 @@
+@mixin hamburgerMenu {
+	// Добавим немного стиля для кнопки
+
+	// /* скрываем чекбокс */
+	#menu__toggle {
+		opacity: 0;
+		display: none;
+	}
+	// /* стилизуем кнопку */
+	.menu__btn {
+		display: flex; /* используем flex для центрирования содержимого */
+		align-items: center;  /* центрируем содержимое кнопки */
+		position: relative;
+		top: 0;
+		right: 0;
+		width: 24px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 3;
+	}
+	// /* добавляем "гамбургер" */
+	.menu__btn > span,
+	.menu__btn > span::before,
+	.menu__btn > span::after {
+		display: block;
+		position: absolute;
+		top: 8px;
+		width: 100%;
+		height: 2px;
+		background: #FFFFFF;
+	}
+	.menu__btn > span::before {
+		content: '';
+		top: -8px;
+	}
+	.menu__btn > span::after {
+		content: '';
+		top: 8px;
+	}
+
+// Теперь стилизуем само меню. По-умолчанию оно будет скрыто — visibility: hidden, а открываться будет при установки галки на чекбокс.
+
+	// /* контейнер меню */
+	.menu__box {
+		display: block;
+		position: fixed;
+		visibility: hidden;
+		left: 0;
+		top: -100%;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 100px 0;
+		list-style: none;
+		text-align: center;
+		background-color: #252840;
+		box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+		z-index: 2;
+		opacity: 0;
+	}
+	// /* элементы меню */
+	.menu__item {
+		display: block;
+		padding: 12px 24px;
+		color: #FFFFFF;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 15px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.menu__item:hover {
+		background-color: #CFD8DC;
+	}
+
+	// открытие / закрытие меню
+
+	#menu__toggle:checked ~ .menu__btn > span {
+		transform: rotate(45deg);
+	}
+	#menu__toggle:checked ~ .menu__btn > span::before {
+		top: 0;
+		transform: rotate(0);
+	}
+	#menu__toggle:checked ~ .menu__btn > span::after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+	#menu__toggle:checked ~ .menu__box {
+		visibility: visible;
+		top: 0;
+		opacity: 1;
+	}
+
+// 	Свойство transform: rotate(45deg) — поворачивает элемент на 45 градусов. Поворачивая элементы кнопки меню под разным углом, мы получаем значок “крестик”, вместо горизонтальных линий.
+// Псевдокласс :checked — находит только выбранные или включенные элементы. В нашем случае при активации чекбокса он становится :сhecked. 
+// Комбинатор ~ — находит элементы, указанные справа, которые следуют за элементом, указанным слева и имеют с ним общего родителя. 
+
+// немного анимации
+
+	.menu__btn > span,
+	.menu__btn > span::before,
+	.menu__btn > span::after {
+		transition-duration: .25s;
+	}
+	.menu__box {
+		transition-duration: .25s;
+	}
+	.menu__item {
+		transition-duration: .25s;
+	}
+}
