@@ -13,7 +13,7 @@ html{
 	margin: 0 auto;
 }
 
-.text__link a::before{
+.text__link::before{
 	content: '';
 	display: inline-block;
 	width: 0; 
@@ -22,12 +22,7 @@ html{
 	border-left: 5px solid;
 	border-bottom: 5px solid transparent;
 	margin-right: 5px;
-}
-.text__link a:hover{
-	color: #FFD723;
-}
-.text__link a:active{
-	color: #D4D6D4;
+
 }
 
 
@@ -36,7 +31,9 @@ html{
 
 .header{
 	position: relative;
+	padding: 0 15px;
 	.container {
+		padding: 0;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -89,6 +86,12 @@ html{
 	}
 	&__link{
 		@include textLink;
+		&:hover{
+			color: #FFD723;
+		}
+		&:active{
+			color: #D4D6D4;
+		}
 	}
 }
 
@@ -127,12 +130,11 @@ html{
 		padding: 0 0 150px;
 	}
 	&__block{
-
+		padding: 244px 0 0;
 	}
 	&__text-small{
 		@include servicesTextSmall;
 		margin-bottom: 29px;
-		padding: 244px 0 0;
 	}
 	&__title{
 		@include servicesTitle;
@@ -144,6 +146,12 @@ html{
 	}
 	&__link{
 		@include textLink;
+		&:hover{
+			color: #FFD723;
+		}
+		&:active{
+			color: #D4D6D4;
+		}
 	}
 
 	&__comment{
@@ -204,29 +212,32 @@ html{
 
 .wall{
 	display: flex;
-	align-items: center;
 	margin-bottom: 165px;
 
 	&__block{
 		margin-right: 97px;
-		width: 50%;
+		max-width: 50%;
+		width: 100%;
 		background-image: url(../img/Bitmap_1.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding: 275px 0;
 		position: relative;
+	}
+	&__info {
+		padding: 96.6px 0;
 	}
 	&__comment{
 		background: #FFFFFF;
 		box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
 		border-radius: 8px;
 		max-width: 453px;
+		width: 100%;
 		padding: 30px;
 		position: absolute;
-		right: 0;
-		bottom: 0;
-		transform: translate(40px, 50px);
+		right: (0 - 40px);
+		bottom: (0 - 50px);
+		// transform: translate(40px, 50px);
 		.wall__text{
 			@include productComments;
 			margin-bottom: 24px;
@@ -265,6 +276,7 @@ html{
 
 	&__info {
 		max-width: 475px;
+		width: 100%;
 		.wall__title{
 			@include productTitle;
 			margin-bottom: 24px;
@@ -272,40 +284,34 @@ html{
 		.wall__text{
 			@include productText;
 			margin-bottom: 24px;
-			&:last-child{
+			&:nth-child(3){
 				margin-bottom: 90px;
 			}
 		}
 		.wall__link{
 			@include textLink;
+			&:hover{
+				color: #FFD723;
+			}
+			&:active{
+				color: #D4D6D4;
+			}
 		}
 	}
-	// &__title {
-	// 	@include productTitle;
-	// 	margin-bottom: 24px;
-	// }
-	// &__text {
-	// 	@include productText;
-	// 	margin-bottom: 24px;
-	// 	&:last-child{
-	// 		margin-bottom: 0 !important;
-	// 	}
-	// }
-	// &__link {
-	// 	@include textLink;
-	// }
 }
 
 // model
 
 .model{
 	display: flex;
-	align-items: center;
 	justify-content: flex-end;
+	margin-bottom: 135px;
 
 	&__info{
 		max-width: 421px;
+		width: 100%;
 		margin-right: 58px;
+		padding: 83.6px 0;
 		.model__title{
 			@include productTitle;
 			margin-bottom: 24px;
@@ -313,16 +319,21 @@ html{
 		.model__text{
 			@include productText;
 			margin-bottom: 24px;
-			&:last-child{
+			&:nth-child(3){
 				margin-bottom: 90px;
 			}
 		}
 		.model__link{
 			@include textLink;
+			&:hover{
+				color: #FFD723;
+			}
+			&:active{
+				color: #D4D6D4;
+			}
 		}
 	}
-
-
+	
 	&__block{
 		max-width: 50%;
 		width: 100%;
@@ -338,10 +349,12 @@ html{
 		box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
 		border-radius: 8px;
 		max-width: 453px;
+		width: 100%;
 		padding: 30px;
 		position: absolute;
-		bottom: 0;
-		left: 0;
+		bottom: (0 - 50px);
+		left: (0 - 40px);
+		// transform: translate(-40px, 50px);
 		.model__text{
 			@include productComments;
 			margin-bottom: 24px;
@@ -373,9 +386,284 @@ html{
 	}
 }
 
+// booking
 
+.booking{
+	display: flex;
+	margin-bottom: 190px;
+	&__block{
+		background-image: url(../img/Bitmap_3.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		max-width: 50%;
+		width: 100%;
+		margin-right: 95px;
+		position: relative;
+	}
+	&__comment{
+		max-width: 453px;
+		width: 100%;
+		background: #FFFFFF;
+		box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+		border-radius: 8px;
+		padding: 30px;
+		position: absolute;
+		bottom: (0 - 50px);
+		right: (0 - 40px);
+		// transform: translate(40px, 50px);
+		.booking__text{
+			@include productComments;
+			margin-bottom: 24px;
+		}
+		.booking__person{
+			display: flex;
+		}
+		.booking__person-img{
+			width: 46px;
+			height: 46px;
+			border-radius: 50%;
+			margin-right: 14px;
+			overflow: hidden;
+			box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+			img{
+				height: 100%;
+				object-fit: cover;
+				position: relative;
+				right: 8px;
+			}
+		}
+		.booking__person-name{
+			@include productPersonName;
+			margin-bottom: 4px;
+		}
+		.booking__person-post{
+			@include productPersonPost;
+		}
+	}
+	
+	&__info {
+		max-width: 475px;
+		width: 100%;
+		padding: 96.6px 0;
+		.booking__title{
+			@include productTitle;
+			margin-bottom: 24px;
+		}
+		.booking__text{
+			@include productText;
+			margin-bottom: 24px;
+			&:nth-child(3){
+				margin-bottom: 90px;
+			}
+		}
+		.booking__link{
+			@include textLink;
+			&:hover{
+				color: #FFD723;
+			}
+			&:active{
+				color: #D4D6D4;
+			}
+		}
+	}
+}
 
+// product idea
 
+.idea {
+	padding: 0 15px 322px;
+	.container{
+		padding: 149px 0 0;
+		border-top: 1px solid rgba(33, 56, 66, 0.0955529);
+	}
+	&__title {
+		@include ideaTitle;
+		margin-bottom: 60px;
+		max-width: 607px;
+	}
+	&__info {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 30px;
+	}
+	&__block {
+		padding: 27px 31px 36px 30px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__block-title {
+		@include ideaBlockTitle;
+		margin-bottom: 20px;
+	}
+	&__block-text {
+		@include ideaBlockText;
+		margin-bottom: 30px;
+	}
+	&__link {
+		@include textLink;
+		margin-top: auto;
+		&:hover{
+			color: #FFD723;
+		}
+		&:active{
+			color: #D4D6D4;
+		}
+	}
+}
 
+// call to action
 
+.action{
+	&::before{
+		content: '';
+		display: block;
+		height: 362px;
+		width: 50%;
+		background-color: #FAFAFA;
+		box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+		position: absolute;
+	}
+	.container{
+		background: #FAFAFA;
+		box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+		padding: 72.6px 15px;
+		position: relative;
+    margin: -181px auto;
+	}
+	&__title{
+		@include action;
+		margin-bottom: 50px;
+	}
+	&__link{
+		@include textLink;
+		&:hover{
+			color: #FFD723;
+		}
+		&:active{
+			color: #D4D6D4;
+		}
+	}
+}
 
+// footer
+
+.footer{
+	padding: 310px 15px 30px;
+	background-color: #4F553D;
+	background-image: url(../img/footerBgObject.png);
+	.container{
+
+	}
+	.contact{
+		display: flex;
+		padding-bottom: 52px;
+		border-bottom: 1px solid #5D6544;
+		&__phone{
+			margin-right: 128px;
+		}
+		&__text{
+			@include contactText;
+			margin-bottom: 8px;
+		}
+		&__text-bold{
+			@include contactTextBold;
+		}
+	}
+	.info{
+		padding: 60px 0;
+		border-bottom: 1px solid #5D6544;
+		display: flex;
+
+		&__service, &__help, &__company{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			max-width: 167px;
+			width: 100%;
+		}
+		&__service{
+			margin-right: 70px;
+		}
+		&__help{
+			margin-right: 100px;
+		}
+		&__company{
+
+		}
+		&__contact{
+			padding-left: 110px;
+			border-left: 1px solid #5D6544;
+		}
+		&__title{
+			@include infoTitle;
+			margin-bottom: 21px;
+			// display: block;
+		}
+		&__link{
+			@include infoLink;
+			text-decoration: none;
+			// display: block;
+			&:hover{
+				color: #FFD723;
+			}
+			&:active{
+				color: #D4D6D4;
+			}
+		}
+		&__text{
+			@include infoText;
+			margin-bottom: 23px;
+		}
+		&__mail-bold{
+			@include infoMailBold;
+			text-decoration: none;
+		}
+		&__soc{
+			margin-top: 24px;
+			ul{
+				display: flex;
+			}
+			li{
+				width: 33px;
+				height: 33px;
+				margin-right: 14px;
+				border-radius: 50%;
+				background: #444A34;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&:hover{
+					background-color: #FFD723;
+					transition: all .15s linear;
+				}
+				&:hover path{
+					fill: #fff;
+					transition: all .15s linear;
+				}
+				&:active{
+					background-color: #D4D6D4;
+				}
+				
+				a svg{
+
+				}
+			}
+		}
+	}
+	.copyright{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-top: 24px;
+		img{
+			display: block;
+			max-width: 200px;
+			width: 100%;
+		}
+		&__text{
+			@include copyrightText;
+			display: block;
+		}
+	}
+}

@@ -1,7 +1,7 @@
 *{margin: 0; padding: 0; box-sizing: border-box; outline: none; resize: none;}
 button{cursor: pointer;}
 ul li{list-style: none;}
-a, a:link, a:visited, a:hover{text-decoration: none;}
+// a, a:link, a:visited, a:hover{text-decoration: none;}
 
 
 // textLink
@@ -12,7 +12,7 @@ a, a:link, a:visited, a:hover{text-decoration: none;}
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 18px;
-	text-decoration-line: underline;
+	// text-decoration: underline;
 	color: #D4D6D4;
 }
 
@@ -241,7 +241,7 @@ a, a:link, a:visited, a:hover{text-decoration: none;}
 	color: #FFFFFF;
 }
 
-@mixin infoText {
+@mixin infoLink {
 	font-family: Poppins;
 	font-style: normal;
 	font-weight: normal;
@@ -250,7 +250,16 @@ a, a:link, a:visited, a:hover{text-decoration: none;}
 	color: #B6C197;
 }
 
-@mixin infoTextBold {
+@mixin infoText {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #B6C197;
+}
+
+@mixin infoMailBold {
 	font-family: Poppins;
 	font-style: normal;
 	font-weight: bold;
