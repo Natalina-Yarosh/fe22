@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<title>allbirds</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="header__burger">
+				<svg width="29" height="11" viewBox="0 0 29 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1.55054 1.82416C3.61665 1.82416 19.629 1.82416 27.3769 1.82416" stroke="#333333"
+						stroke-width="2" stroke-linecap="square" />
+					<path d="M4.9939 9.82416C6.50904 9.82416 18.2514 9.82416 23.9332 9.82416" stroke="#333333"
+						stroke-width="2" stroke-linecap="square" />
+				</svg>
+
+			</nav>
+			<menu class="header__menu">
+				<a class="header__menu_link" href="">Men</a>
+				<a class="header__menu_link" href="">Women</a>
+				<a class="header__menu_link" href="">New Arrivals</a>
+			</menu>
+			<a class="header__logo" href="">
+				<svg width="120" height="38" viewBox="0 0 120 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M120 28.8917C120 25.8614 118.514 23.0893 117.2 20.6443C116.077 18.5609 115.074 16.667 115.333 15.2551C115.524 14.2392 116.249 13.6538 117.373 13.585C117.407 13.585 117.442 13.5677 117.477 13.5677C117.528 13.5505 117.58 13.5161 117.632 13.4817C117.684 13.4472 117.719 13.3956 117.736 13.3439C117.736 13.3267 117.753 13.3267 117.753 13.3095L118.306 11.8804C118.358 11.7254 118.375 11.6221 118.324 11.5188C118.289 11.4499 118.237 11.3811 118.151 11.3122C118.047 11.2261 117.874 11.1572 117.649 11.0884C117.338 10.9851 116.941 10.9162 116.578 10.9162C114.953 10.9162 112.966 11.4499 111.237 15.7372C111.168 15.9094 107.832 24.5184 107.729 24.7938C107.314 25.8097 106.432 27.0322 104.566 27.0322C103.753 27.0322 103.097 26.7222 102.734 26.2057C102.665 26.1024 102.613 25.9991 102.561 25.8958C102.423 25.5514 102.371 25.1382 102.457 24.6905C102.492 24.5356 102.526 24.3634 102.578 24.1912C102.665 23.8985 102.786 23.5714 102.924 23.2442C104.203 19.99 108.748 8.40236 110.148 4.83824C110.321 4.39058 110.079 4.029 109.595 4.029H107.988C107.815 4.029 107.625 4.08065 107.469 4.16674C107.176 4.30449 106.934 4.56276 106.813 4.83824C106.19 6.40508 105.309 8.67785 104.376 11.0711C103.65 12.9135 102.907 14.8247 102.215 16.5637C102.008 16.2193 101.766 15.8922 101.507 15.5822C101.23 15.2723 100.936 14.9796 100.625 14.7213C99.277 13.6194 97.5659 13.0168 95.682 13.0168C93.366 13.0168 91.1364 13.9465 89.3908 15.4617C89.3217 15.5134 89.2698 15.5822 89.2007 15.6339C89.1488 15.6683 89.1143 15.72 89.0624 15.7544C87.9217 16.8219 87.0229 18.1477 86.4699 19.6112C86.4699 19.6285 86.4526 19.6457 86.4526 19.6801C86.3834 19.8695 86.3316 20.0589 86.2625 20.2655C86.1588 20.6271 86.0723 20.9887 86.0205 21.3675C85.9686 21.7118 85.9341 22.0562 85.9168 22.4005C85.8822 23.3992 86.0378 24.3806 86.3489 25.2759C86.1933 25.5342 85.9859 25.7753 85.7612 25.9991C85.1217 26.6017 84.2748 26.9977 83.3934 27.0666C83.307 27.0666 83.2378 27.0666 83.1514 27.0666C82.8057 27.0666 82.4773 26.9977 82.1835 26.8944C81.8206 26.7567 81.5095 26.5329 81.3021 26.2401C80.9045 25.672 80.9045 24.8455 81.2675 23.8985C81.3539 23.6575 81.907 22.1939 82.4082 20.8854C82.7884 19.8695 83.1341 18.9225 83.2033 18.7331C83.2378 18.6298 83.307 18.4749 83.3588 18.2855C83.4452 17.9239 83.4971 17.4246 83.2551 16.908C83.1514 16.7014 83.0304 16.5292 82.8922 16.3743C82.6156 16.0816 82.2527 15.9094 81.907 15.7716C81.7687 15.72 81.6304 15.6683 81.4922 15.6339C81.2502 15.565 80.991 15.4617 80.6971 15.3412C80.6798 15.3412 80.6799 15.324 80.6626 15.324C80.1786 15.1174 77.8453 14.0326 77.8453 11.9665C77.8453 11.9148 77.8453 11.8632 77.8453 11.8287C77.8453 11.8115 77.8453 11.7943 77.8453 11.7771C77.8453 11.7599 77.8453 11.7254 77.8453 11.7082C77.8108 11.3983 77.7071 11.2089 77.5688 11.1056C77.5515 11.1056 77.5515 11.0884 77.5342 11.0884C77.5342 11.0884 77.5342 11.0884 77.517 11.0884C77.4997 11.0711 77.4824 11.0711 77.4651 11.0539C77.4651 11.0539 77.4651 11.0539 77.4478 11.0539C77.4478 11.0539 77.4478 11.0539 77.4305 11.0539C77.4133 11.0539 77.4132 11.0367 77.396 11.0367C77.3095 11.0023 77.2231 10.985 77.1194 10.985H75.5293C75.201 10.985 74.838 11.1572 74.596 11.4155C74.4923 11.5188 74.4059 11.6565 74.3541 11.7943C74.0084 12.6724 73.5936 13.7227 73.1615 14.8419C71.6405 18.7331 69.8258 23.3992 69.3072 24.725C69.29 24.7766 69.2727 24.8283 69.2554 24.8799C68.8406 25.8958 67.9591 27.1183 66.0752 27.1183C65.2629 27.1183 64.5888 26.8083 64.2432 26.2918C64.0358 25.9819 63.932 25.5859 63.9493 25.121C63.9666 24.7594 64.053 24.3634 64.2086 23.9502C64.537 23.0893 65.2456 21.2986 65.9888 19.4046C66.6974 17.5967 67.4406 15.6683 67.9591 14.3598C68.132 13.9121 67.89 13.5505 67.4061 13.5505H65.7987H65.6431C65.5394 13.5505 65.4184 13.5677 65.2974 13.6022C65.2802 13.6022 65.2802 13.6022 65.2629 13.6022C64.8826 13.7055 64.5024 13.9638 64.2777 14.2392C63.4481 15.2379 62.3765 16.0471 61.2012 16.6325C60.026 17.2179 58.7643 17.5967 57.5544 17.7345C57.3816 17.2868 57.1569 16.8392 56.8803 16.4259C56.8631 16.4087 56.8631 16.3915 56.8458 16.3743C56.6729 16.116 56.5001 15.8749 56.2927 15.6339C54.8582 13.981 52.8014 13.0684 50.4681 13.0684C49.2237 13.0684 48.0139 13.3439 46.8731 13.826C47.4435 12.3625 48.0139 10.8817 48.5496 9.48709C49.2064 7.78251 49.8286 6.19846 50.3299 4.8899C50.4163 4.68328 50.399 4.5111 50.3299 4.35614C50.2434 4.18396 50.0533 4.08065 49.7941 4.08065H49.7768H48.1867H48.1694C47.9793 4.08065 47.7719 4.14952 47.5818 4.25283C47.3571 4.37336 47.167 4.54554 47.0633 4.75215C47.046 4.80381 47.0114 4.83824 46.9941 4.8899C44.9374 10.1069 41.6535 18.5609 40.098 22.6072C39.6659 23.7091 39.3721 24.5011 39.2511 24.7938C38.8363 25.8097 37.9548 27.0322 36.0882 27.0322C35.9153 27.0322 35.7598 27.015 35.6215 26.9977C35.0339 26.8944 34.5326 26.6362 34.2561 26.2057C34.2043 26.1196 34.1524 26.0335 34.1006 25.9302C33.945 25.5859 33.8932 25.1554 33.9796 24.6905C34.0141 24.4667 34.1351 24.1051 34.2734 23.7435C34.4635 23.227 34.6536 22.7277 34.6536 22.7277C34.6536 22.7277 35.345 20.9715 36.3301 18.4232C36.4338 18.1477 36.5548 17.855 36.6758 17.5451C36.6931 17.5107 36.7104 17.4762 36.7104 17.4418C38.2313 13.5505 40.2708 8.29905 41.7399 4.5111C42.3276 2.9787 42.8288 1.68736 43.1744 0.826461C43.3473 0.378795 43.1053 0.0172176 42.6214 0.0172176H41.014C40.5301 0.0172176 40.0116 0.378795 39.8387 0.826461C39.6486 1.30856 37.9548 5.68192 36.0536 10.5718C33.5993 16.8736 30.8167 24.0363 30.5229 24.8111C30.4537 24.966 30.3846 25.121 30.2982 25.2759C30.0389 25.7753 29.6414 26.2574 29.0883 26.6017C28.6389 26.8772 28.0513 27.0494 27.3427 27.0666C26.6859 27.0666 26.1328 26.8772 25.7526 26.5156C25.6662 26.4295 25.5797 26.3435 25.4933 26.2401C25.2341 25.8441 25.1304 25.3448 25.2341 24.7594V24.7422C25.3205 24.2429 25.9946 22.4866 25.9946 22.4522C26.4266 21.3503 26.9279 20.0417 27.4637 18.647C29.2439 14.0843 31.4216 8.43679 32.8216 4.87268C32.8561 4.76937 32.8734 4.66606 32.8734 4.56276C32.8561 4.42501 32.8043 4.28727 32.7006 4.20118C32.5969 4.11509 32.4586 4.06344 32.2685 4.06344H30.6611C30.4883 4.06344 30.2982 4.11509 30.1253 4.20118C29.8834 4.3217 29.676 4.5111 29.555 4.73493C29.5377 4.76937 29.5031 4.82102 29.4858 4.85546C29.071 5.90576 28.6217 7.07658 28.1377 8.31627C27.6192 9.65927 27.0661 11.0884 26.4958 12.5174C24.2835 18.1994 22.0885 23.8985 21.7255 24.8111C21.6045 25.1038 21.449 25.3965 21.2588 25.6892C20.7403 26.4295 19.9107 27.0494 18.5453 27.0494C18.0441 27.0494 17.5947 26.9289 17.2318 26.7222C17.0244 26.5845 16.8342 26.4295 16.7133 26.2229C16.6268 26.0852 16.5577 25.9474 16.5059 25.7925C16.4022 25.4826 16.3849 25.121 16.454 24.725C16.5404 24.2429 17.0244 22.986 17.1108 22.7966C17.1108 22.7793 17.1281 22.7621 17.1281 22.7621L20.4292 14.2909C20.6021 13.8432 20.3601 13.4817 19.8762 13.4817H18.2688C17.975 13.4817 17.6639 13.6194 17.4219 13.826C17.4046 13.826 17.4046 13.8432 17.4046 13.8432C17.2663 13.9638 17.1626 14.1187 17.1108 14.2737L16.7824 15.1346L16.2639 16.4776C16.1602 16.3226 16.0565 16.1677 15.9528 16.0127C15.8491 15.8577 15.7281 15.72 15.6071 15.5822C15.0886 14.9796 14.4664 14.4631 13.7923 14.0671C12.6343 13.3783 11.2689 13.0168 9.79982 13.0168C6.18755 13.0168 2.7654 15.2895 1.08889 18.4921C0.622234 19.3874 0.293846 20.3516 0.138293 21.3503C-0.224662 23.6919 0.380264 25.913 1.83209 27.5831C2.28146 28.0997 2.78268 28.5474 3.35304 28.9089C3.45674 28.9778 3.57773 29.0467 3.69871 29.1155C4.85672 29.787 6.20484 30.1486 7.65666 30.1486C9.98994 30.1486 12.2541 29.1844 14.017 27.652C14.0689 27.7553 14.138 27.8586 14.2071 27.9619C14.2417 28.0136 14.2936 28.0825 14.3281 28.1341C14.3281 28.1513 14.3454 28.1513 14.3454 28.1686C14.38 28.2202 14.4318 28.2719 14.4664 28.3235C14.501 28.358 14.5355 28.3924 14.5528 28.4268C14.5701 28.4613 14.6047 28.4785 14.6392 28.5129C14.6911 28.5646 14.7429 28.6162 14.7775 28.6679C14.7948 28.6851 14.8121 28.7023 14.8294 28.7195C14.8985 28.7712 14.9503 28.8401 15.0195 28.8917C15.0195 28.8917 15.0195 28.8917 15.0368 28.9089C15.6244 29.4082 16.3676 29.8043 17.2318 30.0109C17.2491 30.0109 17.2663 30.0281 17.2836 30.0281C17.37 30.0453 17.4565 30.0625 17.5429 30.0798C17.5774 30.0798 17.612 30.097 17.6639 30.097C17.733 30.1142 17.8021 30.1142 17.8885 30.1314C17.9577 30.1314 18.0095 30.1486 18.0787 30.1486C18.1305 30.1486 18.1824 30.1658 18.2515 30.1658C18.3725 30.1658 18.4935 30.1831 18.6317 30.1831C19.5305 30.1831 20.3774 30.0109 21.1551 29.6837C21.449 29.5632 21.7255 29.4255 21.9848 29.2533C22.0712 29.2016 22.1576 29.15 22.244 29.0811C22.5897 28.8401 22.9181 28.5818 23.2119 28.2719C23.3156 28.4096 23.4366 28.5301 23.5576 28.6507C24.3526 29.4599 25.4242 29.9592 26.6513 30.1142C26.6859 30.1142 26.7377 30.1314 26.7723 30.1314C26.8069 30.1314 26.8414 30.1314 26.876 30.1314C26.9452 30.1314 27.0143 30.1486 27.0834 30.1486C27.118 30.1486 27.1526 30.1486 27.1698 30.1486C27.239 30.1486 27.3254 30.1486 27.3945 30.1486C29.192 30.1486 30.7821 29.4771 31.9574 28.2719C32.4068 28.8228 32.9771 29.2705 33.6339 29.5976C34.3771 29.9592 35.224 30.1486 36.1227 30.1486C36.5894 30.1486 37.0388 30.097 37.4709 30.0109C39.3548 29.6321 40.9103 28.444 41.8609 26.6534C41.9127 26.7395 41.9646 26.8083 42.0164 26.8944C42.0856 26.9977 42.1547 27.101 42.2239 27.2044C42.3276 27.3421 42.4313 27.4626 42.535 27.6004C43.9695 29.2533 46.0262 30.1658 48.3595 30.1658C51.5397 30.1658 54.5816 28.3924 56.3964 25.8097C57.226 24.6217 57.7964 23.2787 58.0211 21.8496C58.0729 21.488 58.1075 21.1264 58.1248 20.7648C58.4359 20.7304 58.747 20.6788 59.0408 20.6099C60.3716 20.3516 61.616 19.9212 62.7222 19.3358C62.6876 19.4218 62.6531 19.5252 62.6185 19.6112C62.1 20.9715 61.6333 22.1423 61.3914 22.7793C60.6309 24.6905 60.7519 26.5501 61.737 27.9964C62.1 28.5301 62.5666 28.9778 63.1024 29.3222C63.9666 29.8731 65.0036 30.1831 66.1443 30.1831C68.8924 30.1831 71.1566 28.6162 72.2282 25.9647C72.3664 25.6203 72.643 24.8972 73.0059 23.9502C73.7664 22.0045 74.9071 19.0775 75.9441 16.4259C76.0306 16.1849 76.1343 15.9438 76.2207 15.72C77.1194 16.8392 78.3293 17.6828 79.5046 18.1821C79.5737 18.2166 79.6255 18.2338 79.6947 18.2682C79.833 18.3199 79.9712 18.3715 80.0922 18.4232C79.5046 20.0073 78.5713 22.5211 78.4503 22.7966C77.9836 23.9846 77.8453 25.1382 78.0527 26.1885C78.1737 26.8428 78.433 27.4626 78.7959 28.0136C79.0379 28.358 79.3144 28.6679 79.6256 28.9434C80.4897 29.6837 81.6132 30.1314 82.8576 30.2003C82.9786 30.2003 83.0823 30.2175 83.2033 30.2175C83.3934 30.2175 83.5835 30.2003 83.7736 30.1831C83.8082 30.1831 83.86 30.1831 83.8946 30.1658C83.9119 30.1658 83.9292 30.1658 83.9464 30.1658C84.7415 30.0798 85.502 29.8387 86.2106 29.4943C86.9365 29.1328 87.5933 28.6507 88.1464 28.0825C89.2352 29.15 90.6352 29.8387 92.208 30.097C92.6401 30.1658 93.0895 30.2003 93.5561 30.2003C94.1438 30.2003 94.7314 30.1314 95.3018 30.0281C96.8746 29.7182 98.361 28.9778 99.6054 27.9619C99.7264 27.8759 99.8301 27.7725 99.9338 27.6692C100.003 27.7898 100.072 27.9103 100.141 28.0136C100.746 28.8917 101.61 29.5288 102.63 29.8904C102.682 29.9076 102.734 29.9248 102.768 29.942C102.82 29.9592 102.889 29.9764 102.941 29.9937C103.01 30.0109 103.062 30.0281 103.131 30.0453C103.183 30.0625 103.235 30.0625 103.287 30.0798C103.356 30.097 103.408 30.1142 103.477 30.1142C103.529 30.1314 103.581 30.1314 103.632 30.1486C103.702 30.1658 103.753 30.1658 103.823 30.1658C103.892 30.1658 103.961 30.1831 104.03 30.1831C104.082 30.1831 104.134 30.2003 104.186 30.2003C104.307 30.2003 104.428 30.2175 104.566 30.2175C107.314 30.2175 109.578 28.6507 110.65 25.9991C110.701 25.8441 111.704 23.3475 112.516 21.2814C112.758 20.6615 112.983 20.0761 113.156 19.6112C113.242 19.8006 113.346 20.0073 113.432 20.1967C113.761 20.8509 114.106 21.5224 114.469 22.2111C114.763 22.7621 115.074 23.3303 115.351 23.8985C116.198 25.5859 116.906 27.3077 116.906 28.995C116.906 33.971 113.519 34.8491 112.482 35.0041C111.79 35.1074 111.272 35.6411 111.168 36.2954C111.151 36.4504 111.134 36.6054 111.168 36.7603C111.168 36.812 111.185 36.8636 111.203 36.8981C111.376 37.5868 111.998 38.0861 112.706 38.0861C112.741 38.0861 112.775 38.0861 112.827 38.0861C112.862 38.0861 112.896 38.0861 112.948 38.0861C113.761 37.9656 114.625 37.7073 115.437 37.3113C117.84 35.9683 120 33.3512 120 28.8917ZM100.089 21.333C99.7955 23.3648 98.4992 25.1554 96.8055 26.1713C96.7882 26.1885 96.7536 26.2057 96.7363 26.2057C96.7363 26.2057 96.719 26.2057 96.719 26.2229C95.8203 26.7395 94.8178 27.0322 93.7808 27.0322C93.2969 27.0322 92.8302 26.9633 92.3981 26.8256C91.6376 26.5845 90.9636 26.1541 90.4624 25.5514C89.9612 24.9488 89.65 24.2084 89.5291 23.382V23.3648C89.4599 22.8654 89.4599 22.3489 89.5463 21.8151C89.6673 21.0231 89.9266 20.2655 90.3241 19.5768C90.8426 18.647 91.5685 17.855 92.4154 17.2524C93.4352 16.5464 94.6277 16.116 95.8549 16.116C96.6845 16.116 97.4449 16.3054 98.0844 16.6842C98.4992 16.9252 98.8622 17.2352 99.1733 17.5967C99.3289 17.7861 99.4671 17.9755 99.5708 18.1821C99.9683 18.8709 100.158 19.6801 100.158 20.541C100.158 20.7993 100.141 21.0575 100.089 21.333ZM46.9423 26.8772C46.0954 26.6534 45.3695 26.2057 44.8337 25.5342C44.0213 24.5528 43.693 23.227 43.9004 21.7979V21.7807C43.9522 21.4191 44.0386 21.1092 44.125 20.8509C44.246 20.541 44.367 20.2139 44.5053 19.8867C44.5226 19.8351 44.5571 19.8006 44.5744 19.749C44.6263 19.6629 44.6608 19.5768 44.7127 19.4907C44.73 19.4563 44.7473 19.4391 44.7645 19.4046C45.1448 18.7676 45.6114 18.1994 46.1472 17.7173C47.2879 16.7186 48.7225 16.0988 50.2089 16.0988C50.8829 16.0988 51.5224 16.2365 52.0755 16.4776C52.6459 16.7358 53.1298 17.0974 53.5273 17.5795C54.3397 18.5609 54.668 19.8867 54.4606 21.333C53.994 24.4667 51.1595 27.0322 48.1348 27.0322C47.72 27.0322 47.3225 26.9805 46.9423 26.8772ZM7.82949 27.0322C6.46409 27.0322 5.28881 26.4984 4.49376 25.5514C4.40734 25.4481 4.33821 25.3448 4.26907 25.2415C3.6123 24.2945 3.37033 23.0893 3.56045 21.7979C4.0271 18.6643 6.8789 16.0988 9.92081 16.0988C11.2862 16.0988 12.4615 16.6325 13.2565 17.5795C14.0689 18.5609 14.4145 19.8867 14.1899 21.333C14.1553 21.5741 14.1034 21.8151 14.0343 22.0562C13.2738 24.8455 10.6294 27.0322 7.82949 27.0322Z"
+						fill="black" />
+				</svg>
+			</a>
+			<nav class="header__nav">
+				<a class="header__nav_link" href="">Sustainability</a>
+				<a class="header__nav_link" href="">Stores</a>
+				<div class="header__icons">
+					<a class="header__icon profile" href="">
+						<svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.60506 12.0445C6.46073 12.0445 3.91174 9.49555 3.91174 6.35122C3.91174 3.20688 6.46073 0.657898 9.60506 0.657898C12.7494 0.657898 15.2984 3.20688 15.2984 6.35122C15.2984 7.86118 14.6986 9.3093 13.6308 10.377C12.5631 11.4447 11.115 12.0445 9.60506 12.0445ZM9.60506 1.92308C7.15947 1.92308 5.17693 3.90563 5.17693 6.35122C5.17693 8.79681 7.15947 10.7794 9.60506 10.7794C12.0507 10.7794 14.0332 8.79681 14.0332 6.35122C14.0416 5.17133 13.5788 4.03687 12.7475 3.19958C11.9161 2.36229 10.785 1.89145 9.60506 1.89145V1.92308Z"
+								fill="#212A2F" />
+							<path
+								d="M17.367 24.3737H1.84319C1.33028 24.3782 0.83907 24.1671 0.489445 23.7918C0.196114 23.4755 0.0472063 23.0517 0.078261 22.6215C0.59066 17.0294 4.68352 12.81 9.60508 12.81C14.5266 12.81 18.6195 16.9977 19.1319 22.6215C19.172 23.0623 19.0225 23.4995 18.7207 23.8234C18.3656 24.187 17.8751 24.3865 17.367 24.3737ZM9.60508 14.0435C5.34142 14.0435 1.78626 17.7695 1.33712 22.7037C1.33162 22.7908 1.36389 22.8761 1.42568 22.9378C1.53496 23.0504 1.6863 23.1123 1.84319 23.1086H17.367C17.5239 23.1123 17.6752 23.0504 17.7845 22.9378C17.8463 22.8761 17.8785 22.7908 17.873 22.7037C17.4239 17.7695 13.8687 14.0435 9.60508 14.0435Z"
+								fill="#212A2F" />
+						</svg>
+					</a>
+					<a class="header__icon info" href="">
+						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.5394 24.1777C5.94106 24.1777 0.592041 18.8367 0.592041 12.2482C0.592041 5.65981 5.94106 0.318817 12.5394 0.318817C19.1378 0.318817 24.4868 5.65981 24.4868 12.2482C24.4759 18.8322 19.1333 24.1668 12.5394 24.1777ZM12.5394 1.67861C6.69318 1.67861 1.95388 6.4108 1.95388 12.2482C1.95388 18.0857 6.69318 22.8179 12.5394 22.8179C18.3856 22.8179 23.1249 18.0857 23.1249 12.2482C23.1177 6.4138 18.3826 1.68585 12.5394 1.67861Z"
+								fill="#212A2F" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M12.6775 16.8926C13.0986 16.8899 13.4796 17.1411 13.6426 17.5287C13.8055 17.9163 13.7182 18.3638 13.4215 18.6621C13.1247 18.9603 12.6771 19.0503 12.2879 18.89C11.8986 18.7298 11.6447 18.3509 11.6447 17.9305C11.6482 17.3613 12.1075 16.8997 12.6775 16.8926Z"
+								fill="#212A2F" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M13.3421 15.5065V14.8102C13.336 14.5265 13.3806 14.244 13.4737 13.9759C13.559 13.7473 13.674 13.5308 13.8158 13.3321C13.9641 13.1203 14.1315 12.9224 14.3158 12.7409C14.5 12.5504 14.6908 12.3731 14.8816 12.1891C15.0724 12.0052 15.2631 11.8015 15.4474 11.5979C15.6347 11.3971 15.8001 11.1769 15.9408 10.941C16.2832 10.3941 16.4592 9.75967 16.4474 9.1148C16.4571 8.59354 16.3632 8.07554 16.171 7.59078C15.9965 7.1667 15.7316 6.78563 15.3947 6.47404C15.0474 6.1612 14.64 5.92207 14.1974 5.77114C13.7034 5.60605 13.1854 5.52392 12.6645 5.52809C12.0871 5.52128 11.5143 5.63076 10.9802 5.84997C10.4901 6.05561 10.0519 6.3675 9.69736 6.76307C9.34302 7.16317 9.07237 7.62997 8.9013 8.13601C8.70831 8.68185 8.61906 9.25886 8.63814 9.8374C8.63814 10.2582 8.97982 10.5994 9.4013 10.5994C9.82278 10.5994 10.1645 10.2582 10.1645 9.8374C10.1598 9.44507 10.2085 9.05392 10.3092 8.67467C10.3942 8.3357 10.5488 8.01805 10.7631 7.74187C10.9731 7.46858 11.2403 7.24439 11.546 7.08496C11.8943 6.92485 12.2746 6.84622 12.6579 6.85504C13.2224 6.82532 13.7751 7.02427 14.1908 7.40684C14.597 7.82031 14.8319 8.37162 14.8487 8.95057C14.877 9.33412 14.8232 9.71931 14.6908 10.0805C14.5592 10.3893 14.3793 10.6753 14.1579 10.9279C13.9341 11.1875 13.6946 11.4332 13.4408 11.6636C13.1804 11.9029 12.9344 12.1574 12.7039 12.4256C12.4675 12.7124 12.2685 13.0281 12.1118 13.365C11.9416 13.7711 11.8501 14.2058 11.8421 14.646V15.4999C11.8421 15.9208 12.1838 16.2619 12.6052 16.2619C13.0267 16.2619 13.3684 15.9208 13.3684 15.4999"
+								fill="#212A2F" />
+						</svg>
+					</a>
+					<a class="header__icon cart" href="">
+						<svg width="34" height="29" viewBox="0 0 34 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M8.42963 4.2142L11.5266 19.7802L28.3366 18.7912L31.7276 4.0342H20.0506L8.42963 4.2142ZM11.0356 21.0172C10.7506 21.0172 10.5006 20.8152 10.4446 20.5312L7.13863 3.9112L4.56963 1.2072H0.603634C0.270634 1.2072 -0.000366211 0.9372 -0.000366211 0.6042C-0.000366211 0.2702 0.270634 0.000200272 0.603634 0.000200272H4.82863C4.99463 0.000200272 5.15263 0.0682003 5.26663 0.1882L7.95163 3.0142L20.0416 2.8272H32.4856C32.6696 2.8272 32.8436 2.9112 32.9576 3.0552C33.0726 3.1992 33.1156 3.3872 33.0736 3.5662L29.4116 19.5022C29.3516 19.7632 29.1266 19.9542 28.8596 19.9692L11.0726 21.0162C11.0606 21.0172 11.0486 21.0172 11.0356 21.0172Z"
+								fill="#231F20" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M29.4276 23.4718H11.1166C10.7836 23.4718 10.5126 23.2008 10.5126 22.8678V20.4128C10.5126 20.0798 10.7836 19.8098 11.1166 19.8098C11.4496 19.8098 11.7206 20.0798 11.7206 20.4128V22.2638H29.4276C29.7606 22.2638 30.0316 22.5348 30.0316 22.8678C30.0316 23.2008 29.7606 23.4718 29.4276 23.4718Z"
+								fill="#231F20" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M14.417 26.2785C14.417 27.5785 13.363 28.6325 12.063 28.6325C10.763 28.6325 9.70898 27.5785 9.70898 26.2785C9.70898 24.9785 10.763 23.9245 12.063 23.9245C13.363 23.9245 14.417 24.9785 14.417 26.2785Z"
+								fill="#231F20" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M30.2723 26.2785C30.2723 27.5785 29.2183 28.6325 27.9183 28.6325C26.6183 28.6325 25.5643 27.5785 25.5643 26.2785C25.5643 24.9785 26.6183 23.9245 27.9183 23.9245C29.2183 23.9245 30.2723 24.9785 30.2723 26.2785Z"
+								fill="#231F20" />
+						</svg>
+						<p class="header__icon_num">0</p>
+					</a>
+				</div>
+			</nav>
+
+		</div>
+	</header>
+
+	<section class="banner">
+		<div class="container">
+			<h1 class="banner__title">The Trail Runner SWT Is Here.</h1>
+			<p class="banner__text">Durable. Comfortable. Ready to get dirty.</p>
+			<div class="banner__buttons">
+				<a href="" class="banner__btn btnWhite">Shop Men</a>
+				<a href="" class="banner__btn btnWhite">Shop Women</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="favorites">
+		<div class="container">
+			<h2 class="favorites__title title">Our Favorites</h2>
+			<div class="favorites__links">
+				<a href="" class="favorites__link">Everyday</a>
+				<a href="" class="favorites__link">Running</a>
+				<a href="" class="favorites__link">Travel</a>
+			</div>
+			<div class="favorites__block">
+
+				<article class="favorites__item">
+					<div class="favorites__img img1">
+						<a href="" class="favorites__btn btnWhite">Shop Men</a>
+						<a href="" class="favorites__btn btnWhite">Shop Women</a>
+					</div>
+					<div class="favorites__info">
+						<h3 class="favorites__subtitle subtitle">Wool Runner</h3>
+
+						<div class="favorites__icon">
+
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path d="M0 0H30V30H0V0Z" fill="url(#pattern0)" />
+								<defs>
+									<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image0_1_87" transform="scale(0.0166667)" />
+									</pattern>
+									<image id="image0_1_87" width="60" height="60"
+										xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAAAAAAfl4auAAACeElEQVRIx+2WIZqrQBCEc4CokSPnBJwAj+UCozlADoDLCTgAHoPCxEdjMMjRo8a0qOonhrDZfG/f8r0Va1IWfrq7pho46Q90esNv+Fdh/gpMkv/bNvEjGMdhUqlKJQDidimsLS5jBBX8HgYIIQVE6qz1l7Zxtg0AjrRNBUAqkjdtoCpib8vIQ5UJABJj6kybBBCoDK4VOVCZwtDXzhhn2gQAVIGOdjzSNjiXtm77oW2CQEBVUFPpmWJUkODn8T/N3Nv6LlQSBJFDItKbwpxN2UW+OvcMr64KQupG5oxB16bp+q62TSA+W/cEJ18sIjmVpIpIikkAABTI5Kqk8lXluWiFICDZ9rnzVd0MASKEqAx2eDmz02N3yJu5Z4tJgql3rvK+cvYaASo0XcoAhapCFYodJsj+vBJkHK6Xdoq98/ckEu/tucnN8m5vUEABJRR8wCI3b8skTFfniqq0hamzd9Ch6HKX4i79MN3mKPnSDveu6FdFulp/X2MYa7+SBBUi93W7yVtjjC2qMQlkbxtX20UI0Ns+QUUFIiTInAzk2STGGObBOx8BbjBne0kEibYRgFRCBJkFKLsxAhKpcx1A6IkAk68j//26el5clbYMzDODa9EBOAYrQAzF/HCbS9Ejn+ChyoK+WKjUE6kIZStysDJASFMFEHpSktK5LskxWIDUuVGY3aZqrKzv5mX+i5ZlWdasEEIIYRka5yNU94TFrnTm/IWMOZ/NQ9YW1RCVKh/ZlnCfxuFF4zAO4ziO4zRN03TbtESAeIJziPYvxLbSn9//WdhSy30lhcQWklfu45EbnEtR9bEYCvn2fF8OY8/2+5/kDb/hN/wHEkM4iqD9Ym0AAAAASUVORK5CYII=" />
+								</defs>
+							</svg>
+						</div>
+						<p class="favorites__text">Cozy Sneaker</p>
+					</div>
+				</article>
+
+				<article class="favorites__item">
+					<div class="favorites__img img2">
+						<a href="" class="favorites__btn btnWhite">Shop Men</a>
+						<a href="" class="favorites__btn btnWhite">Shop Women</a>
+					</div>
+					<div class="favorites__info">
+						<h3 class="favorites__subtitle subtitle">Tree Runner</h3>
+
+						<div class="favorites__icon">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path d="M0 0H30V30H0V0Z" fill="url(#pattern0)" />
+								<defs>
+									<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image0_0_3" transform="scale(0.0166667)" />
+									</pattern>
+									<image id="image0_0_3" width="60" height="60"
+										xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAAAAAAfl4auAAADuklEQVRIx+2WoZKkTBCEV80btG3ZHovmBbB4HgA7DodGjh6NxCKxWCwOg2nVEZlZJ2ZuY3d2Z/e/vfjdIQiiI77OKqoqu1/sL56Xf/A/+Ccwzcxkb98y0qTfC89gJVIwEyiZZGYmJSOPBOgbWIIk6q0OjEsTejPwSxiSgZJkSnhdnbIQapBfK2PpqqIo6n5cDwpJZkJsfbMX9S2cr+ChPvddUwaXVZcFohnTxXcxhZbf5XzbAUzbpcpc3i4R7PwVtrqrRMr4usPnMKEkxHWofSiX2Z8jOPrZTElmxNcwMV0TAMWhHfPmWJa1KXaSRsq+VjbswS2SUYmtX+0cchfq5tycjzeJP1GOdV6UOylxdb1S2seuqauqbg485nyPRLp9yGY/jn4izVKbrQQwlimllN71zh1mEiGT4VbKOo8xO8uEJeshpT2r8GQwBBNvNZUZLIZOqgtKuroVluI5TE+nCnHqu/YyLDto0BgW4OIixKowITZu4DNlYAghy7wLRTvsUW2xmwa3w5JvqaPzbdJz5RRJpm1oi+CyqWxAm9xqXNyItfSXBOPDNL8rlWQmbMs4rnlvssmttMFPlzwbEkiQsk9G8lY73X8812yQaXQrcHXe1ztIgSY9HUndK02s2UBxdBtj4+opEmYwwsTPSiW79YdIyra8l3R1hzo/0iBSNPCBfe0w7NuRaGakcBRnkJ3H4hskgTDu67KZHgxQkuLcZM45X3bzIUg4FzvZ5FtR7TTgmJvc+VOlj04i26qyG6ahr4IvL0uiDWGhlVXnZpBpLn3WjKPrjR+VSYoymMWhzrzPq+rUEaH0Ham1ctWYFM/59qFUN5uFaIAZ4zr1TVXmWdpPrthgUxGukdIc+qSPOdNkJkvrPC0xiTLTHPrpdJoZr67c9gO250XSg7C93OaXSpfM+1B2W5LEeM6aUwldfbPtddkuTZjsDn+0IXKZ1nVscpd347rtizuFCZNrErBfSnfqD4jEvhH2u89e7kebRJEpbUMTfFYU+elUxzUvdxHahz4PRXu5XpriHNOje0oSKDPB4jr0/bVxayyzDdIx5iXi2BZ5lpfdIYl8pyyJoihRgEGxKDC4qxCnyp83g9KxrdsBCHoftiTD2/FIi7tueb1NXRaqmQbaffD4psM/t16hz9bB5YUP7RSN+pNrBfeiwZBX7Rz5eK5+D89+ZNwijYLsz2DrfDQKFMBPbPPrnItKoCjp0Xq+h2M2PA/2+5wP6qeXOAr2Y1j66PD/XRmGv7l76m/gf5f1/wH+BeJU2pgW2G7nAAAAAElFTkSuQmCC" />
+								</defs>
+							</svg>
+
+
+						</div>
+						<p class="favorites__text">Light and Breezy Sneaker</p>
+					</div>
+				</article>
+
+				<article class="favorites__item">
+					<div class="favorites__img img3">
+						<a href="" class="favorites__btn btnWhite">Shop Men</a>
+						<a href="" class="favorites__btn btnWhite">Shop Women</a>
+					</div>
+					<div class="favorites__info">
+						<h3 class="favorites__subtitle subtitle">Wool Runner Mizzle</h3>
+
+						<div class="favorites__icon">
+
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path d="M0 0H30V30H0V0Z" fill="url(#pattern0)" />
+								<defs>
+									<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image0_1_108" transform="scale(0.0166667)" />
+									</pattern>
+									<image id="image0_1_108" width="60" height="60"
+										xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAAAAAAfl4auAAAEbElEQVRIx+2XrZaESBaE+wH6AVKhUCgMuiwPUA7DA2DLYnD4sjg0smzbsinLIZGoFHEiYkX17+ywOz1z1m26os7HvTfvX/Dif3Be/g9/HskiSb7/+BVMy/vUNuNKHrFHsGilMZzPoV3F38KSl3AD7mEQ/VuY6qsdZnsC/gosS5YtiWRqW1IcMsE0bVnWMQwi0VKSabQtLXUVJSYCMkkcwBJiW5TdA6QtDSVpVJ1lCNrntr7EYzjWZdeFOoo2PYeN3sIkmdTWZ3VX1PEI5qXahLU87ZKoWCzmVERZZmrzN2Arm0O47iRgDhMkYasvSG29SyKWbKagS354YW0NKqW+iCSJsVpjPgm0YzkkSerKwzzP2RsprdkAQ4jhNoVVFnHJNzn5kXeHbu99PifTQ1gp2nVbN6TNGK4g0lKdHocwtjbrNzIWYyKsawiTJKfLaQUffThFHrpN7XOZT2say0hJj6p8mPY9nxGHrJh2/Eme+V6dhuMlnOaYjTaRrmMy7b6IY5H1UfhZoC+fXSTRtsx4yYss20ABiQS3PMuK8UE8zXy16DtMQM+HoNK9z19nAgZF8u01GyOEz8b4mA5PGPo2ewxwv20ATIvUtmwAKckQZfIPlkUQEiELQgITmCiSAMAnZSWB/wavwymvuinupEgBBGVDpIRnIrHFeWjb4ZZoix+wtjY0fVeFop5XkQnW97FHw35c6yJUbVNlwy7hE8YQ7snCOrV5OE+PnV++2bbS41q/VpdlQ0Jasomk+JHn8zlRtLnHqQ7lmPDDsq9VaG4r+Jwm55a08WG5PYugSay3JlRXwD9qaSxDPcVdBsHUnAlTH/AUbgnUtlyqUF8f6Xkh392empC30wYS9zBK/op5H7OqacpQ1Ncom8JHzE9PSWOd6iKUXd+EdvtR29hvfdv2c9zM54hFesYMgAIlmlu8dqf8NKw/KkzP6rGRIMIi8O43LcMCCTyriZ9evcOUnterZ49sy5beYWl72ySRsi3o6y5fPov6838gjvnrG/jRMstrMdzT0z3xWw5fvm0aGoa0jkWWZXuyKRv2lmdFcYnSxwv+bAwBTIh9KMZYjiKUxitEYszifAqXSOpwYyRqn4p8iPtc3E3oUVUPG4rlgMc1L5YEHC+6eMr6VVxPlwSbU8iuhIixjOY6ZO3Ow+n5qMsl2byGCMto6qaGTK6hF5nmvN+PLLPLVpFY8x4muYVpCQ9DUJ+tkvkW5sOYy06gU19GUtKc3x/VCEqOxZBIom4PY84vhDRnCw15r9sdl3qz4TSFBcnu6sP93FQbcMvbBImMxSQtRZRp7adypfeyO9wY97rs6uyywTZ0Dau9hVmymGKddZeyPtxVSvFSt8tuigK7EgbK/qkM8OiKvDmUFd8PDFWdRTbtV2/7P6ihH8qTKe9FsmlB/ErEyQZObRJS1VO/Fa6G+3BHumWL8EtYltYmnJts3HEoPo/FurwOTTvtf9SMf1HpizgWrf8VFqC/CYv8+x8oksx/4Lb+h59G/wL+4ajO6ruAVwAAAABJRU5ErkJggg==" />
+								</defs>
+							</svg>
+						</div>
+						<p class="favorites__text">Rain-Ready Sneaker</p>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="banner2">
+		<div class="banner2__img">
+			<img src="img/banner2.png" alt="img">
+		</div>
+		<div class="container">
+			<h2 class="banner2__title title">Seasons Change. Your Shoes Don’t Have To.</h2>
+			<p class="banner2__text text">Soft and cozy wool shoes to keep you comfortable all year round.</p>
+			<div class="banner2__buttons">
+				<a href="" class="banner2__btn btnBlack">Shop Men</a>
+				<a href="" class="banner2__btn btnBlack">Shop Women</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="collections">
+		<div class="container">
+			<h2 class="collections__title title">Shop The Collections</h2>
+
+			<div class="swiper collections__swiper swiper3">
+				<div class="swiper-wrapper collections__slider">
+					<article class="swiper-slide collections__slide">
+						<div class="collections__img">
+							<img src="img/collection1.png" alt="runner">
+						</div>
+						<h3 class="collections__subtitle subtitle">New Arrivals</h3>
+						<p class="collections__text text">The latest styles and limited edition colors that you can only find
+							here
+							(while they last, that is).</p>
+					</article>
+					<article class="swiper-slide collections__slide">
+						<div class="collections__img">
+							<img src="img/collection2.png" alt="runner">
+						</div>
+						<h3 class="collections__subtitle subtitle">Natural Run Collection</h3>
+						<p class="collections__text text">Looking for more sustainable ways to break a sweat? We’ve got you
+							covered
+							from head to toe.</p>
+					</article>
+					<article class="swiper-slide collections__slide">
+						<div class="collections__img">
+							<img src="img/collection3.png" alt="runner">
+						</div>
+						<h3 class="collections__subtitle subtitle">Fresh Long Sleeve Tee Colors</h3>
+						<p class="collections__text text">It’s crisp, clean and ready for wherever the day takes you.</p>
+					</article>
+					<article class="swiper-slide collections__slide">
+						<div class="collections__img">
+							<img src="img/runner1.png" alt="runner">
+						</div>
+						<h3 class="collections__subtitle subtitle">New Arrivals</h3>
+						<p class="collections__text text">The latest styles and limited edition colors that you can only find
+							here
+							(while they last, that is).</p>
+					</article>
+					<article class="swiper-slide collections__slide">
+						<div class="collections__img">
+							<img src="img/banner2.png" alt="runner">
+						</div>
+						<h3 class="collections__subtitle subtitle">Natural Run Collection</h3>
+						<p class="collections__text text">Looking for more sustainable ways to break a sweat? We’ve got you
+							covered
+							from head to toe.</p>
+					</article>
+					<article class="swiper-slide collections__slide">
+						<div class="collections__img">
+							<img src="img/runner3.png" alt="runner">
+						</div>
+						<h3 class="collections__subtitle subtitle">Fresh Long Sleeve Tee Colors</h3>
+						<p class="collections__text text">It’s crisp, clean and ready for wherever the day takes you.</p>
+					</article>
+				</div>
+				<div class="swiper-button-next collections__tick">
+					<svg class="next" width="15" height="25" viewBox="0 0 15 25" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<rect x="0.181152" y="22.2839" width="16.9705" height="3"
+							transform="rotate(-40.8495 0.181152 22.2839)" fill="#4D5559" />
+						<rect x="1.61414" y="2.53687" width="3" height="16.9707" transform="rotate(-40.8495 1.61414 2.53687)"
+							fill="#4D5559" />
+					</svg>
+				</div>
+				<div class="swiper-button-prev collections__tick">
+					<svg class="prev" width="15" height="25" viewBox="0 0 15 25" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<rect x="14.8188" y="2.71606" width="16.9705" height="3" transform="rotate(139.151 14.8188 2.71606)"
+							fill="#4D5559" />
+						<rect x="13.3859" y="22.4631" width="3" height="16.9707" transform="rotate(139.151 13.3859 22.4631)"
+							fill="#4D5559" />
+					</svg>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="banner3">
+		<div class="banner3__img">
+			<img src="img/banner3.png" alt="img">
+		</div>
+		<div class="container">
+			<h2 class="banner3__title title">Made From Nature, For Nature</h2>
+			<p class="banner3__text text">We craft with planet-friendly natural materials, like merino wool and eucalyptus
+				trees, because they're our best chance for a sustainable future.</p>
+			<a href="" class="banner3__btn btnBlack">See How</a>
+		</div>
+	</section>
+
+	<section class="new">
+		<div class="container">
+			<h2 class="new__title title">New Arrivals</h2>
+
+			<div class="swiper new__swiper swiper3">
+				<div class="swiper-wrapper new__slider">
+					<article class="swiper-slide new__slide">
+						<div class="new__img">
+							<img src="img/new1.png" alt="runner">
+						</div>
+						<h3 class="new__subtitle subtitle">Men's Trail Runner SWT</h3>
+						<p class="new__text text">Classic Color, Natural Black</p>
+					</article>
+					<article class="swiper-slide new__slide">
+						<div class="new__img">
+							<img src="img/new2.png" alt="runner">
+						</div>
+						<h3 class="new__subtitle subtitle">Women's Trail Runner SWT</h3>
+						<p class="new__text text">Classic Color, Natural White</p>
+					</article>
+					<article class="swiper-slide new__slide">
+						<div class="new__img">
+							<img src="img/new3.png" alt="runner">
+						</div>
+						<h3 class="new__subtitle subtitle">Men's Trail Runner SWT</h3>
+						<p class="new__text text">Limited Edition Color, Diablo</p>
+					</article>
+
+					<article class="swiper-slide new__slide">
+						<div class="new__img">
+							<img src="img/new1.png" alt="runner">
+						</div>
+						<h3 class="new__subtitle subtitle">Men's Trail Runner SWT</h3>
+						<p class="new__text text">Classic Color, Natural Black</p>
+					</article>
+					<article class="swiper-slide new__slide">
+						<div class="new__img">
+							<img src="img/banner2.png" alt="runner">
+						</div>
+						<h3 class="new__subtitle subtitle">Women's Trail Runner SWT</h3>
+						<p class="new__text text">Classic Color, Natural White</p>
+					</article>
+					<article class="swiper-slide new__slide">
+						<div class="new__img">
+							<img src="img/new3.png" alt="runner">
+						</div>
+						<h3 class="new__subtitle subtitle">Men's Trail Runner SWT</h3>
+						<p class="new__text text">Limited Edition Color, Diablo</p>
+					</article>
+
+				</div>
+				<div class="swiper-button-next new__tick">
+					<svg class="next" width="15" height="25" viewBox="0 0 15 25" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<rect x="0.181152" y="22.2839" width="16.9705" height="3"
+							transform="rotate(-40.8495 0.181152 22.2839)" fill="#4D5559" />
+						<rect x="1.61414" y="2.53687" width="3" height="16.9707" transform="rotate(-40.8495 1.61414 2.53687)"
+							fill="#4D5559" />
+					</svg>
+				</div>
+				<div class="swiper-button-prev new__tick">
+					<svg class="prev" width="15" height="25" viewBox="0 0 15 25" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<rect x="14.8188" y="2.71606" width="16.9705" height="3" transform="rotate(139.151 14.8188 2.71606)"
+							fill="#4D5559" />
+						<rect x="13.3859" y="22.4631" width="3" height="16.9707" transform="rotate(139.151 13.3859 22.4631)"
+							fill="#4D5559" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bannerClimate">
+		<div class="bannerClimate__img">
+			<img src="img/banner4.png" alt="img">
+		</div>
+		<div class="container">
+			<h2 class="bannerClimate__title title">Reversing Climate Change Through Better Business</h2>
+			<p class="bannerClimate__text text">Reducing our environmental impact has been a top priority since day one.
+				But now, we’re taking things further. Explore our overall sustainability approach, our progress thus far,
+				and our bold list of commitments for 2025.</p>
+			<a href="" class="bannerClimate__btn btnBlack">Our Sustainable Practices</a>
+		</div>
+	</section>
+
+	<section class="stories">
+		<div class="container">
+			<h2 class="stories__title title">Stories</h2>
+
+			<div class="swiper stories__swiper swiper3">
+				<div class="swiper-wrapper stories__slider">
+					<article class="swiper-slide stories__slide">
+						<div class="stories__img">
+							<img src="img/story1.png" alt="runner">
+						</div>
+						<h3 class="stories__subtitle subtitle">Planet-Friendly Activewear</h3>
+						<p class="stories__text text">The Natural Run Collection is made with sustainable materials that can
+							stand up to your toughest workout.</p>
+					</article>
+					<article class="swiper-slide stories__slide">
+						<div class="stories__img">
+							<img src="img/story2.png" alt="runner">
+						</div>
+						<h3 class="stories__subtitle subtitle">adidas and Allbirds</h3>
+						<p class="stories__text text">Learn more about FUTURECRAFT.FOOTPRINT, our collaborative shoe coming
+							soon.</p>
+					</article>
+					<article class="swiper-slide stories__slide">
+						<div class="stories__img">
+							<img src="img/story3.png" alt="runner">
+						</div>
+						<h3 class="stories__subtitle subtitle">How much did your outfit cost the planet?</h3>
+						<p class="stories__text text">Now any brand can use our Carbon Footprint tools to label their
+							emissions.</p>
+					</article>
+
+					<article class="swiper-slide stories__slide">
+						<div class="stories__img">
+							<img src="img/story1.png" alt="runner">
+						</div>
+						<h3 class="stories__subtitle subtitle">Planet-Friendly Activewear</h3>
+						<p class="stories__text text">The Natural Run Collection is made with sustainable materials that can
+							stand up to your toughest workout.</p>
+					</article>
+					<article class="swiper-slide stories__slide">
+						<div class="stories__img">
+							<img src="img/banner2.png" alt="runner">
+						</div>
+						<h3 class="stories__subtitle subtitle">adidas and Allbirds</h3>
+						<p class="stories__text text">Learn more about FUTURECRAFT.FOOTPRINT, our collaborative shoe coming
+							soon.</p>
+					</article>
+					<article class="swiper-slide stories__slide">
+						<div class="stories__img">
+							<img src="img/story3.png" alt="runner">
+						</div>
+						<h3 class="stories__subtitle subtitle">How much did your outfit cost the planet?</h3>
+						<p class="stories__text text">Now any brand can use our Carbon Footprint tools to label their
+							emissions.</p>
+					</article>
+				</div>
+				<div class="swiper-button-next stories__tick">
+					<svg class="next" width="15" height="25" viewBox="0 0 15 25" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<rect x="0.181152" y="22.2839" width="16.9705" height="3"
+							transform="rotate(-40.8495 0.181152 22.2839)" fill="#4D5559" />
+						<rect x="1.61414" y="2.53687" width="3" height="16.9707" transform="rotate(-40.8495 1.61414 2.53687)"
+							fill="#4D5559" />
+					</svg>
+				</div>
+				<div class="swiper-button-prev stories__tick">
+					<svg class="prev" width="15" height="25" viewBox="0 0 15 25" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<rect x="14.8188" y="2.71606" width="16.9705" height="3" transform="rotate(139.151 14.8188 2.71606)"
+							fill="#4D5559" />
+						<rect x="13.3859" y="22.4631" width="3" height="16.9707" transform="rotate(139.151 13.3859 22.4631)"
+							fill="#4D5559" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="subscription">
+		<div class="container">
+			<h2 class="subscription__title title">Want First Dibs?</h2>
+			<p class="subscription__text text">Join our email list and be the first to know about new limited edition
+				products, material innovations, and lots of other fun updates.</p>
+			<form class="subscription__form" action="">
+				<input class="subscription__input" placeholder="Enter Your Email Address
+			" type="email" name="email" id="">
+				<button class="subscription__btn btnBlack">Sign Up</button>
+			</form>
+			<div class="subscription__info">
+				<p class="subscription__note">Note: You can opt-out at any time. See our</p>
+				<a class="subscription__privacy" href="">Privacy Policy and Terms</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__block">
+				<article class="footer__item">
+					<h4 class="footer__subtitle">Help</h4>
+					<a class="footer__link" href="tel:+">1-888-963-8944</a>
+					<div class="footer__span">
+						<a class="footer__link" href="tel:+">1-814-251-9966</a>
+						<span> (Text)</span>
+					</div>
+					<a class="footer__link" href="mailto:">help@allbirds.com</a>
+					<a class="footer__link" href="">Returns/Exchanges</a>
+					<a class="footer__link" href="">FAQ/Contact Us</a>
+					<a class="footer__link" href="">Afterpay</a>
+				</article>
+				<article class="footer__item">
+					<h4 class="footer__subtitle">Shop</h4>
+					<a class="footer__link" href="">Men's Shoes</a>
+					<a class="footer__link" href="">Women's Shoes</a>
+					<a class="footer__link" href="">Men's Apparel</a>
+					<a class="footer__link" href="">Women's Apparel</a>
+					<a class="footer__link" href="">Socks</a>
+					<a class="footer__link" href="">Gift Cards</a>
+					<a class="footer__link" href="">Download the Allbirds App</a>
+				</article>
+				<article class="footer__item">
+					<h4 class="footer__subtitle">Company</h4>
+					<a class="footer__link" href="">Our Stores</a>
+					<a class="footer__link" href="">Our Story</a>
+					<a class="footer__link" href="">Our Materials</a>
+					<a class="footer__link" href="">Sustainability</a>
+					<a class="footer__link" href="">Partnerships</a>
+					<a class="footer__link" href="">Product Testing</a>
+					<a class="footer__link" href="">Affiliates</a>
+					<a class="footer__link" href="">Bulk Orders</a>
+					<a class="footer__link" href="">Careers</a>
+					<a class="footer__link" href="">Press</a>
+					<a class="footer__link" href="">California Transparency Act</a>
+				</article>
+			</div>
+			<div class="footer__block2">
+				<div class="footer__follow">
+					<h4 class="footer__subtitle">Follow the Flock</h4>
+					<p class="footer__text">Exclusive offers, a heads up on new things, and sightings of Allbirds in the
+						wild.
+						Oh, we have cute sheep, too. <a class="footer__link" href=""> #weareallbirds</a></p>
+				</div>
+				<div class="footer__icons">
+					<a class="footer__icon" href="">
+						<svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<path d="M0 0H37V22H0V0Z" fill="url(#pattern0)" />
+							<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+									<use xlink:href="#image0_6_2" transform="scale(0.00675676 0.0113636)" />
+								</pattern>
+								<image id="image0_6_2" width="148" height="88"
+									xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAABYBAMAAADhOMMoAAAAHlBMVEVHcEzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzmEFSSAAAACHRSTlMAQIPQFfBoMLvDO4kAAAEoSURBVFjD7dk9CsJAEAXg/GHa6AliunQpREgXEARPIOkEbezSeJHECN5WUERNdoIz+1KIMwf4muy+mdk4V1g5f0BNIXWnHEgppZRSY1HhLEnmFYAK9o8IWRa21Dp/xlFzsKO88hVtbWxDufl7TDaRBZV+Rm4tp1bd+F5IqbDsUm0lpE79rrKVUUHZp9pCRPmmZpeJqNRE1RLKNffgSED5ZioTUKmZqvmU6fsNfcMBakINLDs25VNUxqY2FHVmU0eKurCpnKIaNjUwKDKpkKYqJuXSVMSkPJqKlfoFCngYgEcUeHGQ1xkYMsDoAwYysE0AmxewpSIbPXD8AA5FyFENOEACx1rksA1cAZCLCXJdAi5xyNUSufAi13B9/VBKqbEp4CO5/pv4sm5T17yvAWPkqwAAAABJRU5ErkJggg==" />
+							</defs>
+						</svg>
+
+					</a>
+					<a class="footer__icon" href="">
+						<svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<path d="M0 0H37V22H0V0Z" fill="url(#pattern0)" />
+							<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+									<use xlink:href="#image0_1_698" transform="scale(0.00675676 0.0113636)" />
+								</pattern>
+								<image id="image0_1_698" width="148" height="88"
+									xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAABYBAMAAADhOMMoAAAAGFBMVEVHcEzKysrFxsb9/f329vbs7Ozg4ODU1NR3azCAAAAAAXRSTlMAQObYZgAAAwxJREFUWMPtmU1vozAQhtEa0rOVBK67/QWOtg1X0PbjSpRNcyUizbko7e7fXxuCsc0YT70cqqo+RRF57Hc8zFeC68lW8EFR34NJ1rcv1KdERZXjZ+ErFpUvHKgoYUhUXTpQpC5wKLHnzZg88NwgasWfOxR21KYIZgkOxfWFlNlR+RxSCKGEvnQ5InAWc1yFQTX6yoBsYYtXAaFZEKEEHlp9Ym9gXfHz5meci3b6uEXA67PtAqCEvs0L6Drt/ZWNwmDtRnX6EovR01bhYKshyqGvV2g+MES59EmFpsGGqIu+KLG61S0DFQ5QEXXoU7x0Po4SbrMxtiT3u91v/UUCFA4FFlxfpgYk8lBT+oMmWz008O0Kp7fr+sieXlbVRyvISyGUru+RyrVVrqbxUjdK1bfuSVR+Kc69x6CIEiRJraDoQvFSgovtvb6UaivrFWKTl5Ry0FFzRSHyVEepRF/dtYXVu7OzoY8Org2Pyk3UizdqY6IWU6Cef/28r2k8Aaqxc1gn3qiVIWw9kmkdqKvulZG+mfmiItPaUeFd9R1Md/JHpf2h7u6EnbxtFRBxrJi1H5LCv6zlPyVPp2fWuUXCvFFn0/5nb9RfZvhq7I2qK8Mp/CPDIWbGC1T6ojb01cgVZ18UD1dHfq6HCYKMeAWTP/V/xStmWHuAYlhU+NYVGea6pJwI3S5FlFkCctnXc0iBXcq0ZRxsSuUlz2oJ58Fln3JDVAuglB85rE+UTQWuKJIK9DvsnF8URTUGJaowaddHFVW8q1QjbRUmFRKlAJEecNs2chWqrO3vKJSsN6NsMupxsNjWFHbFaHJUSrkGYzS9YAtAYqb17DdPp9Ouj1Q5r0mjxaBZBxoTrjCzeKHS72eDAQHcLtneDf2BJaaJE9V9ZEsvYo8tcGxLa5me7XMLYUyRP1KGanj1OwygK8a24Y2XwplqZmvLbMMB0Q1ltpTd+GeGHVnMYlczuECFPrAbMgcpJXq8sx9B7UFXsQ6dyFilBF6v5ygMegJGraYb0DnHhrKf+hqxfgTUJ/+b4x/3PO2iw/J8IgAAAABJRU5ErkJggg==" />
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer__info">
+				<p class="footer__copy">© 2021 Allbirds, Inc. All Rights Reserved.</p>
+				<a class="footer__privacy" href="">Terms, Privacy & Accessibility</a>
+			</div>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
