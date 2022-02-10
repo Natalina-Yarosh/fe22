@@ -35,16 +35,14 @@ html {
   border-top: 5px solid transparent;
   border-left: 5px solid;
   border-bottom: 5px solid transparent;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .header {
   position: relative;
-  padding: 0 15px;
 }
 
 .header .container {
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,13 +57,13 @@ html {
 
 .header .logo {
   position: absolute;
-  left: 0;
+  left: 15px;
   top: 24px;
 }
 
 .header .burg {
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 24px;
   background-color: #fff;
   border-radius: 50%;
@@ -244,7 +242,7 @@ html {
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
-  margin-bottom: 45px;
+  margin-bottom: 52px;
 }
 
 .banner__link {
@@ -269,11 +267,11 @@ html {
   -webkit-box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
           box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
   border-radius: 2px;
-  padding: 60px 0 54px;
+  padding: 60px 0 50px;
   position: absolute;
   right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
   z-index: 1;
 }
 
@@ -339,7 +337,7 @@ html {
   font-size: 16px;
   line-height: 26px;
   color: rgba(33, 56, 66, 0.6);
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .services__link {
@@ -361,6 +359,8 @@ html {
 
 .services__comment {
   padding: 244px 8px 60px 40px;
+  max-width: 474px;
+  width: 100%;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
           box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
@@ -464,7 +464,7 @@ html {
 
 .wall__block {
   margin-right: 97px;
-  max-width: 50%;
+  max-width: 51%;
   width: 100%;
   background-image: url(../img/Bitmap_1.jpg);
   background-position: center;
@@ -486,8 +486,8 @@ html {
   width: 100%;
   padding: 30px;
   position: absolute;
-  right: -40px;
-  bottom: -50px;
+  right: -42px;
+  bottom: -65px;
 }
 
 .wall__comment .wall__text {
@@ -497,7 +497,7 @@ html {
   font-size: 16px;
   line-height: 26px;
   color: #4D533C;
-  margin-bottom: 24px;
+  margin-bottom: 31px;
 }
 
 .wall__person {
@@ -532,7 +532,6 @@ html {
   font-size: 16px;
   line-height: 24px;
   color: #4D533C;
-  margin-bottom: 4px;
 }
 
 .wall__person-post {
@@ -603,7 +602,7 @@ html {
 .model__info {
   max-width: 421px;
   width: 100%;
-  margin-right: 58px;
+  margin-right: 112px;
   padding: 83.6px 0;
 }
 
@@ -649,7 +648,7 @@ html {
 }
 
 .model__block {
-  max-width: 50%;
+  max-width: 51%;
   width: 100%;
   background-image: url(../img/Bitmap_2.jpg);
   background-repeat: no-repeat;
@@ -668,7 +667,7 @@ html {
   width: 100%;
   padding: 30px;
   position: absolute;
-  bottom: -50px;
+  bottom: -38px;
   left: -40px;
 }
 
@@ -679,7 +678,7 @@ html {
   font-size: 16px;
   line-height: 26px;
   color: #4D533C;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .model__person {
@@ -729,7 +728,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 190px;
+  margin-bottom: 192px;
 }
 
 .booking__block {
@@ -737,7 +736,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 50%;
+  max-width: 51%;
   width: 100%;
   margin-right: 95px;
   position: relative;
@@ -752,8 +751,8 @@ html {
   border-radius: 8px;
   padding: 30px;
   position: absolute;
-  bottom: -50px;
-  right: -40px;
+  bottom: -44px;
+  right: -42px;
 }
 
 .booking__comment .booking__text {
@@ -913,7 +912,7 @@ html {
   font-size: 14px;
   line-height: 26px;
   color: rgba(33, 56, 66, 0.6);
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .idea__link {
@@ -951,7 +950,7 @@ html {
           box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
   padding: 72.6px 15px;
   position: relative;
-  margin: -181px auto;
+  margin: -169px auto;
 }
 
 .action__title {
@@ -982,7 +981,7 @@ html {
 }
 
 .footer {
-  padding: 310px 15px 30px;
+  padding: 290px 0 30px;
   background-color: #4F553D;
   background-image: url(../img/footerBgObject.png);
 }
@@ -1046,7 +1045,11 @@ html {
 }
 
 .footer .info__help {
-  margin-right: 100px;
+  margin-right: 93px;
+}
+
+.footer .info__company {
+  margin-right: 13px;
 }
 
 .footer .info__contact {
